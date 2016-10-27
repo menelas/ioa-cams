@@ -898,8 +898,8 @@ td {
     background: #adadad;
 }
 
-.actionBtn a:first-child {
-    margin-bottom: 6px;
+.actionBtn a:not(:first-child) {
+    margin-top: 6px;
 }
 
 .actionBtn a:hover {
