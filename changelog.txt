@@ -1,6 +1,6 @@
 ## 2016-11-02
 • Added general-info.html as a sample for two column layout with forms
-• Added search-claims class on search-claims.css
+• Added street-address class for spacing on address
 
 ## 2016-11-01
 • Removed form-control margin top 8px on app.css due to conflict

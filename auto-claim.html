@@ -132,20 +132,17 @@
                               <div class="form-group">
                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                     <label class="control-label" for="contact-address">Contact's Address:</label>  
-                                    <input id="contact-address" name="contact-address" placeholder="Street Address 1" class="form-control input-md" required="" type="text">
+                                    <input id="contact-address" name="contact-address" placeholder="Street Address 1" class="form-control input-md street-address" required="" type="text">
 
                                     <label class="control-label sr-only" for="street-address-2">Street Address 2</label>
-                                    <input id="street-address-2" name="street-address-2" placeholder="Street Address 2" class="form-control input-md" type="text">
+                                    <input id="street-address-2" name="street-address-2" placeholder="Street Address 2" class="form-control input-md street-address" type="text">
 
                                     <label class="control-label sr-only" for="street-city">Street City</label>
-                                    <input id="street-city" name="street-city" placeholder="City" class="form-control input-md" required="" type="text">
-
-                                    <label class="control-label sr-only" for="zip-code">Zip Code</label>
-                                    <input id="zip-code" name="zip-code" placeholder="Zip Code" class="form-control input-md" required="" type="text">
+                                    <input id="street-city" name="street-city" placeholder="City" class="form-control input-md street-address" required="" type="text">
 
                                     <!-- State Select -->
                                     <label class="control-label sr-only" for="address-state">Address State</label>
-                                    <select id="address-state" name="address-state" class="form-control">
+                                    <select id="address-state" name="address-state" class="form-control street-address">
                                        <option value="AL - Alabama">AL - Alabama</option>
                                        <option value="AK - Alaska">AK - Alaska</option>
                                        <option value="AZ - Arizona">AZ - Arizona</option>
@@ -198,11 +195,10 @@
                                        <option value="WI - Wisconsin">WI - Wisconsin</option>
                                        <option value="WY - Wyoming">WY - Wyoming</option>
                                     </select>
-                                 </div>
-                              </div>
-                              <!-- Country Select -->
-                              <div class="form-group">
-                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+
+                                    <label class="control-label sr-only" for="zip-code">Zip Code</label>
+                                    <input id="zip-code" name="zip-code" placeholder="Zip Code" class="form-control input-md street-address" required="" type="text">
+
                                     <label class="control-label sr-only" for="address-country">Country</label>
                                     <select id="address-country" name="address-country" class="form-control">
                                        <option value="US - United States">US - United States</option>
@@ -462,7 +458,7 @@
                               <div class="form-group">
                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 required control-label">Contact's Primary Phone:</div>
                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div class="form-group row">
+                                    <div class="row">
                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
 
                                           <label class="control-tabel sr-only" for="contact-primary-phone">Contact Primary Phone</label>
@@ -492,7 +488,7 @@
                               <div class="form-group">
                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 required control-label">Contact's Secondary Phone:</div>
                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div class="form-group row">
+                                    <div class="row">
                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
                                           <label class="control-tabel sr-only" for="contact-secondary-phone">Contact's Secondary Phone Number</label>
                                           <input id="contact-secondary-phone" name="contact-secondary-phone" placeholder="Phone Number" class="form-control input-md" required="" type="text">
