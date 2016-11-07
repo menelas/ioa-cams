@@ -182,6 +182,8 @@ a, a:active, a:hover, a:focus, a:visited  {
         left: 0;
         height: auto !important;
         margin-top: 65px;
+        max-width: 225px;
+        word-wrap: break-word;
     }
 }
 
@@ -1024,7 +1026,7 @@ th {
 }
 /***** Form Controls ****************************/
 .form-control {      
-    padding-top: 8px;       
+    margin-top: 8px;       
 }       
 
 .input-group {
@@ -1033,10 +1035,6 @@ th {
 
 .input-group .form-control {        
     margin-top: initial;        
-}
-
-.street-address {
-    margin-bottom: 8px;
 }
 
 .required:before {
@@ -1088,18 +1086,21 @@ th {
 .tab-content {
     margin-left: -2px;
 }
-
 .nav.nav-pills {
     margin-bottom: 20px;
 }
 
-/***** Misc ****************************/
+/************ Misc *********/
 .warning {
     color: #E93F33;
 }
 
 .smallBtn {
     font-size: 12px;
+}
+
+.largeBtn {
+    font-size: 15px;
 }
 
 .claims-btn {
@@ -1126,7 +1127,7 @@ th {
     background-color: #4995cf;
     font-size: 13px;
     font-style: normal;
-    padding: 10px;
+    padding: 17px;
     text-transform: uppercase;
 }
 
@@ -1169,3 +1170,14 @@ th {
 .spacer10 {
     margin-top: 10px;
 }
+
+/*@media only screen and (max-width : 768px) {
+
+.btn {
+    border-collapse: separate;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+
+}*/

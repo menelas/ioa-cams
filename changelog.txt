@@ -1,3 +1,7 @@
+## 2016-11-07
+• Fixed progress bar from not selecting previous link on add new claim
+• Added max-width to sidebar for character size limits
+
 ## 2016-11-02
 • Added general-info.html as a sample for two column layout with forms
 • Added street-address class for spacing on address
