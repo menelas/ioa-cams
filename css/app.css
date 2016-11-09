@@ -766,7 +766,7 @@ table {
     }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1320px) {
     /* Force table to not be like tables anymore */
     .cams-tables table, .cams-tables thead, .cams-tables tbody, .cams-tables th, .cams-tables td, .cams-tables tr {
         display: block;
@@ -1025,6 +1025,9 @@ th {
     padding-right: 0;
 }
 /***** Form Controls ****************************/
+.form-group {
+    margin-bottom: 25px;
+}
 .form-control {      
     margin-top: 8px;       
 }       
@@ -1170,14 +1173,3 @@ th {
 .spacer10 {
     margin-top: 10px;
 }
-
-/*@media only screen and (max-width : 768px) {
-
-.btn {
-    border-collapse: separate;
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-
-
-}*/

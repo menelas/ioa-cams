@@ -34,6 +34,12 @@
 .new-claim {
     padding-left: 0px;
 }
+
+@media (max-width: 767px) {
+    .new-claim {
+        padding: 0 0 15px;
+    }
+}
 /************* Progress Bar On Right *************/
 
 .current-progress {

@@ -1,3 +1,9 @@
+## 2016-11-09
+• Updated search-claims.html to reflect all data columns and resize correctly based on   
+  screen resolution
+• Completed claim-details.html, waiting for approval, upon approval changes will be   
+  submitted for development
+
 ## 2016-11-07
 • Fixed progress bar from not selecting previous link on add new claim
 • Added max-width to sidebar for character size limits

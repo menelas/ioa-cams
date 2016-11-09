@@ -1,12 +1,24 @@
 /************* Claim Details *************/
-
-#claim-section {
-    margin-top: 50px;
+.panel-primary {
+    border: 1px solid #ccc;
+    border-radius: 0;
 }
 
-.panel-primary {
-    border: none;
-    margin-top: 20px;
+.body-content {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.claim-details {
+	padding-left: 0px;
+}
+
+.close-claim, .cancel-button, .save-button {
+	margin-bottom: 20px;
+}
+
+.cancel-button {
+	margin-right: 20px;
 }
 
 .summary-checkbox {
@@ -15,4 +27,14 @@
 
 .deductionAmount {
 	background-color: #ff9999;
+}
+
+@media (max-width: 767px) {
+	.claim-details {
+		padding: 0 0 15px;
+	}
+}
+
+.claim-info {
+	margin-left: 15px;
 }
