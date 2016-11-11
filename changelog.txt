@@ -1,3 +1,9 @@
+## 2016-11-11
+• Updated app.css to fix form-horizontal issue as well as actionBtn
+• Continue working on changes for claim-details.html
+• Moved tab-content from app.css to company-info.css
+• Added comments to scroll-top.js
+
 ## 2016-11-09
 • Updated search-claims.html to reflect all data columns and resize correctly based on   
   screen resolution
