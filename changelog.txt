@@ -1,3 +1,10 @@
+## 2016-11-14
+• Updated auto-claim.html to include ordered and unordered list
+• Created app.bootstrap.css to add bootstrap overrides from this point forward
+• Removed scroll-top.js as code already exists
+• Moved nab-tabs to company-info.css
+
+
 ## 2016-11-11
 • Updated app.css to fix form-horizontal issue as well as actionBtn
 • Continue working on changes for claim-details.html

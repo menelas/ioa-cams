@@ -23,10 +23,6 @@
   margin-right: 4px;
 }
 
-.claim-header {
-    color: #4995cf;
-}
-
 .control-label {
     color: #5e5e5e;
     padding-bottom: 6px;
@@ -74,11 +70,15 @@
     position: relative;
 }
 
-
 .input-group[class*="col-"] {
     float: left;
 }
 
 .spacer {
     margin-top: 20px;
+}
+
+form .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
 }

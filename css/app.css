@@ -9,6 +9,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-weight: 400;
 }
 
+h3 {
+    color: #4995cf;
+}
+
 body {
     line-height: 1;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -384,10 +388,6 @@ body.cams-pad {
 
 .content .row {
     position: initial;
-}
-
-.claim-header {
-    color: #4995cf;
 }
 
 @media (min-width: 770px) {
