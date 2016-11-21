@@ -14,7 +14,8 @@
 }
 
 .close-claim, .cancel-button, .save-button {
-	margin-bottom: 5px;
+  margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .cancel-button {
@@ -35,12 +36,53 @@
 	}
 }
 
+
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  .tab-pane { height: 350px !important;    
+}
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  .tab-pane { height: 325px !important;
+}}
+
+@media screen and (min-width: 1921px) {
+  .tab-pane { height: 650px !important;
+   
+}}
+
+
+
+
+
 .claim-info {
 	margin-left: 15px;
 }
 
+.form-group {
+  margin-bottom: 5px;
+}
+
+.indent {
+  margin-left: 10px;
+}
+
+.sub-section {
+  margin-bottom: 10px;
+}
+
+.claim-summary-pane {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#claim-summary-container .tab-pane {
+  height: 220px !important;;
+}   
+
 .tab-pane {
-  height: 240px;
+  height: 250px;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -64,21 +106,22 @@
   border-radius: 5px;
 }
 
+.claim-summary-content, .claim-information-content {
+  border-left: 1px solid #ccc;
+}
+
 #claim-information-container {
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding-top: 10px;
+  padding-top: 0px;
 	margin-top: 5px;
 }
 
 /************* Left Tabs *************/
 
-.tabs-left, .tabs-right {
+.tabs-left {
   border-bottom: none;
   padding-top: 2px;
-}
-.tabs-left {
-  border-right: 1px solid #ddd;
 }
 
 .tabs-left>li {
@@ -96,46 +139,36 @@
   border-right-color: transparent;
 }
 
-
 .tabs-left>li>a {
   border-radius: 4px 0 0 4px;
   margin-right: 0;
   display:block;
 }
 
-.vertical-text {
-  margin-top:50px;
-  border: none;
-  position: relative;
+div#claim-summary-container .col-xs-12.col-sm-4.col-md-2.col-lg-2{
+  padding: 0
 }
-.vertical-text>li {
-  height: 20px;
-  width: 120px;
-  margin-bottom: 100px;
+div#claim-summary-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 li a{
+  border-radius: 0;
 }
-.vertical-text>li>a {
-  border-bottom: 1px solid #ddd;
-  border-right-color: transparent;
-  text-align: center;
-  border-radius: 4px 4px 0px 0px;
+div#claim-summary-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 .nav-pills>li+li {
+    margin-left: 0
 }
-.vertical-text>li.active>a,
-.vertical-text>li.active>a:hover,
-.vertical-text>li.active>a:focus {
-  border-bottom-color: transparent;
-  border-right-color: #ddd;
-  border-left-color: #ddd;
+div#claim-information-container:before, div#claim-information-container:after {
+    display: table;
+    content: " ";
+    clear: both;
 }
-.vertical-text.tabs-left {
-  left: -50px;
+div#claim-information-container .col-xs-12.col-sm-4.col-md-2.col-lg-2{
+  padding: 0
+}
+div#claim-information-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 li a{
+  border-radius: 0;
+}
+div#claim-information-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 .nav-pills>li+li {
+    margin-left: 0
 }
 
-.vertical-text.tabs-left>li {
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+div#claim-summary-container ul li a {
+  cursor: pointer;
 }
-
-

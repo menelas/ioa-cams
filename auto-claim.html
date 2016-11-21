@@ -53,58 +53,100 @@
       </nav>
       <div class="container-fluid content">
          <div class="row sidebar-container">
-            <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
-               <ul class="nav nav-sidebar">
-                  <li>
-                     <a href="dashboard.html">
-                     <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span></a>
-                     <hr />
-                  </li>
-                  <li class="dropdown">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                     <ul class="dropdown-menu">
-                            <li><a href="claim-add-new.html">Add New</a><hr></li>
-                            <li><a href="search-claims.html">View Claims</a><hr></li>
-                            <li><a href="tasks.html">Tasks</a><hr></li> 
-                     </ul>
-                     <hr />
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa fa-building fa-2x" aria-hidden="true"></i><span> Company Info</span></a>
-                     <hr>
-                  </li>
-               </ul>
-               <div class="info">
-                  <p>Producer(s):</p>
-                  <ul>
-                     <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
-                     <li><i class="fa fa-phone" aria-hidden="true"></i> (678) 923-3336</li>
-                     <li><i class="fa fa-envelope" aria-hidden="true"></i> bruce.eades@ioausa.com</li>
+         <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
+            <ul class="nav nav-sidebar">
+               <li>
+                  <a href="dashboard.html">
+                     <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
+                  </a>
+                  <hr />
+               </li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="claim-add-new.html">Add New</a>
+                        <hr>
+                     </li>
+                     <li><a href="search-claims.html">View Claims</a>
+                        <hr>
+                     </li>
+                     <li><a href="tasks.html">Tasks</a>
+                        <hr>
+                     </li>
                   </ul>
-                  <br />
-                  <p>Claims Contact(s):</p>
-                  <ul>
-                     <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
-                     <li><i class="fa fa-phone" aria-hidden="true"></i> (407) 998-5488</li>
-                     <li><i class="fa fa-envelope" aria-hidden="true"></i> fred.tucker@ioausa.com</li>
+                  <hr />
+               </li>
+               <li>
+                  <a href="company-info.html"><i class="fa fa-building fa-2x" aria-hidden="true"></i><span> Company Info</span></a>
+                  <hr />
+               </li>
+
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu servicing-team">
+
+                     <div class="col-xs-6 col-md-6">
+                        <li>Producer(s):</li>
+                        <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
+                        </li>
+
+                        <hr />
+
+                        <li>Claim Contact(s):</li>
+                        <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
+                        </li>
+
+
+                     </div>
+
+                     <div class="col-xs-6 col-md-6">
+                        <li>Policy Information:</li>
+                        <li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
+                        </li>
+
+                        <hr />
+
+
+                        <li>Technical Contact:</li>
+                        <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam
+                           <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
+                           <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
+                              </li>
+                     </div>
                   </ul>
-                  <br />
-               </div>
-               <ul class="nav nav-sidebar nav-sidebar2">
-                  <li class="dropdown">
-                     <hr>
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
+               </li>
+
+                  <hr />
+
+                  <ul class="nav nav-sidebar nav-sidebar2">
+                     <li class="dropdown">
+                        <hr>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
                      <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="#">Edit Profile</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Logout</a></li>
-                     </ul>
-                     <hr>
-                  </li>
-               </ul>
-            </div>
-            <!-- Body -->
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Edit Profile</a>
+                           </li>
+                           <li><a href="#">Help</a>
+                           </li>
+                           <li><a href="#">Logout</a>
+                           </li>
+                        </ul>
+                        <hr>
+                     </li>
+                  </ul>
+            </ul>
+         </div>
+         <!-- Body -->
+         <!-- Body -->
             <div class="body-container">
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
                      <div class="pull-left head-drop">

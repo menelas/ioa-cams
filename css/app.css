@@ -16,6 +16,7 @@ h3 {
 body {
     line-height: 1;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
 }
 
 a, a:hover, a:focus {  
@@ -228,7 +229,7 @@ a, a:active, a:hover, a:focus, a:visited  {
     color: #5c5c5c;
 }
 
-.sidebar .nav > li > a > i {
+.sidebar .nav > li > a > i, .fa.fa-users.fa-2x {
     color: #155499;
     float: left;
 }
@@ -293,7 +294,6 @@ a, a:active, a:hover, a:focus, a:visited  {
 }
 
 .info {
-    margin-top: 30px;
     margin-left: 10px;
 }
 
@@ -620,7 +620,7 @@ body.cams-pad {
 
 
 .body-container {
-    margin-left: 220px;
+    margin-left: 210px;
     padding: 20px;
 }
 
@@ -1068,7 +1068,6 @@ form .form-group:before, form .form-group:after {
     color: #3f3f3f;
     padding-bottom: 6px;
     font-weight: bold;
-    text-align: left !important;
 }
 
 /************* Tabs *************/
@@ -1103,6 +1102,34 @@ form .form-group:before, form .form-group:after {
 
 .nav.nav-pills {
     margin-bottom: 20px;
+}
+
+/************ Servicing Team *********/
+.servicing-team {
+    color: #ffffff;
+    line-height: 23px;
+    padding: 10px !important;
+    width: 100%;
+    top: 0px;
+    min-width: 500px !important;
+}
+
+.dropdown-menu.servicing-team .col-md-6 > hr {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.servicing-team > .col-md-6 i {
+    margin-left: 10px;
+}
+
+.servicing-team a {
+    color: #fff;
+}
+
+ .servicing-team a:active, .servicing-team a:hover, .servicing-team a:focus, .servicing-team a:visited {
+    color: #fff;
+    text-decoration: underline;
 }
 
 /************ Misc *********/
@@ -1171,17 +1198,17 @@ form .form-group:before, form .form-group:after {
 }
 
 .spacer40 {
-    margin-top: 40px;
+    margin-top: 40px !important;
 }
 
 .spacer30 {
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
 
 .spacer20 {
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 
 .spacer10 {
-    margin-top: 10px;
+    margin-top: 10px !important;
 }

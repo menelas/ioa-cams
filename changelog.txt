@@ -1,3 +1,9 @@
+## 2016-11-21
+• Updated hr tag on app.bootstrap.css
+• Removed control label from search-claims.css
+• Completed claims-details.css and approved
+• New servicing team menu added
+
 ## 2016-11-14
 • Updated auto-claim.html to include ordered and unordered list
 • Created app.bootstrap.css to add bootstrap overrides from this point forward
