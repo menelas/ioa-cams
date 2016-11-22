@@ -18,7 +18,7 @@
 			}
 			var navh = $('#claim-information-container #summary #summarysub ul').height();
 			$('#claim-information-container #summary #summarysub ul').css({"position":"fixed","top":ntt,"background":"#ffffff","z-index":99,"width":smsubw});
-			$('#claim-information-container #summary #summarysub h3:first').css({"margin-top":navh+9});
+			$('#claim-information-container #summary #summarysub h4:first').css({"margin-top":navh+9});
     }
 	$.fn.checkNavigationToFix();//make checkNavigationToFix ready when document is ready 
 	$('#claim-information-container #summary #summarysub ul li a').click(function(e){//call function base on click event
