@@ -1,174 +1,154 @@
 /************* Claim Details *************/
+
 .panel-primary {
     border: 1px solid #ccc;
     border-radius: 0;
 }
-
 .body-content {
-	margin-top: 0px;
-	margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
-
 .claim-details {
-	padding-left: 0px;
+    padding-left: 0px;
 }
-
-.close-claim, .cancel-button, .save-button {
-  margin-top: 15px;
-	margin-bottom: 15px;
+.close-claim,
+.cancel-button,
+.save-button {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-
 .cancel-button {
-	margin-right: 20px;
+    margin-right: 20px;
 }
-
 .summary-checkbox {
     margin-left: 10px;
 }
-
 .deductionAmount {
-	background-color: #ff9999;
+    background-color: #ff9999;
 }
-
 @media (max-width: 767px) {
-	.claim-details {
-		padding: 0 0 15px;
-	}
+    .claim-details {
+        padding: 0 0 15px;
+    }
 }
-
-
-
 @media screen and (min-width: 1281px) and (max-width: 1440px) {
-  .tab-pane { height: 350px !important;    
+    #claim-summary-container .tab-pane,
+    #claim-information-container .tab-pane {
+        height: 350px !important;
+    }
 }
-}
-
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
-  .tab-pane { height: 325px !important;
-}}
-
+    #claim-summary-container .tab-pane,
+    #claim-information-container .tab-pane {
+        height: 325px !important;
+    }
+}
 @media screen and (min-width: 1921px) {
-  .tab-pane { height: 650px !important;
-   
-}}
-
-
-
-
-
+    #claim-summary-container .tab-pane,
+    #claim-information-container .tab-pane {
+        height: 650px !important;
+    }
+}
 .claim-info {
-	margin-left: 15px;
+    margin-left: 15px;
 }
-
 .form-group {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
-
 .indent {
-  margin-left: 10px;
+    margin-left: 10px;
 }
-
 .sub-section {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-
 .claim-summary-pane {
-  overflow-x: hidden;
-  overflow-y: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
-
 #claim-summary-container .tab-pane {
-  height: 220px !important;;
-}   
-
-.tab-pane {
-  height: 250px;
-  overflow-x: hidden;
-  overflow-y: auto;
+    height: 220px !important;
+    ;
 }
-
+#claim-summary-container .tab-pane,
+#claim-information-container .tab-pane {
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 .nav-pills {
-  top: 0;
-  position: relative;
+    top: 0;
+    position: relative;
 }
-
 .tab-content {
-  padding-top: 5px;
-  overflow-y: auto;
+    padding-top: 5px;
+    overflow-y: auto;
 }
-
-#summary, #claim-amounts {
-  overflow: hidden;
+#summary,
+#claim-amounts {
+    overflow: hidden;
 }
-
 #claim-summary-container {
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-
-.claim-summary-content, .claim-information-content {
-  border-left: 1px solid #ccc;
+.claim-summary-content,
+.claim-information-content {
+    border-left: 1px solid #ccc;
 }
-
 #claim-information-container {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding-top: 0px;
-	margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 0px;
+    margin-top: 5px;
 }
-
 /************* Left Tabs *************/
 
 .tabs-left {
-  border-bottom: none;
-  padding-top: 2px;
-}
-
-.tabs-left>li {
-  float: none;
-  margin-bottom: 2px;
+    border-bottom: none;
+    padding-top: 2px;
 }
 .tabs-left>li {
-  margin-right: -1px;
+    float: none;
+    margin-bottom: 2px;
 }
-
+.tabs-left>li {
+    margin-right: -1px;
+}
 .tabs-left>li.active>a,
 .tabs-left>li.active>a:hover,
 .tabs-left>li.active>a:focus {
-  border-bottom-color: #ddd;
-  border-right-color: transparent;
+    border-bottom-color: #ddd;
+    border-right-color: transparent;
 }
-
 .tabs-left>li>a {
-  border-radius: 4px 0 0 4px;
-  margin-right: 0;
-  display:block;
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+    display: block;
 }
-
-div#claim-summary-container .col-xs-12.col-sm-4.col-md-2.col-lg-2{
-  padding: 0
+div#claim-summary-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 {
+    padding: 0
 }
-div#claim-summary-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 li a{
-  border-radius: 0;
+div#claim-summary-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 li a {
+    border-radius: 0;
 }
 div#claim-summary-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 .nav-pills>li+li {
     margin-left: 0
 }
-div#claim-information-container:before, div#claim-information-container:after {
+div#claim-information-container:before,
+div#claim-information-container:after {
     display: table;
     content: " ";
     clear: both;
 }
-div#claim-information-container .col-xs-12.col-sm-4.col-md-2.col-lg-2{
-  padding: 0
+div#claim-information-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 {
+    padding: 0
 }
-div#claim-information-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 li a{
-  border-radius: 0;
+div#claim-information-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 li a {
+    border-radius: 0;
 }
 div#claim-information-container .col-xs-12.col-sm-4.col-md-2.col-lg-2 .nav-pills>li+li {
     margin-left: 0
 }
-
 div#claim-summary-container ul li a {
-  cursor: pointer;
+    cursor: pointer;
 }

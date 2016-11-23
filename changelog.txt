@@ -1,3 +1,7 @@
+## 2016-11-22
+• Updated claim-details.html and css to specify tab-pane for views
+• Formatted claim-details.css for readability 
+
 ## 2016-11-21
 • Updated hr tag on app.bootstrap.css
 • Removed control label from search-claims.css
