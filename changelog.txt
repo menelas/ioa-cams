@@ -1,3 +1,7 @@
+## 2016-11-28
+• Created journal entry modal
+• Updated css to fix button hover effect
+
 ## 2016-11-22
 • Updated claim-details.html and css to specify tab-pane for views
 • Formatted claim-details.css for readability 

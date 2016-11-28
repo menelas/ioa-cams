@@ -101,6 +101,16 @@
     padding-top: 0px;
     margin-top: 5px;
 }
+
+.alert-cont {
+    opacity: 0.65;
+    font-weight:bold;
+}
+
+
+.btn.btn-link a:hover {
+    color: red;
+}
 /************* Left Tabs *************/
 
 .tabs-left {

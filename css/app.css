@@ -5,7 +5,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     vertical-align: baseline;
 } 
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
@@ -25,10 +25,6 @@ a, a:hover, a:focus {
  
 a, a:active, a:hover, a:focus, a:visited  {
     text-decoration: none;
-}
-
-.btn:hover {
-    color: #fff;
 }
 
 /***** Left Side Main Nav ***********************************/
@@ -1157,6 +1153,7 @@ form .form-group:before, form .form-group:after {
 
 .claims-btn:hover {
     background-color: #245280;
+    color: #fff;
     padding: 6px 9px;
     border-radius: 4px;
     font-size: 12px;

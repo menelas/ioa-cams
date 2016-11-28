@@ -7,3 +7,11 @@ hr {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+.checkbox input {
+	margin-top: -2px;
+}
+
+.alert.alert-info {
+	margin: 8px 10px 10px 0px;
+}
