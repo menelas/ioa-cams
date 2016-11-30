@@ -762,7 +762,7 @@ table {
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1279px) {
     /* Force table to not be like tables anymore */
     .cams-tables table, .cams-tables thead, .cams-tables tbody, .cams-tables th, .cams-tables td, .cams-tables tr {
         display: block;
@@ -843,15 +843,6 @@ table {
     .txtSearch,.txtMain {
         display: none;
     }
-
-    th {
-        font-size: 12px;
-    }
-
-    td {
-        font-size: 12px;
-    }
-
     .sidebar-toggle {
         display: none;
     }
@@ -879,16 +870,17 @@ thead tr {
 }
 
 th {
-    text-align: center;
+    text-align: left;
+    font-weight: 700;
     font-size: 13px;
     vertical-align: middle;
+    padding: 8px !important;
 }
 
 td {
     text-align: left;
-    font-size: 13px;
+    font-size: 12px;
     vertical-align: middle;
-    padding: 10px !important;
 }
 
 .info p {
@@ -996,12 +988,6 @@ td {
 .tablecontainer .cf {
     padding: 0;
     width: 100%;
-}
-
-th {
-    text-align: left;
-    font-weight: 700;
-    padding: 10px !important;
 }
 
 .th-icon {

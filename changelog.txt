@@ -1,3 +1,6 @@
+## 2016-11-30
+• Updated app.css to accommodate tables for laptop screen sizes 
+
 ## 2016-11-28
 • Created journal entry modal
 • Updated css to fix button hover effect
