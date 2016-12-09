@@ -183,7 +183,8 @@ a, a:active, a:hover, a:focus, a:visited  {
         left: 0;
         height: auto !important;
         margin-top: 65px;
-        max-width: 225px;
+        max-width: 220px;
+        width: 220px;
         word-wrap: break-word;
     }
 }
@@ -616,7 +617,7 @@ body.cams-pad {
 
 
 .body-container {
-    margin-left: 210px;
+    margin-left: 220px;
     padding: 20px;
 }
 
@@ -881,6 +882,7 @@ td {
     text-align: left;
     font-size: 12px;
     vertical-align: middle;
+    padding: 10px !important;
 }
 
 .info p {
@@ -953,6 +955,7 @@ td {
     clear: both;
     text-align: center;
 }
+
 
 .tablecontainer .tableheader .type {
     margin: 0 20px;
@@ -1180,6 +1183,14 @@ form .form-group:before, form .form-group:after {
     background-color: #ededed;
 }
 
+.spacer60 {
+    margin-top: 60px !important;
+}
+
+.spacer50 {
+    margin-top: 50px !important;
+}
+
 .spacer40 {
     margin-top: 40px !important;
 }
@@ -1194,4 +1205,25 @@ form .form-group:before, form .form-group:after {
 
 .spacer10 {
     margin-top: 10px !important;
+}
+
+.grey-bg {
+    background-color: #fcfcfc !important;
+}
+.margin-bottom15 {
+    margin-bottom: 15px;
+}
+
+.alphabet-toolbar {
+    text-align: left;
+    padding: 5px;
+}
+.alphabet-group {
+    letter-spacing: 6px;
+    width: 100%;
+}
+.alphabet-group a {
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
 }

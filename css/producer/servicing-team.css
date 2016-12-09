@@ -1,0 +1,20 @@
+.title-header{
+    margin-bottom: 25px;
+}
+.tablecontainer {
+    padding-left: 0;
+    padding-right: 0;
+}
+.table-condensed tr td:nth-child(4) {
+    color: #337ab7;
+}
+
+tr:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 1290px) {
+    .table-condensed tr td:nth-child(4):before {
+        color: #333333;
+    }
+}

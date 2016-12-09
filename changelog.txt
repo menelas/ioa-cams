@@ -1,3 +1,6 @@
+## 2016-12-9
+• Created Producer Dashboard and Documentation
+
 ## 2016-11-30
 • Updated app.css to accommodate tables for laptop screen sizes 
 
