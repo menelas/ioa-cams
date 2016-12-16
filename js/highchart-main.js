@@ -88,8 +88,7 @@ $(function()
                             color: Highcharts.getOptions()
                                 .colors[2]
                         }],
-                    center: [140, 150],
-                    size: 250,
+             
                     showInLegend: false,
                     dataLabels:
                     {

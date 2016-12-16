@@ -57,6 +57,17 @@ text.highcharts-axis-title {
     float: right;
     margin: 0 auto;
 }
+@media (max-width: 1400px) {
+	.pd-tableheader .head-drop{
+		float: none !important;
+	}
+	#highchar-charts{
+		width: 60%;
+	}
+	#highchar-pies{
+		width: 40%;
+	}
+}
 @media only screen and (max-width: 1279px) {
     .cams-tables thead tr {
         position: relative;
@@ -91,4 +102,18 @@ text.highcharts-axis-title {
     .cams-tables thead tr {
         position: static;
     }
+	#highchar-charts{
+		width: 65%;
+	}
+	#highchar-pies{
+		width: 35%;
+	}
+}
+@media (max-width: 640px) {
+	#highchar-charts{
+		width: 100%;
+	}
+	#highchar-pies{
+		width: 100%;
+	}
 }

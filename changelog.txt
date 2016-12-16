@@ -1,4 +1,8 @@
-## 2016-12-9
+## 2016-12-16
+• Updated producer dashboard css and high chart js for lower resolution
+• Created branding guidelines, will add more information as progress is made
+
+## 2016-12-09
 • Created Producer Dashboard and Documentation
 
 ## 2016-11-30
