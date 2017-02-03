@@ -16,6 +16,7 @@
 
 .claim-header > h4 {
     line-height: 1.5;
+    color: #4995cf;
 }
 
 .lg1 {
@@ -30,38 +31,4 @@
 
 .tab-content {
     margin-left: -2px;
-}
-
-/************* Tabs *************/
-#nav-tabs {
-  background-color: #4995cf;
-}
-
-.nav-tabs {
-  background-color: #4995cf;
-}
-
-.cams-tabs {
-    margin-bottom: 10px;
-}
-
-.tabs-info {
-  border: 1px solid #b9b5b5;
-  border-top: none;
-}
-.nav.nav-tabs a {
-  background-color: #4995cf;
-  color: #ffffff;
-  border-radius: 0px;
-  border: none !important;
-  margin-left: -2px;
-}
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, .nav > li > a:focus, .nav > li > a:hover {
-  background-color: #3e83b8;
-  color: #ffffff;
-}
-
-.nav.nav-pills {
-    margin-bottom: 20px;
 }

@@ -1,0 +1,14 @@
+/************* Claim Report *************/
+.title-header {
+    padding: 3px 0 5px;
+    background: #4995cf;
+    color: #fff;
+    display: block;
+    clear: both;
+    font-size: 17px;
+}
+
+form .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+}

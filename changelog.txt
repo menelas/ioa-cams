@@ -1,8 +1,10 @@
-## 2016-12-16
-• Updated producer dashboard css and high chart js for lower resolution
-• Created branding guidelines, will add more information as progress is made
+## 2017-2-3
+• Updated dashboard.html to include new overview section
+• Created new claim-report.html and report-results.html page
+• Updated css on company-info.html
+• Fixed html header for technical contact list on several pages
 
-## 2016-12-09
+## 2016-12-9
 • Created Producer Dashboard and Documentation
 
 ## 2016-11-30

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America - CAMS</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/claim-report.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body class="cams-pad cams-page">
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="150" alt="Company Title">
+                </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Claims Advocate Management System</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Custom Claims Kit</a>
+                            </li>
+                            <li><a href="#">IOA RiskScore</a>
+                            </li>
+                            <li><a href="#">Learning Management System</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="#">Help</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content">
+        <div class="row sidebar-container">
+            <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
+                        </a>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="claim-add-new.html">Add New</a>
+                                <hr>
+                            </li>
+                            <li><a href="search-claims.html">View Claims</a>
+                                <hr>
+                            </li>
+                            <li><a href="tasks.html">Tasks</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                    <li>
+                        <a href="company-info.html"><i class="fa fa-building fa-2x" aria-hidden="true"></i><span> Company Info</span></a>
+                        <hr />
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu servicing-team">
+
+                            <div class="col-xs-6 col-md-6">
+                                <li>Producer(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
+                                </li>
+
+                                <hr />
+
+                                <li>Claim Contact(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
+                                </li>
+
+
+                            </div>
+
+                            <div class="col-xs-6 col-md-6">
+                                <li>Policy Information:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
+                                </li>
+
+                                <hr />
+
+                                <li>Technical Contact:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a></li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a></li>
+                            </div>
+                        </ul>
+                        </li>
+
+                        <hr />
+
+                        <ul class="nav nav-sidebar nav-sidebar2">
+                            <li class="dropdown">
+                                <hr>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
+                     <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Edit Profile</a>
+                                    </li>
+                                    <li><a href="#">Help</a>
+                                    </li>
+                                    <li><a href="#">Logout</a>
+                                    </li>
+                                </ul>
+                                <hr>
+                            </li>
+                        </ul>
+                </ul>
+            </div>
+            <!-- Body -->
+
+            <div class="body-container">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+                    <div class="pull-left head-drop">
+                        <div class="btn-group">
+                            <p>Select reporting criteria to generate a company claim(s) report. This report will summarize your company's claim data in an easy to read format.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
+
+                    <h3>Claim Report</h3>
+                    <hr />
+
+                    <form role="form">
+                        <fieldset>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <label class="control-label" for="">Customer/Company</label>
+                                <select id="" name="" class="form-control">
+                                    <option value="">Select Company</option>
+                                    <option value=""> </option>
+                                    <option value=""> </option>
+                                    <option value=""> </option>
+                                    <option value=""> </option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <label class="control-label" for="">Location</label>
+                                <select id="" name="" class="form-control">
+                                    <option value="">Show All</option>
+                                    <option value="">Location 1</option>
+                                    <option value="">Location 2</option>
+                                    <option value="">Location 3</option>
+                                    <option value="">Location 4</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <label class="control-label" for="">Department</label>
+                                <select id="" name="" class="form-control">
+                                    <option value="">Show All</option>
+                                    <option value="">Production</option>
+                                    <option value="">Warehouse</option>
+                                    <option value="">Admin</option>
+                                    <option value="">Retail</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <label class="control-label" for="">Year of Claims</label>
+                                <select id="" name="" class="form-control">
+                                    <option value="">Select Year</option>
+                                    <option value="">2017</option>
+                                    <option value="">2016</option>
+                                    <option value="">2015</option>
+                                    <option value="">2014</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <label class="control-label" for="">Start Date:</label>
+                                <input id="" name="" class="form-control input-md" type="search">
+                                <small>Leave Date(s) blank for all dates</small>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <label class="control-label" for="">End Date:</label>
+                                <input id="" name="" class="form-control input-md" type="search">
+                            </div>
+
+                            <hr />
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <h4>Reporting Options</h4> Please select from the following reporting options.
+
+                                <label class="control-label sr-only" for="">Run Report</label>
+
+                                <div class="checkbox">
+                                    <label for="">
+                                        <input name="" id="" value="" type="checkbox"> Select All
+                                    </label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <label for="">
+                                        <input name="" id="" value="" type="checkbox"> Claim Amounts
+                                    </label>
+
+                                    <label for="">
+                                        <input name="" id="" value="" type="checkbox"> Claim Status
+                                    </label>
+
+                                    <label for="">
+                                        <input name="" id="" value="" type="checkbox"> Type of Injury
+                                    </label>
+
+                                    <label for="">
+                                        <input name="" id="" value="" type="checkbox"> Body Part Affected
+                                    </label>
+
+                                </div>
+
+                                <div class="checkbox">
+
+                                    <label for="">
+                                        <input name="" id="" value="" type="checkbox"> Job Title
+                                    </label>
+
+                                    <label for="">
+                                        <input name="" id="" value="" type="checkbox"> Time of Day
+                                    </label>
+
+                                    <label for="">
+                                        <input name="" id="" value="" type="checkbox"> Day of Week
+                                    </label>
+                                </div>
+
+                                <button id="run-report" name="run-report" class="btn btn-primary"> Run Report</button>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+    </div>
+
+    <script type="text/javascript" src="js/tooltip.js"></script>
+</body>
+</html>
