@@ -1,3 +1,7 @@
+## 2017-2-7
+• Changed folder hierarchy for better project management
+• Added admin screenshot changes to admin/Admin Documentation
+
 ## 2017-2-3
 • Updated dashboard.html to include new overview section
 • Created new claim-report.html and report-results.html page

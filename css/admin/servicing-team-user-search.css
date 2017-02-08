@@ -1,0 +1,64 @@
+.total-accounts {
+    float: right;
+    color: #fff;
+}
+
+.title-header {
+    margin-bottom: 25px;
+}
+
+.btn {
+    letter-spacing: 0px;
+}
+
+.fa.fa-times.pull-right {
+    font-size: 15px;
+    margin: 10px 5px 0 0;
+}
+
+.title-header{
+    margin-bottom: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.tablecontainer .tableheader{
+    padding: 5px;
+}
+.tablecontainer{
+    padding-left: 0;
+    padding-right: 0;
+}
+.tablecontainer > .tableheader, .tablecontainer > .panel-body{
+    max-width: 345px;
+}
+.cams-tables {
+   padding: 15px 8px 8px;
+   background: #fcfcfc;
+   position: relative;
+}
+.cams-tables span{
+    float: left;
+    clear: both;
+}
+.cams-tables span:nth-child(1){
+    clear: none;
+}
+.cams-tables p{
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    max-width: 165px;
+    line-height: 18px;
+}
+.cams-tables .statusBtn{
+    float: none;
+    width: auto;
+    position: absolute;
+    bottom: 9px;
+    right: 10px;
+}
+@media (max-width: 992px) {
+    .tablecontainer > .tableheader, .tablecontainer > .panel-body {
+        max-width: 100%;
+    }
+}

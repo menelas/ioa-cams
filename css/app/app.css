@@ -499,7 +499,7 @@ body.cams-pad {
 }
 
 .menu-top {
-   background: rgba(0, 0, 0, 0) url(../img/background-nav.jpg) repeat scroll 0 0 / cover;
+   background: rgba(0, 0, 0, 0) url(../../img/background-nav.jpg) repeat scroll 0 0 / cover;
 }
 
 .menu-top .navbar-nav>li>a {

@@ -6,16 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Insurance Office of America - CAMS</title>
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/app.css">
-	<link rel="stylesheet" href="css/app.bootstrap.css">
-	<link rel="stylesheet" href="css/claim-details.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/app/app.css">
+	<link rel="stylesheet" href="../css/app/app.bootstrap.css">
+	<link rel="stylesheet" href="../css/client/claim-details.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body class="cams-pad cams-page">
+
 	<nav class="navbar navbar-inverse navbar-fixed-top menu-top">
 		<div class="container-fluid menu-margin">
 			<div class="navbar-header">
@@ -25,7 +26,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><img src="img/logo.png" width="150" alt="Company Title">
+				<a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
 				</a>
 				<h4 class="company-title">Insurance Office of America</h4>
 				<h5>Claims Advocate Management System</h5>
@@ -48,7 +49,7 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
 						<ul class="dropdown-menu">
 							<div class="arrow-up"></div>
-							<li><a href="#">Edit Profile</a>
+							<li><a href="edit-profile.html">Edit Profile</a>
 							</li>
 							<li><a href="#">Help</a>
 							</li>
@@ -60,8 +61,9 @@
 			</div>
 		</div>
 	</nav>
+
 	<div class="container-fluid content">
-		<div class="row sidebar-container">
+		<div class="row">
 			<div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
 				<ul class="nav nav-sidebar">
 					<li>
@@ -85,13 +87,16 @@
 						</ul>
 						<hr />
 					</li>
+
 					<li>
-						<a href="company-info.html"><i class="fa fa-building fa-2x" aria-hidden="true"></i><span> Company Info</span></a>
+						<a href="company-info.html">
+							<i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
+						</a>
 						<hr />
 					</li>
 
 					<li class="dropdown">
-						<a class="dropdown-toggle disabled" data-toggle="dropdown" href="company-info.html" target="_blank"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
 						<ul class="dropdown-menu servicing-team">
 
 							<div class="col-xs-6 col-md-6">
@@ -125,33 +130,35 @@
 								<hr />
 
 
-                                <li>Technical Contact:</li>
-                                <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a></li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a></li>
-                                
+								<li>Technical Contact:</li>
+								<li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
+								<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
+								</li>
+								<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
+								</li>
+
 							</div>
 						</ul>
-						</li>
+					</li>
 
-						<hr />
+					<hr />
 
-						<ul class="nav nav-sidebar nav-sidebar2">
-							<li class="dropdown">
-								<hr>
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
+					<ul class="nav nav-sidebar nav-sidebar2">
+						<li class="dropdown">
+							<hr>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
                      <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Edit Profile</a>
-									</li>
-									<li><a href="#">Help</a>
-									</li>
-									<li><a href="#">Logout</a>
-									</li>
-								</ul>
-								<hr>
-							</li>
-						</ul>
+							<ul class="dropdown-menu">
+								<li><a href="edit-profile.html">Edit Profile</a>
+								</li>
+								<li><a href="#">Help</a>
+								</li>
+								<li><a href="#">Logout</a>
+								</li>
+							</ul>
+							<hr>
+						</li>
+					</ul>
 				</ul>
 			</div>
 			<!-- Body -->
@@ -4176,92 +4183,92 @@
 														<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
 															<div class="panel-body">
 																<div class="row alert alert-info">
-																
+
 																	<div class="col-sm-6 col-md-6 col-lg-6">
 																		<label class="control-label" for="">Shown on calendar</label>
-									                                    	<label for="">
-									                                    	<input name="" id="" value="checked" type="checkbox">
-									                                       	</label>
-									                                </div>
+																		<label for="">
+																			<input name="" id="" value="checked" type="checkbox">
+																		</label>
+																	</div>
 
 																	<div class="col-sm-6 col-md-6 col-lg-6">
 																		<label class="control-label" for="">Private (only visible to me)</label>
-									                                    	<label for="">
-									                                    	<input name="" id="" value="checked" type="checkbox">
-									                                       	</label>
-									                                </div>
+																		<label for="">
+																			<input name="" id="" value="checked" type="checkbox">
+																		</label>
+																	</div>
 																</div>
 																<div class="row">
-																<div class="form-group">
-																	<div class="col-sm-3 col-md-3 col-lg-3">
-																		<label for="JournalEntryTypeId">Type:</label>
+																	<div class="form-group">
+																		<div class="col-sm-3 col-md-3 col-lg-3">
+																			<label for="JournalEntryTypeId">Type:</label>
+																		</div>
+																		<div class="col-sm-5 col-md-5 col-lg-5" align="left">
+																			<select class="form-control valid" id="journalentry-journalentrytype-dropdown" name="JournalEntryTypeId">
+																				<option value="">Please select an item...</option>
+																				<option value="10">Document</option>
+																				<option value="20">E-Mail Message</option>
+																				<option value="30">Fax</option>
+																				<option value="40">Letter</option>
+																				<option value="50">Meeting</option>
+																				<option selected="selected" value="60">Note</option>
+																				<option value="70">Task</option>
+																				<option value="80">Claim Review</option>
+																				<option value="90">Job Description</option>
+																				<option value="100">Legal</option>
+																				<option value="110">Phone</option>
+																			</select>
+																		</div>
 																	</div>
-																	<div class="col-sm-5 col-md-5 col-lg-5" align="left">
-																		<select class="form-control valid" id="journalentry-journalentrytype-dropdown" name="JournalEntryTypeId">
-																			<option value="">Please select an item...</option>
-																			<option value="10">Document</option>
-																			<option value="20">E-Mail Message</option>
-																			<option value="30">Fax</option>
-																			<option value="40">Letter</option>
-																			<option value="50">Meeting</option>
-																			<option selected="selected" value="60">Note</option>
-																			<option value="70">Task</option>
-																			<option value="80">Claim Review</option>
-																			<option value="90">Job Description</option>
-																			<option value="100">Legal</option>
-																			<option value="110">Phone</option>
-																		</select>
-																	</div>
-																</div>
 																</div>
 																<div class="row">
-																<div class="form-group">
+																	<div class="form-group">
 
-																	<div class="col-sm-3 col-md-3 col-lg-3">
-																		<label class="requiredfield" for="Subject">Subject:</label>
+																		<div class="col-sm-3 col-md-3 col-lg-3">
+																			<label class="requiredfield" for="Subject">Subject:</label>
+																		</div>
+																		<div class="col-sm-9 col-md-9 col-lg-9">
+																			<input class="form-control watermark" id="calendar-journalentrysubject-textbox" maxlength="45" name="Subject" placeholder="Subject" type="text" value="" autocomplete="off">
+																		</div>
 																	</div>
-																	<div class="col-sm-9 col-md-9 col-lg-9">
-																		<input class="form-control watermark" id="calendar-journalentrysubject-textbox" maxlength="45" name="Subject" placeholder="Subject" type="text" value="" autocomplete="off">
-																	</div>
-																</div>
 																</div>
 
 																<div class="row">
-																<div class="form-group">
+																	<div class="form-group">
 
-																	<div class="col-sm-3 col-md-3 col-lg-3">
-																		<label for="EmailRecipient">Email To:</label>
-																	</div>
-																	<div class="col-sm-9 col-md-9 col-lg-9">
-																		<div class="input-group">
-																			<input class="form-control watermark" id="calendar-journalentryemailrecipient-textbox" name="EmailRecipient" placeholder="Recipient Email Address" type="text" value="">
+																		<div class="col-sm-3 col-md-3 col-lg-3">
+																			<label for="EmailRecipient">Email To:</label>
+																		</div>
+																		<div class="col-sm-9 col-md-9 col-lg-9">
+																			<div class="input-group">
+																				<input class="form-control watermark" id="calendar-journalentryemailrecipient-textbox" name="EmailRecipient" placeholder="Recipient Email Address" type="text" value="">
 
-																			<div id="journalentry-emailaddfindbuttons-div" class="input-group-btn">
-                                                								<button type="button" class="btn btn-primary" id="journalentry-addemail-button" title="" data-original-title="Add email to recipient list" style="margin-left: 10px;"><i class="fa fa-plus"></i>
-																				</button>
-																				<button type="button" class="btn btn-primary" id="journalentry-addemailfromlist-button" href="#" data-original-title="Find Servicing Team and company email recipients" style="margin-left: 5px;">
-																					<i class="fa fa-search"></i> Find
-																				</button>
+																				<div id="journalentry-emailaddfindbuttons-div" class="input-group-btn">
+																					<button type="button" class="btn btn-primary" id="journalentry-addemail-button" title="" data-original-title="Add email to recipient list" style="margin-left: 10px;"><i class="fa fa-plus"></i>
+																					</button>
+																					<button type="button" class="btn btn-primary" id="journalentry-addemailfromlist-button" href="#" data-original-title="Find Servicing Team and company email recipients" style="margin-left: 5px;">
+																						<i class="fa fa-search"></i> Find
+																					</button>
+																				</div>
 																			</div>
 																		</div>
 																	</div>
 																</div>
-																</div>
 
 																<div class="row">
-																<div class="form-group">
+																	<div class="form-group">
 
-																	<div class="col-sm-12 col-md-12 col-lg-12">
-																		<div id="journalentry-emailrecipients-div">
+																		<div class="col-sm-12 col-md-12 col-lg-12">
+																			<div id="journalentry-emailrecipients-div">
 
-																			<div id="journalentry-norecipients-div" class="alert alert-info">
-																				<span>[ No Email Recipients ]</span>
+																				<div id="journalentry-norecipients-div" class="alert alert-info">
+																					<span>[ No Email Recipients ]</span>
+																				</div>
+
+
 																			</div>
-
-
 																		</div>
 																	</div>
-																</div>
 																</div>
 															</div>
 														</div>
@@ -4277,77 +4284,77 @@
 														<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
 															<div class="panel-body">
 																<div class="row">
-																<div class="form-group">
+																	<div class="form-group">
 
-																	<div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-startdate-label">
-																		<label for="StartDate">Start Date:</label>
+																		<div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-startdate-label">
+																			<label for="StartDate">Start Date:</label>
+																		</div>
+																		<div class="col-sm-5 col-md-5 col-lg-5" align="left">
+																			<input class="form-control dateinput" id="calendar-journalentrystartdate-datepicker" name="StartDate" type="text" value="11/28/2016">
+																		</div>
 																	</div>
-																	<div class="col-sm-5 col-md-5 col-lg-5" align="left">
-																		<input class="form-control dateinput" id="calendar-journalentrystartdate-datepicker" name="StartDate" type="text" value="11/28/2016">
-																	</div>
-																</div>
 																</div>
 
 																<div class="collapse row" id="calendar-journalentryduedaterow-div">
-																<div class="form-group">
-																	<div class="col-sm-3 col-md-3 col-lg-3" align="left">
-																		<label for="DueDate" id="DueDateLabel">Due Date:</label>
+																	<div class="form-group">
+																		<div class="col-sm-3 col-md-3 col-lg-3" align="left">
+																			<label for="DueDate" id="DueDateLabel">Due Date:</label>
+																		</div>
+																		<div class="col-sm-5 col-md-5 col-lg-5" align="left">
+																			<input class="form-control dateinput " id="calendar-journalentrydueddate-datepicker" name="DueDate" type="text" value="">
+																		</div>
 																	</div>
-																	<div class="col-sm-5 col-md-5 col-lg-5" align="left">
-																		<input class="form-control dateinput " id="calendar-journalentrydueddate-datepicker" name="DueDate" type="text" value="">
-																	</div>
-																</div>
 																</div>
 
 																<div class="collapse row" id="calendar-journalentrycompleteddaterow-div">
-																<div class="form-group">
-																	<div class="col-sm-3 col-md-3 col-lg-3" align="left">
-																		<label for="CompletedDate">Completed On:</label>
+																	<div class="form-group">
+																		<div class="col-sm-3 col-md-3 col-lg-3" align="left">
+																			<label for="CompletedDate">Completed On:</label>
+																		</div>
+																		<div class="col-sm-5 col-md-5 col-lg-5" align="left">
+																			<input class="form-control dateinput" id="calendar-journalentrycompletedddate-datepicker" name="CompletedDate" type="text" value=""> </div>
 																	</div>
-																	<div class="col-sm-5 col-md-5 col-lg-5" align="left">
-																		<input class="form-control dateinput" id="calendar-journalentrycompletedddate-datepicker" name="CompletedDate" type="text" value=""> </div>
-																</div>
 																</div>
 
 																<div class="row">
-																<div class="form-group">
+																	<div class="form-group">
 
-																	<div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-journalentrystatustype-div">
-																		<label for="JournalEntryStatusTypeId">Status:</label>
+																		<div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-journalentrystatustype-div">
+																			<label for="JournalEntryStatusTypeId">Status:</label>
+																		</div>
+																		<div class="col-sm-5 col-md-5 col-lg-5" align="left">
+																			<select class="form-control" id="calendar-journalentrystatustype-dropdown" name="JournalEntryStatusTypeId">
+																				<option value="">Please select status...</option>
+																				<option selected="selected" value="10">Not Started</option>
+																				<option value="20">In Progress</option>
+																				<option value="30">Completed</option>
+																				<option value="40">Waiting On Someone Else</option>
+																				<option value="50">Deferred</option>
+																			</select>
+																		</div>
 																	</div>
-																	<div class="col-sm-5 col-md-5 col-lg-5" align="left">
-																		<select class="form-control" id="calendar-journalentrystatustype-dropdown" name="JournalEntryStatusTypeId">
-																			<option value="">Please select status...</option>
-																			<option selected="selected" value="10">Not Started</option>
-																			<option value="20">In Progress</option>
-																			<option value="30">Completed</option>
-																			<option value="40">Waiting On Someone Else</option>
-																			<option value="50">Deferred</option>
-																		</select>
-																	</div>
-																</div>
 																</div>
 
 																<div class="row">
-																<div class="form-group">
+																	<div class="form-group">
 
-																	<div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-journalentryassignee-div">
-																		<label for="AssignedToUserId">Assignee:</label>
+																		<div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-journalentryassignee-div">
+																			<label for="AssignedToUserId">Assignee:</label>
+																		</div>
+																		<div class="col-sm-5 col-md-5 col-lg-5" align="left">
+																			<select class="form-control" id="calendar-journalentryassignee-dropdown" name="AssignedToUserId">
+																				<option value="">Please select assignee...</option>
+																				<option value="e94c7f31-469e-4755-90b5-a54500f2beb8">Catlin, Katie</option>
+																				<option value="03154e12-1eea-4d73-aa38-a5d700cf60d9">Eades, Bruce</option>
+																				<option value="293209bf-e5db-4969-949a-a54500f26bda">Fulton, Kyle</option>
+																				<option value="f6281ba7-b367-4ada-a5ee-a54500f30eb0">Kuk, Tony</option>
+																				<option value="006c7ac7-caad-4e73-aaf8-a55300d4eba2">Lemmon, Toni</option>
+																				<option value="153020df-c301-42f4-b61d-a54500f1cd3a">Miller, Pam</option>
+																				<option value="49d6de90-9ad4-48ed-8765-a4d701297c2d">Nam, Min Su</option>
+																				<option value="5142d5ae-71bf-476b-8193-a4d70129e2e6">Tucker, Fred</option>
+																			</select>
+																		</div>
 																	</div>
-																	<div class="col-sm-5 col-md-5 col-lg-5" align="left">
-																		<select class="form-control" id="calendar-journalentryassignee-dropdown" name="AssignedToUserId">
-																			<option value="">Please select assignee...</option>
-																			<option value="e94c7f31-469e-4755-90b5-a54500f2beb8">Catlin, Katie</option>
-																			<option value="03154e12-1eea-4d73-aa38-a5d700cf60d9">Eades, Bruce</option>
-																			<option value="293209bf-e5db-4969-949a-a54500f26bda">Fulton, Kyle</option>
-																			<option value="f6281ba7-b367-4ada-a5ee-a54500f30eb0">Kuk, Tony</option>
-																			<option value="006c7ac7-caad-4e73-aaf8-a55300d4eba2">Lemmon, Toni</option>
-																			<option value="153020df-c301-42f4-b61d-a54500f1cd3a">Miller, Pam</option>
-																			<option value="49d6de90-9ad4-48ed-8765-a4d701297c2d">Nam, Min Su</option>
-																			<option value="5142d5ae-71bf-476b-8193-a4d70129e2e6">Tucker, Fred</option>
-																		</select>
-																	</div>
-																</div>
 																</div>
 															</div>
 														</div>
@@ -4355,20 +4362,20 @@
 													<div class="panel panel-default">
 														<div class="panel-heading" role="tab" id="headingFour">
 															<div class="row">
-															<div class="form-group">
+																<div class="form-group">
 
-																<div class="col-sm-3 col-md-3 col-lg-3" align="left">
-																	<h4 class="panel-title">
+																	<div class="col-sm-3 col-md-3 col-lg-3" align="left">
+																		<h4 class="panel-title">
                                    										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Note History
                                     									</a>
                                 									</h4>
+																	</div>
+																	<div class="col-sm-9 col-md-9 col-lg-9" align="right">
+																		<a href="#" class="btn btn-link" id="journalentry-addnote-button">
+																			<strong> <i class="fa fa-plus"></i> ADD NOTE</strong>
+																		</a>
+																	</div>
 																</div>
-																<div class="col-sm-9 col-md-9 col-lg-9" align="right">
-																	<a href="#" class="btn btn-link" id="journalentry-addnote-button">
-																		<strong> <i class="fa fa-plus"></i> ADD NOTE</strong>
-																	</a>
-																</div>
-															</div>
 															</div>
 														</div>
 														<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
@@ -4391,39 +4398,39 @@
 													<div class="panel panel-default">
 														<div class="panel-heading" role="tab" id="headingFive">
 															<div class="row">
-															<div class="form-group">
+																<div class="form-group">
 
-																<div class="col-sm-3 col-md-3 col-lg-3" align="left">
-																	<h4 class="panel-title">
+																	<div class="col-sm-3 col-md-3 col-lg-3" align="left">
+																		<h4 class="panel-title">
                                     									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Attachments</a>
                                 									</h4>
+																	</div>
+																	<div class="col-sm-9 col-md-9 col-lg-9" align="right">
+																		<a href="#" class="btn btn-link" id="journalentry-addattachment-button">
+																			<strong> <i class="fa fa-plus"></i> ADD ATTACHMENT</strong>
+																		</a>
+																	</div>
 																</div>
-																<div class="col-sm-9 col-md-9 col-lg-9" align="right">
-																	<a href="#" class="btn btn-link" id="journalentry-addattachment-button">
-																		<strong> <i class="fa fa-plus"></i> ADD ATTACHMENT</strong>
-																	</a>
-																</div>
-															</div>
 															</div>
 
 														</div>
 														<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" aria-expanded="false">
 															<div class="panel-body">
 																<div class="row">
-																<div class="form-group">
+																	<div class="form-group">
 
-																	<div class="col-sm-12 col-md-12 col-lg-12">
-																		<div id="journalentry-attachments-div">
+																		<div class="col-sm-12 col-md-12 col-lg-12">
+																			<div id="journalentry-attachments-div">
 
-																			<input id="ClientId" name="ClientId" type="hidden" value="9d308875-206f-41d3-9e9d-a54500efbfb2">
-																			<input id="AttachmentsCount" name="AttachmentsCount" type="hidden" value="0">
+																				<input id="ClientId" name="ClientId" type="hidden" value="9d308875-206f-41d3-9e9d-a54500efbfb2">
+																				<input id="AttachmentsCount" name="AttachmentsCount" type="hidden" value="0">
 
-																			<div class="alert alert-info" role="alert">
-																				<span class="alert-cont">[ No Attachments ]</span>
+																				<div class="alert alert-info" role="alert">
+																					<span class="alert-cont">[ No Attachments ]</span>
+																				</div>
 																			</div>
 																		</div>
 																	</div>
-																</div>
 																</div>
 															</div>
 														</div>
@@ -4454,7 +4461,7 @@
 	<div class="text-center copyright">
 		<p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
 	</div>
-	<script src="js/claim-details.js"></script>
+	<script type="text/javascript" src="../js/claim-details.js"></script>
+	
 </body>
-
 </html>

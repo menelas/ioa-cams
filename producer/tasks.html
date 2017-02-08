@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Insurance Office of America - CAMS</title>
+   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="../css/app/app.css">
+   <link rel="stylesheet" href="../css/producer/workers-comp-search.css">
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body class="cams-pad cams-page">
+   <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+      <div class="container-fluid menu-margin">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
+            </a>
+            <h4 class="company-title">Insurance Office of America</h4>
+            <h5>Claims Advocate Management System</h5>
+         </div>
+         <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                  <ul class="dropdown-menu">
+                     <div class="arrow-up"></div>
+                     <li><a href="#">Custom Claims Kit</a>
+                     </li>
+                     <li><a href="#">IOA RiskScore</a>
+                     </li>
+                     <li><a href="#">Learning Management System</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                     <div class="arrow-up"></div>
+                     <li><a href="#">Edit Profile</a>
+                     </li>
+                     <li><a href="#">Help</a>
+                     </li>
+                     <li><a href="#">Logout</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <div class="container-fluid content">
+      <div class="row sidebar-container">
+         <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
+            <ul class="nav nav-sidebar">
+               <li>
+                  <a href="dashboard.html">
+                     <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
+                  </a>
+                  <hr />
+               </li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="search-claims.html">View Claims</a>
+                        <hr>
+                     </li>
+                     <li><a href="tasks.html">Tasks</a>
+                        <hr>
+                     </li>
+                     <li><a href="trigger-search.html">Triggers</a>
+                        <hr>
+                     </li>
+                  </ul>
+                  <hr />
+               </li>
+               <li>
+                  <a href="client-search.html"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
+                  <hr />
+               </li>
+
+
+               <hr />
+
+               <ul class="nav nav-sidebar nav-sidebar2">
+                  <li class="dropdown">
+                     <hr>
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
+                     <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">Edit Profile</a>
+                        </li>
+                        <li><a href="#">Help</a>
+                        </li>
+                        <li><a href="#">Logout</a>
+                        </li>
+                     </ul>
+                     <hr>
+                  </li>
+               </ul>
+            </ul>
+         </div>
+         <!-- Body -->
+            <div class="body-container">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+                    <div class="pull-left head-drop">
+                        <div class="btn-group">
+                            <p>My Claim Tasks</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
+                    <h3 class="claim-header">Search for a task</h3>
+                    <hr />
+
+                    <form role="form">
+                        <fieldset>
+
+                            <div class="form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 control-label">Filter By Due Date:</div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11">
+
+                                    <div class="form-group row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                            <label class="control-tabel sr-only" for="start-date">Start Date: </label>
+                                            <input id="start-date" name="contact-primary-phone" placeholder="Start Date" class="form-control input-md" required type="search">
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                            <label class="control-tabel sr-only" for="end-date">End Date</label>
+                                            <input id="end-date" name="end-date" placeholder="End Date" class="form-control input-md" required type="search">
+                                        </div>
+
+                                        <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <label class="control-label sr-only" for="show-completed-tasks">Show Completed Tasks</label>
+
+                                            <div class="checkbox">
+                                                <label for="show-completed-tasks">
+                                                    <input name="show-completed-tasks" id="show-completed-tasks" value="1" type="checkbox">
+                                                </label> Show Completed Tasks
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+
+                    <h3 class="claim-header spacer">Search Results</h3>
+                    <hr />
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                List of Tasks
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="cams-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+
+                                        <tr>
+                                            <th class="numeric">Claim Number</th>
+                                            <th class="numeric">Line of Coverage</th>
+                                            <th class="numeric">Subject</th>
+                                            <th class="numeric">Company Name</th>
+                                            <th class="numeric">Assigned To</th>
+                                            <th class="numeric">Due Date</th>
+                                            <th class="action">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-type="a">
+                                            <td data-title="Claim Number">GC-828276</td>
+                                            <td data-title="Line of Coverage">Workers' Comp.</td>
+                                            <td data-title="Subject">Update</td>
+                                            <td data-title="Company Name">P&amp;S Co.</td>
+                                            <td data-title="Assigned To">Gregg, Diane</td>
+                                            <td data-title="Due Date" class="numeric">9/13/2016</td>
+                                            <td data-title="Status">
+                                                <a href="" class="statusBtn grey">Not Started</a>
+                                            </td>
+                                        </tr>
+                                        <tr data-type="p">
+                                            <td data-title="Claim Number">GC-928272</td>
+                                            <td data-title="Line of Coverage">Automobile</td>
+                                            <td data-title="Subject">Fix number</td>
+                                            <td data-title="Company Name">MUTI/Midwest</td>
+                                            <td data-title="Assigned To">Nam, Min Su</td>
+                                            <td data-title="Due Date" class="numeric">7/10/2016</td>
+                                            <td data-title="Status">
+                                                <a href="" class="statusBtn grey">Not Started</a>
+                                            </td>
+                                        </tr>
+                                        <tr data-type="g">
+                                            <td data-title="Claim Number">GC-632632</td>
+                                            <td data-title="Line of Coverage">Property</td>
+                                            <td data-title="Subject">Company</td>
+                                            <td data-title="Company Name">Jay &amp; Sons</td>
+                                            <td data-title="Assigned To">Sam, Penn</td>
+                                            <td data-title="Due Date" class="numeric">7/13/2016</td>
+                                            <td data-title="Status">
+                                                <a href="" class="statusBtn green">&nbsp;In Progress</a>
+                                            </td>
+                                        </tr>
+                                        <tr data-type="p">
+                                            <td data-title="Claim Number">GC-7363382 </td>
+                                            <td data-title="Line of Coverage">Motor Truck Cargo</td>
+                                            <td data-title="Subject">Update</td>
+                                            <td data-title="Company Name">Evergreen Inc.</td>
+                                            <td data-title="Assigned To">Rob, Jake</td>
+                                            <td data-title="Due Date" class="numeric">6/23/2016</td>
+                                            <td data-title="Status">
+                                                <a href="" class="statusBtn green">In Progress</a>
+                                            </td>
+                                        </tr>
+                                        <tr data-type="g">
+                                            <td data-title="Claim Number">GC-9282729</td>
+                                            <td data-title="Line of Coverage">Automobile</td>
+                                            <td data-title="Subject">Closed Claim</td>
+                                            <td data-title="Company Name">Marry All.</td>
+                                            <td data-title="Assigned To">Combs, Judy</td>
+                                            <td data-title="Due Date" class="numeric">6/15/2016</td>
+                                            <td data-title="Status">
+                                                <a href="" class="statusBtn green">In Progress</a>
+                                            </td>
+                                        </tr>
+                                        <tr data-type="p">
+                                            <td data-title="Claim Number">GC-2392827</td>
+                                            <td data-title="Line of Coverage">General Liability</td>
+                                            <td data-title="Subject">Update</td>
+                                            <td data-title="Company Name">Smallv Inc.</td>
+                                            <td data-title="Assigned To">Michael, Fred</td>
+                                            <td data-title="Due Date" class="numeric">5/24/2016</td>
+                                            <td data-title="Status">
+                                                <a href="" class="statusBtn green">In Progress</a>
+                                            </td>
+                                        </tr>
+                                        <tr data-type="p">
+                                            <td data-title="Claim Number">GC-2292278</td>
+                                            <td data-title="Line of Coverage">Property</td>
+                                            <td data-title="Subject">Update</td>
+                                            <td data-title="Company Name">Capt. Amr.</td>
+                                            <td data-title="Assigned To">Jennifer, Layly</td>
+                                            <td data-title="Due Date" class="numeric">4/23/2016</td>
+                                            <td data-title="Status">
+                                                <a href="" class="statusBtn blue">Completed</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a>
+                                    </li>
+                                    <li><a href="#">2</a>
+                                    </li>
+                                    <li><a href="#">3</a>
+                                    </li>
+                                    <li><a href="#">4</a>
+                                    </li>
+                                    <li><a href="#">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+    </div>
+
+    <script type="text/javascript" src="../js/tooltip.js"></script>
+    
+</body>
+</html>
