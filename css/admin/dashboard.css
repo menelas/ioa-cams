@@ -1,0 +1,191 @@
+.text-indent5{
+    text-indent: 5px;
+}
+
+.month-dropdown {
+    padding-top: 8px;
+    padding-right: 10px;
+}
+
+.month-dropdown .dropdown-toggle {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.grey-bg {
+    background-color: #fcfcfc;
+}
+
+.head-drop:hover, .tableheader:hover {
+    cursor: all-scroll;
+}
+
+.cams-tables {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cams-tables tr, .daily-log tr {
+    border-right: none;
+    border-left: none;
+}
+
+.month-dropdown {
+    padding-bottom: 10px;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    color: inherit;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+span.vertical-line {
+    margin: 0 10px 0 8px;
+    border-right: 1px solid #3f88bf;
+    box-shadow: 1px 0px #61a1d2;
+}
+
+.chart .panel.tablecontainer {
+    max-height: 100%;
+    margin: 0px;
+    padding-bottom: 30px;
+    height: 400px;
+}
+.highchar .panel-heading {
+   text-transform: uppercase;
+}
+.highcharts-button-symbol, .highcharts-credits, .highcharts-button-box {
+    display: none;
+}
+text.highcharts-axis-title {
+    display: none;
+}
+@media (max-width: 1400px) {
+  .pd-tableheader .head-drop{
+    float: none !important;
+  }
+}
+@media only screen and (max-width: 1279px) {
+    .cams-tables thead tr {
+        position: relative;
+    }
+    .cams-tables table {
+        display: table;
+    }
+    .cams-tables thead {
+        display: table-header-group;
+    }
+    .cams-tables tbody {
+        display: table-row-group;
+    }
+    .cams-tables tr {
+        display: table-row;
+    }
+    .cams-tables th, .cams-tables td {
+        display: table-cell;
+    }
+    .cams-tables th, .cams-tables th.text-left {
+        text-align: left;
+    }
+    .cams-tables th, .cams-tables td.text-right {
+        text-align: center;
+    }
+    .cams-tables td{
+        padding-left: 5px !important;
+    }
+    .cams-tables td:before {
+        content: "";
+    }
+    .cams-tables thead tr {
+        position: static;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .drag-enable {
+        height: auto !important;
+    }
+}
+
+
+
+/**** Daily Log Table *************************************/
+
+.daily-log {
+   border: 1px solid #b9b5b5;
+}
+
+@media only screen and (max-width: 1279px) {
+    /* Force table to not be like tables anymore */
+    .daily-log table, .daily-log thead, .daily-log tbody, .daily-log th, .daily-log td, .daily-log tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .daily-log thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .daily-log tr {
+        border: 1px solid #ccc;
+    }
+
+    .daily-log td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 700;
+    }
+
+    .daily-log td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    .daily-log td {
+        padding-left: 60% !important;
+    }
+
+   /*
+      Label the data
+      */
+   .daily-log td:before {
+      content: attr(data-title);
+   }
+   .tablecontainer .tableheader .elem {
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+   }
+   .tablecontainer .tableheader .type {
+      margin: 0;
+   }
+}
+
+@media (max-width: 1400px) {
+    .pd-tableheader .head-drop{
+        float: none !important;
+    }
+}
+
+.sortable-placeholder.drag-enable {
+    background-color: #d9edf7;
+    border: 1px dotted #eee;
+        
+}

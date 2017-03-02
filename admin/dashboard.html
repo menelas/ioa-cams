@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America - CAMS</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/app/app.css">
+    <link rel="stylesheet" href="../css/admin/dashboard.css">
+    <link rel="stylesheet" href="../css/admin/jquery-ui.min.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/draggable-widget.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="cams-pad cams-page">
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
+                </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Claims Advocate Management System</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Custom Claims Kit</a>
+                            </li>
+                            <li><a href="#">IOA RiskScore</a>
+                            </li>
+                            <li><a href="#">Learning Management System</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="../admin/help-request.html">Help</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content">
+        <div class="row sidebar-container">
+            <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
+                        </a>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../client/claim-add-new.html">Add New</a>
+                                <hr>
+                            </li>
+                            <li><a href="../client/search-claims.html">View Claims</a>
+                                <hr>
+                            </li>
+                            <li><a href="../client/tasks.html">Tasks</a>
+                                <hr>
+                            </li>
+                            <li><a href="../producer/trigger-search.html">Triggers</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <a href="../client/company-info.html">
+                            <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
+                        </a>
+                        <hr />
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu servicing-team">
+
+                            <div class="col-xs-6 col-md-6">
+                                <li>Producer(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
+                                </li>
+
+                                <hr />
+
+                                <li>Claim Contact(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
+                                </li>
+
+
+                            </div>
+
+                            <div class="col-xs-6 col-md-6">
+                                <li>Policy Information:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
+                                </li>
+
+                                <hr />
+
+
+                                <li>Technical Contact:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
+                                </li>
+
+                            </div>
+                        </ul>
+                    </li>
+
+                    <hr />
+
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Carriers</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Document Mgmt</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Loss Run Import</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Users</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <ul class="nav nav-sidebar nav-sidebar2">
+                        <li class="dropdown">
+                            <hr>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
+                     <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Edit Profile</a>
+                                </li>
+                                <li><a href="../admin/help-request.html">Help</a>
+                                </li>
+                                <li><a href="#">Logout</a>
+                                </li>
+                            </ul>
+                            <hr>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- Body -->
+            <div class="body-container ui-sortable">
+
+<!--
+            	Only display when widget has been moved
+				<div class="row">
+					  <div class="col-lg-12 margin-bottom15">
+					  <button id="save" name="save" class="pull-right btn btn-primary smallBtn"> Save Changes</button></div>				  
+				</div>
+-->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-enable" style="height: 355px;">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    ERRORS
+                                </div>
+
+                                <div class="btn-group pull-right head-drop month-dropdown">
+                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        ALL <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">30 Days</a>
+                                        </li>
+                                        <li><a href="#">60 Days</a>
+                                        </li>
+                                        <li><a href="#">90 Days</a>
+                                        </li>
+                                        <li><a href="#">All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="cams-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th class="text-left">Total number of</th>
+                                            <th class="text-right">#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Help Requests">Help Requests</td>
+                                            <td data-title="Help Requests" class="text-right"><a href="../admin/help-request-dash.html">25</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Pending Claims">Pending Claims</td>
+                                            <td data-title="Pending CLaims" class="text-right"><a href="../admin/pending-claims.html#pending-claims">12</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-enable" style="height: 355px;">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    EXPIRING POLICIES
+                                </div>
+
+                                <div class="btn-group pull-right head-drop month-dropdown">
+                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        ALL <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Min Su Nam</a>
+                                        </li>
+                                        <li><a href="#">Kevin Skinner</a>
+                                        </li>
+                                        <li><a href="#">Judy Combs</a>
+                                        </li>
+
+                                        <hr />
+
+                                        <li><a href="#">30 Days</a>
+                                        </li>
+                                        <li><a href="#">60 Days</a>
+                                        </li>
+                                        <li><a href="#">90 Days</a>
+                                        </li>
+                                        <li><a href="#">All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="cams-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th class="text-left">Total number of</th>
+                                            <th class="text-right">#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Auto">Auto</td>
+                                            <td data-title="Auto" class="text-right"><a href="../admin/expiring-policies.html">25</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="General Liability">General Liability</td>
+                                            <td data-title="General Liability" class="text-right"><a href="../admin/expiring-policies.html">12</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Property">Property</td>
+                                            <td data-title="Property" class="text-right"><a href="../admin/expiring-policies.html">8</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Workers' Compensation">Workers' Compensation</td>
+                                            <td data-title="Workers' Compensation" class="text-right"><a href="../admin/expiring-policies.html">3</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-enable" style="height: 355px;">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    CARRIER PROFILES
+                                </div>
+
+                                <div class="btn-group pull-right head-drop month-dropdown">
+                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        ALL <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Min Su Nam</a>
+                                        </li>
+                                        <li><a href="#">Kevin Skinner</a>
+                                        </li>
+                                        <li><a href="#">Judy Combs</a>
+                                        </li>
+
+                                        <hr />
+
+                                        <li><a href="#">30 Days</a>
+                                        </li>
+                                        <li><a href="#">60 Days</a>
+                                        </li>
+                                        <li><a href="#">90 Days</a>
+                                        </li>
+                                        <li><a href="#">All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="cams-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th class="text-left">Total number of</th>
+                                            <th class="text-right">#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="New">New</td>
+                                            <td data-title="New" class="text-right"><a href="../admin/new-carrier-profiles.html">25</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Need Reporting Info">Need Reporting Info</td>
+                                            <td data-title="Need Reporting Info" class="text-right"><a href="../admin/need-reporting-info.html">12</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Successfully added">Successfully added</td>
+                                            <td data-title="Successfully added" class="text-right"><a href="../admin/carrier-profiles-success.html">8</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-enable" style="height: 355px;">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    CLIENTS
+                                </div>
+
+                                <div class="btn-group pull-right head-drop month-dropdown">
+                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ALL <span class="caret"></span>
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Producer Name 1</a>
+                                        </li>
+                                        <li><a href="#">Producer Name 2</a>
+                                        </li>
+                                        <li><a href="#">Producer Name 3</a>
+                                        </li>
+
+                                        <hr />
+
+                                        <li><a href="#">30 Days</a>
+                                        </li>
+                                        <li><a href="#">60 Days</a>
+                                        </li>
+                                        <li><a href="#">90 Days</a>
+                                        </li>
+                                        <li><a href="#">All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="cams-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th class="text-left">Total number of</th>
+                                            <th class="text-right">#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Clients">Clients</td>
+                                            <td data-title="Clients" class="text-right"><a href="../admin/client-search.html">25</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Workers' Compensation accounts">Workers' Compensation accounts</td>
+                                            <td data-title="Workers' Compensation accounts" class="text-right"><a href="../admin/client-search.html">12</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="All Lines">All Lines</td>
+                                            <td data-title="All Lines" class="text-right"><a href="../admin/client-search.html">8</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="LMS accounts">LMS accounts</td>
+                                            <td data-title="LMS accounts" class="text-right"><a href="../admin/client-search.html">3</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="CP Accounts">CP Accounts</td>
+                                            <td data-title="CP Accounts" class="text-right"><a href="../admin/client-search.html">2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Implementer">Implementer</td>
+                                            <td data-title="Implementer" class="text-right"><a href="#">1</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-enable" style="height: 355px;">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    SERVICING TEAM
+                                </div>
+                            </div>
+                            <div class="cams-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th class="text-left">Total number of accounts served</th>
+                                            <th class="text-right">#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Claims Advocates"><strong>Claims Advocates</strong>
+                                            </td>
+                                            <td data-title="Claims Advocates" class="text-right"></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Diana Gregg" class="text-indent5">Diana Gregg</td>
+                                            <td data-title="14" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">25</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Mike Ferguson" class="text-indent5">Mike Ferguson</td>
+                                            <td data-title="3" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">12</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Beth Nash" class="text-indent5">Beth Nash</td>
+                                            <td data-title="4" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">8</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Risk Advocates"><strong>Risk Advocates</strong>
+                                            </td>
+                                            <td data-title="" class="text-right"></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Min Su Nam" class="text-indent5">Min Su Nam</td>
+                                            <td data-title="13" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">13</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Judy Combs" class="text-indent5">Judy Combs</td>
+                                            <td data-title="8" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">8</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Kevin Joyce" class="text-indent5">Kevin Joyce</td>
+                                            <td data-title="4" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">4</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-enable" style="height: 355px;">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    ACTIVITY
+                                </div>
+
+                                <div class="btn-group pull-right head-drop month-dropdown">
+                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        ALL <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Week</a>
+                                        </li>
+                                        <li><a href="#">Month</a>
+                                        </li>
+                                        <li><a href="#">Quarter</a>
+                                        </li>
+                                        <li><a href="#">Semi-Annual</a>
+                                        </li>
+                                        <li><a href="#">Year</a>
+                                        </li>
+                                        <li><a href="#">All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="cams-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th class="text-left">Total number of</th>
+                                            <th class="text-right">#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Tasks"><strong>Tasks</strong>
+                                            </td>
+                                            <td data-title="Line of Open" class="text-right"><a href="../admin/tasks.html">25</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="grey-bg">
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Triggers"><strong>Triggers</strong>
+                                            </td>
+                                            <td data-title="Triggers" class="text-right">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Open">Open</td>
+                                            <td data-title="Open" class="text-right"><a href="../admin/trigger-search.html">3</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Closed">Closed</td>
+                                            <td data-title="Closed" class="text-right"><a href="../admin/trigger-search.html">2</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 drag-enable full-size-panel" style="height: 355px;">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    DAILY LOG - <small>Last Updated 2/8/2017 at 12:00am</small>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="daily-log">
+                                    <table class="table-hover table-striped table-condensed cf">
+                                        <thead class="cf">
+                                            <tr>
+                                                <th>Company</th>
+                                                <th>Claimant's Names</th>
+                                                <th>Line of Coverage</th>
+                                                <th>Date of Loss</th>
+                                                <th>Triggers</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="clickable-row" onclick="window.location='#';">
+                                                <td data-title="Company">Alpine Building</td>
+                                                <td data-title="Claimant's Names">Alpine Building</td>
+                                                <td data-title="Line of Coverage">BAUT</td>
+                                                <td data-title="Date of Loss">2/6/2017</td>
+                                                <td data-title="Triggers">1/2</td>
+                                            </tr>
+                                            <tr class="clickable-row" onclick="window.location='#';">
+                                                <td data-title="Company">A.I. Group, Inc.</td>
+                                                <td data-title="Claimant's Names">A.I. Group, Inc.</td>
+                                                <td data-title="Line of Coverage">WCOM</td>
+                                                <td data-title="Date of Loss">2/6/2017</td>
+                                                <td data-title="Triggers">2/2</td>
+                                            </tr>
+                                            <tr class="clickable-row" onclick="window.location='#';">
+                                                <td data-title="Company">Abel Leasing Co, Inc.</td>
+                                                <td data-title="Claimant's Names">Abel Leasing Co, Inc.</td>
+                                                <td data-title="Line of Coverage">WCOM</td>
+                                                <td data-title="Date of Loss">2/6/2017</td>
+                                                <td data-title="Triggers">2/2</td>
+                                            </tr>
+                                            <tr class="clickable-row" onclick="window.location='#';">
+                                                <td data-title="Company">Berkley Surety Group</td>
+                                                <td data-title="Claimant's Names">Berkley Surety Group</td>
+                                                <td data-title="Line of Coverage">BAUT</td>
+                                                <td data-title="Date of Loss">2/6/2017</td>
+                                                <td data-title="Triggers">1/2</td>
+                                            </tr>
+                                            <tr class="clickable-row" onclick="window.location='#';">
+                                                <td data-title="Company">Big Sky Underwriters</td>
+                                                <td data-title="Claimant's Names">Big Sky Underwriters</td>
+                                                <td data-title="Line of Coverage">WCOM</td>
+                                                <td data-title="Date of Loss">2/6/2017</td>
+                                                <td data-title="Triggers">2/2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">«</span>
+                                            </a>
+                                        </li>
+                                        <li class="active"><a href="#">1</a>
+                                        </li>
+                                        <li><a href="#">2</a>
+                                        </li>
+                                        <li><a href="#">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true">»</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 highchar drag-enable full-size-panel">
+                        <div class="panel tablecontainer">
+
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader pd-tableheader">
+
+                                <div class="pull-left head-drop">
+                                    Total Claims
+                                </div>
+
+                                <div class="btn-group pull-right head-drop producer-select month-dropdown">
+                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        DISPLAY ALL <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">2012</a>
+                                        </li>
+                                        <li><a href="#">2013</a>
+                                        </li>
+                                        <li><a href="#">2014</a>
+                                        </li>
+                                        <li><a href="#">2015</a>
+                                        </li>
+                                        <li><a href="#">2016</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="head-drop">
+                                    Open: 193 <span class="vertical-line"></span>Pending: 78 <span class="vertical-line"></span> Closed: 232 <span class="vertical-line"></span> Paid: $29,339.10 <span class="vertical-line"></span> Reserved: $54,439.83 <span class="vertical-line"></span> Incurred: $83,778.93
+                                </div>
+                            </div>
+                            <div class="cams-tables clearfix">
+                                <script src="../js/highchart-main.js"></script>
+                                <div id="highchart-charts"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center copyright">
+                <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+            </div>
+            <script src="../js/highchart-main.js"></script>
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/data.js"></script>
+
+</body>
+
+</html>

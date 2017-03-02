@@ -15,7 +15,6 @@
 </head>
 
 <body class="cams-pad cams-page">
-
     <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
         <div class="container-fluid menu-margin">
             <div class="navbar-header">
@@ -48,9 +47,9 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <div class="arrow-up"></div>
-                            <li><a href="edit-profile.html">Edit Profile</a>
+                            <li><a href="#">Edit Profile</a>
                             </li>
-                            <li><a href="#">Help</a>
+                            <li><a href="../admin/help-request.html">Help</a>
                             </li>
                             <li><a href="#">Logout</a>
                             </li>
@@ -60,9 +59,8 @@
             </div>
         </div>
     </nav>
-
     <div class="container-fluid content">
-        <div class="row">
+        <div class="row sidebar-container">
             <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
                 <ul class="nav nav-sidebar">
                     <li>
@@ -74,21 +72,28 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="claim-add-new.html">Add New</a>
+                            <li><a href="../client/claim-add-new.html">Add New</a>
                                 <hr>
                             </li>
-                            <li><a href="search-claims.html">View Claims</a>
+                            <li><a href="../client/search-claims.html">View Claims</a>
                                 <hr>
                             </li>
-                            <li><a href="tasks.html">Tasks</a>
+                            <li><a href="../client/tasks.html">Tasks</a>
+                                <hr>
+                            </li>
+                            <li><a href="../producer/trigger-search.html">Triggers</a>
                                 <hr>
                             </li>
                         </ul>
                         <hr />
                     </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
+                        <hr />
+                    </li>
 
                     <li>
-                        <a href="company-info.html">
+                        <a href="../client/company-info.html">
                             <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
                         </a>
                         <hr />
@@ -142,15 +147,35 @@
 
                     <hr />
 
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Carriers</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Document Mgmt</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Loss Run Import</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Users</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
                     <ul class="nav nav-sidebar nav-sidebar2">
                         <li class="dropdown">
                             <hr>
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
                      <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="edit-profile.html">Edit Profile</a>
+                                <li><a href="#">Edit Profile</a>
                                 </li>
-                                <li><a href="#">Help</a>
+                                <li><a href="../admin/help-request.html">Help</a>
                                 </li>
                                 <li><a href="#">Logout</a>
                                 </li>
@@ -340,7 +365,24 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
+                                        <tr class="same-claims">
+                                            <td data-title="Line of Coverage">Automobile</td>
+                                            <td data-title="Company">MUTI/Midwest Underground Technology Inc.</td>
+                                            <td data-title="Claim Number">1827232-GB</td>
+                                            <td data-title="Claimant Name(s)">MUTI/Midwest Underground Technology Inc.</td>
+                                            <td data-title="Date of Loss">7/10/2016</td>
+                                            <td data-title="Submitted to Carrier">----------</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span></td>
+                                            <td data-title="Total Incurred" class="numeric">0.00</td>
+                                            <td data-title="Total Paid" class="numeric">0.00</td>
+                                            <td data-title="Total Reserved" class="numeric">0.00</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionGray"><i class="fa fa-arrow-circle-right"></i><i class="txt">&nbsp;&nbsp;Continue Claim</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-info-circle"></i><i class="txt">&nbsp;&nbsp;Legacy Claim</i></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="same-claims">
                                             <td data-title="Line of Coverage">Automobile</td>
                                             <td data-title="Company">MUTI/Midwest Underground Technology Inc.</td>
                                             <td data-title="Claim Number">1827232-GB</td>
@@ -361,9 +403,9 @@
                                         <tr>
                                             <td data-title="Line of Coverage">Automobile</td>
                                             <td data-title="Company">MUTI/Midwest Underground Technology Inc.</td>
-                                            <td data-title="Claim Number">34384343-GB</td>
+                                            <td data-title="Claim Number">9112PE10837</td>
                                             <td data-title="Claimant Name(s)">MUTI/Midwest Underground Technology Inc.</td>
-                                            <td data-title="Date of Loss">6/8/2016</td>
+                                            <td data-title="Date of Loss">6/10/2016</td>
                                             <td data-title="Submitted to Carrier">----------</td>
                                             <td data-title="Status"><span class="statusBtn green">Open</span>
                                             </td>
@@ -375,6 +417,7 @@
                                                 <a href="" class="actionBlue"><i class="fa fa-info-circle"></i><i class="txt">&nbsp;&nbsp;Legacy Claim</i></a>
                                             </td>
                                         </tr>
+
                                     </tbody>
                                 </table>
                             </div>

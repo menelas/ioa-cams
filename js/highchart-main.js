@@ -1,99 +1,64 @@
-$(function()
-{
-    Highcharts.chart('highchar-charts',
-    {
+$(function () {
+    // Create the chart
+    Highcharts.chart('highchart-charts', {
+        colors: ['#687c82', '#e87969', '#5c5c5c', '#78b9c8', '#1b4367'],
         chart: {
             type: 'column'
         },
-        title:
-        {
+        title: {
+            text: 'DISPLAYING ALL CLAIMS FROM 2013 TO 2017'
+        },
+        subtitle: {
             text: ''
         },
-        xAxis:
-        {
-            categories: ['Dec \'15', 'Jan \'16', 'Feb \'16', 'Mar \'16', 'Apr \'16', 'May\'16', 'Jun \'16', 'Jul \'16', 'Aug \'16', 'Sep \'16', 'Oct \'16', 'Nov\'16', 'Dec \'16']
+        xAxis: {
+            categories: ['2013', '2014', '2015', '2016', '2017']
+
         },
-        labels:
-        {
-            items: [
-            {
-                style:
-                {
-                    left: '50px',
-                    top: '18px',
-                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+        yAxis: {
+            title: {
+                text: ''
+            }
+
+        },
+
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: false, 
                 }
-            }]
-        },
-        legend:
-        {
-            borderRadius: 0,
-            squareSymbol: false,
-            symbolRadius: 0,
-            symbolWidth: 35,
-            itemStyle: {
-                fontSize: '14px'
             }
         },
-        series: [
-            {
-                name: 'Open',
-                data: [30, 20, 30, 8, 17, 18, 12, 3, 4, 2, 1, 8, 9]
 
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
         },
-            {
-                name: 'Pending',
-                data: [8, 3, 6, 2, 9, 6, 5, 3, 4, 1, 1, 6, 3]
-        },
-            {
-                name: 'Closed',
-                data: [24, 21, 19, 29, 19, 16, 18, 23, 40, 20, 12, 12, 20]
 
-
-        }]
+        series: [{
+            name: 'Claims',
+            colorByPoint: true,
+            data: [{
+                name: '2013',
+                y: 560,
+             }, {
+                name: '2014',
+                y: 243,
+             }, {
+                name: '2015',
+                y: 103,
+             }, {
+                name: '2016',
+                y: 477,
+             }, {
+                name: '2017',
+                y: 152,
+             }]
+        }],
+         
     });
-    Highcharts.chart('highchar-pies',
-        {
-            chart: {
-                type: 'pie'
-            },
-            title:
-            {
-                text: ''
-            },
-            tooltip: {
-                formatter: function () {
-                    return this.point.name + ' ' + this.y;
-                }
-            },
-            series: [
-                {
-                    name: 'Total consumption',
-                    data: [
-                        {
-                            name: 'Open:',
-                            y: 162,
-                            color: Highcharts.getOptions()
-                                .colors[0]
-                        },
-                        {
-                            name: 'Pending:',
-                            y: 57,
-                            color: Highcharts.getOptions()
-                                .colors[1]
-                        },
-                        {
-                            name: 'Closed:',
-                            y: 273,
-                            color: Highcharts.getOptions()
-                                .colors[2]
-                        }],
-             
-                    showInLegend: false,
-                    dataLabels:
-                    {
-                        enabled: false
-                    }
-                }]
-        });
 });

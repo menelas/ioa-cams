@@ -20,7 +20,7 @@
     margin-bottom: 40px;
 }
 
-.ioa-portal{
+.dashboard-launch {
     margin-left: 0;
     height: 254px;
     display: table;
@@ -28,7 +28,13 @@
     margin: 35px auto 40px;
 }
 
-.ioa-portal a{
+.icons {
+  display: block;
+  font-size: 140px;
+  margin-bottom: 40px;
+}
+
+.dashboard-launch a{
     display: table-cell;
     vertical-align: middle;
 }
@@ -41,7 +47,7 @@
     font-size: 18px;
 }
 
-.ioa-portal {
+.dashboard-launch {
   border: 1px solid #ccc;
   margin-top: 35px;
   margin-bottom: 45px;
@@ -56,7 +62,7 @@
   animation: fadein 2s;
 }
 
-.ioa-portal:hover {
+.dashboard-launch:hover {
   background-color: #f9f9f9;
   -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.43);
   -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.43);

@@ -32,3 +32,9 @@
 .tab-content {
     margin-left: -2px;
 }
+
+a.details-control {
+    background: no-repeat center center;
+	 background-image: url('../../img/details_open.png');
+    cursor: pointer;
+}
