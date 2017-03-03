@@ -1,3 +1,6 @@
+## 2017-3-3
+• Updated claim details to include claim adjuster information
+
 ## 2017-3-2
 • Admin dashboard completed
 
