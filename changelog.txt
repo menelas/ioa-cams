@@ -1,3 +1,6 @@
+## 2017-3-8
+• Updated client dashboard to re-adjust display of overview section
+
 ## 2017-3-3
 • Updated claim details to include claim adjuster information
 

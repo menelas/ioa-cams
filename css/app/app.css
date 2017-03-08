@@ -691,6 +691,12 @@ table {
    color: #fff;
 }
 
+.btn-cell {
+   display: table-cell;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
 .statistics .dropdown-menu>li>a:hover {
    color: #000 !important;
 }
