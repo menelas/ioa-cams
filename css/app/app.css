@@ -982,6 +982,9 @@ td a {
    padding-right: 0;
 }
 
+.numeric {
+    text-align: right;
+}
 
 /***** Form Controls ****************************/
 
