@@ -1,3 +1,6 @@
+## 2017-3-13
+• Replaced GL umbrella icon with shield across app
+
 ## 2017-3-8
 • Updated client dashboard to re-adjust display of overview section
 
