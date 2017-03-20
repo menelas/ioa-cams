@@ -2,376 +2,408 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Insurance Office of America - CAMS</title>
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/app/app.css">
-	<link rel="stylesheet" href="css/app/branding-guidelines.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America - CAMS</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app/app.css">
+    <link rel="stylesheet" href="css/app/branding-guidelines.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body class="cams-pad cams-page">
-	<nav class="navbar navbar-inverse navbar-fixed-top menu-top">
-		<div class="container-fluid menu-margin">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
-				</a>
-				<h4 class="company-title">Insurance Office of America</h4>
-				<h5>Claims Advocate Management System</h5>
-			</div>
-			<div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
-						<ul class="dropdown-menu">
-							<div class="arrow-up"></div>
-							<li><a href="#">Custom Claims Kit</a>
-							</li>
-							<li><a href="#">IOA RiskScore</a>
-							</li>
-							<li><a href="#">Learning Management System</a>
-							</li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
-						<ul class="dropdown-menu">
-							<div class="arrow-up"></div>
-							<li><a href="#">Edit Profile</a>
-							</li>
-							<li><a href="../admin/help-request.html">Help</a>
-							</li>
-							<li><a href="#">Logout</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="container-fluid content">
-		<div class="row sidebar-container">
-			<div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
-				<ul class="nav nav-sidebar">
-					<li>
-						<a href="dashboard.html">
-							<i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
-						</a>
-						<hr />
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-						<ul class="dropdown-menu">
-							<li><a href="../client/search-claims.html">View Claims</a>
-								<hr>
-							</li>
-							<li><a href="../client/tasks.html">Tasks</a>
-								<hr>
-							</li>
-							<li><a href="../producer/trigger-search.html">Triggers</a>
-								<hr>
-							</li>
-						</ul>
-						<hr />
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
-						<hr />
-					</li>
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
+                </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Claims Advocate Management System</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Custom Claims Kit</a>
+                            </li>
+                            <li><a href="#">IOA RiskScore</a>
+                            </li>
+                            <li><a href="#">Learning Management System</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="../admin/help-request.html">Help</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content">
+        <div class="row sidebar-container">
+            <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
+                        </a>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../client/claim-add-new.html">Add New</a>
+                                <hr>
+                            </li>
+                            <li><a href="../client/search-claims.html">View Claims</a>
+                                <hr>
+                            </li>
+                            <li><a href="../client/tasks.html">Tasks</a>
+                                <hr>
+                            </li>
+                            <li><a href="../producer/trigger-search.html">Triggers</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
+                        <hr />
+                    </li>
 
-					<li>
-						<a href="../client/company-info.html">
-							<i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
-						</a>
-						<hr />
-					</li>
+                    <li>
+                        <a href="../client/company-info.html">
+                            <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
+                        </a>
+                        <hr />
+                    </li>
 
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-						<ul class="dropdown-menu servicing-team">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu servicing-team">
 
-							<div class="col-xs-6 col-md-6">
-								<li>Producer(s):</li>
-								<li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
-								<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
-								</li>
-								<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
-								</li>
+                            <div class="col-xs-6 col-md-6">
+                                <li>Producer(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
+                                </li>
 
-								<hr />
+                                <hr />
 
-								<li>Claim Contact(s):</li>
-								<li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
-								<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
-								</li>
-								<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
-								</li>
-
-
-							</div>
-
-							<div class="col-xs-6 col-md-6">
-								<li>Policy Information:</li>
-								<li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
-								<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
-								</li>
-								<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
-								</li>
-
-								<hr />
+                                <li>Claim Contact(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
+                                </li>
 
 
-								<li>Technical Contact:</li>
-								<li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
-								<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
-								</li>
-								<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
-								</li>
+                            </div>
 
-							</div>
-						</ul>
-					</li>
+                            <div class="col-xs-6 col-md-6">
+                                <li>Policy Information:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
+                                </li>
 
-					<hr />
+                                <hr />
 
 
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Carriers</a>
-								<hr>
-							</li>
-							<li><a href="#">Document Mgmt</a>
-								<hr>
-							</li>
-							<li><a href="#">Loss Run Import</a>
-								<hr>
-							</li>
-							<li><a href="#">Users</a>
-								<hr>
-							</li>
-						</ul>
-						<hr />
-					</li>
+                                <li>Technical Contact:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
+                                </li>
 
-					<ul class="nav nav-sidebar nav-sidebar2">
-						<li class="dropdown">
-							<hr>
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <hr />
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../client/claim-report.html">Summary</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">OSHA</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Carriers</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Document Mgmt</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Loss Run Import</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Users</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <ul class="nav nav-sidebar nav-sidebar2">
+                        <li class="dropdown">
+                            <hr>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
                      <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Edit Profile</a>
-								</li>
-								<li><a href="../admin/help-request.html">Help</a>
-								</li>
-								<li><a href="#">Logout</a>
-								</li>
-							</ul>
-							<hr>
-						</li>
-					</ul>
-				</ul>
-			</div>
-			<!-- Body -->
-			<div class="body-container">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
-					<div class="pull-left head-drop">
-						<div class="btn-group">
-							<p>Brand Style Guideline</p>
-						</div>
-					</div>
-				</div>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Edit Profile</a>
+                                </li>
+                                <li><a href="../admin/help-request.html">Help</a>
+                                </li>
+                                <li><a href="#">Logout</a>
+                                </li>
+                            </ul>
+                            <hr>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- Body -->
+            <div class="body-container">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+                    <div class="pull-left head-drop">
+                        <div class="btn-group">
+                            <p>Brand Style Guideline</p>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="col-lg-12 spacer30">
+                <div class="col-lg-12 spacer30">
 
-					<ul class="nav nav-pills nav-stacked col-md-3">
-						<li><a href="#typography" data-toggle="pill">Typography and Colors</a>
-						</li>
-						<li><a href="#buttons-progress" data-toggle="pill">Buttons and Progress</a>
-						</li>
-						<li class="active"><a href="#iconography" data-toggle="pill">Iconography</a>
-						</li>
-						<li><a href="#tables" data-toggle="pill">Tables</a>
-						</li>
-					</ul>
-					<div class="tab-content col-md-9">
-						<div class="tab-pane" id="typography">
-							<h4>Typography</h4>
-							<p>Body - Font Family: Helvetica Neue and 15px</p>
-						
-							<hr />
+                    <ul class="nav nav-pills nav-stacked col-md-3">
+                        <li><a href="#typography" data-toggle="pill">Typography and Colors</a>
+                        </li>
+                        <li><a href="#buttons-progress" data-toggle="pill">Buttons and Progress</a>
+                        </li>
+                        <li class="active"><a href="#iconography" data-toggle="pill">Iconography</a>
+                        </li>
+                        <li><a href="#tables" data-toggle="pill">Tables</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content col-md-9">
+                        <div class="tab-pane" id="typography">
+                            <h4>Typography</h4>
+                            <p>Body - Font Family: Helvetica Neue and 15px</p>
 
-							<h4>Primary Colors</h4>
-							<div class="color1">Icons</div>
-							<div class="color2">Title Headers</div>
-							<div class="color3">BG Content</div>
+                            <hr />
 
-						</div>
+                            <h4>Primary Colors</h4>
+                            <div class="color1">Icons</div>
+                            <div class="color2">Title Headers</div>
+                            <div class="color3">BG Content</div>
 
-						<div class="tab-pane active" id="buttons-progress">
-							<h4>Buttons and Progress</h4>
+                        </div>
 
-							<div class="cams-tables">
-								<table class="table-hover table-striped table-condensed cf">
-									<thead class="cf">
-										<tr>
-											<th>Icon</th>
-											<th>Purpose</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td data-title="Icon">Open Status</td>
-											<td data-title="Purpose"> <span class="statusBtn green">Open</span></td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-automobile"></i></td>
-											<td data-title="Purpose"> Automobile Claim</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-shield"></i></td>
-											<td data-title="Purpose"> General Liability Claim</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-building"></i></td>
-											<td data-title="Purpose"> Property Claim </td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-briefcase"></i></td>
-											<td data-title="Purpose">Workers' Comp. Claim</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-edit"></i></td>
-											<td data-title="Purpose">Edit</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-exclamation-circle warning"></i></td>
-											<td data-title="Purpose">Warning</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-eye"></i></td>
-											<td data-title="Purpose">View Details</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+                        <div class="tab-pane active" id="buttons-progress">
+                            <h4>Buttons and Progress</h4>
 
-						</div>
+                            <div class="cams-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th>Icon</th>
+                                            <th>Purpose</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Icon">Open Status</td>
+                                            <td data-title="Purpose"> <span class="statusBtn green">Open</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-automobile"></i>
+                                            </td>
+                                            <td data-title="Purpose"> Automobile Claim</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-shield"></i>
+                                            </td>
+                                            <td data-title="Purpose"> General Liability Claim</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-building"></i>
+                                            </td>
+                                            <td data-title="Purpose"> Property Claim </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-briefcase"></i>
+                                            </td>
+                                            <td data-title="Purpose">Workers' Comp. Claim</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-edit"></i>
+                                            </td>
+                                            <td data-title="Purpose">Edit</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-exclamation-circle warning"></i>
+                                            </td>
+                                            <td data-title="Purpose">Warning</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-eye"></i>
+                                            </td>
+                                            <td data-title="Purpose">View Details</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
 
 
-						<div class="tab-pane" id="iconography">
-							<h4>Iconography</h4>
+                        <div class="tab-pane" id="iconography">
+                            <h4>Iconography</h4>
 
-							<p><a href="http://fontawesome.io/cheatsheet/">Font Awesome Icons</a> are primarly used throughout the system.</p><br />
+                            <p><a href="http://fontawesome.io/cheatsheet/">Font Awesome Icons</a> are primarly used throughout the system.</p>
+                            <br />
 
-							<div class="cams-tables">
-								<table class="table-hover table-striped table-condensed cf">
-									<thead class="cf">
-										<tr>
-											<th>Icon</th>
-											<th>Purpose</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-close"></i></td>
-											<td data-title="Purpose"> Close</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-automobile"></i></td>
-											<td data-title="Purpose"> Automobile Claim</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-shield"></i></td>
-											<td data-title="Purpose"> General Liability Claim</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-building"></i></td>
-											<td data-title="Purpose"> Property Claim </td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-briefcase"></i></td>
-											<td data-title="Purpose">Workers' Comp. Claim</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-edit"></i></td>
-											<td data-title="Purpose">Edit</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-exclamation-circle warning"></i></td>
-											<td data-title="Purpose">Warning</td>
-										</tr>
-										<tr>
-											<td data-title="Icon"><i class="fa fa-eye"></i></td>
-											<td data-title="Purpose">View Details</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+                            <div class="cams-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th>Icon</th>
+                                            <th>Purpose</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-close"></i>
+                                            </td>
+                                            <td data-title="Purpose"> Close</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-automobile"></i>
+                                            </td>
+                                            <td data-title="Purpose"> Automobile Claim</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-shield"></i>
+                                            </td>
+                                            <td data-title="Purpose"> General Liability Claim</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-building"></i>
+                                            </td>
+                                            <td data-title="Purpose"> Property Claim </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-briefcase"></i>
+                                            </td>
+                                            <td data-title="Purpose">Workers' Comp. Claim</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-edit"></i>
+                                            </td>
+                                            <td data-title="Purpose">Edit</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-exclamation-circle warning"></i>
+                                            </td>
+                                            <td data-title="Purpose">Warning</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-eye"></i>
+                                            </td>
+                                            <td data-title="Purpose">View Details</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
-						</div>
-						<div class="tab-pane" id="tables">
-							<h4>Tables</h4>
-							<p>All Tables throughout the system must have the div class <code>cams-tables</code> and td data titles in order to display correctly in lower resolutions.</p>
-							<br />
+                        </div>
+                        <div class="tab-pane" id="tables">
+                            <h4>Tables</h4>
+                            <p>All Tables throughout the system must have the div class <code>cams-tables</code> and td data titles in order to display correctly in lower resolutions.</p>
+                            <br />
 
-							<div class="cams-tables">
-								<table class="table-hover table-striped table-condensed cf">
-									<thead class="cf">
-										<tr>
-											<th>Name</th>
-											<th>Email</th>
-											<th>Position</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td data-title="John Doverman">John Doverman</td>
-											<td data-title="Email">johndoverman@ioausa.com</td>
-											<td data-title="Position">HR Manager</td>
-										</tr>
-										<tr>
-											<td data-title="John Doverman">John Doverman</td>
-											<td data-title="Email">johndoverman@ioausa.com</td>
-											<td data-title="Position">HR Manager</td>
-										</tr>
-										<tr>
-											<td data-title="John Doverman">John Doverman</td>
-											<td data-title="Email">johndoverman@ioausa.com</td>
-											<td data-title="Position">HR Manager</td>
-										</tr>
-										<tr>
-											<td data-title="John Doverman">John Doverman</td>
-											<td data-title="Email">johndoverman@ioausa.com</td>
-											<td data-title="Position">HR Manager</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-					<!-- tab content -->
+                            <div class="cams-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Position</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="John Doverman">John Doverman</td>
+                                            <td data-title="Email">johndoverman@ioausa.com</td>
+                                            <td data-title="Position">HR Manager</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="John Doverman">John Doverman</td>
+                                            <td data-title="Email">johndoverman@ioausa.com</td>
+                                            <td data-title="Position">HR Manager</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="John Doverman">John Doverman</td>
+                                            <td data-title="Email">johndoverman@ioausa.com</td>
+                                            <td data-title="Position">HR Manager</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="John Doverman">John Doverman</td>
+                                            <td data-title="Email">johndoverman@ioausa.com</td>
+                                            <td data-title="Position">HR Manager</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab content -->
 
-				</div>
+                </div>
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 
-	<div class="text-center copyright">
-		<p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
-	</div>
-	<script type="text/javascript" src="js/tooltip.js"></script>
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+    </div>
+    <script type="text/javascript" src="js/tooltip.js"></script>
 </body>
 
 </html>

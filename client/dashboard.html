@@ -2,1093 +2,1097 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Insurance Office of America - CAMS</title>
-	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../css/app/app.css">
-	<link rel="stylesheet" href="../css/client/dashboard.css">
-	<script type="text/javascript" src="../js/jquery.min.js"></script>
-	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../js/dashboard.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America - CAMS</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/app/app.css">
+    <link rel="stylesheet" href="../css/client/dashboard.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/dashboard.js"></script>
 </head>
 
 <body class="cams-pad cams-page">
-	<nav class="navbar navbar-inverse navbar-fixed-top menu-top">
-		<div class="container-fluid menu-margin">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
-				</a>
-				<h4 class="company-title">Insurance Office of America</h4>
-				<h5>Claims Advocate Management System</h5>
-			</div>
-			<div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
-						<ul class="dropdown-menu">
-							<div class="arrow-up"></div>
-							<li><a href="#">Custom Claims Kit</a>
-							</li>
-							<li><a href="#">IOA RiskScore</a>
-							</li>
-							<li><a href="#">Learning Management System</a>
-							</li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
-						<ul class="dropdown-menu">
-							<div class="arrow-up"></div>
-							<li><a href="#">Edit Profile</a>
-							</li>
-							<li><a href="../admin/help-request.html">Help</a>
-							</li>
-							<li><a href="#">Logout</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="container-fluid content">
-		<div class="row sidebar-container">
-			<div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
-				<ul class="nav nav-sidebar">
-					<li>
-						<a href="dashboard.html">
-							<i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
-						</a>
-						<hr />
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-						<ul class="dropdown-menu">
-							<li><a href="../client/claim-add-new.html">Add New</a>
-								<hr>
-							</li>
-							<li><a href="../client/search-claims.html">View Claims</a>
-								<hr>
-							</li>
-							<li><a href="../client/tasks.html">Tasks</a>
-								<hr>
-							</li>
-							<li><a href="../producer/trigger-search.html">Triggers</a>
-								<hr>
-							</li>
-						</ul>
-						<hr />
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
-						<hr />
-					</li>
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
+                </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Claims Advocate Management System</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Custom Claims Kit</a>
+                            </li>
+                            <li><a href="#">IOA RiskScore</a>
+                            </li>
+                            <li><a href="#">Learning Management System</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="../admin/help-request.html">Help</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content">
+        <div class="row sidebar-container">
+            <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
+                        </a>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../client/claim-add-new.html">Add New</a>
+                                <hr>
+                            </li>
+                            <li><a href="../client/search-claims.html">View Claims</a>
+                                <hr>
+                            </li>
+                            <li><a href="../client/tasks.html">Tasks</a>
+                                <hr>
+                            </li>
+                            <li><a href="../producer/trigger-search.html">Triggers</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
+                        <hr />
+                    </li>
 
-					<li>
-						<a href="../client/company-info.html">
-							<i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
-						</a>
-						<hr />
-					</li>
+                    <li>
+                        <a href="../client/company-info.html">
+                            <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
+                        </a>
+                        <hr />
+                    </li>
 
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-						<ul class="dropdown-menu servicing-team">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu servicing-team">
 
-							<div class="col-xs-6 col-md-6">
-								<li>Producer(s):</li>
-								<li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
-								<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
-								</li>
-								<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
-								</li>
+                            <div class="col-xs-6 col-md-6">
+                                <li>Producer(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
+                                </li>
 
-								<hr />
+                                <hr />
 
-								<li>Claim Contact(s):</li>
-								<li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
-								<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
-								</li>
-								<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
-								</li>
-
-
-							</div>
-
-							<div class="col-xs-6 col-md-6">
-								<li>Policy Information:</li>
-								<li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
-								<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
-								</li>
-								<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
-								</li>
-
-								<hr />
+                                <li>Claim Contact(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
+                                </li>
 
 
-								<li>Technical Contact:</li>
-								<li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
-								<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
-								</li>
-								<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
-								</li>
+                            </div>
 
-							</div>
-						</ul>
-					</li>
+                            <div class="col-xs-6 col-md-6">
+                                <li>Policy Information:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
+                                </li>
 
-					<hr />
+                                <hr />
 
 
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Carriers</a>
-								<hr>
-							</li>
-							<li><a href="#">Document Mgmt</a>
-								<hr>
-							</li>
-							<li><a href="#">Loss Run Import</a>
-								<hr>
-							</li>
-							<li><a href="#">Users</a>
-								<hr>
-							</li>
-						</ul>
-						<hr />
-					</li>
+                                <li>Technical Contact:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
+                                </li>
 
-					<ul class="nav nav-sidebar nav-sidebar2">
-						<li class="dropdown">
-							<hr>
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <hr />
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../client/claim-report.html">Summary</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">OSHA</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Carriers</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Document Mgmt</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Loss Run Import</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Users</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <ul class="nav nav-sidebar nav-sidebar2">
+                        <li class="dropdown">
+                            <hr>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
                      <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Edit Profile</a>
-								</li>
-								<li><a href="../admin/help-request.html">Help</a>
-								</li>
-								<li><a href="#">Logout</a>
-								</li>
-							</ul>
-							<hr>
-						</li>
-					</ul>
-				</ul>
-			</div>
-			<!-- Body -->
-			<div class="body-container">
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Edit Profile</a>
+                                </li>
+                                <li><a href="../admin/help-request.html">Help</a>
+                                </li>
+                                <li><a href="#">Logout</a>
+                                </li>
+                            </ul>
+                            <hr>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- Body -->
+            <div class="body-container">
 
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 panel body">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 panel body">
 
-					<div class="panel panel-primary">
-						<div id="nav-tabs">
-							<ul class="nav nav-tabs">
-								<li class="active"><a data-toggle="tab" href="#overview"><i class="fa fa-list"></i> Overview</a>
-								</li>
-								<li class="sep"><a data-toggle="tab" href="#auto"><i class="fa fa-car"></i> Auto</a>
-								</li>
-								<li class="sep"><a data-toggle="tab" href="#general-liability"><i class="fa fa-shield"></i> General Liability</a>
-								</li>
-								<li class="sep"><a data-toggle="tab" href="#property"><i class="fa fa-building"></i> Property</a>
-								</li>
-								<li class="sep"><a data-toggle="tab" href="#workers-compensation"><i class="fa fa-briefcase"></i> Workers' Compensation</a>
-								</li>
-							</ul>
-						</div>
+                    <div class="panel panel-primary">
+                        <div id="nav-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#overview"><i class="fa fa-list"></i> Overview</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#auto"><i class="fa fa-car"></i> Auto</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#general-liability"><i class="fa fa-shield"></i> General Liability</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#property"><i class="fa fa-building"></i> Property</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#workers-compensation"><i class="fa fa-briefcase"></i> Workers' Compensation</a>
+                                </li>
+                            </ul>
+                        </div>
 
-						<div class="tab-content">
-							<div id="overview" class="tab-pane fade in active tabs-info company-overview">
-								<table class="table-hover table-striped table-condensed">
-									<thead class="cf">
+                        <div class="tab-content">
+                            <div id="overview" class="tab-pane fade in active tabs-info company-overview">
+                                <table class="table-hover table-striped table-condensed">
+                                    <thead class="cf">
 
-										<tr>
-											<th>Company Name</th>
-											<th class="text-right">Claims</th>
-											<th class="text-right">Open</th>
-											<th class="text-right">Closed</th>
-											<th class="text-right">Paid</th>
-											<th class="text-right">Reserved</th>
-											<th class="text-right">Incurred</th>
-											<th class="text-right">Past Due</th>
-											<th>Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td data-title="Company Name">Kessler Hospitality Mgmt Co. Grand Performer Inc.</td>
-											<td data-title="Claims" class="numeric">94</td>
-											<td data-title="Open" class="numeric">75</td>
-											<td data-title="Closed" class="numeric">8</td>
-											<td data-title="Paid" class="numeric">$117,794</td>
-											<td data-title="Reserved" class="numeric">$300,840</td>
-											<td data-title="Incurred" class="numeric">$424,134</td>
-											<td data-title="Past Due" class="numeric">152</td>
-											<td data-title="Action" class="actionBtn">
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
-												</div>
+                                        <tr>
+                                            <th>Company Name</th>
+                                            <th class="text-right">Claims</th>
+                                            <th class="text-right">Open</th>
+                                            <th class="text-right">Closed</th>
+                                            <th class="text-right">Paid</th>
+                                            <th class="text-right">Reserved</th>
+                                            <th class="text-right">Incurred</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Company Name">Kessler Hospitality Mgmt Co. Grand Performer Inc.</td>
+                                            <td data-title="Claims" class="numeric">94</td>
+                                            <td data-title="Open" class="numeric">75</td>
+                                            <td data-title="Closed" class="numeric">8</td>
+                                            <td data-title="Paid" class="numeric">$117,794</td>
+                                            <td data-title="Reserved" class="numeric">$300,840</td>
+                                            <td data-title="Incurred" class="numeric">$424,134</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Company Name">Casa Monica Resort and Spa</td>
-											<td data-title="Claims" class="numeric">87</td>
-											<td data-title="Open" class="numeric">65</td>
-											<td data-title="Closed" class="numeric">6</td>
-											<td data-title="Paid" class="numeric">$37,933</td>
-											<td data-title="Reserved" class="numeric">$43,039</td>
-											<td data-title="Incurred" class="numeric">$320,332</td>
-											<td data-title="Past Due" class="numeric">133</td>
-											<td data-title="Action" class="actionBtn">
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Company Name">Casa Monica Resort and Spa</td>
+                                            <td data-title="Claims" class="numeric">87</td>
+                                            <td data-title="Open" class="numeric">65</td>
+                                            <td data-title="Closed" class="numeric">6</td>
+                                            <td data-title="Paid" class="numeric">$37,933</td>
+                                            <td data-title="Reserved" class="numeric">$43,039</td>
+                                            <td data-title="Incurred" class="numeric">$320,332</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Company Name">Delray Beach</td>
-											<td data-title="Claims" class="numeric">78</td>
-											<td data-title="Open" class="numeric">43</td>
-											<td data-title="Closed" class="numeric">9</td>
-											<td data-title="Paid" class="numeric">$39,834</td>
-											<td data-title="Reserved" class="numeric">$45,343</td>
-											<td data-title="Incurred" class="numeric">$145,434</td>
-											<td data-title="Past Due" class="numeric">125</td>
-											<td data-title="Action" class="actionBtn">
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Company Name">Delray Beach</td>
+                                            <td data-title="Claims" class="numeric">78</td>
+                                            <td data-title="Open" class="numeric">43</td>
+                                            <td data-title="Closed" class="numeric">9</td>
+                                            <td data-title="Paid" class="numeric">$39,834</td>
+                                            <td data-title="Reserved" class="numeric">$45,343</td>
+                                            <td data-title="Incurred" class="numeric">$145,434</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Company Name">El Monte Sagrado Living Resort and Spa</td>
-											<td data-title="Claims" class="numeric">69</td>
-											<td data-title="Open" class="numeric">31</td>
-											<td data-title="Closed" class="numeric">8</td>
-											<td data-title="Paid" class="numeric">$45,889</td>
-											<td data-title="Reserved" class="numeric">$89,434</td>
-											<td data-title="Incurred" class="numeric">$132,434</td>
-											<td data-title="Past Due" class="numeric">155</td>
-											<td data-title="Action" class="actionBtn">
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Company Name">El Monte Sagrado Living Resort and Spa</td>
+                                            <td data-title="Claims" class="numeric">69</td>
+                                            <td data-title="Open" class="numeric">31</td>
+                                            <td data-title="Closed" class="numeric">8</td>
+                                            <td data-title="Paid" class="numeric">$45,889</td>
+                                            <td data-title="Reserved" class="numeric">$89,434</td>
+                                            <td data-title="Incurred" class="numeric">$132,434</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Company Name">Grand Bohemian Hotel - Celebration</td>
-											<td data-title="Claims" class="numeric">54</td>
-											<td data-title="Open" class="numeric">28</td>
-											<td data-title="Closed" class="numeric">7</td>
-											<td data-title="Paid" class="numeric">$65,493</td>
-											<td data-title="Reserved" class="numeric">$78,343</td>
-											<td data-title="Incurred" class="numeric">$131,324</td>
-											<td data-title="Past Due" class="numeric">132</td>
-											<td data-title="Action" class="actionBtn">
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Company Name">Grand Bohemian Hotel - Celebration</td>
+                                            <td data-title="Claims" class="numeric">54</td>
+                                            <td data-title="Open" class="numeric">28</td>
+                                            <td data-title="Closed" class="numeric">7</td>
+                                            <td data-title="Paid" class="numeric">$65,493</td>
+                                            <td data-title="Reserved" class="numeric">$78,343</td>
+                                            <td data-title="Incurred" class="numeric">$131,324</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Company Name">Grand Bohemian Hotel - Orlando</td>
-											<td data-title="Claims" class="numeric">33</td>
-											<td data-title="Open" class="numeric">18</td>
-											<td data-title="Closed" class="numeric">10</td>
-											<td data-title="Paid" class="numeric">$49,434</td>
-											<td data-title="Reserved" class="numeric">$90,329</td>
-											<td data-title="Incurred" class="numeric">$130,434</td>
-											<td data-title="Past Due" class="numeric">116</td>
-											<td data-title="Action" class="actionBtn">
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Company Name">Grand Bohemian Hotel - Orlando</td>
+                                            <td data-title="Claims" class="numeric">33</td>
+                                            <td data-title="Open" class="numeric">18</td>
+                                            <td data-title="Closed" class="numeric">10</td>
+                                            <td data-title="Paid" class="numeric">$49,434</td>
+                                            <td data-title="Reserved" class="numeric">$90,329</td>
+                                            <td data-title="Incurred" class="numeric">$130,434</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Company Name">Grand Bohemian Hotel - Asheville</td>
-											<td data-title="Claims" class="numeric">29</td>
-											<td data-title="Open" class="numeric">39</td>
-											<td data-title="Closed" class="numeric">9</td>
-											<td data-title="Paid" class="numeric">$89,439</td>
-											<td data-title="Reserved" class="numeric">$45,403</td>
-											<td data-title="Incurred" class="numeric">$128,323</td>
-											<td data-title="Past Due" class="numeric">118</td>
-											<td data-title="Action" class="actionBtn">
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Company Name">Grand Bohemian Hotel - Asheville</td>
+                                            <td data-title="Claims" class="numeric">29</td>
+                                            <td data-title="Open" class="numeric">39</td>
+                                            <td data-title="Closed" class="numeric">9</td>
+                                            <td data-title="Paid" class="numeric">$89,439</td>
+                                            <td data-title="Reserved" class="numeric">$45,403</td>
+                                            <td data-title="Incurred" class="numeric">$128,323</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="View Claims" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
-												</div>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="Report Central" class="actionBlue"><i class="fa fa-pie-chart"></i></a>
+                                                </div>
 
-												<div class="btn-cell">
-													<a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+                                                <div class="btn-cell">
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="OSHA Log" class="actionBlue"><i class="fa fa-file-text-o"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-							</div>
+                            </div>
 
-							<div id="auto" class="tab-pane fade tabs-info cams-tables">
+                            <div id="auto" class="tab-pane fade tabs-info cams-tables">
 
-								<table class="table-hover table-striped table-condensed">
-									<thead class="cf">
+                                <table class="table-hover table-striped table-condensed">
+                                    <thead class="cf">
 
-										<tr>
-											<th>Date of Loss</th>
-											<th>Line of Coverage</th>
-											<th class="text-right">Claim Number</th>
-											<th class="text-center">Status</th>
-											<th class="text-right">Incurred</th>
-											<th class="text-right">Paid</th>
-											<th class="text-right">Reserved</th>
-											<th class="action">Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td data-title="Date of Loss">9/12/2016</td>
-											<td data-title="Line of Coverage">Motor Truck Cargo</td>
-											<td data-title="Claim Number" class="numeric"><i class="fa fa-exclamation-circle warning">&nbsp;&nbsp;</i>----------</td>
-											<td data-title="Status"><span class="statusBtn grey">Pending</span>
-											</td>
-											<td data-title="Incurred" class="numeric">----------</td>
-											<td data-title="Paid" class="numeric">----------</td>
-											<td data-title="Reserved" class="numeric">----------</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionGray"><i class="fa fa-arrow-circle-right"></i><i class="txt">&nbsp;&nbsp;Continue Claim</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-info-circle"></i><i class="txt">&nbsp;&nbsp;Legacy Claim</i></a>
-											</td>
-										</tr>
-										<tr class="same-claims">
-											<td data-title="Date of Loss">7/12/2016</td>
-											<td data-title="Line of Coverage">Automobile</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">----------</td>
-											<td data-title="Paid" class="numeric">----------</td>
-											<td data-title="Reserved" class="numeric">----------</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr class="same-claims">
-											<td data-title="Date of Loss">7/12/2016</td>
-											<td data-title="Line of Coverage">Automobile</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">----------</td>
-											<td data-title="Paid" class="numeric">----------</td>
-											<td data-title="Reserved" class="numeric">----------</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">5/12/2016 </td>
-											<td data-title="Line of Coverage">Automobile</td>
-											<td data-title="Claim Number" class="numeric">323920</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$0.00</td>
-											<td data-title="Paid" class="numeric">$0.00</td>
-											<td data-title="Reserved" class="numeric">$0.00</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">4/24/2016 </td>
-											<td data-title="Line of Coverage">Automobile</td>
-											<td data-title="Claim Number" class="numeric">908888</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$0.00</td>
-											<td data-title="Paid" class="numeric">$0.00</td>
-											<td data-title="Reserved" class="numeric">$0.00</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">3/12/2016</td>
-											<td data-title="Line of Coverage">Automobile</td>
-											<td data-title="Claim Number" class="numeric">832937</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$0.00</td>
-											<td data-title="Paid" class="numeric">$0.00</td>
-											<td data-title="Reserved" class="numeric">$0.00</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">2/10/2016</td>
-											<td data-title="Line of Coverage">Automobile</td>
-											<td data-title="Claim Number" class="numeric">932092</td>
-											<td data-title="Status"><span class="statusBtn blue">Closed</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$0.00</td>
-											<td data-title="Paid" class="numeric">$0.00</td>
-											<td data-title="Reserved" class="numeric">$0.00</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+                                        <tr>
+                                            <th>Date of Loss</th>
+                                            <th>Line of Coverage</th>
+                                            <th class="text-right">Claim Number</th>
+                                            <th class="text-center">Status</th>
+                                            <th class="text-right">Incurred</th>
+                                            <th class="text-right">Paid</th>
+                                            <th class="text-right">Reserved</th>
+                                            <th class="action">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Date of Loss">9/12/2016</td>
+                                            <td data-title="Line of Coverage">Motor Truck Cargo</td>
+                                            <td data-title="Claim Number" class="numeric"><i class="fa fa-exclamation-circle warning">&nbsp;&nbsp;</i>----------</td>
+                                            <td data-title="Status"><span class="statusBtn grey">Pending</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">----------</td>
+                                            <td data-title="Paid" class="numeric">----------</td>
+                                            <td data-title="Reserved" class="numeric">----------</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionGray"><i class="fa fa-arrow-circle-right"></i><i class="txt">&nbsp;&nbsp;Continue Claim</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-info-circle"></i><i class="txt">&nbsp;&nbsp;Legacy Claim</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr class="same-claims">
+                                            <td data-title="Date of Loss">7/12/2016</td>
+                                            <td data-title="Line of Coverage">Automobile</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">----------</td>
+                                            <td data-title="Paid" class="numeric">----------</td>
+                                            <td data-title="Reserved" class="numeric">----------</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr class="same-claims">
+                                            <td data-title="Date of Loss">7/12/2016</td>
+                                            <td data-title="Line of Coverage">Automobile</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">----------</td>
+                                            <td data-title="Paid" class="numeric">----------</td>
+                                            <td data-title="Reserved" class="numeric">----------</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">5/12/2016 </td>
+                                            <td data-title="Line of Coverage">Automobile</td>
+                                            <td data-title="Claim Number" class="numeric">323920</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$0.00</td>
+                                            <td data-title="Paid" class="numeric">$0.00</td>
+                                            <td data-title="Reserved" class="numeric">$0.00</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">4/24/2016 </td>
+                                            <td data-title="Line of Coverage">Automobile</td>
+                                            <td data-title="Claim Number" class="numeric">908888</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$0.00</td>
+                                            <td data-title="Paid" class="numeric">$0.00</td>
+                                            <td data-title="Reserved" class="numeric">$0.00</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">3/12/2016</td>
+                                            <td data-title="Line of Coverage">Automobile</td>
+                                            <td data-title="Claim Number" class="numeric">832937</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$0.00</td>
+                                            <td data-title="Paid" class="numeric">$0.00</td>
+                                            <td data-title="Reserved" class="numeric">$0.00</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">2/10/2016</td>
+                                            <td data-title="Line of Coverage">Automobile</td>
+                                            <td data-title="Claim Number" class="numeric">932092</td>
+                                            <td data-title="Status"><span class="statusBtn blue">Closed</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$0.00</td>
+                                            <td data-title="Paid" class="numeric">$0.00</td>
+                                            <td data-title="Reserved" class="numeric">$0.00</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-							</div>
+                            </div>
 
-							<div id="general-liability" class="tab-pane fade tabs-info cams-tables">
+                            <div id="general-liability" class="tab-pane fade tabs-info cams-tables">
 
-								<table class="table-hover table-striped table-condensed">
-									<thead class="cf">
+                                <table class="table-hover table-striped table-condensed">
+                                    <thead class="cf">
 
-										<tr>
-											<th>Date of Loss</th>
-											<th>Line of Coverage</th>
-											<th class="text-right">Claim Number</th>
-											<th class="text-center">Status</th>
-											<th class="text-right">Incurred</th>
-											<th class="text-right">Paid</th>
-											<th class="text-right">Reserved</th>
-											<th class="action">Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td data-title="Date of Loss">9/12/2016</td>
-											<td data-title="Line of Coverage">General Liability</td>
-											<td data-title="Claim Number" class="numeric"><i class="fa fa-exclamation-circle warning">&nbsp;&nbsp;</i>----------</td>
-											<td data-title="Status"><span class="statusBtn grey">Pending</span>
-											</td>
-											<td data-title="Incurred" class="numeric">----------</td>
-											<td data-title="Paid" class="numeric">----------</td>
-											<td data-title="Reserved" class="numeric">----------</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionGray"><i class="fa fa-arrow-circle-right"></i><i class="txt">&nbsp;&nbsp;Continue Claim</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-info-circle"></i><i class="txt">&nbsp;&nbsp;Legacy Claim</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">7/12/2016</td>
-											<td data-title="Line of Coverage">General Liability</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$8,437.59</td>
-											<td data-title="Paid" class="numeric">$4,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">6/24/2016 </td>
-											<td data-title="Line of Coverage">General Liability</td>
-											<td data-title="Claim Number" class="numeric">908888</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$11,507.61</td>
-											<td data-title="Paid" class="numeric">$5,732.34</td>
-											<td data-title="Reserved" class="numeric">$4,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">5/12/2016 </td>
-											<td data-title="Line of Coverage">General Liability</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$5,437.591</td>
-											<td data-title="Paid" class="numeric">$5,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">4/24/2016 </td>
-											<td data-title="Line of Coverage">General Liability</td>
-											<td data-title="Claim Number" class="numeric">908888</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$0.00</td>
-											<td data-title="Paid" class="numeric">$0.00</td>
-											<td data-title="Reserved" class="numeric">$0.00</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">3/12/2016</td>
-											<td data-title="Line of Coverage">General Liability</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$8,437.59</td>
-											<td data-title="Paid" class="numeric">$4,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">2/10/2016</td>
-											<td data-title="Line of Coverage">General Liability</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn blue">Closed</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$8,437.59</td>
-											<td data-title="Paid" class="numeric">$5,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+                                        <tr>
+                                            <th>Date of Loss</th>
+                                            <th>Line of Coverage</th>
+                                            <th class="text-right">Claim Number</th>
+                                            <th class="text-center">Status</th>
+                                            <th class="text-right">Incurred</th>
+                                            <th class="text-right">Paid</th>
+                                            <th class="text-right">Reserved</th>
+                                            <th class="action">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Date of Loss">9/12/2016</td>
+                                            <td data-title="Line of Coverage">General Liability</td>
+                                            <td data-title="Claim Number" class="numeric"><i class="fa fa-exclamation-circle warning">&nbsp;&nbsp;</i>----------</td>
+                                            <td data-title="Status"><span class="statusBtn grey">Pending</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">----------</td>
+                                            <td data-title="Paid" class="numeric">----------</td>
+                                            <td data-title="Reserved" class="numeric">----------</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionGray"><i class="fa fa-arrow-circle-right"></i><i class="txt">&nbsp;&nbsp;Continue Claim</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-info-circle"></i><i class="txt">&nbsp;&nbsp;Legacy Claim</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">7/12/2016</td>
+                                            <td data-title="Line of Coverage">General Liability</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$8,437.59</td>
+                                            <td data-title="Paid" class="numeric">$4,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">6/24/2016 </td>
+                                            <td data-title="Line of Coverage">General Liability</td>
+                                            <td data-title="Claim Number" class="numeric">908888</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$11,507.61</td>
+                                            <td data-title="Paid" class="numeric">$5,732.34</td>
+                                            <td data-title="Reserved" class="numeric">$4,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">5/12/2016 </td>
+                                            <td data-title="Line of Coverage">General Liability</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$5,437.591</td>
+                                            <td data-title="Paid" class="numeric">$5,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">4/24/2016 </td>
+                                            <td data-title="Line of Coverage">General Liability</td>
+                                            <td data-title="Claim Number" class="numeric">908888</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$0.00</td>
+                                            <td data-title="Paid" class="numeric">$0.00</td>
+                                            <td data-title="Reserved" class="numeric">$0.00</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">3/12/2016</td>
+                                            <td data-title="Line of Coverage">General Liability</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$8,437.59</td>
+                                            <td data-title="Paid" class="numeric">$4,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">2/10/2016</td>
+                                            <td data-title="Line of Coverage">General Liability</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn blue">Closed</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$8,437.59</td>
+                                            <td data-title="Paid" class="numeric">$5,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-							</div>
+                            </div>
 
-							<div id="property" class="tab-pane fade tabs-info cams-tables">
+                            <div id="property" class="tab-pane fade tabs-info cams-tables">
 
-								<table class="table-hover table-striped table-condensed">
-									<thead class="cf">
-										<tr>
-											<th>Date of Loss</th>
-											<th>Line of Coverage</th>
-											<th class="text-right">Claim Number</th>
-											<th class="text-center">Status</th>
-											<th class="text-right">Incurred</th>
-											<th class="text-right">Paid</th>
-											<th class="text-right">Reserved</th>
-											<th class="action">Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td data-title="Date of Loss">9/12/2016</td>
-											<td data-title="Line of Coverage">Property</td>
-											<td data-title="Claim Number" class="numeric"><i class="fa fa-exclamation-circle warning">&nbsp;&nbsp;</i>----------</td>
-											<td data-title="Status"><span class="statusBtn grey">Pending</span>
-											</td>
-											<td data-title="Incurred" class="numeric">----------</td>
-											<td data-title="Paid" class="numeric">----------</td>
-											<td data-title="Reserved" class="numeric">----------</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionGray"><i class="fa fa-arrow-circle-right"></i><i class="txt">&nbsp;&nbsp;Continue Claim</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-info-circle"></i><i class="txt">&nbsp;&nbsp;Legacy Claim</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">7/12/2016</td>
-											<td data-title="Line of Coverage">Property</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$8,437.59</td>
-											<td data-title="Paid" class="numeric">$4,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">6/24/2016 </td>
-											<td data-title="Line of Coverage">Property</td>
-											<td data-title="Claim Number" class="numeric">908888</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$11,507.61</td>
-											<td data-title="Paid" class="numeric">$5,732.34</td>
-											<td data-title="Reserved" class="numeric">$4,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">5/12/2016 </td>
-											<td data-title="Line of Coverage">Property</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$5,437.591</td>
-											<td data-title="Paid" class="numeric">$5,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">4/24/2016 </td>
-											<td data-title="Line of Coverage">Property</td>
-											<td data-title="Claim Number" class="numeric">908888</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$14,507.61</td>
-											<td data-title="Paid" class="numeric">$6,732.34</td>
-											<td data-title="Reserved" class="numeric">$4,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">3/12/2016</td>
-											<td data-title="Line of Coverage">Property</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$8,437.59</td>
-											<td data-title="Paid" class="numeric">$4,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">2/10/2016</td>
-											<td data-title="Line of Coverage">Property</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn blue">Closed</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$8,437.59</td>
-											<td data-title="Paid" class="numeric">$5,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+                                <table class="table-hover table-striped table-condensed">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th>Date of Loss</th>
+                                            <th>Line of Coverage</th>
+                                            <th class="text-right">Claim Number</th>
+                                            <th class="text-center">Status</th>
+                                            <th class="text-right">Incurred</th>
+                                            <th class="text-right">Paid</th>
+                                            <th class="text-right">Reserved</th>
+                                            <th class="action">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Date of Loss">9/12/2016</td>
+                                            <td data-title="Line of Coverage">Property</td>
+                                            <td data-title="Claim Number" class="numeric"><i class="fa fa-exclamation-circle warning">&nbsp;&nbsp;</i>----------</td>
+                                            <td data-title="Status"><span class="statusBtn grey">Pending</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">----------</td>
+                                            <td data-title="Paid" class="numeric">----------</td>
+                                            <td data-title="Reserved" class="numeric">----------</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionGray"><i class="fa fa-arrow-circle-right"></i><i class="txt">&nbsp;&nbsp;Continue Claim</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-info-circle"></i><i class="txt">&nbsp;&nbsp;Legacy Claim</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">7/12/2016</td>
+                                            <td data-title="Line of Coverage">Property</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$8,437.59</td>
+                                            <td data-title="Paid" class="numeric">$4,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">6/24/2016 </td>
+                                            <td data-title="Line of Coverage">Property</td>
+                                            <td data-title="Claim Number" class="numeric">908888</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$11,507.61</td>
+                                            <td data-title="Paid" class="numeric">$5,732.34</td>
+                                            <td data-title="Reserved" class="numeric">$4,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">5/12/2016 </td>
+                                            <td data-title="Line of Coverage">Property</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$5,437.591</td>
+                                            <td data-title="Paid" class="numeric">$5,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">4/24/2016 </td>
+                                            <td data-title="Line of Coverage">Property</td>
+                                            <td data-title="Claim Number" class="numeric">908888</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$14,507.61</td>
+                                            <td data-title="Paid" class="numeric">$6,732.34</td>
+                                            <td data-title="Reserved" class="numeric">$4,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">3/12/2016</td>
+                                            <td data-title="Line of Coverage">Property</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$8,437.59</td>
+                                            <td data-title="Paid" class="numeric">$4,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">2/10/2016</td>
+                                            <td data-title="Line of Coverage">Property</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn blue">Closed</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$8,437.59</td>
+                                            <td data-title="Paid" class="numeric">$5,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-							</div>
+                            </div>
 
-							<div id="workers-compensation" class="tab-pane fade tabs-info cams-tables">
+                            <div id="workers-compensation" class="tab-pane fade tabs-info cams-tables">
 
-								<table class="table-hover table-striped table-condensed">
-									<thead class="cf">
-										<tr>
-											<th>Date of Loss</th>
-											<th>Line of Coverage</th>
-											<th class="text-right">Claim Number</th>
-											<th class="text-center">Status</th>
-											<th class="text-right">Incurred</th>
-											<th class="text-right">Paid</th>
-											<th class="text-right">Reserved</th>
-											<th class="action">Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td data-title="Date of Loss">9/12/2016</td>
-											<td data-title="Line of Coverage">Workers' Compensation</td>
-											<td data-title="Claim Number" class="numeric"><i class="fa fa-exclamation-circle warning">&nbsp;&nbsp;</i>----------</td>
-											<td data-title="Status"><span class="statusBtn grey">Pending</span>
-											</td>
-											<td data-title="Incurred" class="numeric">----------</td>
-											<td data-title="Paid" class="numeric">----------</td>
-											<td data-title="Reserved" class="numeric">----------</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionGray"><i class="fa fa-arrow-circle-right"></i><i class="txt">&nbsp;&nbsp;Continue Claim</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-info-circle"></i><i class="txt">&nbsp;&nbsp;Legacy Claim</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">7/12/2016</td>
-											<td data-title="Line of Coverage">Workers' Compensation</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$8,437.59</td>
-											<td data-title="Paid" class="numeric">$4,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">6/24/2016 </td>
-											<td data-title="Line of Coverage">Workers' Compensation</td>
-											<td data-title="Claim Number" class="numeric">908888</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$11,507.61</td>
-											<td data-title="Paid" class="numeric">$5,732.34</td>
-											<td data-title="Reserved" class="numeric">$4,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">5/12/2016 </td>
-											<td data-title="Line of Coverage">Workers' Compensation</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$5,437.591</td>
-											<td data-title="Paid" class="numeric">$5,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">4/24/2016 </td>
-											<td data-title="Line of Coverage">Workers' Compensation</td>
-											<td data-title="Claim Number" class="numeric">908888</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$14,507.61</td>
-											<td data-title="Paid" class="numeric">$6,732.34</td>
-											<td data-title="Reserved" class="numeric">$4,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">3/12/2016</td>
-											<td data-title="Line of Coverage">Workers' Compensation</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn green">Open</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$8,437.59</td>
-											<td data-title="Paid" class="numeric">$4,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-										<tr>
-											<td data-title="Date of Loss">2/10/2016</td>
-											<td data-title="Line of Coverage">Workers' Compensation</td>
-											<td data-title="Claim Number" class="numeric">064384</td>
-											<td data-title="Status"><span class="statusBtn blue">Closed</span>
-											</td>
-											<td data-title="Incurred" class="numeric">$8,437.59</td>
-											<td data-title="Paid" class="numeric">$5,434.45</td>
-											<td data-title="Reserved" class="numeric">$3,384.34</td>
-											<td data-title="Action" class="actionBtn">
-												<a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
-												<a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+                                <table class="table-hover table-striped table-condensed">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th>Date of Loss</th>
+                                            <th>Line of Coverage</th>
+                                            <th class="text-right">Claim Number</th>
+                                            <th class="text-center">Status</th>
+                                            <th class="text-right">Incurred</th>
+                                            <th class="text-right">Paid</th>
+                                            <th class="text-right">Reserved</th>
+                                            <th class="action">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Date of Loss">9/12/2016</td>
+                                            <td data-title="Line of Coverage">Workers' Compensation</td>
+                                            <td data-title="Claim Number" class="numeric"><i class="fa fa-exclamation-circle warning">&nbsp;&nbsp;</i>----------</td>
+                                            <td data-title="Status"><span class="statusBtn grey">Pending</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">----------</td>
+                                            <td data-title="Paid" class="numeric">----------</td>
+                                            <td data-title="Reserved" class="numeric">----------</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionGray"><i class="fa fa-arrow-circle-right"></i><i class="txt">&nbsp;&nbsp;Continue Claim</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-info-circle"></i><i class="txt">&nbsp;&nbsp;Legacy Claim</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">7/12/2016</td>
+                                            <td data-title="Line of Coverage">Workers' Compensation</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$8,437.59</td>
+                                            <td data-title="Paid" class="numeric">$4,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">6/24/2016 </td>
+                                            <td data-title="Line of Coverage">Workers' Compensation</td>
+                                            <td data-title="Claim Number" class="numeric">908888</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$11,507.61</td>
+                                            <td data-title="Paid" class="numeric">$5,732.34</td>
+                                            <td data-title="Reserved" class="numeric">$4,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">5/12/2016 </td>
+                                            <td data-title="Line of Coverage">Workers' Compensation</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$5,437.591</td>
+                                            <td data-title="Paid" class="numeric">$5,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">4/24/2016 </td>
+                                            <td data-title="Line of Coverage">Workers' Compensation</td>
+                                            <td data-title="Claim Number" class="numeric">908888</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$14,507.61</td>
+                                            <td data-title="Paid" class="numeric">$6,732.34</td>
+                                            <td data-title="Reserved" class="numeric">$4,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">3/12/2016</td>
+                                            <td data-title="Line of Coverage">Workers' Compensation</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn green">Open</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$8,437.59</td>
+                                            <td data-title="Paid" class="numeric">$4,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Date of Loss">2/10/2016</td>
+                                            <td data-title="Line of Coverage">Workers' Compensation</td>
+                                            <td data-title="Claim Number" class="numeric">064384</td>
+                                            <td data-title="Status"><span class="statusBtn blue">Closed</span>
+                                            </td>
+                                            <td data-title="Incurred" class="numeric">$8,437.59</td>
+                                            <td data-title="Paid" class="numeric">$5,434.45</td>
+                                            <td data-title="Reserved" class="numeric">$3,384.34</td>
+                                            <td data-title="Action" class="actionBtn">
+                                                <a href="" class="actionBlue"><i class="fa fa-edit"></i><i class="txt">&nbsp;&nbsp;Incident Report</i></a>
+                                                <a href="" class="actionBlue"><i class="fa fa-eye"></i><i class="txt">&nbsp;&nbsp;Claim Details</i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-							</div>
-						</div>
-					</div>
-				</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 widget widget1">
-					<div class="statistics panel panel-primary">
-						<div class="panel-heading">
-							<div class="btn-group">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bars"></i>&nbsp;&nbsp; CLAIMS OVERVIEW</a>
-								<ul class="dropdown-menu">
-									<li><a href="#" class="W1">Open Status</a>
-									</li>
-									<li><a href="#" class="W2">Incurred Status</a>
-									</li>
-									<li><a href="my-claims.html">Yearly Review</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="panel-body widget-content">
-							<div class="progressContainer">
-								<h4 class="type"><i class="fa fa-car"></i>&nbsp;&nbsp;Automobile</h4>
-								<div class="progress">
-									<div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="45 Pending" style="width: 35%">
-									</div>
-									<div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="15 Open" data-toggle="tooltip" style="width: 15%">
-									</div>
-									<div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="40 Closed" style="width: 50%">
-									</div>
-								</div>
-							</div>
-							<div class="progressContainer">
-								<h4 class="type"><i class="fa fa-shield"></i>&nbsp;&nbsp;General Liability</h4>
-								<div class="progress">
-									<div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="10 Pending" style="width: 10%">
-									</div>
-									<div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="30 Open" data-toggle="tooltip" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="60 Closed" style="width: 60%">
-									</div>
-								</div>
-							</div>
-							<div class="progressContainer">
-								<h4 class="type"><i class="fa fa-building"></i>&nbsp;&nbsp;Property</h4>
-								<div class="progress">
-									<div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="10 Pending" style="width: 10%">
-									</div>
-									<div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="30 Open" data-toggle="tooltip" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="60 Closed" style="width: 60%">
-									</div>
-								</div>
-							</div>
-							<div class="progressContainer">
-								<h4 class="type"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Workers' Compensation</h4>
-								<div class="progress">
-									<div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="10 Pending" style="width: 10%">
-									</div>
-									<div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="30 Open" data-toggle="tooltip" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="60 Closed" style="width: 60%">
-									</div>
-								</div>
-							</div>
-							<div class="progressContainer col-xs-12">
-								<div class="stats col-xs-4">
-									<span class="number grey">40</span>
-									<span class="type">Pending</span>
-								</div>
-								<div class="stats col-xs-4">
-									<span class="number darkblue">120</span>
-									<span class="type">Open</span>
-								</div>
-								<div class="stats col-xs-4">
-									<span class="number blue">240</span>
-									<span class="type">Closed</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="statistics panel panel-primary">
-						<div class="panel-heading"><a href="">MY LATEST TASKS</a>
-						</div>
-						<div class="panel-body latest widget-content">
-							<div class="first">
-								<div class="line"><span class="title">Claim Number:</span>&nbsp; <span class="content">9837298</span>
-								</div>
-								<div class="line"><span class="title">Status:</span>&nbsp;<span class="status grey"> Not Started</span>
-								</div>
-								<div class="line"><span class="title">Due date:</span>&nbsp;<span class="content">10/23/2016</span>
-								</div>
-								<div class="line"><span class="title">Subject:</span>&nbsp;<span class="content">Obtain Update</span>
-								</div>
-							</div>
-							<div class="second">
-								<div class="line"><span class="title">Claim Number:</span>&nbsp; <span class="content">90677988</span>
-								</div>
-								<div class="line"><span class="title">Status:</span>&nbsp; <span class="status green">In Progress</span>
-								</div>
-								<div class="line"><span class="title">Due date:</span>&nbsp; <span class="content">8/13/2016</span>
-								</div>
-								<div class="line"><span class="title">Subject:</span>&nbsp; <span class="content">Claim Closed</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 widget widget1">
+                    <div class="statistics panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="btn-group">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bars"></i>&nbsp;&nbsp; CLAIMS OVERVIEW</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="W1">Open Status</a>
+                                    </li>
+                                    <li><a href="#" class="W2">Incurred Status</a>
+                                    </li>
+                                    <li><a href="my-claims.html">Yearly Review</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-body widget-content">
+                            <div class="progressContainer">
+                                <h4 class="type"><i class="fa fa-car"></i>&nbsp;&nbsp;Automobile</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="45 Pending" style="width: 35%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="15 Open" data-toggle="tooltip" style="width: 15%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="40 Closed" style="width: 50%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressContainer">
+                                <h4 class="type"><i class="fa fa-shield"></i>&nbsp;&nbsp;General Liability</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="10 Pending" style="width: 10%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="30 Open" data-toggle="tooltip" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="60 Closed" style="width: 60%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressContainer">
+                                <h4 class="type"><i class="fa fa-building"></i>&nbsp;&nbsp;Property</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="10 Pending" style="width: 10%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="30 Open" data-toggle="tooltip" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="60 Closed" style="width: 60%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressContainer">
+                                <h4 class="type"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Workers' Compensation</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="10 Pending" style="width: 10%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="30 Open" data-toggle="tooltip" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="60 Closed" style="width: 60%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressContainer col-xs-12">
+                                <div class="stats col-xs-4">
+                                    <span class="number grey">40</span>
+                                    <span class="type">Pending</span>
+                                </div>
+                                <div class="stats col-xs-4">
+                                    <span class="number darkblue">120</span>
+                                    <span class="type">Open</span>
+                                </div>
+                                <div class="stats col-xs-4">
+                                    <span class="number blue">240</span>
+                                    <span class="type">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statistics panel panel-primary">
+                        <div class="panel-heading"><a href="">MY LATEST TASKS</a>
+                        </div>
+                        <div class="panel-body latest widget-content">
+                            <div class="first">
+                                <div class="line"><span class="title">Claim Number:</span>&nbsp; <span class="content">9837298</span>
+                                </div>
+                                <div class="line"><span class="title">Status:</span>&nbsp;<span class="status grey"> Not Started</span>
+                                </div>
+                                <div class="line"><span class="title">Due date:</span>&nbsp;<span class="content">10/23/2016</span>
+                                </div>
+                                <div class="line"><span class="title">Subject:</span>&nbsp;<span class="content">Obtain Update</span>
+                                </div>
+                            </div>
+                            <div class="second">
+                                <div class="line"><span class="title">Claim Number:</span>&nbsp; <span class="content">90677988</span>
+                                </div>
+                                <div class="line"><span class="title">Status:</span>&nbsp; <span class="status green">In Progress</span>
+                                </div>
+                                <div class="line"><span class="title">Due date:</span>&nbsp; <span class="content">8/13/2016</span>
+                                </div>
+                                <div class="line"><span class="title">Subject:</span>&nbsp; <span class="content">Claim Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 widget widget2">
-					<div class="statistics panel panel-primary">
-						<div class="panel-heading ">
-							<div class="btn-group">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bars"></i>&nbsp;&nbsp; CLAIMS OVERVIEW</a>
-								<ul class="dropdown-menu">
-									<li><a href="#" class="W1">Open Status</a>
-									</li>
-									<li><a href="#" class="W2">Incurred Status</a>
-									</li>
-									<li><a href="my-claims.html">Yearly Review</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="panel-body widget-content">
-							<div class="progressContainer">
-								<h4 class="type"><i class="fa fa-car"></i>&nbsp;&nbsp;Automobile</h4>
-								<div class="progress">
-									<div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="$119,343,939 Inccured" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="$117.794,90 Paid" data-toggle="tooltip" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="$293,430,939 Reserved" style="width: 40%">
-									</div>
-								</div>
-							</div>
-							<div class="progressContainer">
-								<h4 class="type"><i class="fa fa-shield"></i>&nbsp;&nbsp;General liability</h4>
-								<div class="progress">
-									<div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="$119,343,939 Inccured" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="$117.794,90 Paid" data-toggle="tooltip" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="$293,430,939 Reserved" style="width: 40%">
-									</div>
-								</div>
-							</div>
-							<div class="progressContainer">
-								<h4 class="type"><i class="fa fa-building"></i>&nbsp;&nbsp;Property</h4>
-								<div class="progress">
-									<div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="$119,343,939 Inccured" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="$117.794,90 Paid" data-toggle="tooltip" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="$293,430,939 Reserved" style="width: 40%">
-									</div>
-								</div>
-							</div>
-							<div class="progressContainer">
-								<h4 class="type"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Workers Compensation</h4>
-								<div class="progress">
-									<div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="$119,343,939 Inccured" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="$117.794,90 Paid" data-toggle="tooltip" style="width: 30%">
-									</div>
-									<div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="$293,430,939 Reserved" style="width: 40%">
-									</div>
-								</div>
-							</div>
-							<div class="progressContainer col-xs-12">
-								<div class="stats col-xs-4">
-									<span class="number grey">357k</span>
-									<span class="type">Incurred</span>
-								</div>
-								<div class="stats col-xs-4">
-									<span class="number darkblue">351k</span>
-									<span class="type">Paid</span>
-								</div>
-								<div class="stats col-xs-4">
-									<span class="number blue">879k</span>
-									<span class="type">Reserved</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="statistics panel panel-primary">
-						<div class="panel-heading"><a href="">MY LATEST TASKS</a>
-						</div>
-						<div class="panel-body latest widget-content">
-							<div class="first">
-								<div class="line"><span class="title">Claim Number:</span>&nbsp; <span class="content">9837298</span>
-								</div>
-								<div class="line"><span class="title">Status:</span>&nbsp;<span class="status grey"> Not Started</span>
-								</div>
-								<div class="line"><span class="title">Due date:</span>&nbsp;<span class="content">10/23/2016</span>
-								</div>
-								<div class="line"><span class="title">Subject:</span>&nbsp;<span class="content">Obtain Update</span>
-								</div>
-							</div>
-							<div class="second">
-								<div class="line"><span class="title">Claim Number:</span><span class="content">&nbsp;90677988</span>
-								</div>
-								<div class="line"><span class="title">Status:</span><span class="status green">&nbsp; In Progress</span>
-								</div>
-								<div class="line"><span class="title">Due date:</span><span class="content">&nbsp;8/13/2016</span>
-								</div>
-								<div class="line"><span class="title">Subject:</span><span class="content">&nbsp;Claim Closed</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 widget widget2">
+                    <div class="statistics panel panel-primary">
+                        <div class="panel-heading ">
+                            <div class="btn-group">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bars"></i>&nbsp;&nbsp; CLAIMS OVERVIEW</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="W1">Open Status</a>
+                                    </li>
+                                    <li><a href="#" class="W2">Incurred Status</a>
+                                    </li>
+                                    <li><a href="my-claims.html">Yearly Review</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-body widget-content">
+                            <div class="progressContainer">
+                                <h4 class="type"><i class="fa fa-car"></i>&nbsp;&nbsp;Automobile</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="$119,343,939 Inccured" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="$117.794,90 Paid" data-toggle="tooltip" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="$293,430,939 Reserved" style="width: 40%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressContainer">
+                                <h4 class="type"><i class="fa fa-shield"></i>&nbsp;&nbsp;General liability</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="$119,343,939 Inccured" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="$117.794,90 Paid" data-toggle="tooltip" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="$293,430,939 Reserved" style="width: 40%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressContainer">
+                                <h4 class="type"><i class="fa fa-building"></i>&nbsp;&nbsp;Property</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="$119,343,939 Inccured" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="$117.794,90 Paid" data-toggle="tooltip" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="$293,430,939 Reserved" style="width: 40%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressContainer">
+                                <h4 class="type"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Workers Compensation</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-grey" data-toggle="tooltip" data-placement="bottom" title="$119,343,939 Inccured" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-darkblue progress-bar-striped" data-placement="bottom" title="$117.794,90 Paid" data-toggle="tooltip" style="width: 30%">
+                                    </div>
+                                    <div class="progress-bar progress-bar-blue" data-toggle="tooltip" data-placement="bottom" title="$293,430,939 Reserved" style="width: 40%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressContainer col-xs-12">
+                                <div class="stats col-xs-4">
+                                    <span class="number grey">357k</span>
+                                    <span class="type">Incurred</span>
+                                </div>
+                                <div class="stats col-xs-4">
+                                    <span class="number darkblue">351k</span>
+                                    <span class="type">Paid</span>
+                                </div>
+                                <div class="stats col-xs-4">
+                                    <span class="number blue">879k</span>
+                                    <span class="type">Reserved</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statistics panel panel-primary">
+                        <div class="panel-heading"><a href="">MY LATEST TASKS</a>
+                        </div>
+                        <div class="panel-body latest widget-content">
+                            <div class="first">
+                                <div class="line"><span class="title">Claim Number:</span>&nbsp; <span class="content">9837298</span>
+                                </div>
+                                <div class="line"><span class="title">Status:</span>&nbsp;<span class="status grey"> Not Started</span>
+                                </div>
+                                <div class="line"><span class="title">Due date:</span>&nbsp;<span class="content">10/23/2016</span>
+                                </div>
+                                <div class="line"><span class="title">Subject:</span>&nbsp;<span class="content">Obtain Update</span>
+                                </div>
+                            </div>
+                            <div class="second">
+                                <div class="line"><span class="title">Claim Number:</span><span class="content">&nbsp;90677988</span>
+                                </div>
+                                <div class="line"><span class="title">Status:</span><span class="status green">&nbsp; In Progress</span>
+                                </div>
+                                <div class="line"><span class="title">Due date:</span><span class="content">&nbsp;8/13/2016</span>
+                                </div>
+                                <div class="line"><span class="title">Subject:</span><span class="content">&nbsp;Claim Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 
-	<div class="text-center copyright">
-		<p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
-	</div>
-	<script type="text/javascript" src="../js/tooltip.js"></script>
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+    </div>
+    <script type="text/javascript" src="../js/tooltip.js"></script>
 
 </body>
 

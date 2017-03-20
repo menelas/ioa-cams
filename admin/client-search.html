@@ -2,451 +2,464 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Insurance Office of America - CAMS</title>
-   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-   <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-   <link rel="stylesheet" href="../css/app/app.css">
-   <link rel="stylesheet" href="../css/producer/workers-comp-search.css">
-   <script type="text/javascript" src="../js/jquery.min.js"></script>
-   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America - CAMS</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/app/app.css">
+    <link rel="stylesheet" href="../css/producer/workers-comp-search.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body class="cams-pad cams-page">
-   <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
-      <div class="container-fluid menu-margin">
-         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
-            </a>
-            <h4 class="company-title">Insurance Office of America</h4>
-            <h5>Claims Advocate Management System</h5>
-         </div>
-         <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav navbar-right">
-               <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
-                  <ul class="dropdown-menu">
-                     <div class="arrow-up"></div>
-                     <li><a href="#">Custom Claims Kit</a>
-                     </li>
-                     <li><a href="#">IOA RiskScore</a>
-                     </li>
-                     <li><a href="#">Learning Management System</a>
-                     </li>
-                  </ul>
-               </li>
-               <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu">
-                     <div class="arrow-up"></div>
-                     <li><a href="#">Edit Profile</a>
-                     </li>
-                     <li><a href="../admin/help-request.html">Help</a>
-                     </li>
-                     <li><a href="#">Logout</a>
-                     </li>
-                  </ul>
-               </li>
-            </ul>
-         </div>
-      </div>
-   </nav>
-   <div class="container-fluid content">
-      <div class="row sidebar-container">
-         <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
-            <ul class="nav nav-sidebar">
-               <li>
-                  <a href="dashboard.html">
-                     <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
-                  </a>
-                  <hr />
-               </li>
-               <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu">
-                     <li><a href="../client/claim-add-new.html">Add New</a>
-                        <hr>
-                     </li>
-                     <li><a href="../client/search-claims.html">View Claims</a>
-                        <hr>
-                     </li>
-                     <li><a href="../client/tasks.html">Tasks</a>
-                        <hr>
-                     </li>
-                     <li><a href="../producer/trigger-search.html">Triggers</a>
-                        <hr>
-                     </li>
-                  </ul>
-                  <hr />
-               </li>
-               <li>
-                  <a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
-                  <hr />
-               </li>
-
-               <li>
-                  <a href="../client/company-info.html">
-                     <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
-                  </a>
-                  <hr />
-               </li>
-
-               <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu servicing-team">
-
-                     <div class="col-xs-6 col-md-6">
-                        <li>Producer(s):</li>
-                        <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
-                        <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
-                        </li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
-                        </li>
-
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
+                </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Claims Advocate Management System</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Custom Claims Kit</a>
+                            </li>
+                            <li><a href="#">IOA RiskScore</a>
+                            </li>
+                            <li><a href="#">Learning Management System</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="../admin/help-request.html">Help</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content">
+        <div class="row sidebar-container">
+            <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
+                        </a>
                         <hr />
-
-                        <li>Claim Contact(s):</li>
-                        <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
-                        <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
-                        </li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
-                        </li>
-
-
-                     </div>
-
-                     <div class="col-xs-6 col-md-6">
-                        <li>Policy Information:</li>
-                        <li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
-                        <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
-                        </li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
-                        </li>
-
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../client/claim-add-new.html">Add New</a>
+                                <hr>
+                            </li>
+                            <li><a href="../client/search-claims.html">View Claims</a>
+                                <hr>
+                            </li>
+                            <li><a href="../client/tasks.html">Tasks</a>
+                                <hr>
+                            </li>
+                            <li><a href="../producer/trigger-search.html">Triggers</a>
+                                <hr>
+                            </li>
+                        </ul>
                         <hr />
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
+                        <hr />
+                    </li>
+
+                    <li>
+                        <a href="../client/company-info.html">
+                            <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
+                        </a>
+                        <hr />
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu servicing-team">
+
+                            <div class="col-xs-6 col-md-6">
+                                <li>Producer(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
+                                </li>
+
+                                <hr />
+
+                                <li>Claim Contact(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
+                                </li>
 
 
-                        <li>Technical Contact:</li>
-                        <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
-                        <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
-                        </li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
-                        </li>
+                            </div>
 
-                     </div>
-                  </ul>
-               </li>
+                            <div class="col-xs-6 col-md-6">
+                                <li>Policy Information:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
+                                </li>
 
-               <hr />
+                                <hr />
 
 
-               <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu">
-                     <li><a href="#">Carriers</a>
-                        <hr>
-                     </li>
-                     <li><a href="#">Document Mgmt</a>
-                        <hr>
-                     </li>
-                     <li><a href="#">Loss Run Import</a>
-                        <hr>
-                     </li>
-                     <li><a href="#">Users</a>
-                        <hr>
-                     </li>
-                  </ul>
-                  <hr />
-               </li>
+                                <li>Technical Contact:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
+                                </li>
 
-               <ul class="nav nav-sidebar nav-sidebar2">
-                  <li class="dropdown">
-                     <hr>
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <hr />
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../client/claim-report.html">Summary</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">OSHA</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Carriers</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Document Mgmt</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Loss Run Import</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Users</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <ul class="nav nav-sidebar nav-sidebar2">
+                        <li class="dropdown">
+                            <hr>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
                      <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="#">Edit Profile</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Edit Profile</a>
+                                </li>
+                                <li><a href="../admin/help-request.html">Help</a>
+                                </li>
+                                <li><a href="#">Logout</a>
+                                </li>
+                            </ul>
+                            <hr>
                         </li>
-                        <li><a href="../admin/help-request.html">Help</a>
-                        </li>
-                        <li><a href="#">Logout</a>
-                        </li>
-                     </ul>
-                     <hr>
-                  </li>
-               </ul>
-            </ul>
-         </div>
-         <!-- Body -->
-         <div class="body-container">
-
-            <ol class="breadcrumb">
-               <li class="active"><a href="#"><i class="fa fa-search"></i> Client Search</a></li>
-            </ol>
-
-            <form role="form" id="client-search-form" action="" class="form-validation-enabled clearfix" method="post">
-               <input id="ClientSearchRequest" name="ClientSearchRequest" type="hidden" value="">
-               <div class="col-lg-3 col-md-6 col-sm-7">
-                  <div class="form-group input-md">
-                     <input class="form-control watermark" id="ClientSearchRequest_Name" name="ClientSearchRequest.Name" placeholder="Please type here to search..." type="text" value="">
-                  </div>
-               </div>
-               <div class="col-lg-9 col-md-12 col-sm-12">
-                  <div class="alphabet-toolbar">
-                     <div class="alphabet-group">
-                        <a href="#">A</a>
-                        <a href="#">B</a>
-                        <a href="#">C</a>
-                        <a href="#">D</a>
-                        <a href="#">E</a>
-                        <a href="#">F</a>
-                        <a href="#">G</a>
-                        <a href="#">H</a>
-                        <a href="#">I</a>
-                        <a href="#">J</a>
-                        <a href="#">K</a>
-                        <a href="#">L</a>
-                        <a href="#">M</a>
-                        <a href="#">N</a>
-                        <a href="#">O</a>
-                        <a href="#">P</a>
-                        <a href="#">Q</a>
-                        <a href="#">R</a>
-                        <a href="#">S</a>
-                        <a href="#">T</a>
-                        <a href="#">U</a>
-                        <a href="#">V</a>
-                        <a href="#">W</a>
-                        <a href="#">X</a>
-                        <a href="#">Y</a>
-                        <a href="#">Z</a>
-                        <button id="client-clearsearch-button" class="btn btn-primary" type="button">Clear Selected</button>
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                  <input id="IncludeInactiveClients" name="IncludeInactiveClients" type="checkbox" value="true">
-                  <label for="IncludeInactiveClients">Include inactive clients</label>
-               </div>
-            </form>
-            <div class="clients-view-result">
-               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
-                  <div class="clearfix panel-heading tableheader">
-                     <div class="pull-left head-drop">
-                        MUTI/Midwest Underground Technology Inc.
-                     </div>
-                     <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="panel-body">
-                  <a href="#">
-                     <div class="cams-tables client-detail clearfix">
-                        <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                        <p>2626 Midwest Court
-                           <br />Champaign, IL 61822</p>
-                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <p>(217)-819-3040</p>
-                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                        <p>Lemmon, Toni
-                           <br /> (217)-819-3040
-                        </p>
-                        <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                        <p> Eades, Bruce
-                           <br /> (678)-923-3336
-                        </p>
-                        <span class="statusBtn green">ACTIVE CLIENT</span>
-                     </div>
-                  </a>
-                  </div>
-               </div>
-
-               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
-                  <div class="clearfix panel-heading tableheader">
-                     <div class="pull-left head-drop">
-                        Advance Utility Design, Inc.
-                     </div>
-                     <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
-                  </div>
-
-                  <div class="panel-body">
-                  <a href="#">
-                     <div class="cams-tables client-detail clearfix">
-                        <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                        <p>5500 Commerce Drive
-                           <br />Orlando, Fl 32839</p>
-                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <p>(407)-243-6899</p>
-                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                        <p>Lemmon, Toni
-                           <br /> (217)-819-3040
-                        </p>
-                        <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                        <p> Eades, Bruce
-                           <br /> (678)-923-3336
-                        </p>
-                        <span class="statusBtn green">ACTIVE CLIENT</span>
-                     </div>
-                  </a>
-                  </div>
-               </div>
-
-               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
-                  <div class="clearfix panel-heading tableheader">
-                     <div class="pull-left head-drop">
-                        Capital Golf Carts, Inc.
-                     </div>
-                     <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="panel-body">
-                  <a href="#">
-                     <div class="cams-tables client-detail clearfix">
-                        <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                        <p>1015 Illinois Ave
-                           <br />Palm Harbor, FL 34683</p>
-                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <p>(727)-647-7999</p>
-                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                        <p>Lemmon, Toni
-                           <br /> (217)-819-3040
-                        </p>
-                        <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                        <p> Eades, Bruce
-                           <br /> (678)-923-3336
-                        </p>
-                        <span class="statusBtn green">ACTIVE CLIENT</span>
-                     </div>
-                  </a>
-                  </div>
-               </div>
-
-               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
-                  <div class="clearfix panel-heading tableheader">
-                     <div class="pull-left head-drop">
-                        1-800 Radiator Marietta, Inc.
-                     </div>
-                     <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="panel-body">
-                  <a href="#">
-                     <div class="cams-tables client-detail clearfix">
-                        <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                        <p>1665 Lakes Parkway
-                           <br />Lawrenceville, GA 30043</p>
-                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <p>(700)-628-4839</p>
-                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                        <p>Lemmon, Toni
-                           <br /> (217)-819-3040
-                        </p>
-                        <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                        <p> Eades, Bruce
-                           <br /> (678)-923-3336
-                        </p>
-                        <span class="statusBtn green">ACTIVE CLIENT</span>
-                     </div>
-                  </a>
-                  </div>
-               </div>
-
-               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
-                  <div class="clearfix panel-heading tableheader">
-                     <div class="pull-left head-drop">
-                        Advanced Tower Solutions, LLC
-                     </div>
-                     <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="panel-body">
-                  <a href="#">
-                     <div class="cams-tables client-detail clearfix">
-                        <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                        <p>10210 Governor Lane Blvd
-                           <br />Williamsport, MD 21745</p>
-                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <p>(240)-329-5077</p>
-                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                        <p>Lemmon, Toni
-                           <br /> (217)-819-3040
-                        </p>
-                        <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                        <p> Eades, Bruce
-                           <br /> (678)-923-3336
-                        </p>
-                        <span class="statusBtn green">ACTIVE CLIENT</span>
-                     </div>
-                  </a>
-                  </div>
-               </div>
-
-               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
-                  <div class="clearfix panel-heading tableheader">
-                     <div class="pull-left head-drop">
-                        Affordable Glass Protection, Inc.
-                     </div>
-                     <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="panel-body">
-                  <a href="#">
-                     <div class="cams-tables client-detail clearfix">
-                        <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                        <p>2555 Michigan Street
-                           <br />West Melbourne, FL 32904</p>
-                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <p>(321)-844-4933</p>
-                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                        <p>Lemmon, Toni
-                           <br /> (217)-819-3040
-                        </p>
-                        <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                        <p> Eades, Bruce
-                           <br /> (678)-923-3336
-                        </p>
-                        <span class="statusBtn green">ACTIVE CLIENT</span>
-                     </div>
-                  </a>
-                  </div>
-               </div>
+                    </ul>
+                </ul>
             </div>
+            <!-- Body -->
+            <div class="body-container">
 
-            <div class="text-center">
-               <nav aria-label="Page navigation">
-                  <ul class="pagination">
-                     <li>
-                        <a href="#" aria-label="Previous">
-                           <span aria-hidden="true">&laquo;</span>
-                        </a>
-                     </li>
-                     <li class="active"><a href="#">1</a>
-                     </li>
-                     <li><a href="#">2</a>
-                     </li>
-                     <li><a href="#">3</a>
-                     </li>
-                     <li><a href="#">4</a>
-                     </li>
-                     <li><a href="#">5</a>
-                     </li>
-                     <li>
-                        <a href="#" aria-label="Next">
-                           <span aria-hidden="true">&raquo;</span>
-                        </a>
-                     </li>
-                  </ul>
-               </nav>
+                <ol class="breadcrumb">
+                    <li class="active"><a href="#"><i class="fa fa-search"></i> Client Search</a>
+                    </li>
+                </ol>
+
+                <form role="form" id="client-search-form" action="" class="form-validation-enabled clearfix" method="post">
+                    <input id="ClientSearchRequest" name="ClientSearchRequest" type="hidden" value="">
+                    <div class="col-lg-3 col-md-6 col-sm-7">
+                        <div class="form-group input-md">
+                            <input class="form-control watermark" id="ClientSearchRequest_Name" name="ClientSearchRequest.Name" placeholder="Please type here to search..." type="text" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        <div class="alphabet-toolbar">
+                            <div class="alphabet-group">
+                                <a href="#">A</a>
+                                <a href="#">B</a>
+                                <a href="#">C</a>
+                                <a href="#">D</a>
+                                <a href="#">E</a>
+                                <a href="#">F</a>
+                                <a href="#">G</a>
+                                <a href="#">H</a>
+                                <a href="#">I</a>
+                                <a href="#">J</a>
+                                <a href="#">K</a>
+                                <a href="#">L</a>
+                                <a href="#">M</a>
+                                <a href="#">N</a>
+                                <a href="#">O</a>
+                                <a href="#">P</a>
+                                <a href="#">Q</a>
+                                <a href="#">R</a>
+                                <a href="#">S</a>
+                                <a href="#">T</a>
+                                <a href="#">U</a>
+                                <a href="#">V</a>
+                                <a href="#">W</a>
+                                <a href="#">X</a>
+                                <a href="#">Y</a>
+                                <a href="#">Z</a>
+                                <button id="client-clearsearch-button" class="btn btn-primary" type="button">Clear Selected</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                        <input id="IncludeInactiveClients" name="IncludeInactiveClients" type="checkbox" value="true">
+                        <label for="IncludeInactiveClients">Include inactive clients</label>
+                    </div>
+                </form>
+                <div class="clients-view-result">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
+                        <div class="clearfix panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                MUTI/Midwest Underground Technology Inc.
+                            </div>
+                            <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#">
+                                <div class="cams-tables client-detail clearfix">
+                                    <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                                    <p>2626 Midwest Court
+                                        <br />Champaign, IL 61822</p>
+                                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    <p>(217)-819-3040</p>
+                                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    <p>Lemmon, Toni
+                                        <br /> (217)-819-3040
+                                    </p>
+                                    <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                    <p> Eades, Bruce
+                                        <br /> (678)-923-3336
+                                    </p>
+                                    <span class="statusBtn green">ACTIVE CLIENT</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
+                        <div class="clearfix panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Advance Utility Design, Inc.
+                            </div>
+                            <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="panel-body">
+                            <a href="#">
+                                <div class="cams-tables client-detail clearfix">
+                                    <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                                    <p>5500 Commerce Drive
+                                        <br />Orlando, Fl 32839</p>
+                                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    <p>(407)-243-6899</p>
+                                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    <p>Lemmon, Toni
+                                        <br /> (217)-819-3040
+                                    </p>
+                                    <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                    <p> Eades, Bruce
+                                        <br /> (678)-923-3336
+                                    </p>
+                                    <span class="statusBtn green">ACTIVE CLIENT</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
+                        <div class="clearfix panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Capital Golf Carts, Inc.
+                            </div>
+                            <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#">
+                                <div class="cams-tables client-detail clearfix">
+                                    <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                                    <p>1015 Illinois Ave
+                                        <br />Palm Harbor, FL 34683</p>
+                                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    <p>(727)-647-7999</p>
+                                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    <p>Lemmon, Toni
+                                        <br /> (217)-819-3040
+                                    </p>
+                                    <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                    <p> Eades, Bruce
+                                        <br /> (678)-923-3336
+                                    </p>
+                                    <span class="statusBtn green">ACTIVE CLIENT</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
+                        <div class="clearfix panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                1-800 Radiator Marietta, Inc.
+                            </div>
+                            <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#">
+                                <div class="cams-tables client-detail clearfix">
+                                    <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                                    <p>1665 Lakes Parkway
+                                        <br />Lawrenceville, GA 30043</p>
+                                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    <p>(700)-628-4839</p>
+                                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    <p>Lemmon, Toni
+                                        <br /> (217)-819-3040
+                                    </p>
+                                    <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                    <p> Eades, Bruce
+                                        <br /> (678)-923-3336
+                                    </p>
+                                    <span class="statusBtn green">ACTIVE CLIENT</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
+                        <div class="clearfix panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Advanced Tower Solutions, LLC
+                            </div>
+                            <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#">
+                                <div class="cams-tables client-detail clearfix">
+                                    <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                                    <p>10210 Governor Lane Blvd
+                                        <br />Williamsport, MD 21745</p>
+                                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    <p>(240)-329-5077</p>
+                                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    <p>Lemmon, Toni
+                                        <br /> (217)-819-3040
+                                    </p>
+                                    <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                    <p> Eades, Bruce
+                                        <br /> (678)-923-3336
+                                    </p>
+                                    <span class="statusBtn green">ACTIVE CLIENT</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 panel tablecontainer">
+                        <div class="clearfix panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Affordable Glass Protection, Inc.
+                            </div>
+                            <a href=""><i class="fa fa-times pull-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#">
+                                <div class="cams-tables client-detail clearfix">
+                                    <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                                    <p>2555 Michigan Street
+                                        <br />West Melbourne, FL 32904</p>
+                                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    <p>(321)-844-4933</p>
+                                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    <p>Lemmon, Toni
+                                        <br /> (217)-819-3040
+                                    </p>
+                                    <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                    <p> Eades, Bruce
+                                        <br /> (678)-923-3336
+                                    </p>
+                                    <span class="statusBtn green">ACTIVE CLIENT</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a>
+                            </li>
+                            <li><a href="#">2</a>
+                            </li>
+                            <li><a href="#">3</a>
+                            </li>
+                            <li><a href="#">4</a>
+                            </li>
+                            <li><a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
 
-   <div class="text-center copyright">
-      <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
-   </div>
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+    </div>
 </body>
 
 </html>

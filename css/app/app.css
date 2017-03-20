@@ -1014,6 +1014,10 @@ form .form-group:before, form .form-group:after {
     margin-top: 0;
 }
 
+.checkbox > label {
+    margin-right: 10px;
+}
+
 .input-group {
    margin-top: 8px;
 }

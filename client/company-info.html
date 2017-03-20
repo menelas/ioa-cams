@@ -2,197 +2,209 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance Office of America - CAMS</title>
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/app/app.css">
-  <link rel="stylesheet" href="../css/client/company-info.css">
-  <script type="text/javascript" src="../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../js/dashboard.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America - CAMS</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/app/app.css">
+    <link rel="stylesheet" href="../css/client/company-info.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/dashboard.js"></script>
 </head>
 
 <body class="cams-pad cams-page">
-  <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
-    <div class="container-fluid menu-margin">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
-        </a>
-        <h4 class="company-title">Insurance Office of America</h4>
-        <h5>Claims Advocate Management System</h5>
-      </div>
-      <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
-            <ul class="dropdown-menu">
-              <div class="arrow-up"></div>
-              <li><a href="#">Custom Claims Kit</a>
-              </li>
-              <li><a href="#">IOA RiskScore</a>
-              </li>
-              <li><a href="#">Learning Management System</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
-            <ul class="dropdown-menu">
-              <div class="arrow-up"></div>
-              <li><a href="#">Edit Profile</a>
-              </li>
-              <li><a href="../admin/help-request.html">Help</a>
-              </li>
-              <li><a href="#">Logout</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container-fluid content">
-    <div class="row sidebar-container">
-      <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
-        <ul class="nav nav-sidebar">
-          <li>
-            <a href="dashboard.html">
-              <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
-            </a>
-            <hr />
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="../client/claim-add-new.html">Add New</a>
-                <hr>
-              </li>
-              <li><a href="../client/search-claims.html">View Claims</a>
-                <hr>
-              </li>
-              <li><a href="../client/tasks.html">Tasks</a>
-                <hr>
-              </li>
-              <li><a href="../producer/trigger-search.html">Triggers</a>
-                <hr>
-              </li>
-            </ul>
-            <hr />
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
-            <hr />
-          </li>
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
+                </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Claims Advocate Management System</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Custom Claims Kit</a>
+                            </li>
+                            <li><a href="#">IOA RiskScore</a>
+                            </li>
+                            <li><a href="#">Learning Management System</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="../admin/help-request.html">Help</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content">
+        <div class="row sidebar-container">
+            <div id="sidebar" class="col-xs-12 col-sm-3 col-md-12 sidebar1 sidebar navbar-collapse collapse">
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span>
+                        </a>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i><span> Claims</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../client/claim-add-new.html">Add New</a>
+                                <hr>
+                            </li>
+                            <li><a href="../client/search-claims.html">View Claims</a>
+                                <hr>
+                            </li>
+                            <li><a href="../client/tasks.html">Tasks</a>
+                                <hr>
+                            </li>
+                            <li><a href="../producer/trigger-search.html">Triggers</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
+                        <hr />
+                    </li>
 
-          <li>
-            <a href="../client/company-info.html">
-              <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
-            </a>
-            <hr />
-          </li>
+                    <li>
+                        <a href="../client/company-info.html">
+                            <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
+                        </a>
+                        <hr />
+                    </li>
 
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-            <ul class="dropdown-menu servicing-team">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu servicing-team">
 
-              <div class="col-xs-6 col-md-6">
-                <li>Producer(s):</li>
-                <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
-                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
-                </li>
-                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
-                </li>
+                            <div class="col-xs-6 col-md-6">
+                                <li>Producer(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
+                                </li>
 
-                <hr />
+                                <hr />
 
-                <li>Claim Contact(s):</li>
-                <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
-                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
-                </li>
-                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
-                </li>
-
-
-              </div>
-
-              <div class="col-xs-6 col-md-6">
-                <li>Policy Information:</li>
-                <li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
-                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
-                </li>
-                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
-                </li>
-
-                <hr />
+                                <li>Claim Contact(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
+                                </li>
 
 
-                <li>Technical Contact:</li>
-                <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
-                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
-                </li>
-                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
-                </li>
+                            </div>
 
-              </div>
-            </ul>
-          </li>
+                            <div class="col-xs-6 col-md-6">
+                                <li>Policy Information:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
+                                </li>
 
-          <hr />
+                                <hr />
 
 
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Carriers</a>
-                <hr>
-              </li>
-              <li><a href="#">Document Mgmt</a>
-                <hr>
-              </li>
-              <li><a href="#">Loss Run Import</a>
-                <hr>
-              </li>
-              <li><a href="#">Users</a>
-                <hr>
-              </li>
-            </ul>
-            <hr />
-          </li>
+                                <li>Technical Contact:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
+                                </li>
 
-          <ul class="nav nav-sidebar nav-sidebar2">
-            <li class="dropdown">
-              <hr>
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <hr />
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../client/claim-report.html">Summary</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">OSHA</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Carriers</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Document Mgmt</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Loss Run Import</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Users</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <ul class="nav nav-sidebar nav-sidebar2">
+                        <li class="dropdown">
+                            <hr>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
                      <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Edit Profile</a>
-                </li>
-                <li><a href="../admin/help-request.html">Help</a>
-                </li>
-                <li><a href="#">Logout</a>
-                </li>
-              </ul>
-              <hr>
-            </li>
-          </ul>
-        </ul>
-      </div>
-      <!-- Body -->
-      <div class="body-container">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
-          <div class="pull-left head-drop">
-            <div class="btn-group">
-              <!-- Adding in future release-->
-              <!--
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Edit Profile</a>
+                                </li>
+                                <li><a href="../admin/help-request.html">Help</a>
+                                </li>
+                                <li><a href="#">Logout</a>
+                                </li>
+                            </ul>
+                            <hr>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- Body -->
+            <div class="body-container">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+                    <div class="pull-left head-drop">
+                        <div class="btn-group">
+                            <!-- Adding in future release-->
+                            <!--
                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bars"></i>&nbsp;&nbsp; Review your company info</a>
                       <ul class="dropdown-menu">
                         <li><a href="#">Company 1</a></li>
@@ -200,133 +212,134 @@
                        <li><a href="#">Company 3</a></li>
                      </ul>
                   -->
-            </div>
-          </div>
+                        </div>
+                    </div>
 
-          <div class="pull-right">
-            <button type="button" class="btn claims-btn">Contact us to edit any information </button>
-          </div>
+                    <div class="pull-right">
+                        <button type="button" class="btn claims-btn">Contact us to edit any information </button>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel body">
+
+                    <div class="panel panel-primary">
+                        <div class="claim-header">
+                            <h3>MUTI/Midwest Underground Technology Inc. 2626 Midwest Court, Champaign, IL 61822</h3>
+                            <h4>Phone: (217)-819-3040</h4>
+                        </div>
+
+                        <hr />
+                        <div id="nav-tabs">
+                            <ul class="nav nav-tabs spacer20">
+                                <li class="active"><a data-toggle="tab" href="#contacts"><i class="fa fa-phone"></i> Contacts</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#servicing-team"><i class="fa fa-users"></i> Servicing Team</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#policies"><i class="fa fa-file-text-o"></i> Policies</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#sites"><i class="fa fa-location-arrow"></i> Sites</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#locations"><i class="fa fa-building-o"></i> Locations</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#location-groups"><i class="fa fa-building-o lg1"></i><i class="fa fa-building"></i><i class="fa fa-building-o lg2"></i> Location Groups</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#departments"><i class="fa fa-sitemap"></i> Departments</a>
+                                </li>
+                                <li class="sep"><a data-toggle="tab" href="#reports"><i class="fa fa-pie-chart"></i> Reports</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content">
+                            <div id="contacts" class="tab-pane fade in active tabs-info cams-tables">
+                                <button id="add-new-contact" name="add-new-contact" class="pull-right btn claims-btn"> <i class="fa fa-plus"></i> ADD NEW CONTACT</button>
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead class="cf">
+
+                                        <tr>
+                                            <th class="th-icon"></th>
+                                            <th>Name</th>
+                                            <th>Job Classification</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-user"></i>
+                                            </td>
+                                            <td data-title="Name">Fred Tucker</td>
+                                            <td data-title="Job Classification">Claims Contact</td>
+                                            <td data-title="Phone">(407)-998-5488</td>
+                                            <td data-title="Email"><a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-user"></i>
+                                            </td>
+                                            <td data-title="Name">Toni Lemmon</td>
+                                            <td data-title="Job Classification">Other</td>
+                                            <td data-title="Phone">(217)-649-3710</td>
+                                            <td data-title="Email"><a href="mailto:toni.lemmon@ioausa.com">toni.lemmon@ioausa.com</a>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Icon"><i class="fa fa-user"></i>
+                                            </td>
+                                            <td data-title="Name">Bruce Eades</td>
+                                            <td data-title="Job Classification">Producer</td>
+                                            <td data-title="Phone">(678)-923-3336</td>
+                                            <td data-title="Email"><a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
+                                            </td>
+                                            <td data-title="Primary Contact"><i class="fa fa-star"></i> Primary Contact</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div id="servicing-team" class="tab-pane fade">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div>
+
+                            <div id="policies" class="tab-pane fade">
+                                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+
+                            <div id="sites" class="tab-pane fade">
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+
+                            <div id="locations" class="tab-pane fade">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div>
+
+                            <div id="location-groups" class="tab-pane fade">
+                                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+
+                            <div id="departments" class="tab-pane fade">
+                                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+
+                            <div id="reports" class="tab-pane fade">
+                                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel body">
-
-          <div class="panel panel-primary">
-            <div class="claim-header">
-              <h3>MUTI/Midwest Underground Technology Inc. 2626 Midwest Court, Champaign, IL 61822</h3>
-              <h4>Phone: (217)-819-3040</h4>
-            </div>
-
-            <hr />
-            <div id="nav-tabs">
-              <ul class="nav nav-tabs spacer20">
-                <li class="active"><a data-toggle="tab" href="#contacts"><i class="fa fa-phone"></i> Contacts</a>
-                </li>
-                <li class="sep"><a data-toggle="tab" href="#servicing-team"><i class="fa fa-users"></i> Servicing Team</a>
-                </li>
-                <li class="sep"><a data-toggle="tab" href="#policies"><i class="fa fa-file-text-o"></i> Policies</a>
-                </li>
-                <li class="sep"><a data-toggle="tab" href="#sites"><i class="fa fa-location-arrow"></i> Sites</a>
-                </li>
-                <li class="sep"><a data-toggle="tab" href="#locations"><i class="fa fa-building-o"></i> Locations</a>
-                </li>
-                <li class="sep"><a data-toggle="tab" href="#location-groups"><i class="fa fa-building-o lg1"></i><i class="fa fa-building"></i><i class="fa fa-building-o lg2"></i> Location Groups</a>
-                </li>
-                <li class="sep"><a data-toggle="tab" href="#departments"><i class="fa fa-sitemap"></i> Departments</a>
-                </li>
-                <li class="sep"><a data-toggle="tab" href="#reports"><i class="fa fa-pie-chart"></i> Reports</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="tab-content">
-              <div id="contacts" class="tab-pane fade in active tabs-info cams-tables">
-                <button id="add-new-contact" name="add-new-contact" class="pull-right btn claims-btn"> <i class="fa fa-plus"></i> ADD NEW CONTACT</button>
-                <table class="table-hover table-striped table-condensed cf">
-                  <thead class="cf">
-
-                    <tr>
-                      <th class="th-icon"></th>
-                      <th>Name</th>
-                      <th>Job Classification</th>
-                      <th>Phone</th>
-                      <th>Email</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td data-title="Icon"><i class="fa fa-user"></i>
-                      </td>
-                      <td data-title="Name">Fred Tucker</td>
-                      <td data-title="Job Classification">Claims Contact</td>
-                      <td data-title="Phone">(407)-998-5488</td>
-                      <td data-title="Email"><a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
-                      </td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td data-title="Icon"><i class="fa fa-user"></i>
-                      </td>
-                      <td data-title="Name">Toni Lemmon</td>
-                      <td data-title="Job Classification">Other</td>
-                      <td data-title="Phone">(217)-649-3710</td>
-                      <td data-title="Email"><a href="mailto:toni.lemmon@ioausa.com">toni.lemmon@ioausa.com</a>
-                      </td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td data-title="Icon"><i class="fa fa-user"></i>
-                      </td>
-                      <td data-title="Name">Bruce Eades</td>
-                      <td data-title="Job Classification">Producer</td>
-                      <td data-title="Phone">(678)-923-3336</td>
-                      <td data-title="Email"><a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
-                      </td>
-                      <td data-title="Primary Contact"><i class="fa fa-star"></i> Primary Contact</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div id="servicing-team" class="tab-pane fade">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-              </div>
-
-              <div id="policies" class="tab-pane fade">
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
-
-              <div id="sites" class="tab-pane fade">
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-
-              <div id="locations" class="tab-pane fade">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-              </div>
-
-              <div id="location-groups" class="tab-pane fade">
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
-
-              <div id="departments" class="tab-pane fade">
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
-
-              <div id="reports" class="tab-pane fade">
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class="text-center copyright">
-    <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
-  </div>
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+    </div>
 
-  <script type="text/javascript" src="../js/tooltip.js"></script>
-  
+    <script type="text/javascript" src="../js/tooltip.js"></script>
+
 </body>
+
 </html>
