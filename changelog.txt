@@ -1,6 +1,7 @@
 ## 2017-3-20
 • Removed past due column on client dashboard
-• Added reports menu to be shown to users
+• Added reports menu to be shown to users (updated all pages to include the new item menu)
+• Only sections on the app that needs to be updated is client dashboard (to remove the past due column) and adding the new reports menu which needs to be shown above “Administration” to Admin users and the last menu item for all other users
 
 ## 2017-3-14
 • Updated claim icon colors on add new claims
