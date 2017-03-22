@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="../css/client/claim-details.css">
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Chosen Multi Select -->
+    <link rel="stylesheet" href="../chosen_v1.6.2/docsupport/style.css">
+    <link rel="stylesheet" href="../chosen_v1.6.2/docsupport/prism.css">
+    <link rel="stylesheet" href="../chosen_v1.6.2/chosen.css">
+    <script type="text/javascript" src="../chosen_v1.6.2/chosen.jquery.js"></script>
+    <script type="text/javascript" src="../chosen_v1.6.2/docsupport/prism.js"></script>
+
 </head>
 
 <body class="cams-pad cams-page">
@@ -45,7 +53,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Amy Wacker <i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chris Robertson <i class="fa fa-cog" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <div class="arrow-up"></div>
                             <li><a href="#">Edit Profile</a>
@@ -106,19 +114,19 @@
 
                             <div class="col-xs-6 col-md-6">
                                 <li>Producer(s):</li>
-                                <li><i class="fa fa-user" aria-hidden="true"></i> Bruce Eades</li>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:678-923-3336">(678) 923-3336</a>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Bernard Ware</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 989-4481</a>
                                 </li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample.user@ioausa.com">sample.user@ioausa.com</a>
                                 </li>
 
                                 <hr />
 
                                 <li>Claim Contact(s):</li>
-                                <li><i class="fa fa-user" aria-hidden="true"></i> Fred Tucker</li>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-927-8474">(407) 927-8474</a>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Patricia Hawley</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 989-4481</a>
                                 </li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
                                 </li>
 
 
@@ -126,20 +134,20 @@
 
                             <div class="col-xs-6 col-md-6">
                                 <li>Policy Information:</li>
-                                <li><i class="fa fa-user" aria-hidden="true"></i> Sally Kleber</li>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-324-9483">(407) 324-9483</a>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Patrice Carter</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 989-4481</a>
                                 </li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sally.kleber@ioausa.com">sally.kleber@ioausa.com</a>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
                                 </li>
 
                                 <hr />
 
 
                                 <li>Technical Contact:</li>
-                                <li><i class="fa fa-user" aria-hidden="true"></i> Min Su Nam</li>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-493-4343">(407) 493-4343</a>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Shawn Walters</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 493-4343</a>
                                 </li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:minsu.nam@ioausa.com">minsu.nam@ioausa.com</a>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
                                 </li>
 
                             </div>
@@ -183,7 +191,7 @@
                     <ul class="nav nav-sidebar nav-sidebar2">
                         <li class="dropdown">
                             <hr>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Amy Wacker</span>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Chris Robertson</span>
                      <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Edit Profile</a>
@@ -231,18 +239,31 @@
                         <div class="tab-content">
                             <div class="tab-pane claim-summary-pane fade in active" id="claim-summary">
 
-
-
                                 <div class="form-horizontal">
                                     <div class="form-group">
-                                        <label for="" class="col-md-4 col-lg-3 control-label">Claimant:</label>
-                                        <div class="col-md-8 col-lg-7">
-                                            <p class="form-control-static">MUTI/Midwest Underground Technology Inc.</p>
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Claimant:</label>
+                                        <div class="col-md-5 col-lg-2">
+                                            <p class="form-control-static">Beedle Foods, Inc.</p>
+                                        </div>
+
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Connecting Claims:</label>
+                                        <div class="col-md-5 col-lg-6">
+                                           <select data-placeholder="Select Claim(s)" multiple class="chosen-select-width" tabindex="16">
+                                                    <optgroup label="Beedle Foods, Inc.">
+                                                        <option>1827232-GB - Date of Loss: 7/10/2016</option>
+                                                        <option>983934343-GA - Date of Loss: 4/11/2016</option>
+                                                    </optgroup>
+                                                    <optgroup label="Second Company">
+                                                        <option>9230293-GB - Date of Loss: 5/8/2016</option>
+                                                        <option>8347373938-GA - Date of Loss: 5/6/2016</option>
+                                                    </optgroup>
+                                                </select>
+
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-md-4 col-lg-3 control-label">Claim Number:</label>
-                                        <div class="col-md-5 col-lg-3">
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Claim Number:</label>
+                                        <div class="col-md-5 col-lg-4">
                                             <p id="SummaryClaimNumber" class="form-control-static ">
                                                 <span>539367-GB</span>
                                             </p>
@@ -256,8 +277,8 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-md-4 col-lg-3 control-label">Date of Loss:</label>
-                                        <div class="col-md-5 col-lg-3">
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Date of Loss:</label>
+                                        <div class="col-md-5 col-lg-4">
                                             <p class="form-control-static">04/08/2015 12:00am</p>
                                         </div>
                                         <div class="form-group row">
@@ -268,33 +289,33 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-md-4 col-lg-3 control-label">Claim Denied?</label>
-                                        <div class="col-md-1 col-lg-1">
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Claim Denied?</label>
+                                        <div class="col-md-1 col-lg-2">
                                             <p class="form-control-static">No</p>
                                         </div>
                                         <div class="controls">
-                                            <label for="" class="col-md-4 col-lg-3 control-label">Report Only?</label>
-                                            <div class="col-md-1 col-lg-1">
+                                            <label for="" class="col-md-4 col-lg-2 control-label">Report Only?</label>
+                                            <div class="col-md-1 col-lg-2">
                                                 <p class="form-control-static">No</p>
                                             </div>
-                                            <label for="" class="col-md-4 col-lg-3 control-label">Legacy Claim?</label>
-                                            <div class="col-md-2 col-lg-1">
+                                            <label for="" class="col-md-4 col-lg-2 control-label">Legacy Claim?</label>
+                                            <div class="col-md-2 col-lg-2">
                                                 <p class="form-control-static">No</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-md-4 col-lg-3 control-label">Litigation?</label>
-                                        <div class="col-md-1 col-lg-1">
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Litigation?</label>
+                                        <div class="col-md-1 col-lg-2">
                                             <p class="form-control-static">No</p>
                                         </div>
                                         <div class="controls">
-                                            <label for="" class="col-md-4 col-lg-3 control-label">Subrogation?</label>
-                                            <div class="col-md-1 col-lg-1">
+                                            <label for="" class="col-md-4 col-lg-2 control-label">Subrogation?</label>
+                                            <div class="col-md-1 col-lg-2">
                                                 <p class="form-control-static">No</p>
                                             </div>
-                                            <label for="" class="col-md-4 col-lg-3 control-label">Fatality Occurred?</label>
-                                            <div class="col-md-1 col-lg-1">
+                                            <label for="" class="col-md-4 col-lg-2 control-label">Fatality Occurred?</label>
+                                            <div class="col-md-1 col-lg-2">
                                                 <p class="form-control-static">No</p>
                                             </div>
                                         </div>
@@ -310,27 +331,27 @@
                                 <div class="form-horizontal" id="employer">
 
                                     <div class="form-group">
-                                        <label for="" class="col-md-4 col-lg-3 control-label">Name:</label>
-                                        <div class="col-md-8 col-lg-8">
-                                            <p class="form-control-static">MUTI/Midwest Underground Technology Inc.</p>
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Name:</label>
+                                        <div class="col-md-8 col-lg-7">
+                                            <p class="form-control-static">Beedle Foods, Inc.</p>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-md-4 col-lg-3 control-label">Nature Of Business</label>
-                                        <div class="col-md-9 col-lg-8">
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Nature Of Business</label>
+                                        <div class="col-md-9 col-lg-7">
                                             <p class="form-control-static"></p>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-md-4 col-lg-3 control-label">Address:</label>
-                                        <div class="col-md-8 col-lg-8">
-                                            <p class="form-control-static">2626 Midwest Court Champaign, IL </p>
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Address:</label>
+                                        <div class="col-md-8 col-lg-7">
+                                            <p class="form-control-static">1855 W State Rd 434 Longwood, FL </p>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-md-4 col-lg-3 control-label">Employer FEIN:</label>
-                                        <div class="col-md-8 col-lg-8">
-                                            <p class="form-control-static">364340531</p>
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Employer FEIN:</label>
+                                        <div class="col-md-8 col-lg-7">
+                                            <p class="form-control-static">364340001</p>
                                         </div>
                                     </div>
                                 </div>
@@ -352,26 +373,26 @@
 
                                         <tbody>
                                             <tr>
-                                                <td data-title="Name">Fred Tucker</td>
+                                                <td data-title="Name">Patricia Hawley</td>
                                                 <td data-title="Job Classification">Safety</td>
-                                                <td data-title="Phone">(407)-998-5488</td>
-                                                <td data-title="Email"><a href="mailto:fred.tucker@ioausa.com">fred.tucker@ioausa.com</a>
+                                                <td data-title="Phone">(407)-989-4481</td>
+                                                <td data-title="Email"><a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
                                                 </td>
                                                 <td></td>
                                             </tr>
                                             <tr>
-                                                <td data-title="Name">Toni Lemmon</td>
+                                                <td data-title="Name">Nancy Kersey</td>
                                                 <td data-title="Job Classification">Other</td>
-                                                <td data-title="Phone">(217)-649-3710</td>
-                                                <td data-title="Email"><a href="mailto:toni.lemmon@ioausa.com">toni.lemmon@ioausa.com</a>
+                                                <td data-title="Phone">(407)-989-4481</td>
+                                                <td data-title="Email"><a href="mailto:sample.user@ioausa.com">sample.user@ioausa.com</a>
                                                 </td>
                                                 <td></td>
                                             </tr>
                                             <tr>
-                                                <td data-title="Name">Bruce Eades</td>
+                                                <td data-title="Name">Bernard Ware</td>
                                                 <td data-title="Job Classification">Other</td>
-                                                <td data-title="Phone">(678)-923-3336</td>
-                                                <td data-title="Email"><a href="mailto:bruce.eades@ioausa.com">bruce.eades@ioausa.com</a>
+                                                <td data-title="Phone">(407)-989-4481</td>
+                                                <td data-title="Email"><a href="mailto:sample.user@ioausa.com">sample.user@ioausa.com</a>
                                                 </td>
                                                 <td data-title="Primary Contact"><i class="fa fa-star"></i> Primary Contact</td>
                                             </tr>
@@ -388,22 +409,22 @@
                                         <div class="form-horizontal">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <label for="" class="col-md-4 col-lg-3 control-label">Policies:</label>
-                                                    <div class="col-sm-9 col-md-7 col-lg-5">
+                                                    <label for="" class="col-md-4 col-lg-2 control-label">Policies:</label>
+                                                    <div class="col-sm-9 col-md-7 col-lg-4">
                                                         <select class="form-control" name="Policy.PolicyId" id="PolicyId">
                                                             <option value="">Please select an option...</option>
                                                             <option value="df22cceb-6273-4322-a93c-a54500f00993">ACP5705894143-AL IL [02/01/2014 - 02/01/2015]</option>
                                                             <option value="928d217a-ae42-4917-8959-a54500f00992">ACP5705894143-AL IL [02/01/2013 - 02/01/2014]</option>
                                                             <option value="1c485a0c-1dc7-4175-8dad-a54500f00993">ACP5905891584-ILMO IL [02/01/2013 - 02/01/2014]</option>
                                                             <option value="3a0db3e6-07e0-464c-8b98-a54500f00993">ACP5906326427 IL [02/01/2014 - 02/01/2015]</option>
-                                                            <option selected="selected" value="fe99df81-18e4-4d6d-9028-a54500f00993">ACP5916326427 IL [02/01/2015 - 02/01/2016]</option>
+                                                            <option selected="selected" value="fe99df81-18e4-4d6d-9028-a54500f00993">ACP239208380 IL [02/01/2015 - 02/01/2016]</option>
                                                             <option value="7e56c099-0d05-48aa-bb27-a5960021580c">ACP5926326427 IL [02/01/2016 - 02/01/2017]</option>
                                                         </select>
                                                     </div>
 
 
-                                                    <label for="" class="col-md-4 col-lg-1 control-label">Carrier:</label>
-                                                    <div class="col-md-4 col-lg-3">
+                                                    <label for="" class="col-md-4 col-lg-2 control-label">Carrier:</label>
+                                                    <div class="col-md-4 col-lg-2">
                                                         <p class="form-control-static">Allied Insurance</p>
                                                     </div>
                                                 </div>
@@ -412,14 +433,14 @@
 
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <label for="" class="col-md-4 col-lg-3 control-label">Line of Coverage:</label>
-                                                    <div class="col-md-7 col-lg-3">
+                                                    <label for="" class="col-md-4 col-lg-2 control-label">Line of Coverage:</label>
+                                                    <div class="col-md-7 col-lg-2">
                                                         <p class="form-control-static">Automobile</p>
                                                     </div>
 
-                                                    <label for="" class="col-md-4 col-lg-3 control-label">Policy Number:</label>
+                                                    <label for="" class="col-md-4 col-lg-4 control-label">Policy Number:</label>
                                                     <div class="col-md-4 col-lg-3">
-                                                        <p class="form-control-static">ACP5916326427</p>
+                                                        <p class="form-control-static">ACP239208380</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -427,20 +448,20 @@
                                             <div class="row">
 
                                                 <div class="form-group">
-                                                    <label for="" class="col-md-4 col-lg-3 control-label">Claim Adjuster:</label>
+                                                    <label for="" class="col-md-4 col-lg-2 control-label">Claim Adjuster:</label>
                                                     <div class="col-md-6 col-lg-3">
                                                         <input id="CarrierId" name="CarrierId" value="214b9353-c0e6-482c-b1cb-a4cd00cbd8a4" type="hidden">
                                                         <input id="CarrierName" name="CarrierName" value="Allied Insurance" type="hidden">
                                                         <select name="Policy.CarrierContactId" class="col-lg-5 col-md-5 form-control" id="CarrierContactId">
                                                             <option value="">Please select a item...</option>
-                                                            <option selected value="Nash, Beth">Nash, Beth</option>
+                                                            <option selected value="Jennifer, Lundrstom">Jennifer, Lundrstom</option>
 
                                                         </select>
                                                     </div>
 
-                                                    <label for="" class="col-md-4 col-lg-3 control-label">Email:</label>
+                                                    <label for="" class="col-md-4 col-lg-4 control-label">Email:</label>
                                                     <div class="col-md-4 col-lg-3">
-                                                        <p class="form-control-static">ddmeyer@auw.com</p>
+                                                        <p class="form-control-static">sample-user@ioausa.com</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -450,12 +471,12 @@
                                                 <div class="form-group">
                                                     <label for="" class="col-md-4 col-lg-3 control-label">Phone:</label>
                                                     <div class="col-md-7 col-lg-3">
-                                                        <p class="form-control-static">407-788-3000</p>
+                                                        <p class="form-control-static">407-989-4481</p>
                                                     </div>
 
                                                     <label for="" class="col-md-4 col-lg-3 control-label">Fax:</label>
                                                     <div class="col-md-4 col-lg-3">
-                                                        <p class="form-control-static">407-788-3000</p>
+                                                        <p class="form-control-static">407-989-4481</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -628,7 +649,7 @@
                                         <div class="form-group">
                                             <label for="" class="col-md-4 col-lg-3 control-label">Contact's Address:</label>
                                             <div class="col-md-6 col-lg-5">
-                                                <input name="Contact.NameAddressPhoneAndEmail.Address.Address1" class="form-control" value="2626 Midwest Court" placeholder="Street Address 1" maxlength="60" type="text">
+                                                <input name="Contact.NameAddressPhoneAndEmail.Address.Address1" class="form-control" value="1855 W State Rd 434" placeholder="Street Address 1" maxlength="60" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -1010,7 +1031,7 @@
                                         <div class="form-group">
                                             <label for="" class="col-md-4 col-lg-3 control-label">Contact's Primary Email:</label>
                                             <div class="col-md-6 col-lg-4">
-                                                <input name="Contact.NameAddressPhoneAndEmail.PrimaryEmail" class="form-control emailinput" value="kfulton@mutionline.com" maxlength="255" type="text">
+                                                <input name="Contact.NameAddressPhoneAndEmail.PrimaryEmail" class="form-control emailinput" value="sample-user@ioausa.com" maxlength="255" type="text">
                                             </div>
                                         </div>
 
@@ -1548,7 +1569,7 @@
                                             <div class="form-group">
                                                 <label for="" class="col-md-4 col-lg-3 control-label ">Owner's Name:</label>
                                                 <div class="col-md-6 col-lg-4 ">
-                                                    <input name="InsuredVehicle.OwnersNameAddressPhoneAndEmail.FullName" id="insuredvehicle-ownersnameaddressphoneandemail--full-name" class="form-control " value="MUTI/Midwest Underground Technology Inc." maxlength="75" type="text">
+                                                    <input name="InsuredVehicle.OwnersNameAddressPhoneAndEmail.FullName" id="insuredvehicle-ownersnameaddressphoneandemail--full-name" class="form-control " value="Beedle Foods, Inc." maxlength="75" type="text">
 
                                                 </div>
                                             </div>
@@ -3853,8 +3874,8 @@
 
 
                                     <h4 id="witnesses-passengers" class="spacer40">Witnesses or Passengers 
-											
-										</h4>
+                                            
+                                        </h4>
                                     <hr />
                                     <button id="add-witness" name="add-witness" class="btn btn-primary"> Add New Witness</button>
 
@@ -4234,8 +4255,8 @@
                                                     <div class="panel panel-default" id="journal-entry-type-div">
                                                         <div class="panel-heading" role="tab" id="headingOne">
                                                             <h4 class="panel-title">
-                            									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Entry Type, Subject and Email Recipients</a>
-                        									</h4>
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Entry Type, Subject and Email Recipients</a>
+                                                            </h4>
                                                         </div>
                                                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
                                                             <div class="panel-body">
@@ -4334,9 +4355,9 @@
                                                     <div class="panel panel-default" id="journal-entry-assignee-div">
                                                         <div class="panel-heading" role="tab" id="headingTwo">
                                                             <h4 class="panel-title">
-                            									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Assignee and Dates
-                            									</a>
-                        									</h4>
+                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Assignee and Dates
+                                                                </a>
+                                                            </h4>
                                                         </div>
                                                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
                                                             <div class="panel-body">
@@ -4402,12 +4423,12 @@
                                                                             <select class="form-control" id="calendar-journalentryassignee-dropdown" name="AssignedToUserId">
                                                                                 <option value="">Please select assignee...</option>
                                                                                 <option value="e94c7f31-469e-4755-90b5-a54500f2beb8">Catlin, Katie</option>
-                                                                                <option value="03154e12-1eea-4d73-aa38-a5d700cf60d9">Eades, Bruce</option>
+                                                                                <option value="03154e12-1eea-4d73-aa38-a5d700cf60d9">Pettway, Jason</option>
                                                                                 <option value="293209bf-e5db-4969-949a-a54500f26bda">Fulton, Kyle</option>
                                                                                 <option value="f6281ba7-b367-4ada-a5ee-a54500f30eb0">Kuk, Tony</option>
-                                                                                <option value="006c7ac7-caad-4e73-aaf8-a55300d4eba2">Lemmon, Toni</option>
+                                                                                <option value="006c7ac7-caad-4e73-aaf8-a55300d4eba2">Hazel, Graham</option>
                                                                                 <option value="153020df-c301-42f4-b61d-a54500f1cd3a">Miller, Pam</option>
-                                                                                <option value="49d6de90-9ad4-48ed-8765-a4d701297c2d">Nam, Min Su</option>
+                                                                                <option value="49d6de90-9ad4-48ed-8765-a4d701297c2d">Young, Joey</option>
                                                                                 <option value="5142d5ae-71bf-476b-8193-a4d70129e2e6">Tucker, Fred</option>
                                                                             </select>
                                                                         </div>
@@ -4423,9 +4444,9 @@
 
                                                                     <div class="col-sm-3 col-md-3 col-lg-3" align="left">
                                                                         <h4 class="panel-title">
-                                   										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Note History
-                                    									</a>
-                                									</h4>
+                                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Note History
+                                                                        </a>
+                                                                    </h4>
                                                                     </div>
                                                                     <div class="col-sm-9 col-md-9 col-lg-9" align="right">
                                                                         <a href="#" class="btn btn-link" id="journalentry-addnote-button">
@@ -4459,8 +4480,8 @@
 
                                                                     <div class="col-sm-3 col-md-3 col-lg-3" align="left">
                                                                         <h4 class="panel-title">
-                                    									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Attachments</a>
-                                									</h4>
+                                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Attachments</a>
+                                                                    </h4>
                                                                     </div>
                                                                     <div class="col-sm-9 col-md-9 col-lg-9" align="right">
                                                                         <a href="#" class="btn btn-link" id="journalentry-addattachment-button">
@@ -4519,7 +4540,7 @@
         <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
     </div>
     <script type="text/javascript" src="../js/claim-details.js"></script>
-
+    <script type="text/javascript" src="../chosen_v1.6.2/docsupport/multi-select.js"></script>
 </body>
 
 </html>
