@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +14,7 @@
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/dashboard.js"></script>
+    <script type="text/javascript" src="../js/collapsible.js"></script>
 </head>
 
 <body class="cams-pad cams-page">
@@ -215,9 +217,6 @@
                         </div>
                     </div>
 
-                    <div class="pull-right">
-                        <button type="button" class="btn claims-btn">Contact us to edit any information </button>
-                    </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel body">
@@ -231,7 +230,7 @@
                         <hr />
                         <div id="nav-tabs">
                             <ul class="nav nav-tabs spacer20">
-                                <li class="active"><a data-toggle="tab" href="#contacts"><i class="fa fa-phone"></i> Contacts</a>
+                                <li class=""><a data-toggle="tab" href="#contacts"><i class="fa fa-phone"></i> Contacts</a>
                                 </li>
                                 <li class="sep"><a data-toggle="tab" href="#servicing-team"><i class="fa fa-users"></i> Servicing Team</a>
                                 </li>
@@ -241,7 +240,7 @@
                                 </li>
                                 <li class="sep"><a data-toggle="tab" href="#locations"><i class="fa fa-building-o"></i> Locations</a>
                                 </li>
-                                <li class="sep"><a data-toggle="tab" href="#location-groups"><i class="fa fa-building-o lg1"></i><i class="fa fa-building"></i><i class="fa fa-building-o lg2"></i> Location Groups</a>
+                                <li class="active"><a data-toggle="tab" href="#location-groups"><i class="fa fa-list-ul"></i></i> Groups</a>
                                 </li>
                                 <li class="sep"><a data-toggle="tab" href="#departments"><i class="fa fa-sitemap"></i> Departments</a>
                                 </li>
@@ -251,7 +250,7 @@
                         </div>
 
                         <div class="tab-content">
-                            <div id="contacts" class="tab-pane fade in active tabs-info cams-tables">
+                            <div id="contacts" class="tab-pane fade tabs-info cams-tables">
                                 <button id="add-new-contact" name="add-new-contact" class="pull-right btn claims-btn"> <i class="fa fa-plus"></i> ADD NEW CONTACT</button>
                                 <table class="table-hover table-striped table-condensed cf">
                                     <thead class="cf">
@@ -316,8 +315,324 @@
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                             </div>
 
-                            <div id="location-groups" class="tab-pane fade">
-                                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <div id="location-groups" class="tab-pane tabs-info fade in active">
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 clearfix">
+                                        <div id="clientgroups-policygroups-div">
+                                            <div class="cams-tables spacer10">
+                                                <table id="clientgroups-policygroup-table" class="table-hover table-striped table-condensed cf">
+                                                    <thead class="cf">
+                                                        <tr>
+                                                            <th>Group Name</th>
+                                                            <th>User(s)</th>
+                                                            <th>Claim Access</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td data-title="Group Name">WC Group - HR Assistants</td>
+                                                            <td data-title="User(s)">Derek Ramsey</td>
+                                                            <td data-title="Claim Access">Submit</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td data-title="Group Name">WC Group - Full Access</td>
+                                                            <td data-title="User(s)">Alex Standall</td>
+                                                            <td data-title="Claim Access">Submit, View, and Edit</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Groups</h3>
+                                        <span class="pull-right clickable"><i class="fa fa-angle-down"></i></span>
+                                    </div>
+
+                                    <div class="panel-body" style="display: none;">
+                                        <div class="row">
+
+                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                                                <div class="row-xs-5 row-sm-5 row-md-5 row-lg-4 scrollable">
+                                                    <h4 class="pull-left spacer10">Line of Coverage</h4>
+
+                                                    <div class="clearfix">
+                                                        <a id="#" href="" class="pull-right btn claims-btn for-table" role="button">
+                                                            <i class="fa fa-plus"></i>&nbsp;ADD
+                                                        </a>
+                                                    </div>
+                                                    <div id="clientgroups-policygroups-div">
+                                                        <div class="cams-tables spacer10">
+                                                            <table id="clientgroups-policygroup-table" class="table-hover table-striped table-condensed cf">
+                                                                <thead class="cf">
+                                                                    <tr>
+                                                                        <th>Name</th>
+                                                                        <th>Description</th>
+                                                                        <th class="action"></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td data-title="Name">LOC Group 4</td>
+                                                                        <td data-title="Description">LOC Group</td>
+                                                                        <td data-title="Actions" class="actionBtn clearfix">
+                                                                            <div class="btn-cell">
+                                                                                <a href="#" class="clientgroups-editpolicygroup-link actionBlue" title="" data-original-title="Edit Location Group"><i class="fa fa-pencil"></i></a>
+                                                                            </div>
+
+                                                                            <div class="btn-cell actionRed">
+                                                                                <a href="#" class="clientgroups-deletegroup-link actionRed" title="" data-original-title="Delete Location Group"><i class="fa fa-remove"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td data-title="Name">LOC Group 5</td>
+                                                                        <td data-title="Description">LOC Group</td>
+                                                                        <td data-title="Actions" class="actionBtn clearfix">
+                                                                            <div class="btn-cell">
+                                                                                <a href="#" class="clientgroups-editpolicygroup-link actionBlue" title="" data-original-title="Edit Location Group"><i class="fa fa-pencil"></i></a>
+                                                                            </div>
+
+                                                                            <div class="btn-cell actionRed">
+                                                                                <a href="#" class="clientgroups-deletegroup-link actionRed" title="" data-original-title="Delete Location Group"><i class="fa fa-remove"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td data-title="Name">LOC Group 6</td>
+                                                                        <td data-title="Description">LOC Group</td>
+                                                                        <td data-title="Actions" class="actionBtn clearfix">
+                                                                            <div class="btn-cell">
+                                                                                <a href="#" class="clientgroups-editpolicygroup-link actionBlue" title="" data-original-title="Edit Location Group"><i class="fa fa-pencil"></i></a>
+                                                                            </div>
+
+                                                                            <div class="btn-cell actionRed">
+                                                                                <a href="#" class="clientgroups-deletegroup-link actionRed" title="" data-original-title="Delete Location Group"><i class="fa fa-remove"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+
+                                                            <div class="text-center">
+                                                                <nav aria-label="Page navigation">
+                                                                    <ul class="pagination pagination-sm">
+                                                                        <li>
+                                                                            <a href="#" aria-label="Previous">
+                                                                                <span aria-hidden="true">«</span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="active"><a href="#">1</a>
+                                                                        </li>
+                                                                        <li><a href="#">2</a>
+                                                                        </li>
+                                                                        <li><a href="#">3</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" aria-label="Next">
+                                                                                <span aria-hidden="true">»</span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </nav>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                                                <div class="row-xs-5 row-sm-5 row-md-5 row-lg-4 scrollable">
+                                                    <h4 class="pull-left spacer10">Policy</h4>
+
+                                                    <div class="clearfix">
+                                                        <a id="#" href="" class="pull-right btn claims-btn for-table" role="button">
+                                                            <i class="fa fa-plus"></i>&nbsp;ADD
+                                                        </a>
+                                                    </div>
+                                                    <div id="clientgroups-policygroups-div">
+                                                        <div class="cams-tables spacer10">
+                                                            <table id="clientgroups-policygroup-table" class="table-hover table-striped table-condensed cf">
+                                                                <thead class="cf">
+                                                                    <tr>
+                                                                        <th>Name</th>
+                                                                        <th>Description</th>
+                                                                        <th class="action"></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td data-title="Name">Policy Group 7</td>
+                                                                        <td data-title="Description">Department Policy</td>
+                                                                        <td data-title="Actions" class="actionBtn clearfix">
+                                                                            <div class="btn-cell">
+                                                                                <a href="#" class="clientgroups-editpolicygroup-link actionBlue" title="" data-original-title="Edit Location Group"><i class="fa fa-pencil"></i></a>
+                                                                            </div>
+
+                                                                            <div class="btn-cell actionRed">
+                                                                                <a href="#" class="clientgroups-deletegroup-link actionRed" title="" data-original-title="Delete Location Group"><i class="fa fa-remove"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td data-title="Name">Policy Group 8</td>
+                                                                        <td data-title="Description">All Policy</td>
+                                                                        <td data-title="Actions" class="actionBtn clearfix">
+                                                                            <div class="btn-cell">
+                                                                                <a href="#" class="clientgroups-editpolicygroup-link actionBlue" title="" data-original-title="Edit Location Group"><i class="fa fa-pencil"></i></a>
+                                                                            </div>
+
+                                                                            <div class="btn-cell actionRed">
+                                                                                <a href="#" class="clientgroups-deletegroup-link actionRed" title="" data-original-title="Delete Location Group"><i class="fa fa-remove"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td data-title="Name">Policy Group 9</td>
+                                                                        <td data-title="Description">Department Policy</td>
+                                                                        <td data-title="Actions" class="actionBtn clearfix">
+                                                                            <div class="btn-cell">
+                                                                                <a href="#" class="clientgroups-editpolicygroup-link actionBlue" title="" data-original-title="Edit Location Group"><i class="fa fa-pencil"></i></a>
+                                                                            </div>
+
+                                                                            <div class="btn-cell actionRed">
+                                                                                <a href="#" class="clientgroups-deletegroup-link actionRed" title="" data-original-title="Delete Location Group"><i class="fa fa-remove"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                            <div class="text-center">
+                                                                <nav aria-label="Page navigation">
+                                                                    <ul class="pagination pagination-sm">
+                                                                        <li>
+                                                                            <a href="#" aria-label="Previous">
+                                                                                <span aria-hidden="true">«</span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="active"><a href="#">1</a>
+                                                                        </li>
+                                                                        <li><a href="#">2</a>
+                                                                        </li>
+                                                                        <li><a href="#">3</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" aria-label="Next">
+                                                                                <span aria-hidden="true">»</span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </nav>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                                                <div class="row-xs-5 row-sm-5 row-md-5 row-lg-4 scrollable">
+                                                    <h4 class="pull-left spacer10">Work Comp Location</h4>
+
+                                                    <div class="clearfix">
+                                                        <a id="#" href="" class="pull-right btn claims-btn for-table" role="button">
+                                                            <i class="fa fa-plus"></i>&nbsp;ADD
+                                                        </a>
+                                                    </div>
+                                                    <div id="clientgroups-policygroups-div">
+                                                        <div class="cams-tables spacer10">
+                                                            <table id="clientgroups-policygroup-table" class="table-hover table-striped table-condensed cf">
+                                                                <thead class="cf">
+                                                                    <tr>
+                                                                        <th>Name</th>
+                                                                        <th>Description</th>
+                                                                        <th class="action"></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td data-title="Name">Location Group 1</td>
+                                                                        <td data-title="Description">West Coast Group</td>
+                                                                        <td data-title="Actions" class="actionBtn clearfix">
+                                                                            <div class="btn-cell">
+                                                                                <a href="#" class="clientgroups-editpolicygroup-link actionBlue" title="" data-original-title="Edit Location Group"><i class="fa fa-pencil"></i></a>
+                                                                            </div>
+
+                                                                            <div class="btn-cell actionRed">
+                                                                                <a href="#" class="clientgroups-deletegroup-link actionRed" title="" data-original-title="Delete Location Group"><i class="fa fa-remove"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td data-title="Name">Location Group 2</td>
+                                                                        <td data-title="Description">East Coast Group</td>
+                                                                        <td data-title="Actions" class="actionBtn clearfix">
+                                                                            <div class="btn-cell">
+                                                                                <a href="#" class="clientgroups-editpolicygroup-link actionBlue" title="" data-original-title="Edit Location Group"><i class="fa fa-pencil"></i></a>
+                                                                            </div>
+
+                                                                            <div class="btn-cell actionRed">
+                                                                                <a href="#" class="clientgroups-deletegroup-link actionRed" title="" data-original-title="Delete Location Group"><i class="fa fa-remove"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td data-title="Name">Location Group 3</td>
+                                                                        <td data-title="Description">West Coast Group</td>
+                                                                        <td data-title="Actions" class="actionBtn clearfix">
+                                                                            <div class="btn-cell">
+                                                                                <a href="#" class="clientgroups-editpolicygroup-link actionBlue" title="" data-original-title="Edit Location Group"><i class="fa fa-pencil"></i></a>
+                                                                            </div>
+
+                                                                            <div class="btn-cell actionRed">
+                                                                                <a href="#" class="clientgroups-deletegroup-link actionRed" title="" data-original-title="Delete Location Group"><i class="fa fa-remove"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                            <div class="text-center">
+                                                                <nav aria-label="Page navigation">
+                                                                    <ul class="pagination pagination-sm">
+                                                                        <li>
+                                                                            <a href="#" aria-label="Previous">
+                                                                                <span aria-hidden="true">«</span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="active"><a href="#">1</a>
+                                                                        </li>
+                                                                        <li><a href="#">2</a>
+                                                                        </li>
+                                                                        <li><a href="#">3</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" aria-label="Next">
+                                                                                <span aria-hidden="true">»</span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </nav>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div id="departments" class="tab-pane fade">

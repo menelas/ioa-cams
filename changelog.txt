@@ -1,3 +1,6 @@
+## 2017-5-23
+• Updated groups tab on company-info.html and updated stylesheets
+
 ## 2017-3-31
 • Added link claims on claim details and search claims
 

@@ -697,6 +697,10 @@ table {
    padding-right: 2px;
 }
 
+td.actionBtn .btn-cell {
+   float: right;
+}
+
 .statistics .dropdown-menu>li>a:hover {
    color: #000 !important;
 }
@@ -877,6 +881,10 @@ td a {
 
 .actionBtn a.actionBlue {
    background: #4995cf;
+}
+
+.actionBtn a.actionRed {
+   background: #d9534f;
 }
 
 .actionBtn a.actionGray {
