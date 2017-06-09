@@ -1,3 +1,6 @@
+## 2017-6-9
+• Created dropdown for parent/child claims
+
 ## 2017-5-23
 • Updated groups tab on company-info.html and updated stylesheets
 

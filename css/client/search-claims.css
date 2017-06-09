@@ -75,3 +75,82 @@ form .form-group {
     margin-left: 0px;
     margin-right: 0px;
 }
+
+
+/************* Parent/Child Table *************/
+
+.parent-child-main-th {
+    width: 3%;
+}
+
+.tablecontainer .parent-child-main-table.cf th:first-child {
+    padding-left: 42px !important;
+}
+
+.tablecontainer .parent-child-main-table.cf td:first-child {
+    padding-left: 42px !important;
+}
+
+.tablecontainer .parent-child-main-table.cf .parent-child-main td:first-child {
+    padding-left: 12px !important;
+}
+.parent-child-main-table.cf .parent-child-main td:first-child i {
+    margin-right: 7px;
+    font-size: 16px;
+    line-height: 11px;  
+    display: inline-block;
+    vertical-align: middle;
+}
+.parent-child-main-table.cf .parent-child-main td:first-child strong {
+   display: inline-block;
+   vertical-align: middle;
+}
+.parent-child-main-table.cf .parent-child-main td:first-child i:hover{
+    cursor: pointer;
+}
+
+.parent-child-main-table .parent-child{
+    background-color: #efefef;
+}
+
+.parent-child-main-table .parent-child:hover {
+    background-color: #efefef !important;
+}
+
+.bg-alternate {
+    background-color: #ffffff !important;
+}
+
+.bg-alternate:hover {
+    background-color: #ffffff !important;
+}
+
+.parent-child-main-table tr.parent-child{
+    display: none;
+}
+
+.parent-child-main-table tr.parent-child-show{
+    display: table-row;
+}
+
+.tablecontainer .parent-child-main-table.cf tr.parent-child .parent-child-c{
+    padding-left: 12px !important;
+}
+
+.tablecontainer .parent-child-main-table.cf tr.parent-child .parent-child-c strong{
+    margin-right: 18px;
+}
+@media only screen and (max-width: 1279px) {
+    .parent-child-main-table tr.parent-child-show{
+        display: inherit;
+    }
+    .tablecontainer .parent-child-main-table.cf td:first-child {
+        padding-left: 60% !important;
+    }
+    .tablecontainer .parent-child-main-table.cf .parent-child-main td:first-child {
+        padding-left: 60% !important;
+    }
+    .tablecontainer .parent-child-main-table.cf tr.parent-child .parent-child-c{
+        padding-left: 60% !important;
+    }
+}
