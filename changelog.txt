@@ -1,3 +1,6 @@
+## 2017-6-16
+• Added hover link effects
+
 ## 2017-6-9
 • Created dropdown for parent/child claims
 
