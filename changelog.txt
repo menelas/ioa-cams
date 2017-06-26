@@ -1,3 +1,6 @@
+## 2017-6-19
+• Fixed claim display amount issue
+
 ## 2017-6-9
 • Created dropdown for parent/child claims
 
