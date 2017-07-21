@@ -193,3 +193,17 @@ text.highcharts-axis-title {
     border: 1px dotted #eee;
         
 }
+.collapse-users{
+	padding: 0 !important;
+}
+.has-dropdown:hover{
+	cursor: pointer;
+}
+@media only screen and (max-width: 1279px){
+.cams-tables tr.collapse {
+    display: none;
+}
+.cams-tables tr.collapse.in {
+    display: table-row;
+}
+}
