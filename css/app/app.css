@@ -1026,7 +1026,7 @@ form .form-group:before, form .form-group:after {
 }
 
 .checkbox > label {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .input-group {
@@ -1052,6 +1052,27 @@ form .form-group:before, form .form-group:after {
    font-weight: bold;
 }
 
+.chosen-container-multi .chosen-choices {
+   background-color: #fff;
+   background-image: none !important;
+   border-radius: 4px;
+   border: 1px solid #ccc !important;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+   margin-top: 8px !important;
+   height: 34px !important;
+}
+
+.chosen-container .search-choice {
+   margin-top: 5px !important;
+}
+
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+    padding-top: 8px !important;
+}
+
+.search-field .default {
+    width: 100% !important;
+}
 
 /************* Tabs *************/
 
@@ -1136,7 +1157,6 @@ a.view:visited, a.view:hover {
    text-decoration: underline;
 }
 
-
 /************ Misc *********/
 
 .warning {
@@ -1151,7 +1171,7 @@ a.view:visited, a.view:hover {
    font-size: 15px;
 }
 
-.claims-btn {
+.cams-btn {
    background-color: #296198;
    color: #fff;
    padding: 6px 9px;
@@ -1159,9 +1179,15 @@ a.view:visited, a.view:hover {
    font-size: 12px;
    margin-top: 4px;
    margin-right: 4px;
+   position: relative;
+   z-index: 1000;
 }
 
-.claims-btn:hover {
+.btn-table, .btn-table:hover {
+   margin: 5px 5px -24px 0 !important;
+}
+
+.cams-btn:hover {
    background-color: #245280;
    color: #fff;
    padding: 6px 9px;
@@ -1169,6 +1195,8 @@ a.view:visited, a.view:hover {
    font-size: 12px;
    margin-top: 4px;
    margin-right: 4px;
+   position: relative;
+   z-index: 1000;
 }
 
 .breadcrumb {

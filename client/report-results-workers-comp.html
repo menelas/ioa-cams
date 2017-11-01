@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America - CAMS</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/app/app.css">
+    <link rel="stylesheet" href="../css/client/report-results.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body class="cams-pad cams-page">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
+                </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Claims Advocate Management System</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Report Run: 2/2/2017 12:27 PM</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid content">
+
+            <!-- Body -->
+            <div class="body-container">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+                    <div class="pull-left head-drop">
+                        <div class="btn-group">
+                            <p>IOA Risk Services Claim Report for Sample Company</p>
+                        </div>
+                    </div>
+
+                    <div class="pull-right">
+                        <script> function printPage() { window.print(); } </script>
+                        <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
+                        <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to CSV</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="panel tablecontainer">
+                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                    <div class="pull-left head-drop">
+                                        Job Title
+                                    </div>
+                                </div>
+                                <div id="job-title" class="report-container"></div>
+                            </div>
+                        </div> 
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="panel tablecontainer">
+                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                    <div class="pull-left head-drop">
+                                        Type of Injury
+                                    </div>
+                                </div>
+                                <div id="type-of-injury" class="report-container"></div>
+                            </div>
+                        </div> 
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="panel tablecontainer">
+                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                    <div class="pull-left head-drop">
+                                        Body Part Affected
+                                    </div>
+                                </div>
+                                <div id="body-part-injury" class="report-container"></div>
+                            </div>
+                        </div> 
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="panel tablecontainer">
+                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                    <div class="pull-left head-drop">
+                                        Date of Hire
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="claim-amounts">
+                                        <table class="table-hover table-striped table-condensed cf" border="5">
+                                            <thead class="cf">
+
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Count</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td data-title="Date">09/18/2017</td>
+                                                    <td data-title="Count">4</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-title="Date">09/17/2017</td>
+                                                    <td data-title="Count">7</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-title="Date">09/16/2017</td>
+                                                    <td data-title="Count">9</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-title="Date">09/15/2017</td>
+                                                    <td data-title="Count">12</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-title="Date">09/15/2017</td>
+                                                    <td data-title="Count">11</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-title="Date">09/15/2017</td>
+                                                    <td data-title="Count">3</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="panel tablecontainer">
+                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                    <div class="pull-left head-drop">
+                                        Length of Time Employed
+                                    </div>
+                                </div>
+                                <div id="length-of-time" class="report-container"></div>
+                            </div>
+                        </div> 
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="panel tablecontainer">
+                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                    <div class="pull-left head-drop">
+                                        Age Range
+                                    </div>
+                                </div>
+                                <div id="age-range" class="report-container"></div>
+                            </div>
+                        </div> 
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="panel tablecontainer">
+                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                    <div class="pull-left head-drop">
+                                        Lag Times
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="claim-amounts">
+                                        <table class="table-hover table-striped table-condensed cf" border="5">
+                                            <thead class="cf">
+                                                <tr>
+                                                    <th>Date of Incident</th>
+                                                    <th>Lag Time</th>
+                                                    <th>Date Submitted to Carrier</th>
+                                                    <th>Lag Time</th>
+                                                    <th>Date Employer Notified</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-title="Date of Incident">09/18/2017</td>
+                                                    <td data-title="Lag Time">8 Days</td>
+                                                    <td data-title="Date Submitted to Carrier">09/26/2017</td>
+                                                    <td data-title="Lag Time">2 Days</td>
+                                                    <td data-title="Date Employer Notified">09/28/2017</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-title="Date of Incident">09/17/2017</td>
+                                                    <td data-title="Lag Time">6 Days</td>
+                                                    <td data-title="Date Submitted to Carrier">09/23/2017</td>
+                                                    <td data-title="Lag Time">6 Days</td>
+                                                    <td data-title="Date Employer Notified">09/29/2017</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-title="Date of Incident">09/16/2017</td>
+                                                    <td data-title="Lag Time">6 Days</td>
+                                                    <td data-title="Date Submitted to Carrier">09/22/2017</td>
+                                                    <td data-title="Lag Time">2 Days</td>
+                                                    <td data-title="Date Employer Notified">09/24/2017</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-title="Date of Incident">09/15/2017</td>
+                                                    <td data-title="Lag Time">6 Days</td>
+                                                    <td data-title="Date Submitted to Carrier">09/21/2017</td>
+                                                    <td data-title="Lag Time">2 Days</td>
+                                                    <td data-title="Date Employer Notified">09/23/2017</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-title="Date of Incident">09/15/2017</td>
+                                                    <td data-title="Lag Time">5 Days</td>
+                                                    <td data-title="Date Submitted to Carrier">09/20/2017</td>
+                                                    <td data-title="Lag Time">1 Days</td>
+                                                    <td data-title="Date Employer Notified">09/22/2017</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-title="Date of Incident">09/15/2017</td>
+                                                    <td data-title="Lag Time">6 Days</td>
+                                                    <td data-title="Date Submitted to Carrier">09/21/2017</td>
+                                                    <td data-title="Lag Time">1 Days</td>
+                                                    <td data-title="Date Employer Notified">09/22/2017</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        <div class="text-center copyright">
+            <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+        </div>
+
+        <script src="../js/report-results/workers-comp/highchart-color.js"></script>
+
+        <!-- Claims by Job Title-->
+        <script src="../js/report-results/workers-comp/highchart-job-title.js"></script>
+
+        <!-- Type of Injury-->
+        <script src="../js/report-results/workers-comp/highchart-type-of-injury.js"></script>
+
+        <!-- Body Part Injury-->
+        <script src="../js/report-results/workers-comp/highchart-type-of-body-part-injury.js"></script>
+
+        <!-- Length of Time Employed -->
+        <script src="../js/report-results/workers-comp/highchart-length-of-time.js"></script>
+
+        <!-- Age Range -->
+        <script src="../js/report-results/workers-comp/highchart-age-range.js"></script>
+
+</body>
+
+</html>

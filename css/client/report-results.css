@@ -1,16 +1,38 @@
+@media print {
+      body, html, .body-container {
+          width: 100%;
+      }
+}
+
 /************* Report Results *************/
+
 .title-header {
     padding: 3px 0 5px;
-    background: #4995cf;
+    background: #4995cf !important;
     color: #fff;
     display: block;
     clear: both;
     text-align: center;
     font-size: 17px;
+    position: sticky;
+    z-index: 1000;
+}
+
+.title-header-claim {
+    padding: 3px 0 5px;
+    background: #296198 !important;
+    color: #fff;
+    display: block;
+    clear: both;
+    text-align: center;
+    font-size: 17px;
+    position: sticky;
+    z-index: 1000;
 }
 
 .body-container {
 	margin-left: 0px;
+  padding: 20px 5px 5px 5px;
 }
 
 .body-content {
@@ -18,6 +40,24 @@
 	padding-left: 0px;
 	padding-right: 0px;
   margin-bottom: 0px;
+}
+
+.main-report {
+   padding: 10px 10px 10px 10px;
+   margin-bottom: 10px;
+   border: 1px solid #cccccc;
+   background-color: #eeeeee;
+   float: left;
+   width: 100%;
+}
+
+.seperate-report {
+   padding: 10px 10px 10px 10px;
+   margin-bottom: 10px;
+   border: 1px solid #296198;
+   background-color: #eeeeee;
+   float: left;
+   width: 100%;
 }
 
 .claim-amounts {
@@ -56,4 +96,62 @@
 
 .color6 {
   background-color: #ea8e4b !important;
+}
+
+/*********Tables********/
+@media only screen and (max-width: 1600px) {
+   /* Force table to not be like tables anymore */
+   .report-results-tables table, .report-results-tables thead, .report-results-tables tbody, .report-results-tables th, .report-results-tables td, .report-results-tables tr {
+      display: block;
+   }
+   /* Hide table headers (but not display: none;, for accessibility) */
+   .report-results-tables thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+   }
+   .report-results-tables tr {
+      border: 1px solid #ccc;
+   }
+   .report-results-tables td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: 700;
+   }
+   .report-results-tables td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+      white-space: normal;
+      text-align: left;
+   }
+   .report-results-tables td {
+      padding-left: 60% !important;
+   }
+   /*
+      Label the data
+      */
+   .report-results-tables td:before {
+      content: attr(data-title);
+   }
+   .tablecontainer .tableheader .elem {
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+   }
+   .tablecontainer .tableheader .type {
+      margin: 0;
+   }
+   .same-claims td:first-child, .same-claims-parent td:first-child {
+      text-indent: 0px !important;
+   }
 }

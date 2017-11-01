@@ -31,13 +31,21 @@
 
 .tab-content {
     margin-left: -2px;
+    margin-top: -2px;
+    border:1px solid #ccc;
+}
+
+td a {
+   color: inherit;
+   cursor: pointer;
 }
 
 a.details-control {
     background: no-repeat center center;
-	 background-image: url('../../img/details_open.png');
+	  background-image: url('../../img/details_open.png');
     cursor: pointer;
 }
+
 
 .clickable{
     cursor: pointer;   
@@ -76,4 +84,43 @@ a.details-control {
 .panel-body {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.location-select {
+  display: none !important;
+}
+
+/************* Policies *************/
+.assign-locations {
+  width: 750px;
+  margin-left: 25px;
+}
+
+.policy-info-group {
+  width: 750px;
+  margin-left: 35px;
+}
+
+.details-control-close {
+    background: no-repeat top center;
+    background-image: url('../../img/details_close.png');
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.listcolumn li {
+  clear: left;
+  list-style: outside none none;
+  padding-right: 5px;
+  line-height: 1.6;
+}
+
+.policy-info-group > label {
+    margin-left: -37px;
+}
+
+#add-second-company-btn.pull-left{
+	float: none !important;
+	margin-left: 15px !important;
+  margin-bottom: 20px !important
 }
