@@ -9,8 +9,18 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/app/app.css">
+    <link rel="stylesheet" href="../css/app/app.bootstrap.css">
+    <link rel="stylesheet" href="../css/client/dropzone.css">
+    <link rel="stylesheet" href="../css/admin/help-request.css">
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/dropzone.js"></script>
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <script type="text/javascript" src="../js/date-picker.js"></script>
+
 </head>
 
 <body class="cams-pad cams-page">
@@ -48,7 +58,7 @@
                             <div class="arrow-up"></div>
                             <li><a href="#">Edit Profile</a>
                             </li>
-                            <li><a href="../admin/help-request.html">Help</a>
+                            <li><a href="#" data-toggle="modal" data-target="#help-request">Help</a>
                             </li>
                             <li><a href="#">Logout</a>
                             </li>
@@ -198,12 +208,94 @@
             </div>
             <!-- Body -->
             <div class="body-container">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+
+                <!--Modal Start-->
+                <div class="modal fade" id="help-request" tabindex="-1" role="dialog" aria-labelledby="contact-titlelabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="help-requestlabel">Submit Help Request</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <form role="form">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                                <label class="control-label" for="contacts-name">Name:</label>
+                                                <input id="contacts-name" name="contacts-name" value="Chris Robertson" class="form-control input-md" required type="text">
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                                <label class="control-label" for="contact-primary-email">Email:</label>
+                                                <input id="contact-primary-email" value="Chris.Robertson@ioausa.com" placeholder="Primary Email" class="form-control input-md" required type="text">
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                                <label class="control-tabel" for="business-name">Business Name:</label>
+                                                <select id="business-name-type" name="business-name-type" class="form-control">
+                                                    <option value="--Please Select--">-- Select Company --</option>
+                                                    <option value="Motionways, Inc.">Motionways, Inc.</option>
+                                                    <option value="Raven Entertainment">Raven Entertainment</option>
+                                                    <option value="Ogre Intelligence">Ogre Intelligence</option>
+                                                    <option value="Ridgeco">Ridgeco</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                                                <label class="control-label required" for="text-area"> Description (please be as descriptive as possible):</label>
+                                                <textarea class="form-control requiredfield" maxlength="4000" spellcheck="true" rows="11" cols="20" placeholder="Please enter note (maximum of 4000 characters)"></textarea>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                                <label for="documents-file-input required" class="control-label requiredfield" id="documents-file-label">Screenshot(s):</label>
+                                                <div id="documents-file-input" class="dropzone requiredfield dz-clickable">
+                                                    <div class="dz-default dz-message"><span>Drop file or click here to upload.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </form>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button id="cancel" name="cancel" class="pull-left btn btn-default"> Cancel</button>
+                                <button id="submit" name="submit" class="pull-right btn btn-primary"> Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Modal End-->
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header  help-request-search">
                     <div class="pull-left head-drop">
                         <div class="btn-group">
                             <p>Help Request Submitted Results</p>
                         </div>
                     </div>
+
+                    <div class="pull-right head-drop">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Display Closed Help Requests</label>
+
+                        <div class="search-frm">
+                            <div class="input-group">
+                                <input class="form-control" id="" name="" type="search" value="" placeholder="Search Company" autocomplete="off">
+                                <input name="" type="hidden" class="autocompletehidden" value="">
+                                <div class="input-group-addon"><i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tablecontainer dash-launch-tables">
                     <div class="panel-body">
@@ -211,32 +303,134 @@
                             <table class="table-hover table-striped table-condensed cf">
                                 <thead class="cf">
                                     <tr>
+                                        <th>Date Sent</th>
                                         <th>Name</th>
+                                        <th>User Name</th>
                                         <th>Email</th>
-                                        <th>Screenshot</th>
-                                        <th>Message</th>
-                                        <th>Date Submitted</th>
+                                        <th>Issue Reported</th>
+                                        <th>Date Closed</th>
+                                        <th>Closed By</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td data-title="Name">Jayce Ritter</td>
+                                        <td data-title="Date Sent">10/17/2017</td>
+                                        <td data-title="Client Name">Motionways, Inc.</td>
+                                        <td data-title="Client User Name">Jayce Ritter</td>
                                         <td data-title="Email"><a href="mailto:jayce.ritter@company.com">jayce.ritter@company.com</a>
                                         </td>
-                                        <td data-title="Screenshot">
-                                            <a data-toggle="modal" data-target="#screenshotSubmitted">
-                                View
-                              </a>
-                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
-                                                <div class="modal-dialog" role="document">
+                                        <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
+                                        </td>
+                                        <td data-title="Date Closed">-------</td>
+                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Status"><span class="statusBtn green">Open</span>
+                                        </td>
+                                        <td data-title="Actions" class="actionBtn">
+                                            <div class="btn-cell">
+                                                <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
+                                            </div>
+
+                                            <div class="btn-cell">
+                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
+                                            </div>
+                                        </td>
+
+                                            <!--Close Modal Start-->
+                                            <div class="modal fade" id="close" tabindex="-1" role="dialog" aria-labelledby="contact-titlelabel">
+                                                <div class="modal-dialog modal-md" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                                                             </button>
-                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot submitted</h4>
+                                                            <h4 class="modal-title" id="help-requestlabel">Close Help Request</h4>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <img src="../img/error-sample.png" alt="Error Sample" height="350" width="550" />
+
+                                                            <form role="form">
+                                                                <fieldset>
+
+                                                                    <div class="form-group">
+                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                            <label for="" class="required control-label"> Date Closed:</label>
+                                                                        </div>
+                                                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                                            <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Date">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+
+                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                            <label for="" class="control-label required"> Reason to Close:</label>
+                                                                        </div>
+
+                                                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-8">
+                                                                            <select id="business-name-type" name="business-name-type" class="form-control">
+                                                                                <option value="--Please Select--">-- Please select an item --</option>
+                                                                                <option value="Helped client resolve claims issue">Helped client resolve claims issue</option>
+                                                                                <option value="Helped client resolve missing carrier information">Helped client resolve missing carrier information</option>
+                                                                                <option value="Helped client with technical issue">Helped client with technical issue</option>
+                                                                                <option value="Other (resolved help ticket)">Other (resolved help ticket)</option>
+                                                                            </select>
+                                                                        </div>
+
+                                                                    </div>
+
+
+                                                                </fieldset>
+                                                            </form>
+
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button id="cancel" name="cancel" class="pull-left btn btn-default"> Cancel</button>
+                                                            <button id="submit" name="submit" class="pull-right btn btn-primary"> Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Close Modal End-->
+
+                                            <!--Screenshot Modal Start-->
+                                            <a data-toggle="modal" data-target="#screenshotSubmitted"> </a>
+                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot(s) Submitted</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div id="ScreenshotCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                                                                <ol class="carousel-indicators">
+                                                                    <li data-target="#ScreenshotCarousel" data-slide-to="0" class="active"></li>
+                                                                    <li data-target="#ScreenshotCarousel" data-slide-to="1"></li>
+                                                                </ol>
+
+                                                                <div class="carousel-inner" role="listbox">
+                                                                    <div class="item active">
+                                                                        <img src="../img/error-sample.png" alt="Error" width="1546" height="793">
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <img src="../img/error-sample1.png" alt="Error" width="1546" height="793">
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <a class="left carousel-control" href="#ScreenshotCarousel" role="button" data-slide="prev">
+                                                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                                    <span class="sr-only">Previous</span>
+                                                                </a>
+                                                                <a class="right carousel-control" href="#ScreenshotCarousel" role="button" data-slide="next">
+                                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                                    <span class="sr-only">Next</span>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -244,302 +438,237 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </td>
-                                        <td data-title="Message">I need help</td>
-                                        <td data-title="Date Submitted">2/17/2017</td>
+                                            <!--Screenshot Modal End-->
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="Date Sent">10/17/2017</td>
+                                        <td data-title="Client Name">Raven Entertainment</td>
+                                        <td data-title="Client User Name">Eliza Collins</td>
                                         <td data-title="Email"><a href="mailto:eliza.collins@company.com">eliza.collins@company.com</a>
                                         </td>
-                                        <td data-title="Screenshot">
-                                            <a data-toggle="modal" data-target="#screenshotSubmitted">
-                                View
-                              </a>
-                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot submitted</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <img src="../img/error-sample.png" alt="Error Sample" height="350" width="550" />
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
+                                        </td>
+                                        <td data-title="Date Closed">-------</td>
+                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Status"><span class="statusBtn green">Open</span>
+                                        </td>
+                                        <td data-title="Actions" class="actionBtn">
+                                            <div class="btn-cell">
+                                                <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
+                                            </div>
+
+                                            <div class="btn-cell">
+                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
                                             </div>
                                         </td>
-                                        <td data-title="Message">I need help</td>
-                                        <td data-title="Date Submitted">2/17/2017</td>
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="Date Sent">10/19/2017</td>
+                                        <td data-title="Client Name">Ogre Intelligence</td>
+                                        <td data-title="Client User Name">Carter Hahn</td>
                                         <td data-title="Email"><a href="mailto:sample-user@domain.com">carter.han@domain.com</a>
                                         </td>
-                                        <td data-title="Screenshot">
-                                            <a data-toggle="modal" data-target="#screenshotSubmitted">
-                                View
-                              </a>
-                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot submitted</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <img src="../img/error-sample.png" alt="Error Sample" height="350" width="550" />
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
+                                        </td>
+                                        <td data-title="Date Closed">-------</td>
+                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Status"><span class="statusBtn green">Open</span>
+                                        </td>
+                                        <td data-title="Actions" class="actionBtn">
+                                            <div class="btn-cell">
+                                                <a class="actionBlue btn disabled" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
+                                            </div>
+
+                                            <div class="btn-cell">
+                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
                                             </div>
                                         </td>
-                                        <td data-title="Message">I need help</td>
-                                        <td data-title="Date Submitted">2/16/2017</td>
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Name">Aleah Stein</td>
+                                        <td data-title="Date Sent">10/20/2017</td>
+                                        <td data-title="Client Name">Beedle Foods, Inc.</td>
+                                        <td data-title="Client User Name">Aleah Stein</td>
                                         <td data-title="Email"><a href="mailto:aleah.stein@domain.com">aleah.stein@domain.com</a>
                                         </td>
-                                        <td data-title="Screenshot">
-                                            <a data-toggle="modal" data-target="#screenshotSubmitted">
-                                View
-                              </a>
-                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot submitted</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <img src="../img/error-sample.png" alt="Error Sample" height="350" width="550" />
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
+                                        </td>
+                                        <td data-title="Date Closed">-------</td>
+                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Status"><span class="statusBtn green">Open</span>
+                                        </td>
+                                        <td data-title="Actions" class="actionBtn">
+                                            <div class="btn-cell">
+                                                <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
+                                            </div>
+
+                                            <div class="btn-cell">
+                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
                                             </div>
                                         </td>
-                                        <td data-title="Message">I need help</td>
-                                        <td data-title="Date Submitted">2/16/2017</td>
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Name">Deborah Colon</td>
+                                        <td data-title="Date Sent">10/21/2017</td>
+                                        <td data-title="Client Name">Leopard Navigations</td>
+                                        <td data-title="Client User Name">Deborah Colon</td>
                                         <td data-title="Email"><a href="mailto:deborah.colon@domain.com">deborah.colon@domain.com</a>
                                         </td>
-                                        <td data-title="Screenshot">
-                                            <a data-toggle="modal" data-target="#screenshotSubmitted">
-                                View
-                              </a>
-                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot submitted</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <img src="../img/error-sample.png" alt="Error Sample" height="350" width="550" />
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
+                                        </td>
+                                        <td data-title="Date Closed">-------</td>
+                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Status"><span class="statusBtn green">Open</span>
+                                        </td>
+                                        <td data-title="Actions" class="actionBtn">
+                                            <div class="btn-cell">
+                                                <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
+                                            </div>
+
+                                            <div class="btn-cell">
+                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
                                             </div>
                                         </td>
-                                        <td data-title="Message">I need help</td>
-                                        <td data-title="Date Submitted">2/15/2017</td>
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Name">Luca Atkins</td>
+                                        <td data-title="Date Sent">10/22/2017</td>
+                                        <td data-title="Client Name">Beedle Aviation</td>
+                                        <td data-title="Client User Name">Luca Atkins</td>
                                         <td data-title="Email"><a href="mailto:luca.atkins@domain.com">luca.atkins@domain.com</a>
                                         </td>
-                                        <td data-title="Screenshot">
-                                            <a data-toggle="modal" data-target="#screenshotSubmitted">
-                                View
-                              </a>
-                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot submitted</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <img src="../img/error-sample.png" alt="Error Sample" height="350" width="550" />
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
+                                        </td>
+                                        <td data-title="Date Closed">-------</td>
+                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Status"><span class="statusBtn green">Open</span>
+                                        </td>
+                                        <td data-title="Actions" class="actionBtn">
+                                            <div class="btn-cell">
+                                                <a class="actionBlue btn disabled" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
+                                            </div>
+
+                                            <div class="btn-cell">
+                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
                                             </div>
                                         </td>
-                                        <td data-title="Message">I need help</td>
-                                        <td data-title="Date Submitted">2/14/2017</td>
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Name">Erica Compton</td>
+                                        <td data-title="Date Sent">10/23/2017</td>
+                                        <td data-title="Client Name">Forest Arts</td>
+                                        <td data-title="Client User Name">Erica Compton</td>
                                         <td data-title="Email"><a href="mailto:erica.compton@domain.com">erica.compton@domain.com</a>
                                         </td>
-                                        <td data-title="Screenshot">
-                                            <a data-toggle="modal" data-target="#screenshotSubmitted">
-                                View
-                              </a>
-                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot submitted</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <img src="../img/error-sample.png" alt="Error Sample" height="350" width="550" />
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
+                                        </td>
+                                        <td data-title="Date Closed">-------</td>
+                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Status"><span class="statusBtn green">Open</span>
+                                        </td>
+                                        <td data-title="Actions" class="actionBtn">
+                                            <div class="btn-cell">
+                                                <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
+                                            </div>
+
+                                            <div class="btn-cell">
+                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
                                             </div>
                                         </td>
-                                        <td data-title="Message">I need help</td>
-                                        <td data-title="Date Submitted">2/13/2017</td>
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Name">Lawson Haney</td>
+                                        <td data-title="Date Sent">10/24/2017</td>
+                                        <td data-title="Client Name">Gemedia</td>
+                                        <td data-title="Client User Name">Lawson Haney</td>
                                         <td data-title="Email"><a href="mailto:lawson.haney@domain.com">lawson.haney@domain.com</a>
                                         </td>
-                                        <td data-title="Screenshot">
-                                            <a data-toggle="modal" data-target="#screenshotSubmitted">
-                                View
-                              </a>
-                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot submitted</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <img src="../img/error-sample.png" alt="Error Sample" height="350" width="550" />
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
+                                        </td>
+                                        <td data-title="Date Closed">-------</td>
+                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Status"><span class="statusBtn green">Open</span>
+                                        </td>
+                                        <td data-title="Actions" class="actionBtn">
+                                            <div class="btn-cell">
+
+                                                <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted" disabled"><i class="fa fa-paperclip "></i></a>
+                                            </div>
+
+                                            <div class="btn-cell ">
+                                                <a href=" " data-toggle="modal " data-target="#close " title=" " class="actionRed " data-original-title="Close "><i class="fa fa-close "></i></a>
                                             </div>
                                         </td>
-                                        <td data-title="Message">I need help</td>
-                                        <td data-title="Date Submitted">2/13/2017</td>
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Name">Brian Dorsey</td>
-                                        <td data-title="Email"><a href="mailto:brian.dorsey@domain.com">brian.dorsey@domain.com</a>
+                                        <td data-title="Date Sent ">10/25/2017</td>
+                                        <td data-title="Client Name ">Nemostones</td>
+                                        <td data-title="Client User Name ">Brian Dorsey</td>
+                                        <td data-title="Email "><a href="mailto:brian.dorsey@domain.com ">brian.dorsey@domain.com</a>
                                         </td>
-                                        <td data-title="Screenshot">
-                                            <a data-toggle="modal" data-target="#screenshotSubmitted">
-                                View
-                              </a>
-                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot submitted</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <img src="../img/error-sample.png" alt="Error Sample" height="350" width="550" />
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <td data-title="Issue Reported "> <a href="# " data-toggle="popover " data-trigger="hover " data-placement="top " data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone. ">I was submitting...</a>
+                                        </td>
+                                        <td data-title="Date Closed ">10/28/2017</td>
+                                        <td data-title="Closed By ">Jake Longhorn</td>
+                                        <td data-title="Status "><span class="statusBtn blue ">Closed</span>
+                                        </td>
+                                        <td data-title="Actions " class="actionBtn ">
+                                            <div class="btn-cell ">
+                                                <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
+                                            </div>
+                                            <div class="btn-cell ">
+                                                <a class="actionRed btn disabled" ><i class="fa fa-close "></i></a>
                                             </div>
                                         </td>
-                                        <td data-title="Message">I need help</td>
-                                        <td data-title="Date Submitted">2/12/2017</td>
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Name">Barbara Kline</td>
-                                        <td data-title="Email"><a href="mailto:barbara.kline@domain.com">barbara.kline@domain.com</a>
+                                        <td data-title="Date Sent ">10/26/2017</td>
+                                        <td data-title="Client Name ">Forest Productions</td>
+                                        <td data-title="Client User Name ">Barbara Kline</td>
+                                        <td data-title="Email "><a href="mailto:barbara.kline@domain.com ">barbara.kline@domain.com</a>
                                         </td>
-                                        <td data-title="Screenshot">
-                                            <a data-toggle="modal" data-target="#screenshotSubmitted">
-                                View
-                              </a>
-                                            <div class="modal fade" id="screenshotSubmitted" tabindex="-1" role="dialog" aria-labelledby="screenshotSubmittedLabel">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                            <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot submitted</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <img src="../img/error-sample.png" alt="Error Sample" height="350" width="550" />
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <td data-title="Issue Reported "> <a href="# " data-toggle="popover " data-trigger="hover " data-placement="top " data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone. ">I was submitting...</a>
+                                        </td>
+                                        <td data-title="Date Closed ">10/28/2017</td>
+                                        <td data-title="Closed By ">Julia Wilson</td>
+                                        <td data-title="Status "><span class="statusBtn blue ">Closed</span>
+                                        </td>
+                                        <td data-title="Actions " class="actionBtn ">
+                                            <div class="btn-cell ">
+                                                <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
+                                            </div>
+
+                                            <div class="btn-cell ">
+                                                <a class="actionRed btn disabled" ><i class="fa fa-close "></i></a>
                                             </div>
                                         </td>
-                                        <td data-title="Message">I need help</td>
-                                        <td data-title="Date Submitted">2/12/2017</td>
                                     </tr>
 
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination">
+                    <div class="text-center ">
+                        <nav aria-label="Page navigation ">
+                            <ul class="pagination ">
                                 <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">«</span>
+                                    <a href="# " aria-label="Previous ">
+                                        <span aria-hidden="true ">«</span>
                                     </a>
                                 </li>
-                                <li class="active"><a href="#">1</a>
+                                <li class="active "><a href="# ">1</a>
                                 </li>
-                                <li><a href="#">2</a>
+                                <li><a href="# ">2</a>
                                 </li>
-                                <li><a href="#">3</a>
+                                <li><a href="# ">3</a>
                                 </li>
                                 <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">»</span>
+                                    <a href="# " aria-label="Next ">
+                                        <span aria-hidden="true ">»</span>
                                     </a>
                                 </li>
                             </ul>
@@ -549,10 +678,11 @@
             </div>
         </div>
     </div>
-    <div class="text-center copyright">
+    <div class="text-center copyright ">
         <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
     </div>
-    <script type="text/javascript" src="../js/tooltip.js"></script>
+    <script type="text/javascript " src="../js/tooltip.js "></script>
+    <script type="text/javascript " src="../js/popover.js "></script>
 
 </body>
 

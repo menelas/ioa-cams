@@ -12,6 +12,14 @@ hr {
 	margin-top: -2px;
 }
 
+label.checkbox-inline {
+	font-size: 13px;
+}
+
+input[type="checkbox"] {
+    margin-top: 0px;
+}
+
 .alert.alert-info {
 	margin: 8px 10px 10px 0px;
 }

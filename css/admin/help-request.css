@@ -1,24 +1,92 @@
-/************* Add New Claim Content *************/
-.panel-primary {
-    border: 1px solid #ccc;
-    border-radius: 0;
-    margin-top: 20px;
-}
-
-.title-header {
-    padding: 3px 0 5px;
-    background: #4995cf;
-    color: #fff;
-    display: block;
-    clear: both;
-    text-align: center;
-    font-size: 17px;
-}
-
-.claim-header {
-    color: #4995cf;
-}
-
 .form-control, input[type="file"] {
     margin-bottom: 10px;
+}
+
+.btn.disabled {
+    padding: 2px 6px 4px 6px;
+}
+
+.help-request-search{
+	display: table;
+}
+
+.help-request-search > .head-drop {
+    display: table-cell;
+    vertical-align: middle;
+    float: none !important;
+    text-align: left;
+	padding: 4px 16px;
+}
+
+.help-request-search > .head-drop:last-child {
+    text-align: right;
+}
+
+.help-request-search > .head-drop:last-child label.checkbox-inline {
+    margin-right: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search-frm {
+    max-width: 300px;
+    min-width: 300px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.search-frm  .input-group{
+	margin-top: 0;
+}
+
+.search-frm  .input-group .form-control {
+    height: 30px;
+    padding: 3px 7px;
+    line-height: 1;
+
+}
+.search-frm  .input-group .input-group-addon {
+    padding: 3px 12px;
+}
+
+@media (max-width: 1120px){
+	.search-frm {
+		min-width: 0;
+	}
+}
+
+@media (max-width: 1040px){
+	.help-request-search {
+		display: block;
+	}
+	.help-request-search > .head-drop {
+		display: block;
+	}
+	.help-request-search > .head-drop:last-child {
+		text-align: left;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 870px){
+	.help-request-search > .head-drop:last-child label.checkbox-inline {
+		display: block;
+	}
+	.search-frm {
+		display: block;
+		margin-top: 15px;
+	}
+}
+
+.carousel-indicators .active {
+    background-color: #5c5c5c;
+}
+
+.carousel-indicators li {
+    border: 1px solid #5c5c5c;
+}
+
+@media (min-width: 768px){
+.carousel-indicators {
+    bottom: -15px; }
 }
