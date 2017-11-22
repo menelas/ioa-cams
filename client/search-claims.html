@@ -57,7 +57,7 @@
                             <div class="arrow-up"></div>
                             <li><a href="#">Edit Profile</a>
                             </li>
-                            <li><a href="../admin/help-request.html">Help</a>
+                            <li><a data-toggle="modal" data-target="#help-request">Help</a>
                             </li>
                             <li><a href="#">Logout</a>
                             </li>
@@ -156,19 +156,6 @@
                     <hr />
 
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../client/claim-report.html">Summary</a>
-                                <hr>
-                            </li>
-                            <li><a href="#">OSHA</a>
-                                <hr>
-                            </li>
-                        </ul>
-                        <hr />
-                    </li>
-
-                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Carriers</a>
@@ -195,7 +182,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="#">Edit Profile</a>
                                 </li>
-                                <li><a href="../admin/help-request.html">Help</a>
+                                <li><a data-toggle="modal" data-target="#help-request">Help</a>
                                 </li>
                                 <li><a href="#">Logout</a>
                                 </li>
@@ -216,7 +203,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
 
                     <div class="pull-right">
-                        <button type="button" class="btn claims-btn">Add New Claim</button>
+                        <button type="button" class="btn cams-btn">Add New Claim</button>
                     </div>
 
                     <h3>Search for a claim</h3>
@@ -334,8 +321,7 @@
                                     <thead class="cf">
 
                                         <tr>
-                                           
-                                            <th>Line of Coverage</th>
+                                            <th>LOC</th>
                                             <th>Company</th>
                                             <th>Claim Number</th>
                                             <th>Claimant Name(s)</th>
@@ -352,7 +338,7 @@
 
                                         <tr>
                                             
-                                            <td data-title="Line of Coverage">Auto</td>
+                                            <td data-title="LOC">Auto</td>
                                             <td data-title="Company">Beedle Foods, Inc.</td>
                                             <td data-title="Claim Number"><i class="fa fa-exclamation-circle warning">&nbsp;&nbsp;</i>----------</td>
                                             <td data-title="Claimant Name(s)">Beedle Foods, Inc.</td>
@@ -369,9 +355,8 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
-                                           
-                                            <td data-title="Line of Coverage">Auto</td>
+                                        <tr class="parent-child-main">
+                                            <td data-title="LOC"><strong class="baseline"><i class="fa fa-ban" aria-hidden="true" data-toggle="tooltip" title="Noticed Only and not sent to the carrier"></i></strong> Auto</td>
                                             <td data-title="Company">Beedle Foods, Inc.</td>
                                             <td data-title="Claim Number">9112PE10837</td>
                                             <td data-title="Claimant Name(s)">Beedle Foods, Inc.</td>
@@ -388,9 +373,8 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
-                                            
-                                            <td data-title="Line of Coverage"> Auto</td>
+                                        <tr class="parent-child-main">
+                                            <td data-title="LOC"><strong class="baseline"><i class="fa fa-envelope" aria-hidden="true" data-toggle="tooltip" title="Claim Input from Email"></i></strong> Auto</td>
                                             <td data-title="Company">Beedle Foods, Inc.</td>
                                             <td data-title="Claim Number">983934343-GA</td>
                                             <td data-title="Claimant Name(s)">Beedle Foods, Inc.</td>
@@ -407,9 +391,8 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
-                                            
-                                            <td data-title="Line of Coverage"> Auto</td>
+                                        <tr class="parent-child-main">
+                                            <td data-title="LOC"><strong class="baseline"><i class="fa fa-fax" aria-hidden="true" data-toggle="tooltip" title="Claim Input from Fax"></i></strong> Auto</td>
                                             <td data-title="Company">Beedle Foods, Inc.</td>
                                             <td data-title="Claim Number">1827232-GB</td>
                                             <td data-title="Claimant Name(s)">Beedle Foods, Inc.</td>
@@ -426,9 +409,8 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
-                                           
-                                            <td data-title="Line of Coverage"> Auto</td>
+                                        <tr class="parent-child-main">
+                                            <td data-title="LOC"><strong class="baseline"><i class="fa fa-phone" aria-hidden="true" data-toggle="tooltip" title="Claim Input from Phone"></i></strong> Auto</td>
                                             <td data-title="Company">Beedle Foods, Inc.</td>
                                             <td data-title="Claim Number">1827232-GB</td>
                                             <td data-title="Claimant Name(s)">Beedle Foods, Inc.</td>
@@ -445,9 +427,8 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
-                                          
-                                            <td data-title="Line of Coverage">Auto</td>
+                                        <tr class="parent-child-main">
+                                            <td data-title="LOC"><strong class="baseline"><i class="fa fa-ban" aria-hidden="true" data-toggle="tooltip" title="Noticed Only and Email"></i></strong> Auto</td>
                                             <td data-title="Company">Beedle Foods, Inc.</td>
                                             <td data-title="Claim Number">9112PE19323</td>
                                             <td data-title="Claimant Name(s)">Beedle Foods, Inc.</td>
@@ -465,8 +446,7 @@
                                         </tr>
 
                                         <tr class="parent-child-main">
-                                          
-                                            <td data-title="Line of Coverage"><strong>P</strong> <i class="fa fa-caret-down show2" aria-hidden="true" p-child="pc1"></i><i class="fa fa-caret-up shide" aria-hidden="true" p-child="pc1" style="display: none;"></i> Auto</td>
+                                            <td data-title="LOC"><strong>P</strong> <i class="fa fa-caret-down show2" aria-hidden="true" p-child="pc1"></i><i class="fa fa-caret-up shide" aria-hidden="true" p-child="pc1" style="display: none;"></i> Auto</td>
                                             <td data-title="Company">Beedle Foods, Inc.</td>
                                             <td data-title="Claim Number">9112PE13929</td>
                                             <td data-title="Claimant Name(s)">Beedle Foods, Inc.</td>

@@ -107,10 +107,14 @@
     font-weight:bold;
 }
 
-
 .btn.btn-link a:hover {
     color: red;
 }
+
+.modal .claim-amounts-modal{
+    width: 1200px;
+}
+
 /************* Left Tabs *************/
 
 .tabs-left {

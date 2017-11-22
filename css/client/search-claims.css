@@ -14,7 +14,7 @@
     padding-right: 0px;
 }
 
-.search-claims-btn {
+.search-cams-btn {
   background: #296198;
   padding: 6px 9px;
   border-radius: 4px;
@@ -96,7 +96,7 @@ form .form-group {
 }
 .parent-child-main-table.cf .parent-child-main td:first-child i {
     margin-right: 7px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 11px;  
     display: inline-block;
     vertical-align: middle;
@@ -104,6 +104,9 @@ form .form-group {
 .parent-child-main-table.cf .parent-child-main td:first-child strong {
    display: inline-block;
    vertical-align: middle;
+}
+.parent-child-main-table.cf .parent-child-main td:first-child strong.baseline {
+    vertical-align: baseline;
 }
 .parent-child-main-table.cf .parent-child-main td:first-child i:hover{
     cursor: pointer;

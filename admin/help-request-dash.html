@@ -214,7 +214,7 @@
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="help-requestlabel">Submit Help Request</h4>
                             </div>
@@ -308,8 +308,8 @@
                                         <th>User Name</th>
                                         <th>Email</th>
                                         <th>Issue Reported</th>
-                                        <th>Date Closed</th>
-                                        <th>Closed By</th>
+                                        <th>Date edited</th>
+                                        <th>Edited By</th>
                                         <th>Status</th>
                                         <th>Actions</th>
                                     </tr>
@@ -323,8 +323,8 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date Closed">-------</td>
-                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
                                         <td data-title="Actions" class="actionBtn">
@@ -333,18 +333,18 @@
                                             </div>
 
                                             <div class="btn-cell">
-                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
+                                                <a href="" data-toggle="modal" data-target="#edit" title="" class="actionGray" data-original-title="edit"><i class="fa fa-mail-forward"></i></a>
                                             </div>
                                         </td>
 
                                             <!--Close Modal Start-->
-                                            <div class="modal fade" id="close" tabindex="-1" role="dialog" aria-labelledby="contact-titlelabel">
-                                                <div class="modal-dialog modal-md" role="document">
+                                            <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="contact-titlelabel">
+                                                <div class="modal-dialog modal-lg" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                                                             </button>
-                                                            <h4 class="modal-title" id="help-requestlabel">Close Help Request</h4>
+                                                            <h4 class="modal-title" id="help-requestlabel">Reply to Help Request</h4>
                                                         </div>
                                                         <div class="modal-body">
 
@@ -361,7 +361,6 @@
                                                                     </div>
 
                                                                     <div class="form-group">
-
                                                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                                                             <label for="" class="control-label required"> Reason to Close:</label>
                                                                         </div>
@@ -375,12 +374,22 @@
                                                                                 <option value="Other (resolved help ticket)">Other (resolved help ticket)</option>
                                                                             </select>
                                                                         </div>
-
                                                                     </div>
-
-
                                                                 </fieldset>
                                                             </form>
+
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">Panel Body</div>
+      </div>
+    </div>
+  </div>
 
                                                         </div>
 
@@ -391,7 +400,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--Close Modal End-->
+                                            <!--Edit Modal End-->
 
                                             <!--Screenshot Modal Start-->
                                             <a data-toggle="modal" data-target="#screenshotSubmitted"> </a>
@@ -399,7 +408,7 @@
                                                 <div class="modal-dialog modal-lg" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span>
                                                             </button>
                                                             <h4 class="modal-title" id="screenshotSubmittedLabel">Screenshot(s) Submitted</h4>
                                                         </div>
@@ -449,8 +458,8 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date Closed">-------</td>
-                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
                                         <td data-title="Actions" class="actionBtn">
@@ -459,7 +468,7 @@
                                             </div>
 
                                             <div class="btn-cell">
-                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
+                                                <a href="" data-toggle="modal" data-target="#edit" title="" class="actionGray" data-original-title="edit"><i class="fa fa-mail-forward"></i></a>
                                             </div>
                                         </td>
                                     </tr>
@@ -472,8 +481,8 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date Closed">-------</td>
-                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
                                         <td data-title="Actions" class="actionBtn">
@@ -482,7 +491,7 @@
                                             </div>
 
                                             <div class="btn-cell">
-                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
+                                                <a href="" data-toggle="modal" data-target="#edit" title="" class="actionGray" data-original-title="edit"><i class="fa fa-mail-forward"></i></a>
                                             </div>
                                         </td>
                                     </tr>
@@ -495,8 +504,8 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date Closed">-------</td>
-                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
                                         <td data-title="Actions" class="actionBtn">
@@ -505,7 +514,7 @@
                                             </div>
 
                                             <div class="btn-cell">
-                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
+                                                <a href="" data-toggle="modal" data-target="#edit" title="" class="actionGray" data-original-title="edit"><i class="fa fa-mail-forward"></i></a>
                                             </div>
                                         </td>
                                     </tr>
@@ -518,8 +527,8 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date Closed">-------</td>
-                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
                                         <td data-title="Actions" class="actionBtn">
@@ -528,7 +537,7 @@
                                             </div>
 
                                             <div class="btn-cell">
-                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
+                                                <a href="" data-toggle="modal" data-target="#edit" title="" class="actionGray" data-original-title="edit"><i class="fa fa-mail-forward"></i></a>
                                             </div>
                                         </td>
                                     </tr>
@@ -541,8 +550,8 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date Closed">-------</td>
-                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
                                         <td data-title="Actions" class="actionBtn">
@@ -551,7 +560,7 @@
                                             </div>
 
                                             <div class="btn-cell">
-                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
+                                                <a href="" data-toggle="modal" data-target="#edit" title="" class="actionGray" data-original-title="edit"><i class="fa fa-mail-forward"></i></a>
                                             </div>
                                         </td>
                                     </tr>
@@ -564,8 +573,8 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date Closed">-------</td>
-                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
                                         <td data-title="Actions" class="actionBtn">
@@ -574,7 +583,7 @@
                                             </div>
 
                                             <div class="btn-cell">
-                                                <a href="" data-toggle="modal" data-target="#close" title="" class="actionRed" data-original-title="Close"><i class="fa fa-close"></i></a>
+                                                <a href="" data-toggle="modal" data-target="#edit" title="" class="actionGray" data-original-title="edit"><i class="fa fa-mail-forward"></i></a>
                                             </div>
                                         </td>
                                     </tr>
@@ -587,8 +596,8 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date Closed">-------</td>
-                                        <td data-title="Closed By">-------</td>
+                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
                                         <td data-title="Actions" class="actionBtn">
@@ -597,53 +606,53 @@
                                                 <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted" disabled"><i class="fa fa-paperclip "></i></a>
                                             </div>
 
-                                            <div class="btn-cell ">
-                                                <a href=" " data-toggle="modal " data-target="#close " title=" " class="actionRed " data-original-title="Close "><i class="fa fa-close "></i></a>
+                                            <div class="btn-cell">
+                                                <a href=" " data-toggle="modal " data-target="#edit " title=" " class="actionGray " data-original-title="edit "><i class="fa fa-mail-forward "></i></a>
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Date Sent ">10/25/2017</td>
-                                        <td data-title="Client Name ">Nemostones</td>
-                                        <td data-title="Client User Name ">Brian Dorsey</td>
-                                        <td data-title="Email "><a href="mailto:brian.dorsey@domain.com ">brian.dorsey@domain.com</a>
+                                        <td data-title="Date Sent">10/25/2017</td>
+                                        <td data-title="Client Name">Nemostones</td>
+                                        <td data-title="Client User Name">Brian Dorsey</td>
+                                        <td data-title="Email"><a href="mailto:brian.dorsey@domain.com ">brian.dorsey@domain.com</a>
                                         </td>
-                                        <td data-title="Issue Reported "> <a href="# " data-toggle="popover " data-trigger="hover " data-placement="top " data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone. ">I was submitting...</a>
+                                        <td data-title="Issue Reported"> <a href="# " data-toggle="popover " data-trigger="hover " data-placement="top " data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone. ">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date Closed ">10/28/2017</td>
-                                        <td data-title="Closed By ">Jake Longhorn</td>
-                                        <td data-title="Status "><span class="statusBtn blue ">Closed</span>
+                                        <td data-title="Date edited">10/28/2017</td>
+                                        <td data-title="Edited By">Jake Longhorn</td>
+                                        <td data-title="Status"><span class="statusBtn blue">Closed</span>
                                         </td>
-                                        <td data-title="Actions " class="actionBtn ">
-                                            <div class="btn-cell ">
+                                        <td data-title="Actions" class="actionBtn">
+                                            <div class="btn-cell">
                                                 <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
                                             </div>
-                                            <div class="btn-cell ">
-                                                <a class="actionRed btn disabled" ><i class="fa fa-close "></i></a>
+                                            <div class="btn-cell">
+                                                <a class="actionGray btn disabled" ><i class="fa fa-mail-forward "></i></a>
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td data-title="Date Sent ">10/26/2017</td>
-                                        <td data-title="Client Name ">Forest Productions</td>
-                                        <td data-title="Client User Name ">Barbara Kline</td>
-                                        <td data-title="Email "><a href="mailto:barbara.kline@domain.com ">barbara.kline@domain.com</a>
+                                        <td data-title="Date Sent">10/26/2017</td>
+                                        <td data-title="Client Name">Forest Productions</td>
+                                        <td data-title="Client User Name">Barbara Kline</td>
+                                        <td data-title="Email"><a href="mailto:barbara.kline@domain.com ">barbara.kline@domain.com</a>
                                         </td>
-                                        <td data-title="Issue Reported "> <a href="# " data-toggle="popover " data-trigger="hover " data-placement="top " data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone. ">I was submitting...</a>
+                                        <td data-title="Issue Reported"> <a href="# " data-toggle="popover " data-trigger="hover " data-placement="top " data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone. ">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date Closed ">10/28/2017</td>
-                                        <td data-title="Closed By ">Julia Wilson</td>
-                                        <td data-title="Status "><span class="statusBtn blue ">Closed</span>
+                                        <td data-title="Date edited">10/28/2017</td>
+                                        <td data-title="Edited By">Julia Wilson</td>
+                                        <td data-title="Status"><span class="statusBtn blue">Closed</span>
                                         </td>
-                                        <td data-title="Actions " class="actionBtn ">
-                                            <div class="btn-cell ">
+                                        <td data-title="Actions" class="actionBtn">
+                                            <div class="btn-cell">
                                                 <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
                                             </div>
 
-                                            <div class="btn-cell ">
-                                                <a class="actionRed btn disabled" ><i class="fa fa-close "></i></a>
+                                            <div class="btn-cell">
+                                                <a class="actionGray btn disabled" ><i class="fa fa-mail-forward "></i></a>
                                             </div>
                                         </td>
                                     </tr>

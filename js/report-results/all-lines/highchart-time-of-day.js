@@ -8,13 +8,13 @@ $(function () {
         },
         xAxis: {
             categories: [
-                '0.00',
-                '3:00',
-                '4:00',
-                '8:00',
-                '9:00',
-                '11:00',
-                '12:00',
+                'January',
+                'February',
+                'March',
+                'April',
+                'May',
+                'June',
+                'July',
             ],
             crosshair: true
         },

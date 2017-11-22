@@ -1,3 +1,6 @@
+## 2017-11-22
+• Added icons on search claims, no active policies admin page, and servicing team on claims summary
+
 ## 2017-11-10
 • Added help request dash page for submitted results and updated admin dashboard.
 

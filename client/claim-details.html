@@ -58,7 +58,7 @@
                             <div class="arrow-up"></div>
                             <li><a href="#">Edit Profile</a>
                             </li>
-                            <li><a href="../admin/help-request.html">Help</a>
+                            <li><a data-toggle="modal" data-target="#help-request">Help</a>
                             </li>
                             <li><a href="#">Logout</a>
                             </li>
@@ -183,7 +183,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="#">Edit Profile</a>
                                 </li>
-                                <li><a href="../admin/help-request.html">Help</a>
+                                <li><a data-toggle="modal" data-target="#help-request">Help</a>
                                 </li>
                                 <li><a href="#">Logout</a>
                                 </li>
@@ -211,6 +211,8 @@
                             <li><a data-toggle="tab" target="#employer">Employer</a>
                             </li>
                             <li><a data-toggle="tab" target="#contacts">Contacts</a>
+                            </li>
+                            <li><a data-toggle="tab" target="#servicing-team">Servicing Team</a>
                             </li>
                             <li><a data-toggle="tab" target="#policy">Policy</a>
                             </li>
@@ -379,6 +381,49 @@
                                                 <td data-title="Email"><a href="mailto:sample.user@ioausa.com">sample.user@ioausa.com</a>
                                                 </td>
                                                 <td data-title="Primary Contact"><i class="fa fa-star"></i> Primary Contact</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <hr />
+                                <h4 class="sub-section">Servicing Team</h4>
+
+                                <div class="cams-tables" id="servicing-team">
+                                    <table class="table-hover table-striped table-condensed cf">
+                                        <thead class="cf">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Type</th>
+                                                <th>Phone</th>
+                                                <th>Email</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Name">Jayce Ritter</td>
+                                                <td data-title="Type">Producer</td>
+                                                <td data-title="Phone">(407)-989-4481</td>
+                                                <td data-title="Email"><a href="mailto:jayce.ritter@ioausa.com">jayce.ritter@ioausa.com</a>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Name">Eliza Collins</td>
+                                                <td data-title="Type">Account Manager</td>
+                                                <td data-title="Phone">(407)-989-4481</td>
+                                                <td data-title="Email"><a href="mailto:eliza.collins@ioausa.com">eliza.collins@ioausa.com</a>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Name">Carter Hahn</td>
+                                                <td data-title="Type">Technical Contact</td>
+                                                <td data-title="Phone">(407)-989-4481</td>
+                                                <td data-title="Email"><a href="mailto:carter.hahn@ioausa.com">carter.hahn@ioausa.com</a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>

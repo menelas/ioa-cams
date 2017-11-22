@@ -1157,6 +1157,14 @@ a.view:visited, a.view:hover {
    text-decoration: underline;
 }
 
+/************ Help Request *********/
+
+a.past-help-requests {
+   display: inline-block;
+   margin-top: 5px;
+   color: #23527c;
+}
+
 /************ Misc *********/
 
 .warning {

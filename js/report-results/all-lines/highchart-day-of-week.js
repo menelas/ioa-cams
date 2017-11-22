@@ -1,51 +1,47 @@
-Highcharts.chart('day-of-week', {
-
-    title: {
-        text: 'Solar Employment Growth by Sector, 2010-2016'
-    },
-
-    subtitle: {
-        text: 'Source: thesolarfoundation.com'
-    },
-
-    yAxis: {
+$(function () {
+    Highcharts.chart('day-of-week', {
+        chart: {
+            type: 'column'
+        },
         title: {
-            text: 'Number of Employees'
-        }
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle'
-    },
-
-    plotOptions: {
-        series: {
-            label: {
-                connectorAllowed: false
-            },
-            pointStart: 2010
-        }
-    },
-
-    series: [{
-        name: 'Installation',
-        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
-    }],
-
-    responsive: {
-        rules: [{
-            condition: {
-                maxWidth: 500
-            },
-            chartOptions: {
-                legend: {
-                    layout: 'horizontal',
-                    align: 'center',
-                    verticalAlign: 'bottom'
+            text: ''
+        },
+        xAxis: {
+            categories: [
+                'January, 2017',
+                'February, 2017',
+                'March, 2017',
+                'April, 2017',
+                'May, 2017',
+                'June, 2017',
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Claims Count',
+            }
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
                 }
             }
-        }]
-    }
+        },
+        legend:
+        {
+            enabled: false
+        },
+        series: [{
+            name: 'Claims Count',
+            data: [3,4,7,4,9,1]
 
+        }]
+    });
 });
