@@ -1,4 +1,7 @@
 ## 2017-11-29
+• Updated search claims for clients page
+
+## 2017-11-29
 • Updated no active policies page and search claims
 
 ## 2017-11-22
