@@ -7,21 +7,24 @@ $(function () {
             text: ''
         },
         xAxis: {
-            categories: [
-                'Alabama',
-                'Arizona',
-                'California',
-                'Florida',
-                'Georgia',
-                'New Jersey',
-                'New York',
-            ],
+        categories: [
+            'Cocoa, FL',
+            'Fernandina, FL',
+            'Fort Lauderdale, FL',
+            'Jacksonville, FL',
+            'Jupiter, FL',
+            'Longwood, FL',
+            'Miami, FL',
+            'Ormond Beach, FL',
+            'Tampa, Fl',
+            'Tallahassee, FL'
+        ],
             crosshair: true
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Claims Count',
+                text: 'Locations',
             }
         },
         plotOptions: {
@@ -40,8 +43,8 @@ $(function () {
             enabled: false
         },
         series: [{
-            name: 'Claims Count',
-            data: [3,4,7,4,9,1]
+            name: 'Locations',
+            data: [17,12,9,6,3,2,8,3,1,2]
 
         }]
     });

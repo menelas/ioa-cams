@@ -42,139 +42,343 @@
 
     <div class="container-fluid content">
 
-            <!-- Body -->
-            <div class="body-container">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
-                    <div class="pull-left head-drop">
-                        <div class="btn-group">
-                            <p>IOA Risk Services Claim Report for Sample Company</p>
-                        </div>
-                    </div>
-
-                    <div class="pull-right">
-                        <script> function printPage() { window.print(); } </script>
-                        <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
-                        <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to CSV</button>
+        <!-- Body -->
+        <div class="body-container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+                <div class="pull-left head-drop">
+                    <div class="btn-group">
+                        <p>IOA Risk Services Claim Report for Sample Company</p>
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Damage Type
-                                    </div>
-                                </div>
-                                <div id="damage-type" class="report-container"></div>
-                            </div>
-                        </div> 
-
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Locations
-                                    </div>
-                                </div>
-                                <div id="locations" class="report-container"></div>
-                            </div>
-                        </div> 
-
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Business Interruption
-                                    </div>
-                                </div>
-                                <div id="business-interruption" class="report-container"></div>
-                            </div>
-                        </div> 
-
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Lag Times
-                                    </div>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="claim-amounts">
-                                        <table class="table-hover table-striped table-condensed cf" border="5">
-                                            <thead class="cf">
-                                                <tr>
-                                                    <th>Date of Incident</th>
-                                                    <th>Lag Time</th>
-                                                    <th>Date Submitted to Carrier</th>
-                                                    <th>Lag Time</th>
-                                                    <th>Date Employer Notified</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/18/2017</td>
-                                                    <td data-title="Lag Time">8 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/26/2017</td>
-                                                    <td data-title="Lag Time">2 Days</td>
-                                                    <td data-title="Date Employer Notified">09/28/2017</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/17/2017</td>
-                                                    <td data-title="Lag Time">6 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/23/2017</td>
-                                                    <td data-title="Lag Time">6 Days</td>
-                                                    <td data-title="Date Employer Notified">09/29/2017</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/16/2017</td>
-                                                    <td data-title="Lag Time">6 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/22/2017</td>
-                                                    <td data-title="Lag Time">2 Days</td>
-                                                    <td data-title="Date Employer Notified">09/24/2017</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/15/2017</td>
-                                                    <td data-title="Lag Time">6 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/21/2017</td>
-                                                    <td data-title="Lag Time">2 Days</td>
-                                                    <td data-title="Date Employer Notified">09/23/2017</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/15/2017</td>
-                                                    <td data-title="Lag Time">5 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/20/2017</td>
-                                                    <td data-title="Lag Time">1 Days</td>
-                                                    <td data-title="Date Employer Notified">09/22/2017</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/15/2017</td>
-                                                    <td data-title="Lag Time">6 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/21/2017</td>
-                                                    <td data-title="Lag Time">1 Days</td>
-                                                    <td data-title="Date Employer Notified">09/22/2017</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
+                <div class="pull-right">
+                    <script>
+                        function printPage() { window.print(); }
+                    </script>
+                    <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
+                    <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to Excel</button>
                 </div>
             </div>
 
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
+                <div class="panel tablecontainer spacer">
+                    <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                        <div class="pull-left head-drop">
+                            Claim(s) Amounts
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="claim-amounts">
+                            <table class="table-hover table-striped table-condensed cf" border="5">
+                                <thead class="cf">
+
+                                    <tr>
+                                        <th>Date of Injury</th>
+                                        <th>Claim Number</th>
+                                        <th>Last Name</th>
+                                        <th>First Name</th>
+                                        <th>M.I.</th>
+                                        <th>Medical Paid</th>
+                                        <th>Medical Reserved</th>
+                                        <th>Medical Incurred</th>
+                                        <th>Indemnity Paid</th>
+                                        <th>Indemnity Reserved</th>
+                                        <th>Indemnity Incurred</th>
+                                        <th>Expenses Paid</th>
+                                        <th>Expenses Reserved</th>
+                                        <th>Expenses Incurred</th>
+                                        <th>Total Paid</th>
+                                        <th>Total Reserved</th>
+                                        <th>Total Incurred</th>
+                                        <th>Subrogation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">5/30/2016</td>
+                                        <td data-title="Claim Number">306F15009203</td>
+                                        <td data-title="Last Name">Caroll</td>
+                                        <td data-title="First Name">Dotson</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$292.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$292.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$0.00</td>
+                                        <td data-title="Expenses Paid">$21.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$43.00</td>
+                                        <td data-title="Total Paid">$313.00</td>
+                                        <td data-title="Total Reserved">$0.00</td>
+                                        <td data-title="Total Incurred">$343.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">4/20/2016</td>
+                                        <td data-title="Claim Number">306F15009518</td>
+                                        <td data-title="Last Name">Berry</td>
+                                        <td data-title="First Name">Francis</td>
+                                        <td data-title="M.I.">R</td>
+                                        <td data-title="Medical Paid">$748.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$503.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$0.00</td>
+                                        <td data-title="Expenses Paid">$85.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$84.00</td>
+                                        <td data-title="Total Paid">$839.00</td>
+                                        <td data-title="Total Reserved">$0.00</td>
+                                        <td data-title="Total Incurred">$764.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">4/12/2016</td>
+                                        <td data-title="Claim Number">306F15009439</td>
+                                        <td data-title="Last Name">Mcmillan</td>
+                                        <td data-title="First Name">Linda</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$983.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$323.00</td>
+                                        <td data-title="Indemnity Paid">$302.00</td>
+                                        <td data-title="Indemnity Reserved">$934.00</td>
+                                        <td data-title="IndemnityIncurred">$203.00</td>
+                                        <td data-title="Expenses Paid">$343.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$12.00</td>
+                                        <td data-title="Total Paid">$543.00</td>
+                                        <td data-title="Total Reserved">$0.00</td>
+                                        <td data-title="Total Incurred">$719.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">11/13/2015</td>
+                                        <td data-title="Claim Number">306F15009873</td>
+                                        <td data-title="Last Name">Pitman</td>
+                                        <td data-title="First Name">Edwin</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$4,493.00</td>
+                                        <td data-title="Medical Reserved">$10,430.00</td>
+                                        <td data-title="Medical Incurred">$234.00</td>
+                                        <td data-title="Indemnity Paid">$439.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$812.00</td>
+                                        <td data-title="Expenses Paid">$434.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$923.00</td>
+                                        <td data-title="Total Paid">$3,043.00</td>
+                                        <td data-title="Total Reserved">$839.00</td>
+                                        <td data-title="Total Incurred">$561.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">10/28/2015</td>
+                                        <td data-title="Claim Number">306F15009637</td>
+                                        <td data-title="Last Name">Wootson</td>
+                                        <td data-title="First Name">David</td>
+                                        <td data-title="M.I.">S</td>
+                                        <td data-title="Medical Paid">$1,392.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$834.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$433.00</td>
+                                        <td data-title="Expenses Paid">$232.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$430.00</td>
+                                        <td data-title="Total Paid">$12,032.00</td>
+                                        <td data-title="Total Reserved">$14,000.00</td>
+                                        <td data-title="Total Incurred">$619.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">9/25/2015</td>
+                                        <td data-title="Claim Number">306F15009267</td>
+                                        <td data-title="Last Name">King</td>
+                                        <td data-title="First Name">Robert</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$657.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$563.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$232.00</td>
+                                        <td data-title="Expenses Paid">$219.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$0.00</td>
+                                        <td data-title="Total Paid">$1,4034.00</td>
+                                        <td data-title="Total Reserved">$764.00</td>
+                                        <td data-title="Total Incurred">$719.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader damage-type">
+                            <div class="pull-left head-drop">
+                                Damage Type
+                            </div>
+                        </div>
+                        <div id="damage-type" class="report-container"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Claims by Location
+                            </div>
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Location"><strong>Alabama</strong></td>
+                                        <td data-title="# of Claims"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Auburn, AL</td>
+                                        <td data-title="# of Claims">5</td>
+                                        <td data-title="Location">Birmingham, AL</td>
+                                        <td data-title="# of Claims">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Cleveland, AL</td>
+                                        <td data-title="# of Claims">21</td>
+                                        <td data-title="Location">Colorado Springs, AL</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Location"><strong>California</strong></td>
+                                        <td data-title="# of Claims"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Aliso Viejo, CA</td>
+                                        <td data-title="# of Claims">5</td>
+                                        <td data-title="Location">Pleasanton, CA</td>
+                                        <td data-title="# of Claims">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Sacaramento, CA</td>
+                                        <td data-title="# of Claims">23</td>
+                                        <td data-title="Location">San Diego, CA</td>
+                                        <td data-title="# of Claims">8</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Location"><strong>Florida</strong></td>
+                                        <td data-title="# of Claims"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Jacksonville, FL</td>
+                                        <td data-title="# of Claims">12</td>
+                                        <td data-title="Location">Longwood, FL</td>
+                                        <td data-title="# of Claims">13</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Ormond Beach, FL</td>
+                                        <td data-title="# of Claims">18</td>
+                                        <td data-title="Location">Kissimmee, FL</td>
+                                        <td data-title="# of Claims">13</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Location"><strong>Georgia</strong></td>
+                                        <td data-title="# of Claims"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Atlanta, GA</td>
+                                        <td data-title="# of Claims">11</td>
+                                        <td data-title="Location">Carrolton, GA</td>
+                                        <td data-title="# of Claims">13</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Business Interruption <span class="business-interruption-num">5</span>
+                            </div>
+
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <thead class="cf">
+                                    <tr>
+                                        <th>Date of Loss</th>
+                                        <th>Claim Number</th>
+                                        <th>Total Incurred</th>
+                                    </tr>
+                                </thead>
+
+                                <tr>
+                                    <td data-title="Date of Loss">11/19/2018</td>
+                                    <td data-title="Claim Number">AJK39209</td>
+                                    <td data-title="Total Incurred">$12,000</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="Date of Loss">11/17/2018</td>
+                                    <td data-title="Claim Number">AOK91918</td>
+                                    <td data-title="Total Incurred">$11,400</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="Date of Loss">11/16/2018</td>
+                                    <td data-title="Claim Number">BL201918</td>
+                                    <td data-title="Total Incurred">$16,000</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="Date of Loss">11/15/2018</td>
+                                    <td data-title="Claim Number">B1919183</td>
+                                    <td data-title="Total Incurred">$11,000</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="Date of Loss">11/14/2018</td>
+                                    <td data-title="Claim Number">OLK20292</td>
+                                    <td data-title="Total Incurred">$13,000</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="text-center copyright">
-            <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+            <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 2.3.3</p>
         </div>
 
         <script src="../js/report-results/property/highchart-color.js"></script>
@@ -188,6 +392,8 @@
         <!-- Business Interruption-->
         <script src="../js/report-results/property/highchart-business-interruption.js"></script>
 
+        <!-- Lag Times-->
+        <script src="../js/report-results/all-lines/highchart-lag-times.js"></script>
 
 </body>
 

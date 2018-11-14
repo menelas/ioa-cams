@@ -41,508 +41,322 @@
     </nav>
 
     <div class="container-fluid content">
-        <div class="row">
-            <!-- Body -->
-            <div class="body-container">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="main-report">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
-                            <div class="pull-left head-drop">
-                                <div class="btn-group">
-                                    <p>IOA Risk Services Claim Report for Sample Company</p>
-                                </div>
-                            </div>
 
-                            <div class="pull-right">
-                                <script>
-                                    function printPage() {
-                                        window.print();
-                                    }
-                                </script>
-                                <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
-                            </div>
-                        </div>
-
-                        <div class="seperate-report spacer20">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header-claim">
-                                <div class="pull-left head-drop">
-                                    <div class="btn-group">
-                                        <p><i class="fa fa-car"></i> Auto Claims Report</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 spacer20">
-                                    <div class="panel tablecontainer">
-                                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                            <div class="pull-left head-drop">
-                                                Number of Claims by Policy Year
-                                            </div>
-                                        </div>
-                                        <div id="policy-year-claims" class="report-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 spacer20">
-                                    <div class="panel tablecontainer">
-                                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                            <div class="pull-left head-drop">
-                                                Claim Status
-                                            </div>
-                                        </div>
-                                        <div id="claim-status" class="report-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 spacer20">
-                                    <div class="panel tablecontainer spacer">
-                                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                            <div class="pull-left head-drop">
-                                                Claim(s) Amounts
-                                            </div>
-                                        </div>
-
-                                        <div class="report-results-tables">
-                                            <div class="panel-body">
-                                                <div class="claim-amounts">
-                                                    <table class="table-hover table-striped table-condensed cf" border="5">
-                                                        <thead class="cf">
-                                                            <tr>
-                                                                <th>Date of Injury</th>
-                                                                <th>Claim Number</th>
-                                                                <th>Last Name</th>
-                                                                <th>First Name</th>
-                                                                <th>M.I.</th>
-                                                                <th>Medical Paid</th>
-                                                                <th>Medical Reserved</th>
-                                                                <th>Medical Incurred</th>
-                                                                <th>Indemnity Paid</th>
-                                                                <th>Indemnity Reserved</th>
-                                                                <th>Indemnity Incurred</th>
-                                                                <th>Expenses Paid</th>
-                                                                <th>Expenses Reserved</th>
-                                                                <th>Expenses Incurred</th>
-                                                                <th>Total Paid</th>
-                                                                <th>Total Reserved</th>
-                                                                <th>Total Incurred</th>
-                                                                <th>Subrogation</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-
-                                                            <tr>
-                                                                <td data-title="Date of Injury">5/30/2016</td>
-                                                                <td data-title="Claim Number">306F15009203</td>
-                                                                <td data-title="Last Name">Caroll</td>
-                                                                <td data-title="First Name">Dotson</td>
-                                                                <td data-title="M.I."></td>
-                                                                <td data-title="Medical Paid">$292.00</td>
-                                                                <td data-title="Medical Reserved">$0.00</td>
-                                                                <td data-title="Medical Incurred">$292.00</td>
-                                                                <td data-title="Indemnity Paid">$0.00</td>
-                                                                <td data-title="Indemnity Reserved">$0.00</td>
-                                                                <td data-title="IndemnityIncurred">$0.00</td>
-                                                                <td data-title="Expenses Paid">$21.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$43.00</td>
-                                                                <td data-title="Total Paid">$313.00</td>
-                                                                <td data-title="Total Reserved">$0.00</td>
-                                                                <td data-title="Total Incurred">$343.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td data-title="Date of Injury">4/20/2016</td>
-                                                                <td data-title="Claim Number">306F15009518</td>
-                                                                <td data-title="Last Name">Berry</td>
-                                                                <td data-title="First Name">Francis</td>
-                                                                <td data-title="M.I.">R</td>
-                                                                <td data-title="Medical Paid">$748.00</td>
-                                                                <td data-title="Medical Reserved">$0.00</td>
-                                                                <td data-title="Medical Incurred">$503.00</td>
-                                                                <td data-title="Indemnity Paid">$0.00</td>
-                                                                <td data-title="Indemnity Reserved">$0.00</td>
-                                                                <td data-title="IndemnityIncurred">$0.00</td>
-                                                                <td data-title="Expenses Paid">$85.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$84.00</td>
-                                                                <td data-title="Total Paid">$839.00</td>
-                                                                <td data-title="Total Reserved">$0.00</td>
-                                                                <td data-title="Total Incurred">$764.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td data-title="Date of Injury">4/12/2016</td>
-                                                                <td data-title="Claim Number">306F15009439</td>
-                                                                <td data-title="Last Name">Mcmillan</td>
-                                                                <td data-title="First Name">Linda</td>
-                                                                <td data-title="M.I."></td>
-                                                                <td data-title="Medical Paid">$983.00</td>
-                                                                <td data-title="Medical Reserved">$0.00</td>
-                                                                <td data-title="Medical Incurred">$323.00</td>
-                                                                <td data-title="Indemnity Paid">$302.00</td>
-                                                                <td data-title="Indemnity Reserved">$934.00</td>
-                                                                <td data-title="IndemnityIncurred">$203.00</td>
-                                                                <td data-title="Expenses Paid">$343.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$12.00</td>
-                                                                <td data-title="Total Paid">$543.00</td>
-                                                                <td data-title="Total Reserved">$0.00</td>
-                                                                <td data-title="Total Incurred">$719.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td data-title="Date of Injury">11/13/2015</td>
-                                                                <td data-title="Claim Number">306F15009873</td>
-                                                                <td data-title="Last Name">Pitman</td>
-                                                                <td data-title="First Name">Edwin</td>
-                                                                <td data-title="M.I."></td>
-                                                                <td data-title="Medical Paid">$4,493.00</td>
-                                                                <td data-title="Medical Reserved">$10,430.00</td>
-                                                                <td data-title="Medical Incurred">$234.00</td>
-                                                                <td data-title="Indemnity Paid">$439.00</td>
-                                                                <td data-title="Indemnity Reserved">$0.00</td>
-                                                                <td data-title="IndemnityIncurred">$812.00</td>
-                                                                <td data-title="Expenses Paid">$434.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$923.00</td>
-                                                                <td data-title="Total Paid">$3,043.00</td>
-                                                                <td data-title="Total Reserved">$839.00</td>
-                                                                <td data-title="Total Incurred">$561.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td data-title="Date of Injury">10/28/2015</td>
-                                                                <td data-title="Claim Number">306F15009637</td>
-                                                                <td data-title="Last Name">Wootson</td>
-                                                                <td data-title="First Name">David</td>
-                                                                <td data-title="M.I.">S</td>
-                                                                <td data-title="Medical Paid">$1,392.00</td>
-                                                                <td data-title="Medical Reserved">$0.00</td>
-                                                                <td data-title="Medical Incurred">$834.00</td>
-                                                                <td data-title="Indemnity Paid">$0.00</td>
-                                                                <td data-title="Indemnity Reserved">$0.00</td>
-                                                                <td data-title="IndemnityIncurred">$433.00</td>
-                                                                <td data-title="Expenses Paid">$232.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$430.00</td>
-                                                                <td data-title="Total Paid">$12,032.00</td>
-                                                                <td data-title="Total Reserved">$14,000.00</td>
-                                                                <td data-title="Total Incurred">$619.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td data-title="Date of Injury">9/25/2015</td>
-                                                                <td data-title="Claim Number">306F15009267</td>
-                                                                <td data-title="Last Name">King</td>
-                                                                <td data-title="First Name">Robert</td>
-                                                                <td data-title="M.I."></td>
-                                                                <td data-title="Medical Paid">$657.00</td>
-                                                                <td data-title="Medical Reserved">$0.00</td>
-                                                                <td data-title="Medical Incurred">$563.00</td>
-                                                                <td data-title="Indemnity Paid">$0.00</td>
-                                                                <td data-title="Indemnity Reserved">$0.00</td>
-                                                                <td data-title="IndemnityIncurred">$232.00</td>
-                                                                <td data-title="Expenses Paid">$219.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$0.00</td>
-                                                                <td data-title="Total Paid">$1,4034.00</td>
-                                                                <td data-title="Total Reserved">$764.00</td>
-                                                                <td data-title="Total Incurred">$719.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Body -->
+        <div class="body-container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+                <div class="pull-left head-drop">
+                    <div class="btn-group">
+                        <p>IOA Risk Services Comparison Report with Company A and Company B</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="main-report">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
-                            <div class="pull-left head-drop">
-                                <div class="btn-group">
-                                    <p>IOA Risk Services Claim Report for Other Sample Company</p>
-                                </div>
-                            </div>
-                            <div class="pull-right">
-                                <script>
-                                    function printPage() {
-                                        window.print();
-                                    }
-                                </script>
-                                <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
-                            </div>
+
+                <div class="pull-right">
+                    <script>
+                        function printPage() { window.print(); }
+                    </script>
+                    <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
+                    <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to Excel</button>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
+                <div class="panel tablecontainer spacer">
+                    <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                        <div class="pull-left head-drop">
+                            Claim(s) Amounts
                         </div>
+                    </div>
 
-                        <div class="seperate-report spacer20">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header-claim">
-                                <div class="pull-left head-drop">
-                                    <div class="btn-group">
-                                        <p><i class="fa fa-shield"></i> General Liability Claims Report</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="panel-body">
+                        <div class="claim-amounts">
+                            <table class="table-hover table-striped table-condensed cf" border="5">
+                                <thead class="cf">
 
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 	spacer20">
-                                    <div class="panel tablecontainer">
-                                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                            <div class="pull-left head-drop">
-                                                Number of Claims by Policy Year
-                                            </div>
-                                        </div>
-                                        <div id="policy-year-claims-gl" class="report-container"></div>
-                                    </div>
-                                </div>
-                            </div>
+                                    <tr>
+                                        <th>Date of Injury</th>
+                                        <th>Claim Number</th>
+                                        <th>Last Name</th>
+                                        <th>First Name</th>
+                                        <th>M.I.</th>
+                                        <th>Medical Paid</th>
+                                        <th>Medical Reserved</th>
+                                        <th>Medical Incurred</th>
+                                        <th>Indemnity Paid</th>
+                                        <th>Indemnity Reserved</th>
+                                        <th>Indemnity Incurred</th>
+                                        <th>Expenses Paid</th>
+                                        <th>Expenses Reserved</th>
+                                        <th>Expenses Incurred</th>
+                                        <th>Total Paid</th>
+                                        <th>Total Reserved</th>
+                                        <th>Total Incurred</th>
+                                        <th>Subrogation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 spacer20">
-                                    <div class="panel tablecontainer">
-                                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                            <div class="pull-left head-drop">
-                                                Claim Status
-                                            </div>
-                                        </div>
-                                        <div id="claim-status-gl" class="report-container"></div>
-                                    </div>
-                                </div>
-                            </div>
+                                    <tr>
+                                        <td data-title="Date of Injury">5/30/2016</td>
+                                        <td data-title="Claim Number">306F15009203</td>
+                                        <td data-title="Last Name">Caroll</td>
+                                        <td data-title="First Name">Dotson</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$292.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$292.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$0.00</td>
+                                        <td data-title="Expenses Paid">$21.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$43.00</td>
+                                        <td data-title="Total Paid">$313.00</td>
+                                        <td data-title="Total Reserved">$0.00</td>
+                                        <td data-title="Total Incurred">$343.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
 
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 spacer20">
-                                    <div class="panel tablecontainer spacer">
-                                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                            <div class="pull-left head-drop">
-                                                Claim(s) Amounts
-                                            </div>
-                                        </div>
+                                    <tr>
+                                        <td data-title="Date of Injury">4/20/2016</td>
+                                        <td data-title="Claim Number">306F15009518</td>
+                                        <td data-title="Last Name">Berry</td>
+                                        <td data-title="First Name">Francis</td>
+                                        <td data-title="M.I.">R</td>
+                                        <td data-title="Medical Paid">$748.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$503.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$0.00</td>
+                                        <td data-title="Expenses Paid">$85.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$84.00</td>
+                                        <td data-title="Total Paid">$839.00</td>
+                                        <td data-title="Total Reserved">$0.00</td>
+                                        <td data-title="Total Incurred">$764.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
 
-                                        <div class="report-results-tables">
-                                            <div class="panel-body">
-                                                <div class="claim-amounts">
-                                                    <table class="table-hover table-striped table-condensed cf" border="5">
-                                                        <thead class="cf">
-                                                            <tr>
-                                                                <th>Date of Injury</th>
-                                                                <th>Claim Number</th>
-                                                                <th>Last Name</th>
-                                                                <th>First Name</th>
-                                                                <th>M.I.</th>
-                                                                <th>Medical Paid</th>
-                                                                <th>Medical Reserved</th>
-                                                                <th>Medical Incurred</th>
-                                                                <th>Indemnity Paid</th>
-                                                                <th>Indemnity Reserved</th>
-                                                                <th>Indemnity Incurred</th>
-                                                                <th>Expenses Paid</th>
-                                                                <th>Expenses Reserved</th>
-                                                                <th>Expenses Incurred</th>
-                                                                <th>Total Paid</th>
-                                                                <th>Total Reserved</th>
-                                                                <th>Total Incurred</th>
-                                                                <th>Subrogation</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
+                                    <tr>
+                                        <td data-title="Date of Injury">4/12/2016</td>
+                                        <td data-title="Claim Number">306F15009439</td>
+                                        <td data-title="Last Name">Mcmillan</td>
+                                        <td data-title="First Name">Linda</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$983.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$323.00</td>
+                                        <td data-title="Indemnity Paid">$302.00</td>
+                                        <td data-title="Indemnity Reserved">$934.00</td>
+                                        <td data-title="IndemnityIncurred">$203.00</td>
+                                        <td data-title="Expenses Paid">$343.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$12.00</td>
+                                        <td data-title="Total Paid">$543.00</td>
+                                        <td data-title="Total Reserved">$0.00</td>
+                                        <td data-title="Total Incurred">$719.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
 
-                                                            <tr>
-                                                                <td data-title="Date of Injury">5/30/2016</td>
-                                                                <td data-title="Claim Number">306F15009203</td>
-                                                                <td data-title="Last Name">Caroll</td>
-                                                                <td data-title="First Name">Dotson</td>
-                                                                <td data-title="M.I."></td>
-                                                                <td data-title="Medical Paid">$292.00</td>
-                                                                <td data-title="Medical Reserved">$0.00</td>
-                                                                <td data-title="Medical Incurred">$292.00</td>
-                                                                <td data-title="Indemnity Paid">$0.00</td>
-                                                                <td data-title="Indemnity Reserved">$0.00</td>
-                                                                <td data-title="IndemnityIncurred">$0.00</td>
-                                                                <td data-title="Expenses Paid">$21.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$43.00</td>
-                                                                <td data-title="Total Paid">$313.00</td>
-                                                                <td data-title="Total Reserved">$0.00</td>
-                                                                <td data-title="Total Incurred">$343.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
+                                    <tr>
+                                        <td data-title="Date of Injury">11/13/2015</td>
+                                        <td data-title="Claim Number">306F15009873</td>
+                                        <td data-title="Last Name">Pitman</td>
+                                        <td data-title="First Name">Edwin</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$4,493.00</td>
+                                        <td data-title="Medical Reserved">$10,430.00</td>
+                                        <td data-title="Medical Incurred">$234.00</td>
+                                        <td data-title="Indemnity Paid">$439.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$812.00</td>
+                                        <td data-title="Expenses Paid">$434.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$923.00</td>
+                                        <td data-title="Total Paid">$3,043.00</td>
+                                        <td data-title="Total Reserved">$839.00</td>
+                                        <td data-title="Total Incurred">$561.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
 
-                                                            <tr>
-                                                                <td data-title="Date of Injury">4/20/2016</td>
-                                                                <td data-title="Claim Number">306F15009518</td>
-                                                                <td data-title="Last Name">Berry</td>
-                                                                <td data-title="First Name">Francis</td>
-                                                                <td data-title="M.I.">R</td>
-                                                                <td data-title="Medical Paid">$748.00</td>
-                                                                <td data-title="Medical Reserved">$0.00</td>
-                                                                <td data-title="Medical Incurred">$503.00</td>
-                                                                <td data-title="Indemnity Paid">$0.00</td>
-                                                                <td data-title="Indemnity Reserved">$0.00</td>
-                                                                <td data-title="IndemnityIncurred">$0.00</td>
-                                                                <td data-title="Expenses Paid">$85.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$84.00</td>
-                                                                <td data-title="Total Paid">$839.00</td>
-                                                                <td data-title="Total Reserved">$0.00</td>
-                                                                <td data-title="Total Incurred">$764.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
+                                    <tr>
+                                        <td data-title="Date of Injury">10/28/2015</td>
+                                        <td data-title="Claim Number">306F15009637</td>
+                                        <td data-title="Last Name">Wootson</td>
+                                        <td data-title="First Name">David</td>
+                                        <td data-title="M.I.">S</td>
+                                        <td data-title="Medical Paid">$1,392.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$834.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$433.00</td>
+                                        <td data-title="Expenses Paid">$232.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$430.00</td>
+                                        <td data-title="Total Paid">$12,032.00</td>
+                                        <td data-title="Total Reserved">$14,000.00</td>
+                                        <td data-title="Total Incurred">$619.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
 
-                                                            <tr>
-                                                                <td data-title="Date of Injury">4/12/2016</td>
-                                                                <td data-title="Claim Number">306F15009439</td>
-                                                                <td data-title="Last Name">Mcmillan</td>
-                                                                <td data-title="First Name">Linda</td>
-                                                                <td data-title="M.I."></td>
-                                                                <td data-title="Medical Paid">$983.00</td>
-                                                                <td data-title="Medical Reserved">$0.00</td>
-                                                                <td data-title="Medical Incurred">$323.00</td>
-                                                                <td data-title="Indemnity Paid">$302.00</td>
-                                                                <td data-title="Indemnity Reserved">$934.00</td>
-                                                                <td data-title="IndemnityIncurred">$203.00</td>
-                                                                <td data-title="Expenses Paid">$343.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$12.00</td>
-                                                                <td data-title="Total Paid">$543.00</td>
-                                                                <td data-title="Total Reserved">$0.00</td>
-                                                                <td data-title="Total Incurred">$719.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td data-title="Date of Injury">11/13/2015</td>
-                                                                <td data-title="Claim Number">306F15009873</td>
-                                                                <td data-title="Last Name">Pitman</td>
-                                                                <td data-title="First Name">Edwin</td>
-                                                                <td data-title="M.I."></td>
-                                                                <td data-title="Medical Paid">$4,493.00</td>
-                                                                <td data-title="Medical Reserved">$10,430.00</td>
-                                                                <td data-title="Medical Incurred">$234.00</td>
-                                                                <td data-title="Indemnity Paid">$439.00</td>
-                                                                <td data-title="Indemnity Reserved">$0.00</td>
-                                                                <td data-title="IndemnityIncurred">$812.00</td>
-                                                                <td data-title="Expenses Paid">$434.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$923.00</td>
-                                                                <td data-title="Total Paid">$3,043.00</td>
-                                                                <td data-title="Total Reserved">$839.00</td>
-                                                                <td data-title="Total Incurred">$561.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td data-title="Date of Injury">10/28/2015</td>
-                                                                <td data-title="Claim Number">306F15009637</td>
-                                                                <td data-title="Last Name">Wootson</td>
-                                                                <td data-title="First Name">David</td>
-                                                                <td data-title="M.I.">S</td>
-                                                                <td data-title="Medical Paid">$1,392.00</td>
-                                                                <td data-title="Medical Reserved">$0.00</td>
-                                                                <td data-title="Medical Incurred">$834.00</td>
-                                                                <td data-title="Indemnity Paid">$0.00</td>
-                                                                <td data-title="Indemnity Reserved">$0.00</td>
-                                                                <td data-title="IndemnityIncurred">$433.00</td>
-                                                                <td data-title="Expenses Paid">$232.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$430.00</td>
-                                                                <td data-title="Total Paid">$12,032.00</td>
-                                                                <td data-title="Total Reserved">$14,000.00</td>
-                                                                <td data-title="Total Incurred">$619.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td data-title="Date of Injury">9/25/2015</td>
-                                                                <td data-title="Claim Number">306F15009267</td>
-                                                                <td data-title="Last Name">King</td>
-                                                                <td data-title="First Name">Robert</td>
-                                                                <td data-title="M.I."></td>
-                                                                <td data-title="Medical Paid">$657.00</td>
-                                                                <td data-title="Medical Reserved">$0.00</td>
-                                                                <td data-title="Medical Incurred">$563.00</td>
-                                                                <td data-title="Indemnity Paid">$0.00</td>
-                                                                <td data-title="Indemnity Reserved">$0.00</td>
-                                                                <td data-title="IndemnityIncurred">$232.00</td>
-                                                                <td data-title="Expenses Paid">$219.00</td>
-                                                                <td data-title="Expenses Reserved">$0.00</td>
-                                                                <td data-title="Expenses Incurred">$0.00</td>
-                                                                <td data-title="Total Paid">$1,4034.00</td>
-                                                                <td data-title="Total Reserved">$764.00</td>
-                                                                <td data-title="Total Incurred">$719.00</td>
-                                                                <td data-title="Subrogation">$0.00</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                                    <tr>
+                                        <td data-title="Date of Injury">9/25/2015</td>
+                                        <td data-title="Claim Number">306F15009267</td>
+                                        <td data-title="Last Name">King</td>
+                                        <td data-title="First Name">Robert</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$657.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$563.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$232.00</td>
+                                        <td data-title="Expenses Paid">$219.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$0.00</td>
+                                        <td data-title="Total Paid">$1,4034.00</td>
+                                        <td data-title="Total Reserved">$764.00</td>
+                                        <td data-title="Total Incurred">$719.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Number of Claims by Policy Year in 2017
+                            </div>
+                        </div>
+                        <div id="claims-policy-year" class="report-container"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Damage Type
+                            </div>
+                        </div>
+                        <div id="damage-type" class="report-container"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Claims by Location
+                            </div>
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Location"><strong>Alabama</strong></td>
+                                        <td data-title="# of Claims"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Auburn, AL</td>
+                                        <td data-title="# of Claims">5</td>
+                                        <td data-title="Location">Birmingham, AL</td>
+                                        <td data-title="# of Claims">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Cleveland, AL</td>
+                                        <td data-title="# of Claims">21</td>
+                                        <td data-title="Location">Colorado Springs, AL</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Location"><strong>California</strong></td>
+                                        <td data-title="# of Claims"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Aliso Viejo, CA</td>
+                                        <td data-title="# of Claims">5</td>
+                                        <td data-title="Location">Pleasanton, CA</td>
+                                        <td data-title="# of Claims">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Sacaramento, CA</td>
+                                        <td data-title="# of Claims">23</td>
+                                        <td data-title="Location">San Diego, CA</td>
+                                        <td data-title="# of Claims">8</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Location"><strong>Florida</strong></td>
+                                        <td data-title="# of Claims"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Jacksonville, FL</td>
+                                        <td data-title="# of Claims">12</td>
+                                        <td data-title="Location">Longwood, FL</td>
+                                        <td data-title="# of Claims">13</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Ormond Beach, FL</td>
+                                        <td data-title="# of Claims">18</td>
+                                        <td data-title="Location">Kissimmee, FL</td>
+                                        <td data-title="# of Claims">13</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Location"><strong>Georgia</strong></td>
+                                        <td data-title="# of Claims"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Location">Atlanta, GA</td>
+                                        <td data-title="# of Claims">11</td>
+                                        <td data-title="Location">Carrolton, GA</td>
+                                        <td data-title="# of Claims">13</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
 
-		<div class="text-center copyright">
-		    <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
-		</div>
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+    </div>
 
-		<!-- Number of Claims by Year-->
-		<script src="../js/report-results/all-lines/highchart-claim-by-year.js"></script>
-		<script src="../js/report-results/all-lines/highchart-claim-by-year-gl.js"></script>
+    <script src="../js/report-results/general-liability/highchart-color.js"></script>
 
-		<!-- Claim Status-->
-		<script src="../js/report-results/all-lines/highchart-claim-status.js"></script>
-		<script src="../js/report-results/all-lines/highchart-claim-status-gl.js"></script>
-		<script src="../js/report-results/all-lines/highchart-claim-status-color.js"></script>
+    <!-- Number of Claims by Year-->
+    <script src="../js/report-results/compare/highchart-claims-policy-year.js"></script>
 
-		<!-- Claims by Job Title-->
-		<script src="../js/report-results/all-lines/highchart-job-title.js"></script>
+    <!-- Damange Type -->
+    <script src="../js/report-results/compare/highchart-damage-type.js"></script>
 
-		<!-- Time of Day/Day of Week-->
-		<script src="../js/report-results/all-lines/highchart-time-of-day.js"></script>
-		<script src="../js/report-results/all-lines/highchart-day-of-week.js"></script>
-
-		<!-- Report/Non-Report Only Claims-->
-		<script src="../js/report-results/all-lines/highchart-report-only-claims.js"></script>
-
-		<!-- Denial/Non-Denial Claims-->
-		<script src="../js/report-results/all-lines/highchart-denial-claims.js"></script>
-
-		<!-- Litigation/Non-Litigation Claims-->
-		<script src="../js/report-results/all-lines/highchart-litigation-claims.js"></script>
-
-		<!-- Subrogation/Non-Subrogation Claims-->
-		<script src="../js/report-results/all-lines/highchart-subrogation-claims.js"></script>
-
-		<!-- Death/Fatality or Non-Death/Fatality Claims-->
-		<script src="../js/report-results/all-lines/highchart-fatality-claims.js"></script>
-
-		<!-- Length of Time Claims-->
-		<script src="../js/report-results/all-lines/highchart-length-of-time.js"></script>
-
-		<!-- Type of Injury/Body Part Injury-->
-		<script src="../js/report-results/all-lines/highchart-type-of-injury.js"></script>
-		<script src="../js/report-results/all-lines/highchart-type-of-body-part-injury.js"></script>
+    <!-- Location -->
+    <script src="../js/report-results/compare/highchart-location.js"></script>
 
 </body>
 

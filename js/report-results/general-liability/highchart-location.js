@@ -7,13 +7,13 @@ $(function () {
             text: ''
         },
         xAxis: {
-            categories: ['June 2017', 'July 2017', 'August 2017', 'September 2017', 'October 2017', 'November 2017',],
+            categories: ['Longwood, FL', 'Ormond Beach, FL', 'Jacksonille, FL', 'Fernandina Beach, FL', 'Tampa, FL', 'Ft. Myers, FL',],
             crosshair: true
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Claims Count',
+                text: 'Locations',
             }
         },
         plotOptions: {
@@ -32,7 +32,7 @@ $(function () {
             enabled: false
         },
         series: [{
-            name: 'Claims Count',
+            name: 'Locations',
             data: [17,12,9,6,3,2]
 
         }]

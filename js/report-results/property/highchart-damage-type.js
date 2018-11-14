@@ -8,10 +8,13 @@ $(function () {
         },
         xAxis: {
             categories: [
+                'Hail',
                 'Fire',
                 'Flood',
                 'Lightning',
+                'Theft',
                 'Wind',
+                'Other'
             ],
             crosshair: true
         },
@@ -38,7 +41,7 @@ $(function () {
         },
         series: [{
             name: 'Claims Count',
-            data: [3,4,7,4]
+            data: [6,4,3,4,7,4,3]
 
         }]
     });

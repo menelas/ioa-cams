@@ -42,200 +42,807 @@
 
     <div class="container-fluid content">
 
-            <!-- Body -->
-            <div class="body-container">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
-                    <div class="pull-left head-drop">
-                        <div class="btn-group">
-                            <p>IOA Risk Services Claim Report for Sample Company</p>
-                        </div>
-                    </div>
-
-                    <div class="pull-right">
-                        <script> function printPage() { window.print(); } </script>
-                        <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
-                        <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to CSV</button>
+        <!-- Body -->
+        <div class="body-container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+                <div class="pull-left head-drop">
+                    <div class="btn-group">
+                        <p>IOA Risk Services Claim Report for Sample Company</p>
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Time of Year By Month
-                                    </div>
-                                </div>
-                                <div id="time-of-year" class="report-container"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Bodily Injured
-                                    </div>
-                                </div>
-                                <div id="bodily-injured" class="report-container"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Driver Names
-                                    </div>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="claim-amounts">
-                                        <table class="table-hover table-striped table-condensed cf" border="5">
-                                            <thead class="cf">
-
-                                                <tr>
-                                                    <th>Claim Number</th>
-                                                    <th>Last Name</th>
-                                                    <th>First Name</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td data-title="Claim Number">306F15009203</td>
-                                                    <td data-title="Last Name">Caroll</td>
-                                                    <td data-title="First Name">Dotson</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Claim Number">306F15009518</td>
-                                                    <td data-title="Last Name">Berry</td>
-                                                    <td data-title="First Name">Francis</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Claim Number">306F15009439</td>
-                                                    <td data-title="Last Name">Mcmillan</td>
-                                                    <td data-title="First Name">Linda</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Claim Number">306F15009873</td>
-                                                    <td data-title="Last Name">Pitman</td>
-                                                    <td data-title="First Name">Edwin</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Claim Number">306F15009637</td>
-                                                    <td data-title="Last Name">Wootson</td>
-                                                    <td data-title="First Name">David</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Claim Number">306F15009267</td>
-                                                    <td data-title="Last Name">King</td>
-                                                    <td data-title="First Name">Robert</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Lag Times
-                                    </div>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="claim-amounts">
-                                        <table class="table-hover table-striped table-condensed cf" border="5">
-                                            <thead class="cf">
-
-                                                <tr>
-                                                    <th>Date of Incident</th>
-                                                    <th>Lag Time</th>
-                                                    <th>Date Submitted to Carrier</th>
-                                                    <th>Lag Time</th>
-                                                    <th>Date Employer Notified</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/18/2017</td>
-                                                    <td data-title="Lag Time">8 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/26/2017</td>
-                                                    <td data-title="Lag Time">2 Days</td>
-                                                    <td data-title="Date Employer Notified">09/28/2017</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/17/2017</td>
-                                                    <td data-title="Lag Time">6 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/23/2017</td>
-                                                    <td data-title="Lag Time">6 Days</td>
-                                                    <td data-title="Date Employer Notified">09/29/2017</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/16/2017</td>
-                                                    <td data-title="Lag Time">6 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/22/2017</td>
-                                                    <td data-title="Lag Time">2 Days</td>
-                                                    <td data-title="Date Employer Notified">09/24/2017</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/15/2017</td>
-                                                    <td data-title="Lag Time">6 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/21/2017</td>
-                                                    <td data-title="Lag Time">2 Days</td>
-                                                    <td data-title="Date Employer Notified">09/23/2017</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/15/2017</td>
-                                                    <td data-title="Lag Time">5 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/20/2017</td>
-                                                    <td data-title="Lag Time">1 Days</td>
-                                                    <td data-title="Date Employer Notified">09/22/2017</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td data-title="Date of Incident">09/15/2017</td>
-                                                    <td data-title="Lag Time">6 Days</td>
-                                                    <td data-title="Date Submitted to Carrier">09/21/2017</td>
-                                                    <td data-title="Lag Time">1 Days</td>
-                                                    <td data-title="Date Employer Notified">09/22/2017</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
+                <div class="pull-right">
+                    <script>
+                        function printPage() { window.print(); }
+                    </script>
+                    <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
+                    <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to Excel</button>
                 </div>
             </div>
 
-        <div class="text-center copyright">
-            <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
+                <div class="panel tablecontainer spacer">
+                    <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                        <div class="pull-left head-drop">
+                            Claim(s) Amounts
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="claim-amounts">
+                            <table class="table-hover table-striped table-condensed cf" border="5">
+                                <thead class="cf">
+
+                                    <tr>
+                                        <th>Date of Injury</th>
+                                        <th>Claim Number</th>
+                                        <th>Last Name</th>
+                                        <th>First Name</th>
+                                        <th>M.I.</th>
+                                        <th>Medical Paid</th>
+                                        <th>Medical Reserved</th>
+                                        <th>Medical Incurred</th>
+                                        <th>Indemnity Paid</th>
+                                        <th>Indemnity Reserved</th>
+                                        <th>Indemnity Incurred</th>
+                                        <th>Expenses Paid</th>
+                                        <th>Expenses Reserved</th>
+                                        <th>Expenses Incurred</th>
+                                        <th>Total Paid</th>
+                                        <th>Total Reserved</th>
+                                        <th>Total Incurred</th>
+                                        <th>Subrogation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">5/30/2016</td>
+                                        <td data-title="Claim Number">306F15009203</td>
+                                        <td data-title="Last Name">Caroll</td>
+                                        <td data-title="First Name">Dotson</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$292.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$292.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$0.00</td>
+                                        <td data-title="Expenses Paid">$21.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$43.00</td>
+                                        <td data-title="Total Paid">$313.00</td>
+                                        <td data-title="Total Reserved">$0.00</td>
+                                        <td data-title="Total Incurred">$343.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">4/20/2016</td>
+                                        <td data-title="Claim Number">306F15009518</td>
+                                        <td data-title="Last Name">Berry</td>
+                                        <td data-title="First Name">Francis</td>
+                                        <td data-title="M.I.">R</td>
+                                        <td data-title="Medical Paid">$748.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$503.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$0.00</td>
+                                        <td data-title="Expenses Paid">$85.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$84.00</td>
+                                        <td data-title="Total Paid">$839.00</td>
+                                        <td data-title="Total Reserved">$0.00</td>
+                                        <td data-title="Total Incurred">$764.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">4/12/2016</td>
+                                        <td data-title="Claim Number">306F15009439</td>
+                                        <td data-title="Last Name">Mcmillan</td>
+                                        <td data-title="First Name">Linda</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$983.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$323.00</td>
+                                        <td data-title="Indemnity Paid">$302.00</td>
+                                        <td data-title="Indemnity Reserved">$934.00</td>
+                                        <td data-title="IndemnityIncurred">$203.00</td>
+                                        <td data-title="Expenses Paid">$343.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$12.00</td>
+                                        <td data-title="Total Paid">$543.00</td>
+                                        <td data-title="Total Reserved">$0.00</td>
+                                        <td data-title="Total Incurred">$719.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">11/13/2015</td>
+                                        <td data-title="Claim Number">306F15009873</td>
+                                        <td data-title="Last Name">Pitman</td>
+                                        <td data-title="First Name">Edwin</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$4,493.00</td>
+                                        <td data-title="Medical Reserved">$10,430.00</td>
+                                        <td data-title="Medical Incurred">$234.00</td>
+                                        <td data-title="Indemnity Paid">$439.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$812.00</td>
+                                        <td data-title="Expenses Paid">$434.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$923.00</td>
+                                        <td data-title="Total Paid">$3,043.00</td>
+                                        <td data-title="Total Reserved">$839.00</td>
+                                        <td data-title="Total Incurred">$561.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">10/28/2015</td>
+                                        <td data-title="Claim Number">306F15009637</td>
+                                        <td data-title="Last Name">Wootson</td>
+                                        <td data-title="First Name">David</td>
+                                        <td data-title="M.I.">S</td>
+                                        <td data-title="Medical Paid">$1,392.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$834.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$433.00</td>
+                                        <td data-title="Expenses Paid">$232.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$430.00</td>
+                                        <td data-title="Total Paid">$12,032.00</td>
+                                        <td data-title="Total Reserved">$14,000.00</td>
+                                        <td data-title="Total Incurred">$619.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-title="Date of Injury">9/25/2015</td>
+                                        <td data-title="Claim Number">306F15009267</td>
+                                        <td data-title="Last Name">King</td>
+                                        <td data-title="First Name">Robert</td>
+                                        <td data-title="M.I."></td>
+                                        <td data-title="Medical Paid">$657.00</td>
+                                        <td data-title="Medical Reserved">$0.00</td>
+                                        <td data-title="Medical Incurred">$563.00</td>
+                                        <td data-title="Indemnity Paid">$0.00</td>
+                                        <td data-title="Indemnity Reserved">$0.00</td>
+                                        <td data-title="IndemnityIncurred">$232.00</td>
+                                        <td data-title="Expenses Paid">$219.00</td>
+                                        <td data-title="Expenses Reserved">$0.00</td>
+                                        <td data-title="Expenses Incurred">$0.00</td>
+                                        <td data-title="Total Paid">$1,4034.00</td>
+                                        <td data-title="Total Reserved">$764.00</td>
+                                        <td data-title="Total Incurred">$719.00</td>
+                                        <td data-title="Subrogation">$0.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Claims by 12 Months in 2017
+                            </div>
+                        </div>
+                        <div id="time-of-year" class="report-container"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader bodily-injured">
+                            <div class="pull-left head-drop">
+                                Bodily Injury
+                            </div>
+                        </div>
+                        <div id="bodily-injured" class="report-container"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer30 data-graph-version2" id="graph-version2-1">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Driver names with multiple claims - Version 1
+                            </div>
+                            <div class="pull-right head-drop">
+                                <button class="btn-version btn-graph-version2" data-graph="graph-version2-1">1</button> <button class="btn-version btn-graph-version2" data-graph="graph-version2-2">2</button>
+                            </div>
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <thead class="cf">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Name">Bernard Ware</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Patricia Hawley</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Patrice Carter</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Shawn Walters</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Luca Atkins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Lawson Haney</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Brian Dorsey</td>
+                                        <td data-title="# of Claims">8</td>
+                                        <td data-title="Name">Barbara Kline</td>
+                                        <td data-title="# of Claims">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">8</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Luca Atkins</td>
+                                        <td data-title="# of Claims">7</td>
+                                        <td data-title="Name">Lawson Haney</td>
+                                        <td data-title="# of Claims">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Brian Dorsey</td>
+                                        <td data-title="# of Claims">7</td>
+                                        <td data-title="Name">Barbara Kline</td>
+                                        <td data-title="# of Claims">2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="text-center">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                        </li>
+                                        <li class="active"><a href="#">1</a>
+                                        </li>
+                                        <li><a href="#">2</a>
+                                        </li>
+                                        <li><a href="#">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer30 data-graph-version2" style="display: none" id="graph-version2-2">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Driver names with multiple claims - Version 2
+                            </div>
+                            <div class="pull-right head-drop">
+                                <button class="btn-version btn-graph-version2" data-graph="graph-version2-1">1</button> <button class="btn-version btn-graph-version2" data-graph="graph-version2-2">2</button>
+                            </div>
+                        </div>
+                        <div id="claimant-names2" class="report-container"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer30 chart-data" id="chart-data1" style="display: none">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Driver names with multiple claims - Version 1
+                            </div>
+                            <div class="pull-right head-drop">
+                                <button class="btn-version chart-data-btn" data-chart="chart-data1">1</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data2">2</button>
+                            </div>
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <thead class="cf">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Name">Bernard Ware</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Patricia Hawley</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Patrice Carter</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Shawn Walters</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Luca Atkins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Lawson Haney</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Brian Dorsey</td>
+                                        <td data-title="# of Claims">8</td>
+                                        <td data-title="Name">Barbara Kline</td>
+                                        <td data-title="# of Claims">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">8</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Luca Atkins</td>
+                                        <td data-title="# of Claims">7</td>
+                                        <td data-title="Name">Lawson Haney</td>
+                                        <td data-title="# of Claims">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Brian Dorsey</td>
+                                        <td data-title="# of Claims">7</td>
+                                        <td data-title="Name">Barbara Kline</td>
+                                        <td data-title="# of Claims">2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="text-center">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                        </li>
+                                        <li class="active"><a href="#">1</a>
+                                        </li>
+                                        <li><a href="#">2</a>
+                                        </li>
+                                        <li><a href="#">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer30 chart-data" id="chart-data2" style="display: none">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Claimant with multiple claims - Version 2
+                            </div>
+                            <div class="pull-right head-drop">
+                                <button class="btn-version back-btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data1">1</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data2">2</button>
+                            </div>
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <thead class="cf">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Name">Bernard Ware</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Patricia Hawley</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Patrice Carter</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Shawn Walters</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Luca Atkins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Lawson Haney</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Brian Dorsey</td>
+                                        <td data-title="# of Claims">8</td>
+                                        <td data-title="Name">Barbara Kline</td>
+                                        <td data-title="# of Claims">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">8</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Luca Atkins</td>
+                                        <td data-title="# of Claims">7</td>
+                                        <td data-title="Name">Lawson Haney</td>
+                                        <td data-title="# of Claims">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Brian Dorsey</td>
+                                        <td data-title="# of Claims">7</td>
+                                        <td data-title="Name">Barbara Kline</td>
+                                        <td data-title="# of Claims">2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="text-center">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                        </li>
+                                        <li class="active"><a href="#">1</a>
+                                        </li>
+                                        <li><a href="#">2</a>
+                                        </li>
+                                        <li><a href="#">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer30 chart-data" id="chart-data3" style="display: none">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Claimant with 6-7 claims
+                            </div>
+                            <div class="pull-right head-drop">
+                                <button class="btn-version back-btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data1">1</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data2">2</button>
+                            </div>
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <thead class="cf">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Name">Bernard Ware</td>
+                                        <td data-title="# of Claims">7</td>
+                                        <td data-title="Name">Patricia Hawley</td>
+                                        <td data-title="# of Claims">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Patrice Carter</td>
+                                        <td data-title="# of Claims">7</td>
+                                        <td data-title="Name">Shawn Walters</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">7</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer30 chart-data" id="chart-data4" style="display: none">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Claimant with 8+ claims
+                            </div>
+                            <div class="pull-right head-drop">
+                                <button class="btn-version back-btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data1">1</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data2">2</button>
+                            </div>
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <thead class="cf">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Name">Bernard Ware</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Patricia Hawley</td>
+                                        <td data-title="# of Claims">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Patrice Carter</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Shawn Walters</td>
+                                        <td data-title="# of Claims">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Luca Atkins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Lawson Haney</td>
+                                        <td data-title="# of Claims">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Brian Dorsey</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Barbara Kline</td>
+                                        <td data-title="# of Claims">8</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer30 claimant-data" id="8claims" style="display: none">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Claimant with 8+ claims
+                            </div>
+                            <div class="pull-right head-drop">
+                                <button class="btn-version back-btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data1">1</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data2">2</button>
+                            </div>
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <thead class="cf">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Name">Bernard Ware</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Patricia Hawley</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Patrice Carter</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Shawn Walters</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer30 claimant-data" id="4-5claims" style="display: none">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Claimant with 4-5 claims
+                            </div>
+                            <div class="pull-right head-drop">
+                                <button class="btn-version back-btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data1">1</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data2">2</button>
+                            </div>
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <thead class="cf">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Name">Bernard Ware</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Patricia Hawley</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Patrice Carter</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Shawn Walters</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer30 claimant-data" id="2-3claims" style="display: none">
+                    <div class="panel tablecontainer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Claimant with 2-3 claims
+                            </div>
+                            <div class="pull-right head-drop">
+                                <button class="btn-version back-btn"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data1">1</button>
+                                <button class="btn-version chart-data-btn" data-chart="chart-data2">2</button>
+                            </div>
+                        </div>
+
+                        <div class="cams-tables">
+                            <table class="table-hover table-striped table-condensed cf">
+                                <thead class="cf">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                        <th>Name</th>
+                                        <th># of Claims</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Name">Bernard Ware</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Patricia Hawley</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Patrice Carter</td>
+                                        <td data-title="# of Claims">10</td>
+                                        <td data-title="Name">Shawn Walters</td>
+                                        <td data-title="# of Claims">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Name">Eliza Collins</td>
+                                        <td data-title="# of Claims">9</td>
+                                        <td data-title="Name">Carter Hahn</td>
+                                        <td data-title="# of Claims">5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <script src="../js/report-results/auto/highchart-color.js"></script>
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+    </div>
 
-        <!-- Time of Year By Month-->
-        <script src="../js/report-results/auto/highchart-time-of-year.js"></script>
+    <script src="../js/report-results/scripts.js"></script>
 
-        <!-- Claims that have Bodily Injured-->
-        <script src="../js/report-results/auto/highchart-bodily-injured.js"></script>
+    <script src="../js/report-results/auto/highchart-color.js"></script>
 
+    <!-- Time of Year By Month-->
+    <script src="../js/report-results/auto/highchart-time-of-year.js"></script>
+
+    <!-- Claims that have Bodily Injured-->
+    <script src="../js/report-results/auto/highchart-bodily-injured.js"></script>
+
+    <!--Claimant Names-->
+    <script src="../js/report-results/all-lines/highchart-claimant-names.js"></script>
+    <script src="../js/report-results/all-lines/highchart-claimant-names2.js"></script>
+
+    <!-- Lag Times-->
+    <script src="../js/report-results/all-lines/highchart-lag-times.js"></script>
 
 </body>
 

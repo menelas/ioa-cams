@@ -1424,7 +1424,7 @@ var Dropzone = function (_Emitter) {
     }
 
     // If @options.renameFile is a function,
-    // the function will be used to rename the file.name before appending it to the formData
+    // the function will be used to rename the file.name before apDraft it to the formData
 
   }, {
     key: "_renameFile",

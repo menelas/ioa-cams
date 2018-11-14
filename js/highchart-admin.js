@@ -21,8 +21,8 @@ $('.ioa-dashboard-graph').highcharts({
         data: chartData['OpenClaims']
     },
     {
-        name: 'Pending',
-        data: chartData['PendingClaims']
+        name: 'Draft',
+        data: chartData['DraftClaims']
     },
     {
         name: 'Closed',

@@ -1,43 +1,43 @@
 $(function () {
     Highcharts.chart('bodily-injured', {
         chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
+            type: 'bar'
         },
         title: {
             text: ''
         },
-            tooltip: {
-                formatter: function () {
-                    return '<span style="color:' + this.point.color + '">\u25CF</span> ' + this.series.name + ' ' + ':' + '<strong>' + this.y + '</strong>';//custom name
-                }
-            },
+        xAxis: {
+            categories: [
+                'Injured',
+                'Non-Injured'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Claims Count',
+            }
+        },
         plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
+            bar: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+                stacking: 'normal',
                 dataLabels: {
                     enabled: true,
-                    format: '<b>{point.name}</b>: {point.y:.0f} ',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
                 }
             }
         },
+        legend:
+        {
+            enabled: false
+        },
         series: [{
-            name: 'Injured',
-            colorByPoint: true,
-            data: [{
-                name: 'Bodily injury',
-                y:56
-            }, {
-                name: 'Others',
-                y:50,
-                selected: false
-            }]
+            name: 'Claims Count',
+            data: [32,54]
+
         }]
     });
 });

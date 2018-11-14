@@ -8,16 +8,12 @@ $(function () {
         },
         xAxis: {
             categories: [
-                'Arm',
-                'Burn',
-                'Concussion',
-                'Elbow',
-                'Fall',
-                'Foreign Object',
-                'Fracture',
-                'Other',
-                'Sprain',
-                'Strain',
+                'Hearing Loss $10,000',
+                'Injury $12,000',
+                'Poisoning $6,500',
+                'Respiratory Condition $4,500',
+                'Skin Disorder $1,000',
+                'All other illnesses $3,500',
             ],
             crosshair: true
         },
@@ -44,7 +40,7 @@ $(function () {
         },
         series: [{
             name: 'Claims Count',
-            data: [3,4,7,4,9,1,3,2,3]
+            data: [6,5,12,11,10,10]
 
         }]
     });

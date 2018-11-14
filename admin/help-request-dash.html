@@ -58,8 +58,6 @@
                             <div class="arrow-up"></div>
                             <li><a href="#">Edit Profile</a>
                             </li>
-                            <li><a href="#" data-toggle="modal" data-target="#help-request">Help</a>
-                            </li>
                             <li><a href="#">Logout</a>
                             </li>
                         </ul>
@@ -84,6 +82,9 @@
                             <li><a href="../client/claim-add-new.html">Add New</a>
                                 <hr>
                             </li>
+                            <li><a href="#">Add Attachment</a>
+                                <hr>
+                            </li>
                             <li><a href="../client/search-claims.html">View Claims</a>
                                 <hr>
                             </li>
@@ -101,74 +102,7 @@
                         <hr />
                     </li>
 
-                    <li>
-                        <a href="../client/company-info.html">
-                            <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
-                        </a>
-                        <hr />
-                    </li>
-
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                        <ul class="dropdown-menu servicing-team">
-
-                            <div class="col-xs-6 col-md-6">
-                                <li>Producer(s):</li>
-                                <li><i class="fa fa-user" aria-hidden="true"></i> William Carter</li>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 989-4481</a>
-                                </li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
-                                </li>
-
-                                <hr />
-
-                                <li>Claim Contact(s):</li>
-                                <li><i class="fa fa-user" aria-hidden="true"></i> Patricia Hawley</li>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 989-4481</a>
-                                </li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
-                                </li>
-
-
-                            </div>
-
-                            <div class="col-xs-6 col-md-6">
-                                <li>Policy Information:</li>
-                                <li><i class="fa fa-user" aria-hidden="true"></i> Patrice Carter</li>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 989-4481</a>
-                                </li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
-                                </li>
-
-                                <hr />
-
-
-                                <li>Technical Contact:</li>
-                                <li><i class="fa fa-user" aria-hidden="true"></i> Shawn Walters</li>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 493-4343</a>
-                                </li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
-                                </li>
-
-                            </div>
-                        </ul>
-                    </li>
-
                     <hr />
-
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../client/claim-report.html">Summary</a>
-                                <hr>
-                            </li>
-                            <li><a href="#">OSHA</a>
-                                <hr>
-                            </li>
-                        </ul>
-                        <hr />
-                    </li>
-
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
@@ -179,6 +113,12 @@
                                 <hr>
                             </li>
                             <li><a href="#">Loss Run Import</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Claim Import - Company Exclusion</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Claim Import - Client Mapping</a>
                                 <hr>
                             </li>
                             <li><a href="#">Users</a>
@@ -195,8 +135,6 @@
                      <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Edit Profile</a>
-                                </li>
-                                <li><a href="../admin/help-request.html">Help</a>
                                 </li>
                                 <li><a href="#">Logout</a>
                                 </li>
@@ -308,7 +246,7 @@
                                         <th>User Name</th>
                                         <th>Email</th>
                                         <th>Issue Reported</th>
-                                        <th>Date edited</th>
+                                        <th>Date Edited</th>
                                         <th>Edited By</th>
                                         <th>Status</th>
                                         <th>Actions</th>
@@ -323,7 +261,7 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Date Edited">-------</td>
                                         <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
@@ -347,60 +285,341 @@
                                                             <h4 class="modal-title" id="help-requestlabel">Reply to Help Request</h4>
                                                         </div>
                                                         <div class="modal-body">
-
                                                             <form role="form">
                                                                 <fieldset>
-
-                                                                    <div class="form-group">
-                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                                            <label for="" class="required control-label"> Date Closed:</label>
+                                                                <div class="panel-group custom-panel" id="accordion" role="tablist" aria-multiselectable="true">
+                                                                    <div class="panel panel-default">
+                                                                        <div class="panel-heading" role="tab" id="heading1">
+                                                                            <h4 class="panel-title">
+                                                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                            <strong class="panel-sub">Business Name:</strong>Motionways, Inc.
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                            <strong class="panel-sub">Date Submitted:</strong> 10/2/2017
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                            <strong class="panel-sub">Status:</strong>
+                                                                                            <span class="statusBtn green">Open</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </h4>
                                                                         </div>
-                                                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                                                            <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Date">
+                                                                        <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+                                                                            <div class="panel-body">
+                                                                                <div class="panel-box">
+                                                                                    <h5>Jayce Ritter 10/2/2017 at 12:28 PM</h5>
+                                                                                    <p>I was submitting a claim and received this error code. I refreshed and all of my data was gone. I’m not sure if I submitted a duplicate claim or not.</p>
+                                                                                    <p class="actionBtn"><i>Attachment(s):</i> <a href="javascript:void(0);" data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a></p>
+                                                                                </div>
+                                                                                <div class="panel-box">
+                                                                                    <h5>Bradley Risk Advocate 10/3/2017 at 9:28 AM</h5>
+                                                                                    <p>Can you try re-submitting your claim now? We fixed one issue on our end and need to verify.</p>
+                                                                                </div>
+                                                                                <div class="panel-box">
+                                                                                    <h5>Jayce Ritter 10/3/2017 at 1:00 PM</h5>
+                                                                                    <p>It’s still giving the same error. Here are some more attachments.</p>
+                                                                                    <p class="actionBtn"><i>Attachment(s):</i> <a href="javascript:void(0);" data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a></p>
+                                                                                </div>
+                                                                                <div class="panel-box reply-box">
+                                                                                    <div class="row">
+                                                                                        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                                                                                            <label class="control-label" for="text-area"><strong>Send Reply:</strong></label>
+                                                                                            <textarea class="form-control requiredfield" maxlength="4000" spellcheck="true" rows="8" cols="20"></textarea>
+                                                                                        </div>
+                                                                                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                                                                                            <label for="documents-file-input" class="control-label requiredfield" id="documents-file-label2"><strong>Send Attachment(s):</strong></label>
+                                                                                            <div id="documents-file-input2" class="dropzone requiredfield dz-clickable">
+                                                                                                <div class="dz-default dz-message"><span>Drop file or click here to upload.</span>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                                                                            <button type="button" id="clear-filters" name="clear-filters" class="btn btn-danger spacer20" data-toggle="modal" data-target="#submit-reply">Close Request</button>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 text-right">
+                                                                                            <button id="clear-filters" name="clear-filters" class="btn btn-primary spacer20">Submit Reply</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="form-group">
-                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                                            <label for="" class="control-label required"> Reason to Close:</label>
+                                                                    <!--Close Request-->
+                                                                      <div class="modal fade" id="submit-reply" role="dialog">
+
+                                                                        <div class="modal-dialog">                                             
+                                                                          <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                              <h4 class="modal-title">Close Help Request</h4>
+                                                                            </div>
+
+                                                                            <div class="modal-body">
+                                                                                <form role="form">
+                                                                                    <fieldset>
+                                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                                            <label class="required control-label" for="">Date Closed:</label>
+                                                                                        </div>
+
+                                                                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                                                            <input type="text" class="form-control" value="12/4/2017" readonly>
+                                                                                        </div>
+
+                                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                                            <label class="required control-label" for="">Reason to Close:</label>
+                                                                                        </div>
+
+                                                                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                                                                            <select id="" name="" class="form-control">
+                                                                                                <option value="Please select an item...">
+                                                                                                Please select an item...</option>
+                                                                                                <option value="Helped client resolve claims issue">
+                                                                                                Helped client resolve claims issue</option>
+                                                                                                <option value="Helped client resolve missing carrier information">Helped client resolve missing carrier information</option>
+                                                                                                <option value="Helped client with technical issue">Helped client with technical issue</option>
+                                                                                                <option value="Other (resolved help ticket)">Other (resolved help ticket)</option>   
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </fieldset>
+                                                                                </form>
+                                                                            </div>
+
+                                                                            <div class="modal-footer">
+                                                                              <button id="cancel" class="pull-left btn btn-default" data-dismiss="modal"> Cancel</button>
+                                                                              <button id="submit" name="submit" class="pull-right btn btn-primary"> Save</button>
+                                                                            </div>
+                                                                          </div>  
                                                                         </div>
 
-                                                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-8">
-                                                                            <select id="business-name-type" name="business-name-type" class="form-control">
-                                                                                <option value="--Please Select--">-- Please select an item --</option>
-                                                                                <option value="Helped client resolve claims issue">Helped client resolve claims issue</option>
-                                                                                <option value="Helped client resolve missing carrier information">Helped client resolve missing carrier information</option>
-                                                                                <option value="Helped client with technical issue">Helped client with technical issue</option>
-                                                                                <option value="Other (resolved help ticket)">Other (resolved help ticket)</option>
-                                                                            </select>
+                                                                      </div>
+                                                                    <!--Close Request-->
+
+                                                                    <!--Past Help Requests-->
+                                                                    <div class="panel panel-default">
+                                                                        <div class="panel-heading" role="tab" id="heading2">
+                                                                            <h4 class="panel-title">
+                                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                                                    Past Help Requests
+                                                                                </a>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                                                            <div class="panel-body has-padding">
+                                                                                <div class="panel-group custom-panel" id="accordion-sub" role="tablist" aria-multiselectable="true">
+                                                                                    <div class="panel panel-default">
+                                                                                        <div class="panel-heading" role="tab" id="heading1Sub">
+                                                                                            <h4 class="panel-title">
+                                                                                                <a role="button" data-toggle="collapse" data-parent="#accordion-sub" href="#collapse1Sub" aria-expanded="true" aria-controls="collapse1Sub">
+                                                                                                    <div class="row">
+                                                                                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                                            <strong class="panel-sub">Business Name:</strong>Motionways, Inc.
+                                                                                                        </div>
+                                                                                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                                                                                            <strong class="panel-sub">Date Submitted:</strong> 9/4/2017
+                                                                                                        </div>
+                                                                                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                                                                                            <strong class="panel-sub">Date Closed:</strong> 9/7/2017
+                                                                                                        </div>
+                                                                                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                                            <strong class="panel-sub">Reason Close: </strong>
+                                                                                                            <small>Helped client resolve claims issue</small>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </h4>
+                                                                                        </div>
+                                                                                        <div id="collapse1Sub" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1Sub">
+                                                                                            <div class="panel-body">
+                                                                                                <div class="panel-box">
+                                                                                                    <h5>Jayce Ritter 9/4/2017 at 12:28 PM</h5>
+                                                                                                    <p>I was submitting a claim and received this error code. I refreshed and all of my data was gone. I’m not sure if I submitted a duplicate claim or not.</p>
+                                                                                                    <p class="actionBtn"><i>Attachment(s):</i> <a href="javascript:void(0);" data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a></p>
+                                                                                                </div>
+                                                                                                <div class="panel-box">
+                                                                                                    <h5>Bradley Risk Advocate 9/5/2017 at 9:28 AM</h5>
+                                                                                                    <p>Can you try re-submitting your claim now? We fixed one issue on our end and need to verify.</p>
+                                                                                                </div>
+                                                                                                <div class="panel-box">
+                                                                                                    <h5>Jayce Ritter 9/6/2017 at 1:00 PM</h5>
+                                                                                                    <p>It’s still giving the same error. Here are some more attachments.</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="panel panel-default">
+                                                                                        <div class="panel-heading" role="tab" id="heading2Sub">
+                                                                                            <h4 class="panel-title">
+                                                                                                <a role="button" data-toggle="collapse" data-parent="#accordion-sub" href="#collapse2Sub" aria-expanded="true" aria-controls="collapse2Sub">
+                                                                                                    <div class="row">
+                                                                                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                                            <strong class="panel-sub">Business Name:</strong>Motionways, Inc.
+                                                                                                        </div>
+                                                                                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                                                                                            <strong class="panel-sub">Date Submitted:</strong>8/12/2017
+                                                                                                        </div>
+                                                                                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                                                                                            <strong class="panel-sub">Date Closed:</strong>9/14/2017
+                                                                                                        </div>
+                                                                                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                                            <strong class="panel-sub">Reason Close: </strong>
+                                                                                                            <small>Helped client resolve missing carrier information</small>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </h4>
+                                                                                        </div>
+                                                                                        <div id="collapse2Sub" class="panel-collapse collapse" role="tabpanel" aria-labelledby="past-help-request">
+                                                                                            <div class="panel-body">
+                                                                                                <div class="panel-box">
+                                                                                                    <h5>Jayce Ritter 8/13/2017 at 12:28 PM</h5>
+                                                                                                    <p>I was submitting a claim and received this error code. I refreshed and all of my data was gone. I’m not sure if I submitted a duplicate claim or not.</p>
+                                                                                                    <p class="actionBtn"><i>Attachment(s):</i> <a href="javascript:void(0);" data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a></p>
+                                                                                                </div>
+                                                                                                <div class="panel-box">
+                                                                                                    <h5>Bradley Risk Advocate 8/14/2017 at 9:28 AM</h5>
+                                                                                                    <p>Can you try re-submitting your claim now? We fixed one issue on our end and need to verify.</p>
+                                                                                                </div>
+                                                                                                <div class="panel-box">
+                                                                                                    <h5>Jayce Ritter 8/15/2017 at 1:00 PM</h5>
+                                                                                                    <p>It’s still giving the same error. Here are some more attachments.</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="panel panel-default">
+                                                                                        <div class="panel-heading" role="tab" id="heading3Sub">
+                                                                                            <h4 class="panel-title">
+                                                                                                <a role="button" data-toggle="collapse" data-parent="#accordion-sub" href="#collapse3Sub" aria-expanded="true" aria-controls="collapse3Sub">
+                                                                                                    <div class="row">
+                                                                                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                                            <strong class="panel-sub">Business Name:</strong>Raven Entertainment
+                                                                                                        </div>
+                                                                                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                                                                                            <strong class="panel-sub">Date Submitted:</strong>6/11/2017
+                                                                                                        </div>
+                                                                                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                                                                                            <strong class="panel-sub">Date Closed:</strong>6/13/2017
+                                                                                                        </div>
+                                                                                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                                            <strong class="panel-sub">Reason Close: </strong>
+                                                                                                            <small>Helped client with technical issue</small>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </h4>
+                                                                                        </div>
+                                                                                        <div id="collapse3Sub" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3Sub">
+                                                                                            <div class="panel-body">
+                                                                                                <div class="panel-box">
+                                                                                                    <h5>Jayce Ritter 6/12/2017 at 12:28 PM</h5>
+                                                                                                    <p>I was submitting a claim and received this error code. I refreshed and all of my data was gone. I’m not sure if I submitted a duplicate claim or not.</p>
+                                                                                                    <p class="actionBtn"><i>Attachment(s):</i> <a href="javascript:void(0);" data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a></p>
+                                                                                                </div>
+                                                                                                <div class="panel-box">
+                                                                                                    <h5>Bradley Risk Advocate 6/13/2017 at 9:28 AM</h5>
+                                                                                                    <p>Can you try re-submitting your claim now? We fixed one issue on our end and need to verify.</p>
+                                                                                                </div>
+                                                                                                <div class="panel-box">
+                                                                                                    <h5>Jayce Ritter 6/13/2017 at 1:00 PM</h5>
+                                                                                                    <p>It’s still giving the same error. Here are some more attachments.</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
+                                                                    <!--Past Help Requests-->
+
+                                                                </div>
                                                                 </fieldset>
                                                             </form>
-
-  <div class="panel-group">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse">
-        <div class="panel-body">Panel Body</div>
-      </div>
-    </div>
-  </div>
-
-                                                        </div>
-
-                                                        <div class="modal-footer">
-                                                            <button id="cancel" name="cancel" class="pull-left btn btn-default"> Cancel</button>
-                                                            <button id="submit" name="submit" class="pull-right btn btn-primary"> Save</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <!--Edit Modal End-->
+
+                                            <!--Past Help Request-->
+                                            <div class="modal fade" id="view-past-request-only" tabindex="-1" role="dialog" aria-labelledby="contact-titlelabel">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                            <h4 class="modal-title" id="view-past-request-only">View Past Help Request</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form role="form">
+                                                                <fieldset>
+                                                                    <div class="panel-group custom-panel" id="accordion" role="tablist" aria-multiselectable="true">
+                                                                        <div class="panel panel-default">
+                                                                            <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2">
+                                                                                    <div class="panel-group custom-panel" id="accordion-sub" role="tablist" aria-multiselectable="true">
+                                                                                        <div class="panel panel-default">
+                                                                                            <div class="panel-heading" role="tab" id="heading1Sub">
+                                                                                                <h4 class="panel-title">
+                                                                                                    <a role="button" aria-controls="collapse1Sub">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                                                <strong class="panel-sub">Business Name:</strong>Motionways, Inc.
+                                                                                                            </div>
+                                                                                                            <div class="col-lg-2 col-md-2 col-sm-12">
+                                                                                                                <strong class="panel-sub">Date Submitted:</strong> 9/4/2017
+                                                                                                            </div>
+                                                                                                            <div class="col-lg-2 col-md-2 col-sm-12">
+                                                                                                                <strong class="panel-sub">Date Closed:</strong> 9/7/2017
+                                                                                                            </div>
+                                                                                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                                                                <strong class="panel-sub">Reason Close: </strong>
+                                                                                                                <small>Helped client resolve claims issue</small>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </a>
+                                                                                                </h4>
+                                                                                            </div>
+                                                                                            <div id="collapse1Sub" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1Sub">
+                                                                                                <div class="panel-body no-padding">
+                                                                                                    <div class="panel-box">
+                                                                                                        <h5>Jayce Ritter 9/5/2017 at 12:28 PM</h5>
+                                                                                                        <p>I was submitting a claim and received this error code. I refreshed and all of my data was gone. I’m not sure if I submitted a duplicate claim or not.</p>
+                                                                                                        <p class="actionBtn"><i>Attachment(s):</i> <a href="javascript:void(0);" data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                    <div class="panel-box">
+                                                                                                        <h5>Bradley Risk Advocate 9/6/2017 at 9:28 AM</h5>
+                                                                                                        <p>Can you try re-submitting your claim now? We fixed one issue on our end and need to verify.</p>
+                                                                                                    </div>
+                                                                                                    <div class="panel-box">
+                                                                                                        <h5>Jayce Ritter 9/7/2017 at 1:00 PM</h5>
+                                                                                                        <p>It’s still giving the same error. Here are some more attachments.</p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        
+                                                                                    </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </fieldset>
+                                                            </form>
+
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Past Help Request-->
 
                                             <!--Screenshot Modal Start-->
                                             <a data-toggle="modal" data-target="#screenshotSubmitted"> </a>
@@ -458,7 +677,7 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Date Edited">-------</td>
                                         <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
@@ -481,7 +700,7 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Date Edited">-------</td>
                                         <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
@@ -504,7 +723,7 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Date Edited">-------</td>
                                         <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
@@ -527,7 +746,7 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Date Edited">-------</td>
                                         <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
@@ -550,7 +769,7 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Date Edited">-------</td>
                                         <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
@@ -573,7 +792,7 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Date Edited">-------</td>
                                         <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
@@ -596,31 +815,31 @@
                                         </td>
                                         <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date edited">-------</td>
+                                        <td data-title="Date Edited">-------</td>
                                         <td data-title="Edited By">-------</td>
                                         <td data-title="Status"><span class="statusBtn green">Open</span>
                                         </td>
                                         <td data-title="Actions" class="actionBtn">
                                             <div class="btn-cell">
 
-                                                <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted" disabled"><i class="fa fa-paperclip "></i></a>
+                                                <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted" disabled"><i class="fa fa-paperclip"></i></a>
                                             </div>
 
                                             <div class="btn-cell">
-                                                <a href=" " data-toggle="modal " data-target="#edit " title=" " class="actionGray " data-original-title="edit "><i class="fa fa-mail-forward "></i></a>
+                                                <a href="" data-toggle="modal" data-target="#edit" title="" class="actionGray" data-original-title="edit"><i class="fa fa-mail-forward"></i></a>
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td data-title="Date Sent">10/25/2017</td>
-                                        <td data-title="Client Name">Nemostones</td>
+                                        <td data-title="Client Name">Forest Productions</td>
                                         <td data-title="Client User Name">Brian Dorsey</td>
-                                        <td data-title="Email"><a href="mailto:brian.dorsey@domain.com ">brian.dorsey@domain.com</a>
+                                        <td data-title="Email"><a href="mailto:brian.dorsey@domain.com">brian.dorsey@domain.com</a>
                                         </td>
-                                        <td data-title="Issue Reported"> <a href="# " data-toggle="popover " data-trigger="hover " data-placement="top " data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone. ">I was submitting...</a>
+                                        <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date edited">10/28/2017</td>
+                                        <td data-title="Date Edited">10/28/2017</td>
                                         <td data-title="Edited By">Jake Longhorn</td>
                                         <td data-title="Status"><span class="statusBtn blue">Closed</span>
                                         </td>
@@ -629,7 +848,7 @@
                                                 <a data-toggle="modal" class="actionBlue" data-target="#screenshotSubmitted"><i class="fa fa-paperclip"></i></a>
                                             </div>
                                             <div class="btn-cell">
-                                                <a class="actionGray btn disabled" ><i class="fa fa-mail-forward "></i></a>
+                                                <a href="" data-toggle="modal" data-target="#view-past-request-only" title="" class="actionGray" data-original-title="edit"><i class="fa fa-mail-forward"></i></a>
                                             </div>
                                         </td>
                                     </tr>
@@ -638,11 +857,11 @@
                                         <td data-title="Date Sent">10/26/2017</td>
                                         <td data-title="Client Name">Forest Productions</td>
                                         <td data-title="Client User Name">Barbara Kline</td>
-                                        <td data-title="Email"><a href="mailto:barbara.kline@domain.com ">barbara.kline@domain.com</a>
+                                        <td data-title="Email"><a href="mailto:barbara.kline@domain.com">barbara.kline@domain.com</a>
                                         </td>
-                                        <td data-title="Issue Reported"> <a href="# " data-toggle="popover " data-trigger="hover " data-placement="top " data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone. ">I was submitting...</a>
+                                        <td data-title="Issue Reported"> <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="I was submitting a claim and received this error code. I refreshed and all of my data was gone.">I was submitting...</a>
                                         </td>
-                                        <td data-title="Date edited">10/28/2017</td>
+                                        <td data-title="Date Edited">10/28/2017</td>
                                         <td data-title="Edited By">Julia Wilson</td>
                                         <td data-title="Status"><span class="statusBtn blue">Closed</span>
                                         </td>
@@ -652,7 +871,7 @@
                                             </div>
 
                                             <div class="btn-cell">
-                                                <a class="actionGray btn disabled" ><i class="fa fa-mail-forward "></i></a>
+                                                <a href="" data-toggle="modal" data-target="#view-past-request-only" title="" class="actionGray" data-original-title="edit"><i class="fa fa-mail-forward"></i></a>
                                             </div>
                                         </td>
                                     </tr>
@@ -661,23 +880,23 @@
                             </table>
                         </div>
                     </div>
-                    <div class="text-center ">
-                        <nav aria-label="Page navigation ">
-                            <ul class="pagination ">
+                    <div class="text-center">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
                                 <li>
-                                    <a href="# " aria-label="Previous ">
-                                        <span aria-hidden="true ">«</span>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">«</span>
                                     </a>
                                 </li>
-                                <li class="active "><a href="# ">1</a>
+                                <li class="active"><a href="#">1</a>
                                 </li>
-                                <li><a href="# ">2</a>
+                                <li><a href="#">2</a>
                                 </li>
-                                <li><a href="# ">3</a>
+                                <li><a href="#">3</a>
                                 </li>
                                 <li>
-                                    <a href="# " aria-label="Next ">
-                                        <span aria-hidden="true ">»</span>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">»</span>
                                     </a>
                                 </li>
                             </ul>
@@ -687,11 +906,11 @@
             </div>
         </div>
     </div>
-    <div class="text-center copyright ">
-        <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 2.3.3</p>
     </div>
-    <script type="text/javascript " src="../js/tooltip.js "></script>
-    <script type="text/javascript " src="../js/popover.js "></script>
+    <script type="text/javascript" src="../js/tooltip.js"></script>
+    <script type="text/javascript" src="../js/popover.js"></script>
 
 </body>
 

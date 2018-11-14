@@ -8,12 +8,13 @@ $(function () {
         },
         xAxis: {
             categories: [
-                'January, 2017',
-                'February, 2017',
-                'March, 2017',
-                'April, 2017',
-                'May, 2017',
-                'June, 2017',
+                'Sunday',
+                'Monday',
+                'Tuesday',
+                'Wednesday',
+                'Thursday',
+                'Friday',
+                'Saturday',
             ],
             crosshair: true
         },
@@ -40,7 +41,7 @@ $(function () {
         },
         series: [{
             name: 'Claims Count',
-            data: [3,4,7,4,9,1]
+            data: [3,4,7,4,9,1,4]
 
         }]
     });

@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="../css/app/app.css">
     <link rel="stylesheet" href="../css/app/app.bootstrap.css">
     <link rel="stylesheet" href="../css/client/claim-details.css">
+    <link rel="stylesheet" href="../css/client/dropzone.css">
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/dropzone.js"></script>
 
     <!-- Chosen Multi Select -->
     <link rel="stylesheet" href="../chosen_v1.6.2/docsupport/style.css">
@@ -84,6 +86,9 @@
                             <li><a href="../client/claim-add-new.html">Add New</a>
                                 <hr>
                             </li>
+                            <li><a href="#">Add Attachment</a>
+                                <hr>
+                            </li>
                             <li><a href="../client/search-claims.html">View Claims</a>
                                 <hr>
                             </li>
@@ -98,13 +103,6 @@
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Clients</span></a>
-                        <hr />
-                    </li>
-
-                    <li>
-                        <a href="../client/company-info.html">
-                            <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
-                        </a>
                         <hr />
                     </li>
 
@@ -168,6 +166,12 @@
                             <li><a href="#">Loss Run Import</a>
                                 <hr>
                             </li>
+                            <li><a href="#">Claim Import - Company Exclusion</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">Claim Import - Client Mapping</a>
+                                <hr>
+                            </li>
                             <li><a href="#">Users</a>
                                 <hr>
                             </li>
@@ -204,6 +208,7 @@
                 </ol>
 
                 <div id="claim-summary-container">
+                    <!--
                     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
                         <ul class="nav nav-pills tabs-left">
                             <li class="active"><a data-toggle="tab" target="#claim-summary">Claim Summary </a>
@@ -220,13 +225,21 @@
                             </li>
                         </ul>
                     </div>
+                    -->
 
-                    <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 claim-summary-content">
+                    <div class="col-xs-12 col-sm-8 col-md-12 col-lg-12 claim-summary-content">
 
                         <div class="tab-content">
                             <div class="tab-pane claim-summary-pane fade in active" id="claim-summary">
 
-
+                                <ul class="nav nav-pills">
+                                    <li class="active"><a href="#claim-summary">Claim Summary</a></li>
+                                    <li><a href="#employer">Employer</a></li>
+                                    <li><a href="#contacts">Contacts</a></li>
+                                    <li><a href="#servicing-team">Servicing Team</a></li>
+                                    <li><a href="#policy">Policy</a></li>
+                                    <li><a href="#forms">Forms</a></li>
+                                </ul>
 
                                 <div class="form-horizontal">
                                     <div class="form-group">
@@ -245,9 +258,9 @@
                                         </div>
 
 
-                                      <label for="" class="col-md-4 col-lg-2 control-label">Link Claims:</label>
+                                        <label for="" class="col-md-4 col-lg-2 control-label">Link Claims:</label>
                                         <div class="col-md-5 col-lg-5">
-                                           <select data-placeholder="Select Claim(s)" multiple class="chosen-select-width" tabindex="16">
+                                            <select data-placeholder="Select Claim(s)" multiple class="chosen-select-width" tabindex="16">
                                                     <optgroup label="Beedle Foods, Inc.">
                                                         <option>1827232-GB - DOL: 7/10/2016</option>
                                                         <option>9839343-GA - DOL: 4/11/2016</option>
@@ -312,7 +325,7 @@
 
                                 <hr />
 
-                                <h4 class="sub-section">Employer</h4>
+                                <h4 id="employer" class="sub-section">Employer</h4>
 
                                 <div class="form-horizontal" id="employer">
 
@@ -343,7 +356,7 @@
                                 </div>
 
                                 <hr />
-                                <h4 class="sub-section">Contacts</h4>
+                                <h4 id="contacts" class="sub-section">Contacts</h4>
 
                                 <div class="cams-tables" id="contacts">
                                     <table class="table-hover table-striped table-condensed cf">
@@ -387,7 +400,7 @@
                                 </div>
 
                                 <hr />
-                                <h4 class="sub-section">Servicing Team</h4>
+                                <h4 id="servicing-team" class="sub-section">Servicing Team</h4>
 
                                 <div class="cams-tables" id="servicing-team">
                                     <table class="table-hover table-striped table-condensed cf">
@@ -430,7 +443,7 @@
                                 </div>
 
                                 <hr />
-                                <h4 class="sub-section">Policy</h4>
+                                <h4 id="policy" class="sub-section">Policy</h4>
 
                                 <div class="form-horizontal" id="policy">
 
@@ -459,7 +472,7 @@
                                                 </div>
                                             </div>
 
-                                           <div class="row">
+                                            <div class="row">
                                                 <div class="form-group">
                                                     <label for="" class="col-md-4 col-lg-2 control-label">Claim Adjuster:</label>
                                                     <div class="col-md-6 col-lg-3">
@@ -3885,9 +3898,9 @@
                                     <button id="add-injury" name="add-injury" class="btn btn-primary"> Add New Injury</button>
 
 
-                                    <h4 id="witnesses-passengers" class="spacer40">Witnesses or Passengers 
-                                            
-                                        </h4>
+                                    <h4 id="witnesses-passengers" class="spacer40">Witnesses or Passengers
+
+                                    </h4>
                                     <hr />
                                     <button id="add-witness" name="add-witness" class="btn btn-primary"> Add New Witness</button>
 
@@ -4098,17 +4111,17 @@
                                                             <tr>
                                                                 <td data-title="Date">6/9/2017 9:01:14AM</td>
                                                                 <td data-title="Medical Paid">$1,030.00</th>
-                                                                <td data-title="Medical Reserve">$6,970.00</th>
-                                                                <td data-title="Medical Incurred">$8,000.00</th>
-                                                                <td data-title="Indemnity Paid">$4,704.00</th>
-                                                                <td data-title="Indemnity Reserve">$8,964.00</th>
-                                                                <td data-title="Indemnity Incurred">$13,668.00</th>
-                                                                <td data-title="Expenses Paid">$3,392.00</th>
-                                                                <td data-title="Expenses Reserve">$9,193.00</th>
-                                                                <td data-title="Expenses Inccured">$12,443.00</th>
-                                                                <td data-title="Total Paid">$9,126.00</th>
-                                                                <td data-title="Total Reserve">$25,127.00</th>
-                                                                <td data-title="Total Inccured">$34,111.00</th>
+                                                                    <td data-title="Medical Reserve">$6,970.00</th>
+                                                                        <td data-title="Medical Incurred">$8,000.00</th>
+                                                                            <td data-title="Indemnity Paid">$4,704.00</th>
+                                                                                <td data-title="Indemnity Reserve">$8,964.00</th>
+                                                                                    <td data-title="Indemnity Incurred">$13,668.00</th>
+                                                                                        <td data-title="Expenses Paid">$3,392.00</th>
+                                                                                            <td data-title="Expenses Reserve">$9,193.00</th>
+                                                                                                <td data-title="Expenses Inccured">$12,443.00</th>
+                                                                                                    <td data-title="Total Paid">$9,126.00</th>
+                                                                                                        <td data-title="Total Reserve">$25,127.00</th>
+                                                                                                            <td data-title="Total Inccured">$34,111.00</th>
                                                             </tr>
 
                                                             <tr>
@@ -4116,22 +4129,22 @@
                                                                     <label>Notes</label>
                                                                     <div>Inserted by Loss Run Import</div>
                                                                 </td>
-                                                            </tr>  
+                                                            </tr>
 
                                                             <tr>
                                                                 <td data-title="Date">6/8/2017 9:01:14AM</td>
                                                                 <td data-title="Medical Paid">$2,030.00</th>
-                                                                <td data-title="Medical Reserve">$7,970.00</th>
-                                                                <td data-title="Medical Incurred">$9,000.00</th>
-                                                                <td data-title="Indemnity Paid">$5,704.00</th>
-                                                                <td data-title="Indemnity Reserve">$6,964.00</th>
-                                                                <td data-title="Indemnity Incurred">$14,668.00</th>
-                                                                <td data-title="Expenses Paid">$4,392.00</th>
-                                                                <td data-title="Expenses Reserve">$10,193.00</th>
-                                                                <td data-title="Expenses Inccured">$13,443.00</th>
-                                                                <td data-title="Total Paid">$10,126.00</th>
-                                                                <td data-title="Total Reserve">$26,127.00</th>
-                                                                <td data-title="Total Inccured">$35,111.00</th>
+                                                                    <td data-title="Medical Reserve">$7,970.00</th>
+                                                                        <td data-title="Medical Incurred">$9,000.00</th>
+                                                                            <td data-title="Indemnity Paid">$5,704.00</th>
+                                                                                <td data-title="Indemnity Reserve">$6,964.00</th>
+                                                                                    <td data-title="Indemnity Incurred">$14,668.00</th>
+                                                                                        <td data-title="Expenses Paid">$4,392.00</th>
+                                                                                            <td data-title="Expenses Reserve">$10,193.00</th>
+                                                                                                <td data-title="Expenses Inccured">$13,443.00</th>
+                                                                                                    <td data-title="Total Paid">$10,126.00</th>
+                                                                                                        <td data-title="Total Reserve">$26,127.00</th>
+                                                                                                            <td data-title="Total Inccured">$35,111.00</th>
                                                             </tr>
 
                                                             <tr>
@@ -4139,22 +4152,22 @@
                                                                     <label>Notes</label>
                                                                     <div>Inserted by Loss Run Import</div>
                                                                 </td>
-                                                            </tr>  
+                                                            </tr>
 
                                                             <tr>
                                                                 <td data-title="Date">6/7/2017 9:01:14AM</td>
                                                                 <td data-title="Medical Paid">$3,030.00</th>
-                                                                <td data-title="Medical Reserve">$8,970.00</th>
-                                                                <td data-title="Medical Incurred">$10,000.00</th>
-                                                                <td data-title="Indemnity Paid">$6,704.00</th>
-                                                                <td data-title="Indemnity Reserve">$10,964.00</th>
-                                                                <td data-title="Indemnity Incurred">$15,668.00</th>
-                                                                <td data-title="Expenses Paid">$5,392.00</th>
-                                                                <td data-title="Expenses Reserve">$11,193.00</th>
-                                                                <td data-title="Expenses Inccured">$14,443.00</th>
-                                                                <td data-title="Total Paid">$11,126.00</th>
-                                                                <td data-title="Total Reserve">$27,127.00</th>
-                                                                <td data-title="Total Inccured">$36,111.00</th>
+                                                                    <td data-title="Medical Reserve">$8,970.00</th>
+                                                                        <td data-title="Medical Incurred">$10,000.00</th>
+                                                                            <td data-title="Indemnity Paid">$6,704.00</th>
+                                                                                <td data-title="Indemnity Reserve">$10,964.00</th>
+                                                                                    <td data-title="Indemnity Incurred">$15,668.00</th>
+                                                                                        <td data-title="Expenses Paid">$5,392.00</th>
+                                                                                            <td data-title="Expenses Reserve">$11,193.00</th>
+                                                                                                <td data-title="Expenses Inccured">$14,443.00</th>
+                                                                                                    <td data-title="Total Paid">$11,126.00</th>
+                                                                                                        <td data-title="Total Reserve">$27,127.00</th>
+                                                                                                            <td data-title="Total Inccured">$36,111.00</th>
                                                             </tr>
 
                                                             <tr>
@@ -4162,19 +4175,19 @@
                                                                     <label>Notes</label>
                                                                     <div>Inserted by Loss Run Import</div>
                                                                 </td>
-                                                            </tr>  
+                                                            </tr>
 
 
 
 
                                                         </tbody>
                                                     </table>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
 
                                         </div>
                                     </div>
@@ -4335,7 +4348,7 @@
 
                                 <!-- Modal -->
                                 <div id="journal-entry" class="modal fade" role="dialog">
-                                    <div class="modal-dialog">
+                                    <div class="modal-dialog modal-lg">
 
                                         <!-- Modal content-->
                                         <div class="modal-content">
@@ -4538,9 +4551,9 @@
 
                                                                     <div class="col-sm-3 col-md-3 col-lg-3" align="left">
                                                                         <h4 class="panel-title">
-                                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Note History
+                                                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Note History
                                                                         </a>
-                                                                    </h4>
+                                                                        </h4>
                                                                     </div>
                                                                     <div class="col-sm-9 col-md-9 col-lg-9" align="right">
                                                                         <a href="#" class="btn btn-link" id="journalentry-addnote-button">
@@ -4574,8 +4587,8 @@
 
                                                                     <div class="col-sm-3 col-md-3 col-lg-3" align="left">
                                                                         <h4 class="panel-title">
-                                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Attachments</a>
-                                                                    </h4>
+                                                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Attachments</a>
+                                                                        </h4>
                                                                     </div>
                                                                     <div class="col-sm-9 col-md-9 col-lg-9" align="right">
                                                                         <a href="#" class="btn btn-link" id="journalentry-addattachment-button">
@@ -4618,6 +4631,233 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="panel tablecontainer">
+                                    <div class="col-md-12 col-xs-12 panel-heading tableheader spacer20">
+                                        <div class="pull-left head-drop">
+                                            Submitted Attachments
+                                        </div>
+
+                                        <div class="pull-right">
+                                            <a href="#" data-toggle="modal" data-target="#add-attachment" class="btn cams-btn pull-right"><i class="fa fa-plus"></i> Add Attachment</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel-body">
+                                        <div class="cams-tables">
+                                            <table class="table-hover table-striped table-condensed cf">
+                                                <thead class="cf">
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Source</th>
+                                                        <th>Filename</th>
+                                                        <th>Created By</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-title="Date">1/13/2018</td>
+                                                        <td data-title="Source">Adjuster</td>
+                                                        <td data-title="Filename">Sample File 1</td>
+                                                        <td data-title="Created By">Jayce Ritter</td>
+                                                        <td data-title="Action" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a href="" data-toggle="modal" class="actionBlue" data-target="#attachment-submitted"><i class="fa fa-eye"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td data-title="Date">1/10/2018</td>
+                                                        <td data-title="Source">Employer</td>
+                                                        <td data-title="Filename">Sample File 2</td>
+                                                        <td data-title="Created By">Carter Hahn</td>
+                                                        <td data-title="Action" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a href="" data-toggle="modal" class="actionBlue" data-target="#attachment-submitted"><i class="fa fa-eye"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td data-title="Date">1/9/2018</td>
+                                                        <td data-title="Source">IOA CLaims</td>
+                                                        <td data-title="Filename">Sample File 3</td>
+                                                        <td data-title="Created By">Aleah Stein</td>
+                                                        <td data-title="Action" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a href="" data-toggle="modal" class="actionBlue" data-target="#attachment-submitted"><i class="fa fa-eye"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td data-title="Date">1/7/2018</td>
+                                                        <td data-title="Source">Adjuster</td>
+                                                        <td data-title="Filename">Sample File 4</td>
+                                                        <td data-title="Created By">Luca Atkins</td>
+                                                        <td data-title="Action" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a href="" data-toggle="modal" class="actionBlue" data-target="#attachment-submitted"><i class="fa fa-eye"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td data-title="Date">1/6/2018</td>
+                                                        <td data-title="Source">Employer</td>
+                                                        <td data-title="Filename">Sample File 5</td>
+                                                        <td data-title="Created By">Lawson Haney</td>
+                                                        <td data-title="Action" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a href="" data-toggle="modal" class="actionBlue" data-target="#attachment-submitted"><i class="fa fa-eye"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination">
+                                                <li>
+                                                    <a href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">«</span>
+                                                    </a>
+                                                </li>
+                                                <li class="active"><a href="#">1</a>
+                                                </li>
+                                                <li><a href="#">2</a>
+                                                </li>
+                                                <li><a href="#">3</a>
+                                                </li>
+                                                <li><a href="#">4</a>
+                                                </li>
+                                                <li><a href="#">5</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" aria-label="Next">
+                                                        <span aria-hidden="true">»</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                                <!--Add Attachment Modal-->
+                                <div class="modal fade" id="add-attachment" tabindex="-1" role="dialog" aria-labelledby="contact-titlelabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="help-requestlabel">Add Claim Attachment</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form role="form">
+                                                    <fieldset>
+                                                        <div class="form-group">
+                                                            <label class="required control-label" for="contacts-name">Claimant Name:</label>
+                                                            <input id="" name="" value="" class="form-control input-md" required type="text">
+                                                        </div>
+
+                                                        <div class="form-group spacer20">
+                                                            <label class="control-label" for="">Date:</label>
+                                                            <div class="input-group date-input-group">
+                                                                <input type="text" id="date" name="date" data-datesequence="30" class="form-control dateinput  datesequence valid" value="">
+                                                                <div class="input-group-addon">
+                                                                    <label for="EffectiveDate_DateText"><span class="glyphicon glyphicon-calendar"></span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group spacer20">
+                                                            <label class="control-label" for="">Source:</label>
+                                                            <select id="" name="" class="form-control">
+                                                                <option value=""></option>
+                                                                <option value="">Adjuster</option>
+                                                                <option value="">Employer</option>
+                                                                <option value="">IOA Claims</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="form-group col-lg-6">
+                                                                <label class="control-label" for="">Follow up:</label>
+                                                                <input id="follow-up" name="" value="true" type="checkbox">
+                                                            </div>
+
+
+                                                            <div class="form-group col-lg-6">
+                                                                <label class="control-label" for="">Can be viewed by client:</label>
+                                                                <input id="follow-up" name="" value="true" type="checkbox">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group spacer20">
+                                                            <label class="required control-label" for="contacts-name">Attachment Name:</label>
+                                                            <input id="" name="" placeholder="Name for this attachment (max. 50 characters)" value="" class="form-control input-md" required type="text">
+                                                        </div>
+
+                                                        <div class="form-group spacer20">
+                                                            <label class="required control-label" for="">Attachment:</label>
+                                                                <div id="documents-file-input" class="dropzone requiredfield dz-clickable">
+                                                                    <div class="dz-default dz-message"><span>Drop file or click here to upload.</span>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button id="cancel" name="cancel" class="pull-left btn btn-default"> Cancel</button>
+                                                <button id="submit" name="submit" class="pull-right btn btn-primary"> Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Modal End-->
+
+                                <!--Attachments -->
+                                <a data-toggle="modal" data-target="#attachment-submitted"> </a>
+                                <div class="modal fade" id="attachment-submitted" tabindex="-1" role="dialog" aria-labelledby="attachment-submittedLabel">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="attachment-submittedLabel">Attachment Submitted</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div id="AttachmentCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#AttachmentCarousel" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#AttachmentCarousel" data-slide-to="1"></li>
+                                                    </ol>
+
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="../img/error-sample.png" alt="Error" width="1546" height="793">
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Attachments-->
+
                             </div>
                         </div>
                     </div>
@@ -4631,9 +4871,10 @@
         </div>
     </div>
     <div class="text-center copyright">
-        <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+        <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 2.3.3</p>
     </div>
     <script type="text/javascript" src="../js/claim-details.js"></script>
+    <script type="text/javascript" src="../js/follow-up.js"></script>
     <script type="text/javascript" src="../chosen_v1.6.2/docsupport/multi-select.js"></script>
 </body>
 

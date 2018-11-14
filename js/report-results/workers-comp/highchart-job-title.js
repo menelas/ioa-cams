@@ -9,11 +9,16 @@ $(function () {
         xAxis: {
             categories: [
                 'Accountant',
+                'Assistant Librarian',
                 'Building Technician',
                 'Cashier',
                 'Driver',
                 'Laborer',
+                'Marketing Manager',
+                'Nurse',
+                'Project Manager',
                 'Quality Assurance',
+
             ],
             crosshair: true
         },
@@ -40,7 +45,7 @@ $(function () {
         },
         series: [{
             name: 'Claims Count',
-            data: [5,10,11,14,15,19]
+            data: [7,12,11,10,5,19,5,10,11,14]
 
         }]
     });

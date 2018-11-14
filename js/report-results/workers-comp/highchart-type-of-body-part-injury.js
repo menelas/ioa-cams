@@ -8,21 +8,17 @@ $(function () {
         },
         xAxis: {
             categories: [
-                'Ankle/Foot',
-                'Arm',
-                'Back',
-                'Elbow',
-                'Finger',
-                'Great Toe',
-                'Groin',
-                'Hand',
-                'Head',
-                'Head eye',
-                'Knee',
-                'Leg',
-                'Neck',
-                'Other',
-                'Wrist',
+                'Accountant',
+                'Assistant Librarian',
+                'Building Technician',
+                'Cashier',
+                'Driver',
+                'Laborer',
+                'Marketing Manager',
+                'Nurse',
+                'Project Manager',
+                'Quality Assurance',
+
             ],
             crosshair: true
         },
@@ -49,7 +45,7 @@ $(function () {
         },
         series: [{
             name: 'Claims Count',
-            data: [3,4,7,4,9,1,3,5,1,3,4,2]
+            data: [7,12,11,10,5,19,5,10,11,14]
 
         }]
     });

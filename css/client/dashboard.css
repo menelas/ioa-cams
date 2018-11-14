@@ -7,6 +7,18 @@
     margin-left: -2px;
 }
 
+.claim-number-header {
+  float: left;
+  margin-left: 10px;
+}
+
+.claim-label {
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 5px;
+}
+
 .widget-content {
     border-left: 1px solid #b9b5b5;
     border-right: 1px solid #b9b5b5;
@@ -213,7 +225,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f7ebc', end
 .company-overview {
    border: 1px solid #b9b5b5;
 }
-
+.no-padding.panel-body{
+    padding: 0;
+}
 @media only screen and (max-width: 1400px) {
    /* Force table to not be like tables anymore */
    .company-overview table, .company-overview thead, .company-overview tbody, .company-overview th, .company-overview td, .company-overview tr {

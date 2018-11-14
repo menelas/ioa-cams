@@ -1,58 +1,47 @@
 $(function () {
     Highcharts.chart('length-of-time', {
         chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
+            type: 'column'
         },
         title: {
             text: ''
         },
-            tooltip: {
-                formatter: function () {
-                    return '<span style="color:' + this.point.color + '">\u25CF</span> ' + this.series.name + ' ' + ':' + '<strong>' + this.y + '</strong>';//custom name
-                }
-            },
+        xAxis: {
+            categories: [
+            '0-15 Days',
+            '16-30 Days',
+            '31-45 Days',
+            '46-60 Days',
+            '61-90 Days',
+            '91-120 Days',
+            '121+ Days',
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Claims Count',
+            }
+        },
         plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+                stacking: 'normal',
                 dataLabels: {
                     enabled: true,
-                    format: '<b>{point.name}</b>: {point.y:.0f} ',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
                 }
             }
-        },//(0-15 days, 16-30 days, 31-45 days, 46-60 days, 61-90 days, 91-120 days, 121 days or more)
+        },
+        legend:
+        {
+            enabled: false
+        },
         series: [{
             name: 'Claims Count',
-            colorByPoint: true,
-            data: [{
-                name: '0-15 Days',
-                y:4
-            }, {
-                name: '16-30 Days',
-                y:4
-            }, {
-                name: '31-45 Days',
-                y:5
-            }, {
-                name: '46-60 Days',
-                y:9
-            }, {
-                name: '61-90 Days',
-                y:12
-            }, {
-                name: '91-120 Days',
-                y:13
-            }, {
-                name: '121+ Days',
-                y:34,
-                selected: false
-            }]
+            data: [4,4,5,9,12,13,34]
         }]
     });
 });
