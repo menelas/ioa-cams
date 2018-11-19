@@ -8,6 +8,7 @@
     <title>Insurance Office of America - CAMS</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/app/app.bootstrap.css">
     <link rel="stylesheet" href="../css/app/app.css">
     <link rel="stylesheet" href="../css/app/client.addedit.css">
     <link rel="stylesheet" href="../css/client/company-info.css">
@@ -699,7 +700,7 @@
                                 <button id="" name="" data-toggle="modal" data-target="#add-attachment" class="pull-right btn cams-btn btn-table"><i class="fa fa-plus"></i> Add Attachment</button>
 
                                 <a href="#" data-toggle="modal" data-target="#run-claim-report" class="pull-right"> Run Claim Report</a>
-                                <a href="#" data-toggle="modal" data-target="#run-mod-report" class="pull-right"> Run Mod Analysis Report</a>                            
+                                <a href="#" data-toggle="modal" data-target="#run-mod-report" class="pull-right"> Run Mod Analysis Report</a>
                                 <table class="table-hover table-striped table-condensed cf">
                                     <thead class="cf">
                                         <tr>
@@ -731,20 +732,10 @@
                                                 <p>Select reporting criteria to generate a company claim(s) report. This report will summarize your company's claim data in an easy to read format.</p>
                                                 <hr />
 
-                                                <div class="row">
-                                                    <form role="form">
-                                                        <fieldset>
+                                                <form role="form">
+                                                    <fieldset>
 
-                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Customer/Company</label>
-                                                                <div class="input-group">
-                                                                    <input class="form-control" id="" name="" type="search" value="Beedle Foods, Inc." autocomplete="off">
-                                                                    <input name="" type="hidden" class="autocompletehidden" value="">
-                                                                    <div class="input-group-addon"><i class="fa fa-search"></i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
+                                                        <div class="row">
                                                             <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                                                 <label class="control-label" for="">Line of Coverage</label>
                                                                 <select id="" name="" class="form-control">
@@ -753,18 +744,6 @@
                                                                     <option value="">General Liability</option>
                                                                     <option value="">Property</option>
                                                                     <option value="">Workers' Compensation</option>
-                                                                </select>
-                                                            </div>
-
-                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Status of Claims</label>
-                                                                <select id="" name="" class="form-control">
-                                                                    <option value="">Show All</option>
-                                                                    <option value="">Open</option>
-                                                                    <option value="">Reopen</option>
-                                                                    <option value="">Draft</option>
-                                                                    <option value="">Closed</option>
-                                                                    <option value="">Reclosed</option>
                                                                 </select>
                                                             </div>
 
@@ -789,12 +768,9 @@
                                                                     <option value="">Retail</option>
                                                                 </select>
                                                             </div>
+                                                        </div>
 
-                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Policy Number:</label>
-                                                                <input id="" value="9112PE10837" name="" placeholder="" class="form-control input-md" type="text">
-                                                            </div>
-
+                                                        <div class="row">
                                                             <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                                                 <label class="control-label" for="">Year of Claims</label>
                                                                 <select data-placeholder=" -- Select Year --" multiple class="chosen-select-width" tabindex="16">
@@ -810,92 +786,98 @@
                                                                 <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Date">
                                                             </div>
 
-
                                                             <div class="form-group col-sm-12 col-md-4 col-lg-4">
                                                                 <label class="control-label" for="">Exact End Date:</label>
                                                                 <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Date">
                                                             </div>
+                                                        </div>
 
-                                                            <hr />
-
-                                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                                <label class="control-label" for="">Please select from the following reporting options:</label>
+                                                        <div class="row">
+                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                                                <label class="control-label" for="">Status of Claims</label>
+                                                                <select id="" name="" class="form-control">
+                                                                    <option value="">Show All</option>
+                                                                    <option value="">Open</option>
+                                                                    <option value="">Reopen</option>
+                                                                    <option value="">Draft</option>
+                                                                    <option value="">Closed</option>
+                                                                    <option value="">Reclosed</option>
+                                                                </select>
                                                             </div>
 
-                                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                <div class="checkbox">
-                                                                    <label for="">
-                                                                        <input name="" id="" value="" class="select-all1" type="checkbox"> Select All
-                                                                    </label>
-
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Claim Amounts
-                                                                    </label>
-
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Claim Status
-                                                                    </label>
-
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Type of Injury
-                                                                    </label>
-                                                                </div>
+                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                                                <label class="control-label" for="">Claim Amount</label>
+                                                                <input id="" name="" class="form-control input-md" type="text">
                                                             </div>
+                                                        </div>
 
-                                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                <div class="checkbox">
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Body Part Affected
+                                                        <hr />
+
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                            <label class="control-label" for="">Please select from the following reporting options:</label>
+                                                        </div>
+
+                                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                                                            <div class="checkbox">
+                                                                <label for="">
+                                                                        <input name="" id="" value="" class="select-all1" type="checkbox" checked> Select All
                                                                     </label>
 
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Job Title
+                                                                <label for="">
+                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox" checked> Claim Amounts
                                                                     </label>
 
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Time of Day
+                                                                <label for="">
+                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox" checked> Claim Status
                                                                     </label>
 
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Day of Week
+                                                                <label for="">
+                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox" checked> Type of Injury
                                                                     </label>
-                                                                </div>
                                                             </div>
+                                                        </div>
 
-                                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                <div class="checkbox">
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Split By Policy Year
+                                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                                                            <div class="checkbox">
+                                                                <label for="">
+                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox" checked> Body Part Affected
                                                                     </label>
-                                                                </div>
+
+                                                                <label for="">
+                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox" checked> Time of Day
+                                                                    </label>
+
+                                                                <label for="">
+                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox" checked> Day of Week
+                                                                    </label>
+
+                                                                <label for="">
+                                                                        <input class="select-all2-child" name="" id="" value="" type="checkbox" checked> Triggers
+                                                                    </label>
                                                             </div>
-                                                        </fieldset>
-                                                    </form>
-                                                </div>
+                                                        </div>
+
+                                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                                                            <div class="checkbox">
+                                                                <label for="">
+                                                                    </label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+
 
                                                 <hr />
 
-                                                <div class="row">
-                                                    <form role="form">
-                                                        <fieldset>
-                                                            <div class="form-group">
+                                                <form role="form">
+                                                    <fieldset>
+                                                        <div class="form-group">
+                                                            <button id="add-second-company-btn" href="#display-second-company" data-toggle="collapse" name="" class="pull-left btn cams-btn btn-table">COMPARE SECOND COMPANY</button>
 
-                                                                <button id="add-second-company-btn" href="#display-second-company" data-toggle="collapse" name="" class="pull-left btn cams-btn btn-table">COMPARE SECOND COMPANY</button>
+                                                            <div id="display-second-company" class="collapse">
 
-                                                                <div id="display-second-company" class="collapse">
-
-                                                                    <fieldset>
-
-                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Customer/Company</label>
-                                                                            <div class="input-group">
-                                                                                <input class="form-control" value="Raven Entertainment" id="" name="" type="search" value="" autocomplete="off">
-                                                                                <input name="" type="hidden" class="autocompletehidden" value="">
-                                                                                <div class="input-group-addon"><i class="fa fa-search"></i>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
+                                                                <fieldset>
+                                                                    <div class="row">
                                                                         <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                                                             <label class="control-label" for="">Line of Coverage</label>
                                                                             <select id="" name="" class="form-control">
@@ -906,19 +888,6 @@
                                                                                 <option value="">Workers' Compensation</option>
                                                                             </select>
                                                                         </div>
-
-                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Status of Claims</label>
-                                                                            <select id="" name="" class="form-control">
-                                                                                <option value="">Show All</option>
-                                                                                <option value="">Open</option>
-                                                                                <option value="">Reopen</option>
-                                                                                <option value="">Draft</option>
-                                                                                <option value="">Closed</option>
-                                                                                <option value="">Reclosed</option>
-                                                                            </select>
-                                                                        </div>
-
 
                                                                         <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                                                             <label class="control-label" for="">Location</label>
@@ -940,12 +909,8 @@
                                                                                 <option value="">Retail</option>
                                                                             </select>
                                                                         </div>
-
-                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Policy Number:</label>
-                                                                            <input id="" name="" value="1827232-GB" placeholder="" class="form-control input-md" type="text">
-                                                                        </div>
-
+                                                                    </div>
+                                                                    <div class="row">
                                                                         <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                                                             <label class="control-label" for="">Year of Claims</label>
                                                                             <select data-placeholder=" -- Select Year --" multiple class="chosen-select-width" tabindex="16">
@@ -966,73 +931,35 @@
                                                                             <label class="control-label" for="">Exact End Date:</label>
                                                                             <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Date">
                                                                         </div>
-
-                                                                        <hr />
-
-                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                                            <label class="control-label" for="">Please select from the following reporting options:</label>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                                                            <label class="control-label" for="">Status of Claims</label>
+                                                                            <select id="" name="" class="form-control">
+                                                                                <option value="">Show All</option>
+                                                                                <option value="">Open</option>
+                                                                                <option value="">Reopen</option>
+                                                                                <option value="">Draft</option>
+                                                                                <option value="">Closed</option>
+                                                                                <option value="">Reclosed</option>
+                                                                            </select>
                                                                         </div>
 
-                                                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                            <div class="checkbox">
-                                                                                <label for="">
-                                                                                    <input name="" id="" value="" class="select-all2" type="checkbox"> Select All
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Claim Amounts
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Claim Status
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Type of Injury
-                                                                                </label>
-                                                                            </div>
+                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                                                            <label class="control-label" for="">Claim Amount</label>
+                                                                            <input id="" name="" class="form-control input-md" type="text">
                                                                         </div>
+                                                                    </div>
 
-                                                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                            <div class="checkbox">
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Body Part Affected
-                                                                                </label>
+                                                                    <hr />
 
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Job Title
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Time of Day
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Day of Week
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                            <div class="checkbox">
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Exclude Lag Time
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Split By Policy Year
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset>
-
-                                                                </div>
+                                                                </fieldset>
 
                                                             </div>
-                                                        </fieldset>
-                                                    </form>
-                                                </div>
 
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
                                             </div>
 
                                             <div class="modal-footer">
@@ -1107,10 +1034,10 @@
 
                                                         <div class="form-group">
                                                             <label class="required control-label" for="">Attachment:</label>
-                                                                <div id="documents-file-input" class="dropzone requiredfield dz-clickable">
-                                                                    <div class="dz-default dz-message"><span>Drop file or click here to upload.</span>
-                                                                    </div>
+                                                            <div id="documents-file-input" class="dropzone requiredfield dz-clickable">
+                                                                <div class="dz-default dz-message"><span>Drop file or click here to upload.</span>
                                                                 </div>
+                                                            </div>
                                                         </div>
 
                                                     </fieldset>
@@ -1148,397 +1075,62 @@
                                                         <div class="item active">
                                                             <img src="../img/error-sample.png" alt="Error" width="1546" height="793">
                                                         </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Attachments-->
-
-
-
-
-
-
-                                <!--Mod Analysis Modal-->
-                                <!--
-                                <div class="modal fade" id="run-mod-report" tabindex="-1" role="dialog" aria-labelledby="run-mod-reportlabel">
-                                    <div class="modal-dialog modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="run-mod-reportlabel">Mod Analysis Report</h4>
-                                            </div>
-                                            <div class="modal-body">
-
-                                                <p>Select reporting criteria to generate a company claim(s) report. This report will summarize your company's claim data in an easy to read format.</p>
-                                                <hr />
-
-                                                <div class="row">
-                                                    <form role="form">
-                                                        <fieldset>
-
-                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Customer/Company</label>
-                                                                <div class="input-group">
-                                                                    <input class="form-control" id="" name="" type="search" value="Beedle Foods, Inc." autocomplete="off">
-                                                                    <input name="" type="hidden" class="autocompletehidden" value="">
-                                                                    <div class="input-group-addon"><i class="fa fa-search"></i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Line of Coverage</label>
-                                                                <select id="" name="" class="form-control">
-                                                                    <option value="">Show All</option>
-                                                                    <option value="">Auto</option>
-                                                                    <option value="">General Liability</option>
-                                                                    <option value="">Property</option>
-                                                                    <option value="">Workers' Compensation</option>
-                                                                </select>
-                                                            </div>
-
-                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Status of Claims</label>
-                                                                <select id="" name="" class="form-control">
-                                                                    <option value="">Show All</option>
-                                                                    <option value="">Open</option>
-                                                                    <option value="">Reopen</option>
-                                                                    <option value="">Draft</option>
-                                                                    <option value="">Closed</option>
-                                                                    <option value="">Reclosed</option>
-                                                                </select>
-                                                            </div>
-
-
-                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Location</label>
-                                                                <select data-placeholder=" -- Select Locations --" multiple class="chosen-select-width" class="location-select" tabindex="16">
-                                                                    <option>Location 1</option>
-                                                                    <option>Location 2</option>
-                                                                    <option>Location 3</option>
-                                                                    <option>Location 4</option>
-                                                                </select>
-                                                            </div>
-
-                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Department</label>
-                                                                <select id="" name="" class="form-control">
-                                                                    <option value="">Show All</option>
-                                                                    <option value="">Production</option>
-                                                                    <option value="">Warehouse</option>
-                                                                    <option value="">Admin</option>
-                                                                    <option value="">Retail</option>
-                                                                </select>
-                                                            </div>
-
-                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Policy Number:</label>
-                                                                <input id="" value="9112PE10837" name="" placeholder="" class="form-control input-md" type="text">
-                                                            </div>
-
-                                                            <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Year of Claims</label>
-                                                                <select data-placeholder=" -- Select Year --" multiple class="chosen-select-width" tabindex="16">
-                                                                    <option>2017</option>
-                                                                    <option>2016</option>
-                                                                    <option>2015</option>
-                                                                    <option>2014</option>
-                                                                </select>
-                                                            </div>
-
-                                                            <div class="form-group col-sm-12 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Exact Start Date:</label>
-                                                                <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Date">
-                                                            </div>
-
-
-                                                            <div class="form-group col-sm-12 col-md-4 col-lg-4">
-                                                                <label class="control-label" for="">Exact End Date:</label>
-                                                                <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Date">
-                                                            </div>
-
-                                                            <hr />
-
-                                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                                <label class="control-label" for="">Please select from the following reporting options:</label>
-                                                            </div>
-
-                                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                <div class="checkbox">
-                                                                    <label for="">
-                                                                        <input name="" id="" value="" class="select-all1" type="checkbox"> Select All
-                                                                    </label>
-
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Claim Amounts
-                                                                    </label>
-
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Claim Status
-                                                                    </label>
-
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Type of Injury
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                <div class="checkbox">
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Body Part Affected
-                                                                    </label>
-
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Job Title
-                                                                    </label>
-
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Time of Day
-                                                                    </label>
-
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Day of Week
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                <div class="checkbox">
-                                                                    <label for="">
-                                                                        <input class="select-all1-child" name="" id="" value="" type="checkbox"> Split By Policy Year
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                        </fieldset>
-                                                    </form>
-                                                </div>
-
-                                                <hr />
-
-                                                <div class="row">
-                                                    <form role="form">
-                                                        <fieldset>
-                                                            <div class="form-group">
-
-                                                                <button id="add-second-company-btn" href="#display-second-company" data-toggle="collapse" name="" class="pull-left btn cams-btn btn-table">COMPARE SECOND COMPANY</button>
-
-                                                                <div id="display-second-company" class="collapse">
-
-                                                                    <fieldset>
-
-                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Customer/Company</label>
-                                                                            <div class="input-group">
-                                                                                <input class="form-control" value="Raven Entertainment" id="" name="" type="search" value="" autocomplete="off">
-                                                                                <input name="" type="hidden" class="autocompletehidden" value="">
-                                                                                <div class="input-group-addon"><i class="fa fa-search"></i>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Line of Coverage</label>
-                                                                            <select id="" name="" class="form-control">
-                                                                                <option value="">Show All</option>
-                                                                                <option value="">Auto</option>
-                                                                                <option value="">General Liability</option>
-                                                                                <option value="">Property</option>
-                                                                                <option value="">Workers' Compensation</option>
-                                                                            </select>
-                                                                        </div>
-
-                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Status of Claims</label>
-                                                                            <select id="" name="" class="form-control">
-                                                                                <option value="">Show All</option>
-                                                                                <option value="">Open</option>
-                                                                                <option value="">Reopen</option>
-                                                                                <option value="">Draft</option>
-                                                                                <option value="">Closed</option>
-                                                                                <option value="">Reclosed</option>
-                                                                            </select>
-                                                                        </div>
-
-
-                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Location</label>
-                                                                            <select data-placeholder=" -- Select Locations --" multiple class="chosen-select-width" class="location-select" tabindex="16">
-                                                                                <option>Location 1</option>
-                                                                                <option>Location 2</option>
-                                                                                <option>Location 3</option>
-                                                                                <option>Location 4</option>
-                                                                            </select>
-                                                                        </div>
-
-                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Department</label>
-                                                                            <select id="" name="" class="form-control">
-                                                                                <option value="">Show All</option>
-                                                                                <option value="">Production</option>
-                                                                                <option value="">Warehouse</option>
-                                                                                <option value="">Admin</option>
-                                                                                <option value="">Retail</option>
-                                                                            </select>
-                                                                        </div>
-
-                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Policy Number:</label>
-                                                                            <input id="" name="" value="1827232-GB" placeholder="" class="form-control input-md" type="text">
-                                                                        </div>
-
-                                                                        <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Year of Claims</label>
-                                                                            <select data-placeholder=" -- Select Year --" multiple class="chosen-select-width" tabindex="16">
-                                                                                <option>2017</option>
-                                                                                <option>2016</option>
-                                                                                <option>2015</option>
-                                                                                <option>2014</option>
-                                                                            </select>
-                                                                        </div>
-
-                                                                        <div class="form-group col-sm-12 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Exact Start Date:</label>
-                                                                            <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Date">
-                                                                        </div>
-
-
-                                                                        <div class="form-group col-sm-12 col-md-4 col-lg-4">
-                                                                            <label class="control-label" for="">Exact End Date:</label>
-                                                                            <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Date">
-                                                                        </div>
-
-                                                                        <hr />
-
-                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                                            <label class="control-label" for="">Please select from the following reporting options:</label>
-                                                                        </div>
-
-                                                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                            <div class="checkbox">
-                                                                                <label for="">
-                                                                                    <input name="" id="" value="" class="select-all2" type="checkbox"> Select All
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Claim Amounts
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Claim Status
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Type of Injury
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                            <div class="checkbox">
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Body Part Affected
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Job Title
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Time of Day
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Day of Week
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                                            <div class="checkbox">
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Exclude Lag Time
-                                                                                </label>
-
-                                                                                <label for="">
-                                                                                    <input class="select-all2-child" name="" id="" value="" type="checkbox"> Split By Policy Year
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset>
-
-                                                                </div>
-
-                                                            </div>
-                                                        </fieldset>
-                                                    </form>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button id="cancel" name="cancel" class="pull-left btn btn-default"> Cancel</button>
-                                                <a href="report-results-all-lines.html" target="_blank">
-                                                    <button id="run-mod-report" name="run-mod-report" class="pull-right btn btn-primary"> Run Report</button>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                -->
-
-
-                    <!-- Journal Entry Modal -->
-                    <div id="journal-entry" class="modal fade" role="dialog">
-                        <div class="modal-dialog modal-lg">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Journal Entry - Add </h4>
-                                </div>
-                                <div class="modal-body">
-
-                                    <div class="panel-group form-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default" id="journal-entry-type-div">
-                                            <div class="panel-heading" role="tab" id="headingOne">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Entry Type, Subject and Email Recipients</a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
-                                                <div class="panel-body">
-                                                    <div class="row alert alert-info">
-
-                                                        <div class="col-sm-6 col-md-6 col-lg-6">
-                                                            <label class="control-label" for="">Shown on calendar</label>
-                                                            <label for="">
-                                                                            <input name="" id="" value="checked" type="checkbox">
-                                                                        </label>
-                                                        </div>
-
-                                                        <div class="col-sm-6 col-md-6 col-lg-6">
-                                                            <label class="control-label" for="">Private (only visible to me)</label>
-                                                            <label for="">
-                                                                            <input name="" id="" value="checked" type="checkbox">
-                                                                        </label>
-                                                        </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="form-group">
-                                                            <div class="col-sm-3 col-md-3 col-lg-3">
-                                                                <label for="JournalEntryTypeId">Type:</label>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Attachments-->
+
+
+
+                                    <!-- Journal Entry Modal -->
+                                    <div id="journal-entry" class="modal fade" role="dialog">
+                                        <div class="modal-dialog modal-lg">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">Journal Entry - Add </h4>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="panel-group form-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                        <div class="panel panel-default" id="journal-entry-type-div">
+                                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Entry Type, Subject and Email Recipients</a>
+                                                                </h4>
                                                             </div>
-                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
-                                                                <select class="form-control valid" id="journalentry-journalentrytype-dropdown" name="JournalEntryTypeId">
+                                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                                                                <div class="panel-body">
+                                                                    <div class="row alert alert-info">
+
+                                                                        <div class="col-sm-6 col-md-6 col-lg-6">
+                                                                            <label class="control-label" for="">Shown on calendar</label>
+                                                                            <label for="">
+                                                                            <input name="" id="" value="checked" type="checkbox">
+                                                                        </label>
+                                                                        </div>
+
+                                                                        <div class="col-sm-6 col-md-6 col-lg-6">
+                                                                            <label class="control-label" for="">Private (only visible to me)</label>
+                                                                            <label for="">
+                                                                            <input name="" id="" value="checked" type="checkbox">
+                                                                        </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <div class="col-sm-3 col-md-3 col-lg-3">
+                                                                                <label for="JournalEntryTypeId">Type:</label>
+                                                                            </div>
+                                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
+                                                                                <select class="form-control valid" id="journalentry-journalentrytype-dropdown" name="JournalEntryTypeId">
                                                                                 <option value="">Please select an item...</option>
                                                                                 <option value="10">Document</option>
                                                                                 <option value="20">E-Mail Message</option>
@@ -1552,112 +1144,112 @@
                                                                                 <option value="100">Legal</option>
                                                                                 <option value="110">Phone</option>
                                                                             </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="form-group">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
 
-                                                            <div class="col-sm-3 col-md-3 col-lg-3">
-                                                                <label class="requiredfield" for="Subject">Subject:</label>
-                                                            </div>
-                                                            <div class="col-sm-9 col-md-9 col-lg-9">
-                                                                <input class="form-control watermark" id="calendar-journalentrysubject-textbox" maxlength="45" name="Subject" placeholder="Subject" type="text" value="" autocomplete="off">
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                                            <div class="col-sm-3 col-md-3 col-lg-3">
+                                                                                <label class="requiredfield" for="Subject">Subject:</label>
+                                                                            </div>
+                                                                            <div class="col-sm-9 col-md-9 col-lg-9">
+                                                                                <input class="form-control watermark" id="calendar-journalentrysubject-textbox" maxlength="45" name="Subject" placeholder="Subject" type="text" value="" autocomplete="off">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
-                                                    <div class="row">
-                                                        <div class="form-group">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
 
-                                                            <div class="col-sm-3 col-md-3 col-lg-3">
-                                                                <label for="EmailRecipient">Email To:</label>
-                                                            </div>
-                                                            <div class="col-sm-9 col-md-9 col-lg-9">
-                                                                <div class="input-group">
-                                                                    <input class="form-control watermark" id="calendar-journalentryemailrecipient-textbox" name="EmailRecipient" placeholder="Recipient Email Address" type="text" value="">
+                                                                            <div class="col-sm-3 col-md-3 col-lg-3">
+                                                                                <label for="EmailRecipient">Email To:</label>
+                                                                            </div>
+                                                                            <div class="col-sm-9 col-md-9 col-lg-9">
+                                                                                <div class="input-group">
+                                                                                    <input class="form-control watermark" id="calendar-journalentryemailrecipient-textbox" name="EmailRecipient" placeholder="Recipient Email Address" type="text" value="">
 
-                                                                    <div id="journalentry-emailaddfindbuttons-div" class="input-group-btn">
-                                                                        <button type="button" class="btn btn-primary" id="journalentry-addemail-button" title="" data-original-title="Add email to recipient list" style="margin-left: 10px;"><i class="fa fa-plus"></i>
+                                                                                    <div id="journalentry-emailaddfindbuttons-div" class="input-group-btn">
+                                                                                        <button type="button" class="btn btn-primary" id="journalentry-addemail-button" title="" data-original-title="Add email to recipient list" style="margin-left: 10px;"><i class="fa fa-plus"></i>
                                                                                     </button>
-                                                                        <button type="button" class="btn btn-primary" id="journalentry-addemailfromlist-button" href="#" data-original-title="Find Servicing Team and company email recipients" style="margin-left: 5px;">
+                                                                                        <button type="button" class="btn btn-primary" id="journalentry-addemailfromlist-button" href="#" data-original-title="Find Servicing Team and company email recipients" style="margin-left: 5px;">
                                                                                         <i class="fa fa-search"></i> Find
                                                                                     </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+
+                                                                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                                                                <div id="journalentry-emailrecipients-div">
+
+                                                                                    <div id="journalentry-norecipients-div" class="alert alert-info">
+                                                                                        <span>[ No Email Recipients ]</span>
+                                                                                    </div>
+
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+
                                                         </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="form-group">
-
-                                                            <div class="col-sm-12 col-md-12 col-lg-12">
-                                                                <div id="journalentry-emailrecipients-div">
-
-                                                                    <div id="journalentry-norecipients-div" class="alert alert-info">
-                                                                        <span>[ No Email Recipients ]</span>
-                                                                    </div>
-
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="panel panel-default" id="journal-entry-assignee-div">
-                                            <div class="panel-heading" role="tab" id="headingTwo">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Assignee and Dates
+                                                        <div class="panel panel-default" id="journal-entry-assignee-div">
+                                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                                <h4 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Assignee and Dates
                                                                 </a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="form-group">
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
 
-                                                            <div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-startdate-label">
-                                                                <label for="StartDate">Start Date:</label>
-                                                            </div>
-                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
-                                                                <input class="form-control dateinput" id="calendar-journalentrystartdate-datepicker" name="StartDate" type="text" value="11/28/2016">
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                                            <div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-startdate-label">
+                                                                                <label for="StartDate">Start Date:</label>
+                                                                            </div>
+                                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
+                                                                                <input class="form-control dateinput" id="calendar-journalentrystartdate-datepicker" name="StartDate" type="text" value="11/28/2016">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
-                                                    <div class="collapse row" id="calendar-journalentryduedaterow-div">
-                                                        <div class="form-group">
-                                                            <div class="col-sm-3 col-md-3 col-lg-3" align="left">
-                                                                <label for="DueDate" id="DueDateLabel">Due Date:</label>
-                                                            </div>
-                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
-                                                                <input class="form-control dateinput " id="calendar-journalentrydueddate-datepicker" name="DueDate" type="text" value="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                                    <div class="collapse row" id="calendar-journalentryduedaterow-div">
+                                                                        <div class="form-group">
+                                                                            <div class="col-sm-3 col-md-3 col-lg-3" align="left">
+                                                                                <label for="DueDate" id="DueDateLabel">Due Date:</label>
+                                                                            </div>
+                                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
+                                                                                <input class="form-control dateinput " id="calendar-journalentrydueddate-datepicker" name="DueDate" type="text" value="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
-                                                    <div class="collapse row" id="calendar-journalentrycompleteddaterow-div">
-                                                        <div class="form-group">
-                                                            <div class="col-sm-3 col-md-3 col-lg-3" align="left">
-                                                                <label for="CompletedDate">Completed On:</label>
-                                                            </div>
-                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
-                                                                <input class="form-control dateinput" id="calendar-journalentrycompletedddate-datepicker" name="CompletedDate" type="text" value=""> </div>
-                                                        </div>
-                                                    </div>
+                                                                    <div class="collapse row" id="calendar-journalentrycompleteddaterow-div">
+                                                                        <div class="form-group">
+                                                                            <div class="col-sm-3 col-md-3 col-lg-3" align="left">
+                                                                                <label for="CompletedDate">Completed On:</label>
+                                                                            </div>
+                                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
+                                                                                <input class="form-control dateinput" id="calendar-journalentrycompletedddate-datepicker" name="CompletedDate" type="text" value=""> </div>
+                                                                        </div>
+                                                                    </div>
 
-                                                    <div class="row">
-                                                        <div class="form-group">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
 
-                                                            <div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-journalentrystatustype-div">
-                                                                <label for="JournalEntryStatusTypeId">Status:</label>
-                                                            </div>
-                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
-                                                                <select class="form-control" id="calendar-journalentrystatustype-dropdown" name="JournalEntryStatusTypeId">
+                                                                            <div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-journalentrystatustype-div">
+                                                                                <label for="JournalEntryStatusTypeId">Status:</label>
+                                                                            </div>
+                                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
+                                                                                <select class="form-control" id="calendar-journalentrystatustype-dropdown" name="JournalEntryStatusTypeId">
                                                                                 <option value="">Please select status...</option>
                                                                                 <option selected="selected" value="10">Not Started</option>
                                                                                 <option value="20">In Progress</option>
@@ -1665,18 +1257,18 @@
                                                                                 <option value="40">Waiting On Someone Else</option>
                                                                                 <option value="50">Deferred</option>
                                                                             </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
-                                                    <div class="row">
-                                                        <div class="form-group">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
 
-                                                            <div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-journalentryassignee-div">
-                                                                <label for="AssignedToUserId">Assignee:</label>
-                                                            </div>
-                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
-                                                                <select class="form-control" id="calendar-journalentryassignee-dropdown" name="AssignedToUserId">
+                                                                            <div class="col-sm-3 col-md-3 col-lg-3" align="left" id="calendar-journalentryassignee-div">
+                                                                                <label for="AssignedToUserId">Assignee:</label>
+                                                                            </div>
+                                                                            <div class="col-sm-5 col-md-5 col-lg-5" align="left">
+                                                                                <select class="form-control" id="calendar-journalentryassignee-dropdown" name="AssignedToUserId">
                                                                                 <option value="">Please select assignee...</option>
                                                                                 <option value="e94c7f31-469e-4755-90b5-a54500f2beb8">Catlin, Katie</option>
                                                                                 <option value="03154e12-1eea-4d73-aa38-a5d700cf60d9">Pettway, Jason</option>
@@ -1687,118 +1279,118 @@
                                                                                 <option value="49d6de90-9ad4-48ed-8765-a4d701297c2d">Young, Joey</option>
                                                                                 <option value="5142d5ae-71bf-476b-8193-a4d70129e2e6">Tucker, Fred</option>
                                                                             </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingFour">
-                                                <div class="row">
-                                                    <div class="form-group">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingFour">
+                                                                <div class="row">
+                                                                    <div class="form-group">
 
-                                                        <div class="col-sm-3 col-md-3 col-lg-3" align="left">
-                                                            <h4 class="panel-title">
-                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Note History
+                                                                        <div class="col-sm-3 col-md-3 col-lg-3" align="left">
+                                                                            <h4 class="panel-title">
+                                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Note History
                                                                         </a>
-                                                            </h4>
-                                                        </div>
-                                                        <div class="col-sm-9 col-md-9 col-lg-9" align="right">
-                                                            <a href="#" class="btn btn-link" id="journalentry-addnote-button">
+                                                                            </h4>
+                                                                        </div>
+                                                                        <div class="col-sm-9 col-md-9 col-lg-9" align="right">
+                                                                            <a href="#" class="btn btn-link" id="journalentry-addnote-button">
                                                                             <strong> <i class="fa fa-plus"></i> ADD NOTE</strong>
                                                                         </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-sm-12 col-md-12 col-lg-12">
-                                                            <div id="calendar-notes-div">
-                                                                <div id="notes-div">
-                                                                    <input id="NotesCount" name="NotesCount" type="hidden" value="0">
-                                                                    <div class="alert alert-info" role="alert"><span class="alert-cont">[ No Notes ]</span>
+                                                                        </div>
                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12 col-md-12 col-lg-12">
+                                                                            <div id="calendar-notes-div">
+                                                                                <div id="notes-div">
+                                                                                    <input id="NotesCount" name="NotesCount" type="hidden" value="0">
+                                                                                    <div class="alert alert-info" role="alert"><span class="alert-cont">[ No Notes ]</span>
+                                                                                    </div>
 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingFive">
-                                                <div class="row">
-                                                    <div class="form-group">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingFive">
+                                                                <div class="row">
+                                                                    <div class="form-group">
 
-                                                        <div class="col-sm-3 col-md-3 col-lg-3" align="left">
-                                                            <h4 class="panel-title">
-                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Attachments</a>
-                                                            </h4>
-                                                        </div>
-                                                        <div class="col-sm-9 col-md-9 col-lg-9" align="right">
-                                                            <a href="#" class="btn btn-link" id="journalentry-addattachment-button">
+                                                                        <div class="col-sm-3 col-md-3 col-lg-3" align="left">
+                                                                            <h4 class="panel-title">
+                                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Attachments</a>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <div class="col-sm-9 col-md-9 col-lg-9" align="right">
+                                                                            <a href="#" class="btn btn-link" id="journalentry-addattachment-button">
                                                                             <strong> <i class="fa fa-plus"></i> ADD ATTACHMENT</strong>
                                                                         </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
 
-                                            </div>
-                                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" aria-expanded="false">
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="form-group">
+                                                            </div>
+                                                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" aria-expanded="false">
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
 
-                                                            <div class="col-sm-12 col-md-12 col-lg-12">
-                                                                <div id="journalentry-attachments-div">
+                                                                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                                                                <div id="journalentry-attachments-div">
 
-                                                                    <input id="ClientId" name="ClientId" type="hidden" value="9d308875-206f-41d3-9e9d-a54500efbfb2">
-                                                                    <input id="AttachmentsCount" name="AttachmentsCount" type="hidden" value="0">
+                                                                                    <input id="ClientId" name="ClientId" type="hidden" value="9d308875-206f-41d3-9e9d-a54500efbfb2">
+                                                                                    <input id="AttachmentsCount" name="AttachmentsCount" type="hidden" value="0">
 
-                                                                    <div class="alert alert-info" role="alert">
-                                                                        <span class="alert-cont">[ No Attachments ]</span>
+                                                                                    <div class="alert alert-info" role="alert">
+                                                                                        <span class="alert-cont">[ No Attachments ]</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+
+                                                <div class="modal-footer">
+
+                                                    <button id="save" name="save" class="btn btn-primary"> Save</button>
+                                                    <button id="cancel" name="cancel" class="btn btn-default" data-dismiss="modal">Cancel</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Journal Entry Modal End -->
+
+
                                 </div>
-
-                                <div class="modal-footer">
-
-                                    <button id="save" name="save" class="btn btn-primary"> Save</button>
-                                    <button id="cancel" name="cancel" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Journal Entry Modal End -->
-
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <div class="text-center copyright">
-        <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 2.3.3</p>
-    </div>
+        <div class="text-center copyright">
+            <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+        </div>
 
-    <script type="text/javascript" src="../chosen_v1.6.2/docsupport/multi-select.js"></script>
-    <script type="text/javascript" src="../js/follow-up.js"></script>
-    <script type="text/javascript" src="../js/company-info-child.js"></script>
+        <script type="text/javascript" src="../chosen_v1.6.2/docsupport/multi-select.js"></script>
+        <script type="text/javascript" src="../js/follow-up.js"></script>
+        <script type="text/javascript" src="../js/company-info-child.js"></script>
 </body>
 
 </html>

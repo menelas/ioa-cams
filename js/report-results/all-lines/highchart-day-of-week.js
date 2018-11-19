@@ -1,7 +1,7 @@
 $(function () {
     Highcharts.chart('day-of-week', {
         chart: {
-            type: 'column'
+            type: 'bar'
         },
         title: {
             text: ''
@@ -25,7 +25,7 @@ $(function () {
             }
         },
         plotOptions: {
-            column: {
+            bar: {
                 pointPadding: 0.2,
                 borderWidth: 0,
                 stacking: 'normal',

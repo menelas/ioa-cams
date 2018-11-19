@@ -8,12 +8,12 @@ $(function () {
         },
         xAxis: {
             categories: [
-                'Hearing Loss $10,000',
-                'Injury $12,000',
-                'Poisoning $6,500',
-                'Respiratory Condition $4,500',
-                'Skin Disorder $1,000',
-                'All other illnesses $3,500',
+                'Hearing Loss<br> $10,000',
+                'Injury<br> $12,000',
+                'Poisoning<br> $6,500',
+                'Respiratory Condition<br> $4,500',
+                'Skin Disorder<br> $1,000',
+                'All other illnesses<br> $3,500',
             ],
             crosshair: true
         },

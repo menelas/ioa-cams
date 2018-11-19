@@ -50,7 +50,10 @@ Highcharts.chart('time-of-day', {
         }
     },
     series: [{
-        name: '# of Claims',
+        name: 'Auto Time of Day Injury',
         data: [15,10,14,11,20,40,11,17,14,11,4,3,12,4,18,10,24,10,19,19,19,10,4,1]
+    }, {
+        name: 'General Liability Time of Day Injury',
+        data: [70,43,38,25,48,56,33,37,29,20,24,23,28,14,60,51,54,60,46,27,35,23,34,27]
     }]
 });

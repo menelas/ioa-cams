@@ -1,4 +1,4 @@
-Highcharts.chart('policy-year-claims-compare', {
+Highcharts.chart('claim-status-compare', {
     chart: {
         type: 'column'
     },
@@ -7,11 +7,9 @@ Highcharts.chart('policy-year-claims-compare', {
     },
     xAxis: {
         categories: [
-            '2014',
-            '2015',
-            '2016',
-            '2017',
-            '2018',
+            'Open',
+            'Closed',
+            'Draft',
         ],
         crosshair: true
     },
@@ -41,11 +39,10 @@ Highcharts.chart('policy-year-claims-compare', {
     },
     series: [{
         name: 'Auto',
-        data: [110, 500, 420, 780, 400]
+        data: [11, 50, 42]
 
     }, {
         name: 'General Liability',
-        data: [400, 330, 840, 490, 502]
-
+        data: [40, 33, 84]
     }]
 });

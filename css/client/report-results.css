@@ -182,6 +182,11 @@
     background-color: #ffffff;
 }
 
+.chart-block.chart-block2 {
+    border: none;
+    margin: 0 0 15px 0;
+}
+
 .progress-chart .chart-text {
     display: table-cell;
     background-color: #efefef;
@@ -207,30 +212,31 @@
     top: 0;
     left: 0;
 }
+/*7db3c2 #81a7d2 #d6c398 #566370 */
 
 .bg1 {
-    background-color: #7db3c4;
+    background-color: #7db3c2;
     border-right: 1px solid #629cae;
 }
 
 .bg2 {
-    background-color: #80a7d6;
+    background-color: #81a7d2;
     border-right: 1px solid #638cbe;
 }
 
 .bg3 {
-    background-color: #bbae8f;
-    border-right: 1px solid #978b6e;
+    background-color: #d6c398;
+    border-right: 1px solid #a99b7b;
 }
 
 .bg4 {
-    background-color: #b1cc8c;
-    border-right: 1px solid #8aa269;
+    background-color: #566370;
+    border-right: 1px solid #49535d;
 }
 
 .bg5 {
-    background-color: #e28284;
-    border-right: 1px solid #b66769;
+    background-color: #e28185;
+    border-right: 1px solid #b6676a;
 }
 
 
@@ -302,11 +308,12 @@ span.value:after {
     border-radius: 3px;
 }
 
-.progress-style1 .chart-bar-progress { background-color: #7db3c4; }
-.progress-style2 .chart-bar-progress { background-color: #80a7d6; }
-.progress-style3 .chart-bar-progress { background-color: #bbae8f; }
-.progress-style4 .chart-bar-progress { background-color: #b1cc8c; }
-.progress-style5 .chart-bar-progress { background-color: #e28284; }
+/*7db3c2 #81a7d2 #d6c398 #566370 */
+.progress-style1 .chart-bar-progress { background-color: #7db3c2; }
+.progress-style2 .chart-bar-progress { background-color: #81a7d2; }
+.progress-style3 .chart-bar-progress { background-color: #d6c398; }
+.progress-style4 .chart-bar-progress { background-color: #566370; }
+.progress-style5 .chart-bar-progress { background-color: #e28185; }
 
 #death-denial-multiple-reports .highcharts-series > rect:nth-child(1),
 #death-denial-multiple-reports .highcharts-series > rect:nth-child(2){
@@ -318,15 +325,15 @@ span.value:after {
 }
 #death-denial-multiple-reports .highcharts-series > rect:nth-child(5),
 #death-denial-multiple-reports .highcharts-series > rect:nth-child(6){
-    fill: #bbae8f;
+    fill: #d6c398;
 }
 #death-denial-multiple-reports .highcharts-series > rect:nth-child(7),
 #death-denial-multiple-reports .highcharts-series > rect:nth-child(8){
-    fill: #b0cc93;
+    fill: #566370;
 }
 #death-denial-multiple-reports .highcharts-series > rect:nth-child(9),
 #death-denial-multiple-reports .highcharts-series > rect:nth-child(10){
-    fill: #e28185;
+    fill: #566370;
 }
 
 /*********Background for bar graph********/
@@ -343,7 +350,7 @@ span.value:after {
 #claim-status .highcharts-series > rect,
 #claim-status-gl .highcharts-series > rect,
 #age-range .highcharts-series > rect,
-#claimant-names2 .highcharts-series > rect {
+#claimant-names .highcharts-series > rect, .claimant-bg {
   background-color: #81a7d2 !important;
   fill: #81a7d2;
 }
@@ -352,6 +359,6 @@ span.value:after {
 #day-of-week .highcharts-series > rect,
 #day-of-week2 .highcharts-series > rect,
 #date-of-hire .highcharts-series > rect {
-    background-color: #bbae8f !important;
-    fill: #bbae8f;
+    background-color: #d6c398 !important;
+    fill: #d6c398;
 }

@@ -33,7 +33,7 @@ var chart = Highcharts.chart('liability-type', {
     },
 
     series: [{
-        name: 'Claims Count',
+        name: 'With Injury',
         data: [7, 9],
         dataLabels: {
             enabled: true,
@@ -47,7 +47,7 @@ var chart = Highcharts.chart('liability-type', {
             }
         }
     }, {
-        name: 'Claims with Injuries',
+        name: 'Without Injury',
         data: [12, 5],
         dataLabels: {
             enabled: true,

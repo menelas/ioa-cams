@@ -47,7 +47,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
                 <div class="pull-left head-drop">
                     <div class="btn-group">
-                        <p>IOA Risk Services Claim Report for Sample Company</p>
+                        <p>IOA Risk Services - Workers' Compensation</a> Report for Sample Company</p>
                     </div>
                 </div>
 
@@ -56,7 +56,6 @@
                         function printPage() { window.print(); }
                     </script>
                     <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
-                    <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to Excel</button>
                 </div>
             </div>
 
@@ -67,19 +66,20 @@
                         <div class="pull-left head-drop">
                             Claim(s) Amounts
                         </div>
+
+                        <div class="pull-right">
+                            <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to Excel</button>
+                        </div>
                     </div>
 
                     <div class="panel-body">
                         <div class="claim-amounts">
                             <table class="table-hover table-striped table-condensed cf" border="5">
                                 <thead class="cf">
-
                                     <tr>
                                         <th>Date of Injury</th>
                                         <th>Claim Number</th>
-                                        <th>Last Name</th>
-                                        <th>First Name</th>
-                                        <th>M.I.</th>
+                                        <th>Claimant Name</th>
                                         <th>Medical Paid</th>
                                         <th>Medical Reserved</th>
                                         <th>Medical Incurred</th>
@@ -96,13 +96,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-
                                     <tr>
                                         <td data-title="Date of Injury">5/30/2016</td>
                                         <td data-title="Claim Number">306F15009203</td>
-                                        <td data-title="Last Name">Caroll</td>
-                                        <td data-title="First Name">Dotson</td>
-                                        <td data-title="M.I."></td>
+                                        <td data-title="Claimant Name">Caroll Dotson</td>
                                         <td data-title="Medical Paid">$292.00</td>
                                         <td data-title="Medical Reserved">$0.00</td>
                                         <td data-title="Medical Incurred">$292.00</td>
@@ -121,9 +118,7 @@
                                     <tr>
                                         <td data-title="Date of Injury">4/20/2016</td>
                                         <td data-title="Claim Number">306F15009518</td>
-                                        <td data-title="Last Name">Berry</td>
-                                        <td data-title="First Name">Francis</td>
-                                        <td data-title="M.I.">R</td>
+                                        <td data-title="Claimant Name">Francis Berry</td>
                                         <td data-title="Medical Paid">$748.00</td>
                                         <td data-title="Medical Reserved">$0.00</td>
                                         <td data-title="Medical Incurred">$503.00</td>
@@ -142,9 +137,7 @@
                                     <tr>
                                         <td data-title="Date of Injury">4/12/2016</td>
                                         <td data-title="Claim Number">306F15009439</td>
-                                        <td data-title="Last Name">Mcmillan</td>
-                                        <td data-title="First Name">Linda</td>
-                                        <td data-title="M.I."></td>
+                                        <td data-title="Claimant Name">Linda Mcmillan</td>
                                         <td data-title="Medical Paid">$983.00</td>
                                         <td data-title="Medical Reserved">$0.00</td>
                                         <td data-title="Medical Incurred">$323.00</td>
@@ -163,9 +156,7 @@
                                     <tr>
                                         <td data-title="Date of Injury">11/13/2015</td>
                                         <td data-title="Claim Number">306F15009873</td>
-                                        <td data-title="Last Name">Pitman</td>
-                                        <td data-title="First Name">Edwin</td>
-                                        <td data-title="M.I."></td>
+                                        <td data-title="Claimant Name">Edwin Pitman</td>
                                         <td data-title="Medical Paid">$4,493.00</td>
                                         <td data-title="Medical Reserved">$10,430.00</td>
                                         <td data-title="Medical Incurred">$234.00</td>
@@ -184,9 +175,7 @@
                                     <tr>
                                         <td data-title="Date of Injury">10/28/2015</td>
                                         <td data-title="Claim Number">306F15009637</td>
-                                        <td data-title="Last Name">Wootson</td>
-                                        <td data-title="First Name">David</td>
-                                        <td data-title="M.I.">S</td>
+                                        <td data-title="Claimant Name">David Wootson</td>
                                         <td data-title="Medical Paid">$1,392.00</td>
                                         <td data-title="Medical Reserved">$0.00</td>
                                         <td data-title="Medical Incurred">$834.00</td>
@@ -205,9 +194,7 @@
                                     <tr>
                                         <td data-title="Date of Injury">9/25/2015</td>
                                         <td data-title="Claim Number">306F15009267</td>
-                                        <td data-title="Last Name">King</td>
-                                        <td data-title="First Name">Robert</td>
-                                        <td data-title="M.I."></td>
+                                        <td data-title="Claimant Name">Robert King</td>
                                         <td data-title="Medical Paid">$657.00</td>
                                         <td data-title="Medical Reserved">$0.00</td>
                                         <td data-title="Medical Incurred">$563.00</td>
@@ -230,107 +217,6 @@
             </div>
 
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                    <div class="panel tablecontainer">
-                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                            <div class="pull-left head-drop">
-                                Job Title
-                            </div>
-                        </div>
-                        <div class="cams-tables">
-                            <table class="table-hover table-striped table-condensed cf">
-                                <thead class="cf">
-                                    <tr>
-                                        <th>Occupation/Job Title</th>
-                                        <th># of Claims</th>
-                                        <th>Occupation/Job Title</th>
-                                        <th># of Claims</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-title="Occupation/Job Title">Accountant</td>
-                                        <td data-title="# of Claims">15</td>
-                                        <td data-title="Occupation/Job Title">Administrative</td>
-                                        <td data-title="# of Claims">15</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="Occupation/Job Title">Aircraft Mechanic</td>
-                                        <td data-title="# of Claims">13</td>
-                                        <td data-title="Occupation/Job Title">Anthropologist</td>
-                                        <td data-title="# of Claims">12</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="Occupation/Job Title">Carpenter</td>
-                                        <td data-title="# of Claims">11</td>
-                                        <td data-title="Occupation/Job Title">Dancer</td>
-                                        <td data-title="# of Claims">10</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="Occupation/Job Title">Driller</td>
-                                        <td data-title="# of Claims">9</td>
-                                        <td data-title="Occupation/Job Title">Farmer</td>
-                                        <td data-title="# of Claims">9</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="Occupation/Job Title">Fine artist</td>
-                                        <td data-title="# of Claims">8</td>
-                                        <td data-title="Occupation/Job Title">Geographer</td>
-                                        <td data-title="# of Claims">8</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="Occupation/Job Title">Marketing Manager</td>
-                                        <td data-title="# of Claims">7</td>
-                                        <td data-title="Occupation/Job Title">Nurse</td>
-                                        <td data-title="# of Claims">7</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="Occupation/Job Title">Project Manager</td>
-                                        <td data-title="# of Claims">7</td>
-                                        <td data-title="Occupation/Job Title">Quality Assurance</td>
-                                        <td data-title="# of Claims">6</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="Occupation/Job Title">Software Developer</td>
-                                        <td data-title="# of Claims">4</td>
-                                        <td data-title="Occupation/Job Title">Tester</td>
-                                        <td data-title="# of Claims">3</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="Occupation/Job Title">Water Technician</td>
-                                        <td data-title="# of Claims">2</td>
-                                        <td data-title="Occupation/Job Title">Xylophone Player</td>
-                                        <td data-title="# of Claims">1</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="text-center">
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination">
-                                        <li>
-                                            <a href="#" aria-label="Previous">
-                                                        <span aria-hidden="true">&laquo;</span>
-                                                    </a>
-                                        </li>
-                                        <li class="active"><a href="#">1</a>
-                                        </li>
-                                        <li><a href="#">2</a>
-                                        </li>
-                                        <li><a href="#">3</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" aria-label="Next">
-                                                        <span aria-hidden="true">&raquo;</span>
-                                                    </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="panel tablecontainer">
                         <div class="col-md-12 col-xs-12 panel-heading tableheader">
@@ -462,11 +348,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 
                     <div class="panel tablecontainer">
-                        <div class="col-md-12 col-xs-12 panel-heading tableheader date-of-hire">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
                             <div class="pull-left head-drop">
                                 Date of Hire
                             </div>
@@ -474,12 +362,10 @@
                         <div id="date-of-hire" class="report-container"></div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="panel tablecontainer">
-                        <div class="col-md-12 col-xs-12 panel-heading tableheader length-of-time">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
                             <div class="pull-left head-drop">
                                 Length of Time Employed at time of injury
                             </div>
@@ -490,7 +376,7 @@
 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="panel tablecontainer">
-                        <div class="col-md-12 col-xs-12 panel-heading tableheader age-range">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
                             <div class="pull-left head-drop">
                                 Age Range at time of injury
                             </div>
@@ -506,7 +392,7 @@
         <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 2.3.3</p>
     </div>
 
-    <script src="../js/report-results/workers-comp/highchart-color.js"></script>
+    <script src="../js/report-results/highchart-color.js"></script>
 
     <!-- Claims by Job Title-->
     <script src="../js/report-results/workers-comp/highchart-job-title.js"></script>

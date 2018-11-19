@@ -1,5 +1,5 @@
 $(function () {
-    Highcharts.chart('claimant-names', {
+    var chart = Highcharts.chart('claimant-names', {
         chart: {
             type: 'column'
         },
@@ -8,23 +8,17 @@ $(function () {
         },
         xAxis: {
             categories: [
-            'Carroll Dotson',
-            'Francis Berry',
-            'Edwin Pitman',
-            'David Wootson',
-            'Brian Smith',
-            'Robert King',
-            'Jeff Curtis',
-            'Amanda Willams',
-            'Shannon Gordon',
-            'Emily Lee',
+            '2-3 claims',
+            '4-5 claims',
+            '6-7 claims',
+            '8+ claims'
             ],
             crosshair: true
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Claims Count',
+                text: 'Claimants',
             }
         },
         plotOptions: {
@@ -43,8 +37,44 @@ $(function () {
             enabled: false
         },
         series: [{
-            name: 'Claims Count',
-            data: [56,50,24,12,30,16,8,19,12,11]
+            name: 'Claimants',
+            data: [
+                {
+                    y:4,
+                    className: "chart-data1" },
+                {
+                    y:4,
+                    className: "chart-data2" },
+                {
+                    y:5,
+                    className: "chart-data3" },
+                {
+                    y:6,
+                    className: "chart-data4"
+                }
+            ],
+            cursor: 'pointer',
+            point: {
+                events: {
+                    click: function() {
+                        $(".chart-data").hide();
+                        $("#graph-version2-2").hide();
+                        $("#"+this.className).show();
+                    }
+                }
+            }
         }]
+    });
+    chart.xAxis[0].labelGroup.element.childNodes.forEach(function(label)
+    {
+        label.style.cursor = "pointer";
+        label.onclick = function(){
+            var txtCon = this.textContent;
+            txtCon = txtCon.replace(" ", "");
+            txtCon = txtCon.replace("+", "");
+            $(".claimant-data").hide();
+            $("#graph-version2-2").hide();
+            $("#"+txtCon).show();
+        }
     });
 });
