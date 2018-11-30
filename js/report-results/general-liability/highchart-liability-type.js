@@ -112,7 +112,7 @@ var chart = Highcharts.chart('liability-type', {
         yAxis: {
             min: 0,
             title: {
-                text: 'Claims Count',
+                text: 'Claims',
             }
         },
         plotOptions: {
@@ -131,7 +131,7 @@ var chart = Highcharts.chart('liability-type', {
             enabled: false
         },
         series: [{
-            name: 'Claims Count',
+            name: 'Claims',
             data: [21,12]
 
         }]

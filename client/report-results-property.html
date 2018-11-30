@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="../css/client/report-results.css">
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!--Map-->
+    <script type="text/javascript" src="../js/map/mapdata.js"></script>
+    <script type="text/javascript" src="../js/map/usmap.js"></script>
+    <script type="text/javascript" src="../js/map/select-state.js"></script>
 </head>
 
 <body class="cams-pad cams-page">
@@ -44,37 +49,39 @@
 
         <!-- Body -->
         <div class="body-container">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
-                <div class="pull-left head-drop">
-                    <div class="btn-group">
-                        <p>IOA Risk Services - Property Report for Sample Company</p>
-                    </div>
-                </div>
-
-                <div class="pull-right">
-                    <script>
-                        function printPage() { window.print(); }
-                    </script>
-                    <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
-                <div class="panel tablecontainer spacer">
-                    <div class="col-md-12 col-xs-12 panel-heading tableheader">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-30">
+                    <div class="title-header clearfix">
                         <div class="pull-left head-drop">
-                            Claim(s) Amounts
+                            <div class="btn-group">
+                                <p>IOA Risk Services - Property Report for Sample Company</p>
+                            </div>
                         </div>
 
                         <div class="pull-right">
-                            <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to Excel</button>
+                            <script>
+                                function printPage() { window.print(); }
+                            </script>
+                            <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
                         </div>
                     </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="panel tablecontainer spacer">
+                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                            <div class="pull-left head-drop">
+                                Claim(s) Amounts
+                            </div>
 
-                    <div class="panel-body">
-                        <div class="claim-amounts">
-                            <table class="table-hover table-striped table-condensed cf" border="5">
-                                <thead class="cf">
+                            <div class="pull-right">
+                                <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to Excel</button>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="claim-amounts">
+                                <table class="table-hover table-striped table-condensed cf" border="5">
+                                    <thead class="cf">
                                     <tr>
                                         <th>Date of Injury</th>
                                         <th>Claim Number</th>
@@ -93,8 +100,8 @@
                                         <th>Total Incurred</th>
                                         <th>Subrogation</th>
                                     </tr>
-                                </thead>
-                                <tbody>
+                                    </thead>
+                                    <tbody>
                                     <tr>
                                         <td data-title="Date of Injury">5/30/2016</td>
                                         <td data-title="Claim Number">306F15009203</td>
@@ -208,14 +215,14 @@
                                         <td data-title="Total Incurred">$719.00</td>
                                         <td data-title="Subrogation">$0.00</td>
                                     </tr>
-                                </tbody>
-                            </table>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
+            <div class="row row-flex row-flex-wrap">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="panel tablecontainer">
                         <div class="col-md-12 col-xs-12 panel-heading tableheader damage-type">
@@ -226,7 +233,6 @@
                         <div id="damage-type" class="report-container"></div>
                     </div>
                 </div>
-
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="panel tablecontainer">
                         <div class="col-md-12 col-xs-12 panel-heading tableheader">
@@ -235,86 +241,71 @@
                             </div>
                         </div>
 
+                        <div id="map" class="report-container"></div>
                         <div class="cams-tables">
+
                             <table class="table-hover table-striped table-condensed cf">
                                 <tbody>
                                     <tr>
-                                        <td data-title="Location"><strong>Alabama</strong></td>
-                                        <td data-title="# of Claims"></td>
+                                        <td data-title="State">
+                                            <i class="fa fa-plus-circle plus-sign" aria-hidden="true" data-car-class="car-class-1"></i><i style="display: none" class="fa fa-minus-circle minus-sign" aria-hidden="true" data-car-class="car-class-1"></i>California - 23 Claims
+                                        </td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                         <td></td>
                                     </tr>
-                                    <tr>
-                                        <td data-title="Location">Auburn, AL</td>
-                                        <td data-title="# of Claims">5</td>
-                                        <td data-title="Location">Birmingham, AL</td>
-                                        <td data-title="# of Claims">7</td>
+                                    <tr class="car-class-1 even" style="display: none">
+                                        <td data-title="State">Aliso Viejo</td>
+                                        <td data-title="Claim Count"><strong class="pull-right">9</strong></td>
+                                        <td data-title="State">Encino</td>
+                                        <td data-title="Claim Count"><strong class="pull-right">7</strong></td>
+                                        <td></td>
                                     </tr>
-                                    <tr>
-                                        <td data-title="Location">Cleveland, AL</td>
-                                        <td data-title="# of Claims">21</td>
-                                        <td data-title="Location">Colorado Springs, AL</td>
-                                        <td data-title="# of Claims">5</td>
+                                    <tr class="car-class-1 even" style="display: none">
+                                        <td data-title="State">Rancho Cucamonga</td>
+                                        <td data-title="Claim Count"><strong class="pull-right">8</strong></td>
+                                        <td data-title="State">Rancho Cucamonga</td>
+                                        <td data-title="Claim Count"><strong class="pull-right">6</strong></td>
+                                        <td></td>
                                     </tr>
 
-                                    <tr>
-                                        <td data-title="Location"><strong>California</strong></td>
-                                        <td data-title="# of Claims"></td>
+                                    <tr class="odd">
+                                        <td data-title="State">
+                                            <i class="fa fa-plus-circle plus-sign" aria-hidden="true" data-car-class="car-class-2"></i><i style="display: none" class="fa fa-minus-circle minus-sign" aria-hidden="true" data-car-class="car-class-2"></i>Florida - 89 Claims
+                                        </td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                         <td></td>
                                     </tr>
-                                    <tr>
-                                        <td data-title="Location">Aliso Viejo, CA</td>
-                                        <td data-title="# of Claims">5</td>
-                                        <td data-title="Location">Pleasanton, CA</td>
-                                        <td data-title="# of Claims">11</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="Location">Sacaramento, CA</td>
-                                        <td data-title="# of Claims">23</td>
-                                        <td data-title="Location">San Diego, CA</td>
-                                        <td data-title="# of Claims">8</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td data-title="Location"><strong>Florida</strong></td>
-                                        <td data-title="# of Claims"></td>
-                                        <td></td>
+                                    <tr class="car-class-2 odd" style="display: none">
+                                        <td data-title="State">Tallahassee</td>
+                                        <td data-title="Claim Count"><strong class="pull-right">25</strong></td>
+                                        <td data-title="State">Ocala</td>
+                                        <td data-title="Claim Count"><strong class="pull-right">13</strong></td>
                                         <td></td>
                                     </tr>
-                                    <tr>
-                                        <td data-title="Location">Jacksonville, FL</td>
-                                        <td data-title="# of Claims">12</td>
-                                        <td data-title="Location">Longwood, FL</td>
-                                        <td data-title="# of Claims">13</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-title="Location">Ormond Beach, FL</td>
-                                        <td data-title="# of Claims">18</td>
-                                        <td data-title="Location">Kissimmee, FL</td>
-                                        <td data-title="# of Claims">13</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td data-title="Location"><strong>Georgia</strong></td>
-                                        <td data-title="# of Claims"></td>
-                                        <td></td>
+                                    <tr class="car-class-2 odd" style="display: none">
+                                        <td data-title="State">Longwood</td>
+                                        <td data-title="Claim Count"><strong class="pull-right">23</strong></td>
+                                        <td data-title="State">Cocoa</td>
+                                        <td data-title="Claim Count"><strong class="pull-right">12</strong></td>
                                         <td></td>
                                     </tr>
-                                    <tr>
-                                        <td data-title="Location">Atlanta, GA</td>
-                                        <td data-title="# of Claims">11</td>
-                                        <td data-title="Location">Carrolton, GA</td>
-                                        <td data-title="# of Claims">13</td>
+                                    <tr class="car-class-2 odd" style="display: none">
+                                        <td data-title="State">Tampa</td>
+                                        <td data-title="Claim Count"><strong class="pull-right">15</strong></td>
+                                        <td data-title="State">Jupiter</td>
+                                        <td data-title="Claim Count"><strong class="pull-right">10</strong></td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
+                
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="panel tablecontainer">
                         <div class="col-md-12 col-xs-12 panel-heading tableheader">
@@ -327,11 +318,11 @@
                         <div class="cams-tables">
                             <table class="table-hover table-striped table-condensed cf">
                                 <thead class="cf">
-                                    <tr>
-                                        <th>Date of Loss</th>
-                                        <th>Claim Number</th>
-                                        <th>Total Incurred</th>
-                                    </tr>
+                                <tr>
+                                    <th>Date of Loss</th>
+                                    <th>Claim Number</th>
+                                    <th>Total Incurred</th>
+                                </tr>
                                 </thead>
 
                                 <tr>
@@ -363,6 +354,15 @@
                         </div>
                     </div>
                 </div>
+            </div><!--/row flex-->
+
+            <div class="row">
+
+
+            </div>
+
+            <div class="row">
+
             </div>
         </div>
 
@@ -383,6 +383,7 @@
 
         <!-- Lag Times-->
         <script src="../js/report-results/all-lines/highchart-lag-times.js"></script>
+        <script type="text/javascript" src="../js/report-results/all-lines/location-hide-show.js"></script>
 
 </body>
 

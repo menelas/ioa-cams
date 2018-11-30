@@ -212,7 +212,6 @@
     top: 0;
     left: 0;
 }
-/*7db3c2 #81a7d2 #d6c398 #566370 */
 
 .bg1 {
     background-color: #7db3c2;
@@ -308,7 +307,6 @@ span.value:after {
     border-radius: 3px;
 }
 
-/*7db3c2 #81a7d2 #d6c398 #566370 */
 .progress-style1 .chart-bar-progress { background-color: #7db3c2; }
 .progress-style2 .chart-bar-progress { background-color: #81a7d2; }
 .progress-style3 .chart-bar-progress { background-color: #d6c398; }
@@ -356,9 +354,72 @@ span.value:after {
 }
 
 .day-of-week, .date-of-hire,
-#day-of-week .highcharts-series > rect,
 #day-of-week2 .highcharts-series > rect,
 #date-of-hire .highcharts-series > rect {
     background-color: #d6c398 !important;
     fill: #d6c398;
+}
+
+/*********Claims by Location********/
+div#map_outer {
+    position: absolute;
+    top: 45px;
+}
+
+/*********Body Part Affected********/
+
+.tablecontainer .cf.table-claim-result td {
+    padding: 10px 30px 10px 10px !important;
+    width: 33.334%;
+}
+
+.right-side-table {
+    padding-left: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #d5d5d5;;
+}
+
+.right-side-table.second {
+    background-color: #e4e4e4;
+}
+
+.right-side-table.third {
+    background-color: #dbdbdb;
+    padding-bottom: 20px;
+}
+
+.table-striped.table-claim-result tr:nth-of-type(odd) {
+    background-color: transparent;
+}
+
+.table-striped.table-claim-result tr:nth-of-type(even) {
+    background-color: #f5f5f5;
+}
+
+.top-table-claim-result {
+   position: relative;
+}
+
+.top-table-claim-result:before{
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 100%;
+    background: transparent url("../../img/table-man.png") no-repeat  center;
+}
+
+.plus-sign, .plus-sign:hover {
+    cursor: pointer;
+    color: #40c13f;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.minus-sign, .minus-sign:hover {
+    cursor: pointer;
+    color: #e34647;
+    font-size: 14px;
+    margin-right: 5px;
 }

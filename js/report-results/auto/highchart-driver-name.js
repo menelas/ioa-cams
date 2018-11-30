@@ -24,7 +24,7 @@ $(function () {
         yAxis: {
             min: 0,
             title: {
-                text: 'Claims Count',
+                text: 'Claims',
             }
         },
         plotOptions: {
@@ -43,7 +43,7 @@ $(function () {
             enabled: false
         },
         series: [{
-            name: 'Claims Count',
+            name: 'Claims',
             data: [56,50,24,12,30,16,8,19,12,11]
         }]
     });

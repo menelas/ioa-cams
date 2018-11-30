@@ -46,39 +46,41 @@
         <div class="body-container">
 
             <div class="main-report">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
-                    <div class="pull-left head-drop">
-                        <div class="btn-group">
-                            <p>IOA Risk Services - Auto and General Liability Report for Sample Company</p>
-                        </div>
-                    </div>
-
-                    <div class="pull-right">
-                        <script>
-                            function printPage() {
-                                    window.print();
-                                }
-                        </script>
-                        <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 body-content">
-                    <div class="panel tablecontainer spacer">
-                        <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-30">
+                        <div class="title-header clearfix">
                             <div class="pull-left head-drop">
-                                Claim(s) Amounts
+                                <div class="btn-group">
+                                    <p>IOA Risk Services - Auto and General Liability Report for Sample Company</p>
+                                </div>
                             </div>
 
                             <div class="pull-right">
-                                <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to Excel</button>
+                                <script>
+                                    function printPage() {
+                                        window.print();
+                                    }
+                                </script>
+                                <button type="button" class="btn cams-btn" onclick="printPage()"><i class="fa fa-print"></i> Print Report</button>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="panel tablecontainer spacer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    Claim(s) Amounts
+                                </div>
 
-                        <div class="panel-body">
-                            <div class="claim-amounts">
-                                <table class="table-hover table-striped table-condensed cf" border="5">
-                                    <thead class="cf">
+                                <div class="pull-right">
+                                    <button type="button" class="btn cams-btn"><i class="fa fa-file-excel-o"></i> Export to Excel</button>
+                                </div>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="claim-amounts">
+                                    <table class="table-hover table-striped table-condensed cf" border="5">
+                                        <thead class="cf">
                                         <tr>
                                             <th>Date of Injury</th>
                                             <th>Claim Number</th>
@@ -97,8 +99,8 @@
                                             <th>Total Incurred</th>
                                             <th>Subrogation</th>
                                         </tr>
-                                    </thead>
-                                    <tbody>
+                                        </thead>
+                                        <tbody>
                                         <tr>
                                             <td data-title="Date of Injury">5/30/2016</td>
                                             <td data-title="Claim Number">306F15009203</td>
@@ -212,60 +214,62 @@
                                             <td data-title="Total Incurred">$719.00</td>
                                             <td data-title="Subrogation">$0.00</td>
                                         </tr>
-                                    </tbody>
-                                </table>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer20">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Number of Claims by Policy Year
-                                    </div>
+                <div class="row row-flex row-flex-wrap">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer20">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    Number of Claims by Policy Year
                                 </div>
-                                <div id="policy-year-claims-compare" class="report-container"></div>
                             </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer20">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Claim Status
-                                    </div>
-                                </div>
-                                <div id="claim-status-compare" class="report-container"></div>
-                            </div>
+                            <div id="policy-year-claims-compare" class="report-container"></div>
                         </div>
                     </div>
 
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer20">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    Claim Status
+                                </div>
+                            </div>
+                            <div id="claim-status-compare" class="report-container"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    Time of Day Injury Occurred
+                                </div>
+                            </div>
+                            <div id="time-of-day" class="report-container"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="panel tablecontainer">
+                            <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                <div class="pull-left head-drop">
+                                    Day of Week Injury Occurred
+                                </div>
+                            </div>
+                            <div id="day-of-week" class="report-container"></div>
+                        </div>
+                    </div>
+
+                </div><!--/row flex-->
 
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Time of Day Injury Occurred
-                                    </div>
-                                </div>
-                                <div id="time-of-day" class="report-container"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="panel tablecontainer">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        Day of Week Injury Occurred
-                                    </div>
-                                </div>
-                                <div id="day-of-week" class="report-container"></div>
-                            </div>
-                        </div>
 
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 data-graph-version">
                             <div class="panel tablecontainer">
@@ -274,74 +278,75 @@
                                         Death, Denial, Litigation, Report Only, and Subrogation Claims
                                     </div>
                                 </div>
+                                <div class="data-graph-version-wrap">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <div class="chart-block chart-block2">
+                                                <div class="progress-chart progress-style1 clearfix">
+                                                    <div class="chart-text">Death/Fatality<span class="value bg1" data-value="5" data-max="300"></span></div>
+                                                    <div class="chart-bar"></div>
+                                                </div>
+                                                <div class="progress-chart progress-style1 clearfix">
+                                                    <div class="chart-text">Non-Death/Fatality<span class="value bg1" data-value="10" data-max="300"></span></div>
+                                                    <div class="chart-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <div class="chart-block chart-block2">
+                                                <div class="progress-chart progress-style2 clearfix">
+                                                    <div class="chart-text">Denial<span class="value bg2" data-value="19" data-max="300"></span></div>
+                                                    <div class="chart-bar"></div>
+                                                </div>
+                                                <div class="progress-chart progress-style2 clearfix">
+                                                    <div class="chart-text">Non-Denial<span class="value bg2" data-value="39" data-max="300"></span></div>
+                                                    <div class="chart-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <div class="chart-block chart-block2">
+                                                <div class="progress-chart progress-style3 clearfix">
+                                                    <div class="chart-text">Litigation<span class="value bg3" data-value="32" data-max="300"></span></div>
+                                                    <div class="chart-bar"></div>
+                                                </div>
+                                                <div class="progress-chart progress-style3 clearfix">
+                                                    <div class="chart-text">Non-Litigation<span class="value bg3" data-value="54" data-max="300"></span></div>
+                                                    <div class="chart-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <div class="chart-block chart-block2">
+                                                <div class="progress-chart progress-style4 clearfix">
+                                                    <div class="chart-text">Report Only<span class="value bg4" data-value="32" data-max="300"></span></div>
+                                                    <div class="chart-bar"></div>
+                                                </div>
+                                                <div class="progress-chart progress-style4 clearfix">
+                                                    <div class="chart-text">Non-Report<span class="value bg4" data-value="54" data-max="300"></span></div>
+                                                    <div class="chart-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <div class="chart-block chart-block2">
+                                                <div class="progress-chart progress-style5 clearfix">
+                                                    <div class="chart-text">Subrogation<span class="value bg5" data-value="58" data-max="300"></span></div>
+                                                    <div class="chart-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="chart-block chart-block2">
-                                            <div class="progress-chart progress-style1 clearfix">
-                                                <div class="chart-text">Death/Fatality<span class="value bg1" data-value="5" data-max="300"></span></div>
-                                                <div class="chart-bar"></div>
-                                            </div>
-                                            <div class="progress-chart progress-style1 clearfix">
-                                                <div class="chart-text">Non-Death/Fatality<span class="value bg1" data-value="10" data-max="300"></span></div>
-                                                <div class="chart-bar"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="chart-block chart-block2">
-                                            <div class="progress-chart progress-style2 clearfix">
-                                                <div class="chart-text">Denial<span class="value bg2" data-value="19" data-max="300"></span></div>
-                                                <div class="chart-bar"></div>
-                                            </div>
-                                            <div class="progress-chart progress-style2 clearfix">
-                                                <div class="chart-text">Non-Denial<span class="value bg2" data-value="39" data-max="300"></span></div>
-                                                <div class="chart-bar"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="chart-block chart-block2">
-                                            <div class="progress-chart progress-style3 clearfix">
-                                                <div class="chart-text">Litigation<span class="value bg3" data-value="32" data-max="300"></span></div>
-                                                <div class="chart-bar"></div>
-                                            </div>
-                                            <div class="progress-chart progress-style3 clearfix">
-                                                <div class="chart-text">Non-Litigation<span class="value bg3" data-value="54" data-max="300"></span></div>
-                                                <div class="chart-bar"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="chart-block chart-block2">
-                                            <div class="progress-chart progress-style4 clearfix">
-                                                <div class="chart-text">Report Only<span class="value bg4" data-value="32" data-max="300"></span></div>
-                                                <div class="chart-bar"></div>
-                                            </div>
-                                            <div class="progress-chart progress-style4 clearfix">
-                                                <div class="chart-text">Non-Report<span class="value bg4" data-value="54" data-max="300"></span></div>
-                                                <div class="chart-bar"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="chart-block chart-block2">
-                                            <div class="progress-chart progress-style5 clearfix">
-                                                <div class="chart-text">Subrogation<span class="value bg5" data-value="58" data-max="300"></span></div>
-                                                <div class="chart-bar"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="chart-block chart-block2">
-                                            <div class="progress-chart progress-style5 clearfix">
-                                                <div class="chart-text">Non-Subrogation<span class="value bg5" data-value="31" data-max="300"></span></div>
-                                                <div class="chart-bar"></div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <div class="chart-block chart-block2">
+                                                <div class="progress-chart progress-style5 clearfix">
+                                                    <div class="chart-text">Non-Subrogation<span class="value bg5" data-value="31" data-max="300"></span></div>
+                                                    <div class="chart-bar"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -350,7 +355,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row row-flex row-flex-wrap">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 spacer30 data-graph-version2" id="graph-version2-2">
                             <div class="panel tablecontainer">
                                 <div class="col-md-12 col-xs-12 panel-heading tableheader">

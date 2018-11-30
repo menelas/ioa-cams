@@ -21,14 +21,15 @@ $(function () {
         yAxis: {
             min: 0,
             title: {
-                text: 'Claims Count',
+                text: 'Claims',
             }
         },
         plotOptions: {
             bar: {
+                layout: 'vertical',
                 pointPadding: 0.2,
                 borderWidth: 0,
-                stacking: 'normal',
+                floating: true,
                 dataLabels: {
                     enabled: true,
                     color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
@@ -37,12 +38,14 @@ $(function () {
         },
         legend:
         {
-            enabled: false
+            enabled: true
         },
         series: [{
-            name: 'Claims Count',
+            name: 'Claims',
             data: [3,4,7,4,9,1,4]
-
+        },{
+            name: 'Claims',
+            data: [5,1,8,3,7,4,8]
         }]
     });
 });
