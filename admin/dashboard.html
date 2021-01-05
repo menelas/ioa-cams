@@ -53,6 +53,8 @@
                             <div class="arrow-up"></div>
                             <li><a href="#">Edit Profile</a>
                             </li>
+                            <li><a href="../admin/help-request.html">Help</a>
+                            </li>
                             <li><a href="#">Logout</a>
                             </li>
                         </ul>
@@ -77,9 +79,6 @@
                             <li><a href="../client/claim-add-new.html">Add New</a>
                                 <hr>
                             </li>
-                            <li><a href="#">Add Attachment</a>
-                                <hr>
-                            </li>
                             <li><a href="../client/search-claims.html">View Claims</a>
                                 <hr>
                             </li>
@@ -97,7 +96,74 @@
                         <hr />
                     </li>
 
+                    <li>
+                        <a href="../client/company-info.html">
+                            <i class="fa fa-building fa-2x" aria-hidden="true"></i><span>Company Info</span>
+                        </a>
+                        <hr />
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i><span> Servicing Team</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu servicing-team">
+
+                            <div class="col-xs-6 col-md-6">
+                                <li>Producer(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> William Carter</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 989-4481</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
+                                </li>
+
+                                <hr />
+
+                                <li>Claim Contact(s):</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Patricia Hawley</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 989-4481</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
+                                </li>
+
+
+                            </div>
+
+                            <div class="col-xs-6 col-md-6">
+                                <li>Policy Information:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Patrice Carter</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 989-4481</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
+                                </li>
+
+                                <hr />
+
+
+                                <li>Technical Contact:</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> Shawn Walters</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:407-989-4481">(407) 493-4343</a>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:sample-user@ioausa.com">sample-user@ioausa.com</a>
+                                </li>
+
+                            </div>
+                        </ul>
+                    </li>
+
                     <hr />
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../client/claim-report.html">Summary</a>
+                                <hr>
+                            </li>
+                            <li><a href="#">OSHA</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
@@ -108,12 +174,6 @@
                                 <hr>
                             </li>
                             <li><a href="#">Loss Run Import</a>
-                                <hr>
-                            </li>
-                            <li><a href="#">Claim Import - Company Exclusion</a>
-                                <hr>
-                            </li>
-                            <li><a href="#">Claim Import - Client Mapping</a>
                                 <hr>
                             </li>
                             <li><a href="#">Users</a>
@@ -131,6 +191,8 @@
                             <ul class="dropdown-menu">
                                 <li><a href="#">Edit Profile</a>
                                 </li>
+                                <li><a href="../admin/help-request.html">Help</a>
+                                </li>
                                 <li><a href="#">Logout</a>
                                 </li>
                             </ul>
@@ -147,7 +209,7 @@
                         <div class="panel tablecontainer">
                             <div class="col-md-12 col-xs-12 panel-heading tableheader">
                                 <div class="pull-left head-drop title">
-                                    Critical
+                                    Miscellaneous
                                 </div>
 
                                 <div class="btn-group pull-right head-drop month-dropdown">
@@ -186,20 +248,8 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td data-title="Draft Claims">Draft Claims</td>
-                                            <td data-title="Draft CLaims" class="text-right"><a href="../admin/Draft-claims.html#Draft-claims">12</a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td data-title="Unprocessed Claims">Unprocessed Claims</td>
-                                            <td data-title="Unprocessed Claims" class="text-right"><a href="../admin/unprocessed-claims.html">28</a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td data-title="Help Requests">Help Requests</td>
-                                            <td data-title="Help Requests" class="text-right"><a href="../admin/help-request-dash.html">48</a>
+                                            <td data-title="Pending Claims">Pending Claims</td>
+                                            <td data-title="Pending CLaims" class="text-right"><a href="../admin/pending-claims.html#pending-claims">12</a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -227,7 +277,7 @@
                                         </li>
                                         <li><a href="#">90 Days</a>
                                         </li>
-                                        <li><a href="#">No Active Policies</a>
+                                        <li><a href="#">All</a>
                                         </li>
 
                                         <hr />
@@ -281,7 +331,7 @@
                         <div class="panel tablecontainer">
                             <div class="col-md-12 col-xs-12 panel-heading tableheader">
                                 <div class="pull-left head-drop title">
-                                    Carrier Communication Profiles
+                                     Carrier Communication Profiles
                                 </div>
 
                                 <div class="btn-group pull-right head-drop month-dropdown">
@@ -366,8 +416,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td data-title="Clients"><strong>Clients</strong>
-                                            </td>
+                                            <td data-title="Clients"><strong>Clients</strong></td>
                                             <td data-title="Clients" class="text-right"><a href="../admin/client-search.html">25</a>
                                             </td>
                                         </tr>
@@ -416,73 +465,60 @@
                                 </div>
                             </div>
                             <div class="cams-tables">
-
+                                
                                 <table class="table-hover table-striped table-condensed cf">
                                     <thead class="cf">
                                         <tr>
-                                            <th>Location</th>
-                                            <th># of Claims</th>
-                                            <th>Location</th>
-                                            <th># of Claims</th>
+                                            <th class="text-left">Total number of accounts served</th>
+                                            <th class="text-right">#</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td data-title="Location">Longwood, FL</td>
-                                            <td data-title="# of Claims">14</td>
-                                            <td data-title="Location">Ormond Beach, FL</td>
-                                            <td data-title="# of Claims">13</td>
+                                            <td data-title="Claims Advocates"><strong>Claims Advocates</strong>
+                                            </td>
+                                            <td data-title="Claims Advocates" class="text-right"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td data-title="John Cotton" class="text-indent5">John Cotton</td>
+                                            <td data-title="14" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">25</a>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td data-title="Name">Jacksonville, FL</td>
-                                            <td data-title="# of Claims">12</td>
-                                            <td data-title="Name">Fernandina Beach, FL</td>
-                                            <td data-title="# of Claims">13</td>
+                                            <td data-title="Antonia Stenger" class="text-indent5">Antonia Stenger</td>
+                                            <td data-title="3" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">12</a>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td data-title="Name">Atlanta, GA</td>
-                                            <td data-title="# of Claims">13</td>
-                                            <td data-title="Name">Ft. Myers, FL</td>
-                                            <td data-title="# of Claims">11</td>
+                                            <td data-title="Leta Kreitzer" class="text-indent5">Leta Kreitzer</td>
+                                            <td data-title="4" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">8</a>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td data-title="Name">Tampa, FL</td>
-                                            <td data-title="# of Claims">10</td>
-                                            <td data-title="Name">Carrollton, GA</td>
-                                            <td data-title="# of Claims">8</td>
+                                            <td data-title="Risk Advocates"><strong>Risk Advocates</strong>
+                                            </td>
+                                            <td data-title="" class="text-right"></td>
                                         </tr>
                                         <tr>
-                                            <td data-title="Name">Auburn, AL</td>
-                                            <td data-title="# of Claims">6</td>
-                                            <td data-title="Name">Las Vegas, NV</td>
-                                            <td data-title="# of Claims">6</td>
+                                            <td data-title="Shawn Walters" class="text-indent5">Shawn Walters</td>
+                                            <td data-title="13" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">13</a>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td data-title="Name">Cleveland, AL</td>
-                                            <td data-title="# of Claims">6</td>
-                                            <td data-title="Name">Colorado Springs, AL</td>
-                                            <td data-title="# of Claims">5</td>
+                                            <td data-title="Thomas Blodgett" class="text-indent5">Thomas Blodgett</td>
+                                            <td data-title="8" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">8</a>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td data-title="Name">Birmingham, AL</td>
-                                            <td data-title="# of Claims">5</td>
-                                            <td data-title="Name">Aliso Viejo, CA</td>
-                                            <td data-title="# of Claims">3</td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Name">Denver, Co</td>
-                                            <td data-title="# of Claims">3</td>
-                                            <td data-title="Name">Sacramento, CA</td>
-                                            <td data-title="# of Claims">2</td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Name">San Diego, CA</td>
-                                            <td data-title="# of Claims">2</td>
-                                            <td data-title="Name">Pleasanton, CA</td>
-                                            <td data-title="# of Claims">1</td>
+                                            <td data-title="Kyle Johnson" class="text-indent5">Kyle Johnson</td>
+                                            <td data-title="4" class="text-right"><a href="../admin/servicing-team-diana-gregg-search.html">4</a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                            
+
 
                             </div>
                         </div>
@@ -680,9 +716,7 @@
                                 </div>
 
                                 <div class="head-drop">
-                                    Open: 193 <span class="vertical-line"></span>Draft: 78 <span class="vertical-line"></span> Closed: 232 <span class="vertical-line"></span> Paid: $29,339.10 <span class="vertical-line"></span> Reserved: $54,439.83
-                                    <span
-                                        class="vertical-line"></span> Incurred: $83,778.93
+                                    Open: 193 <span class="vertical-line"></span>Pending: 78 <span class="vertical-line"></span> Closed: 232 <span class="vertical-line"></span> Paid: $29,339.10 <span class="vertical-line"></span> Reserved: $54,439.83 <span class="vertical-line"></span> Incurred: $83,778.93
                                 </div>
                             </div>
                             <div class="cams-tables clearfix">
@@ -696,7 +730,7 @@
             </div>
 
             <div class="text-center copyright">
-                <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 2.3.3</p>
+                <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 2.3.3</p>
             </div>
             <script src="../js/highchart-main.js"></script>
             <script src="https://code.highcharts.com/highcharts.js"></script>

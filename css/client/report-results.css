@@ -46,14 +46,14 @@
     font-weight: bold;
 }
 .body-container {
-	margin-left: 0px;
+  margin-left: 0px;
   padding: 20px 5px 5px 5px;
 }
 
 .body-content {
-	border: none;
-	padding-left: 0px;
-	padding-right: 0px;
+  border: none;
+  padding-left: 0px;
+  padding-right: 0px;
   margin-bottom: 0px;
 }
 
@@ -174,6 +174,7 @@
 
 
 /*********Multiple Reports Results********/
+
 .chart-block {
     border: 1px solid #ccc;
     padding: 10px;
@@ -361,6 +362,7 @@ span.value:after {
 }
 
 /*********Claims by Location********/
+
 div#map_outer {
     position: absolute;
     top: 45px;
@@ -371,10 +373,19 @@ div#map_outer {
 .tablecontainer .cf.table-claim-result td {
     padding: 10px 30px 10px 10px !important;
     width: 33.334%;
+    position: relative;
+    vertical-align: top;
+}
+
+.table-claim-result strong.pull-right {
+    float: none !important;
+    position: absolute;
+    right: 9px;
+    top: 10px;
 }
 
 .right-side-table {
-    padding-left: 30%;
+    padding-left: 34%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #f0f0f0;
@@ -388,6 +399,7 @@ div#map_outer {
 .right-side-table.third {
     background-color: #dbdbdb;
     padding-bottom: 20px;
+    border-bottom: 0 !important;
 }
 
 .table-striped.table-claim-result tr:nth-of-type(odd) {
@@ -405,7 +417,7 @@ div#map_outer {
 .top-table-claim-result:before{
     position: absolute;
     content: "";
-    width: 30%;
+    width: 34%;
     height: 100%;
     background: transparent url("../../img/table-man.png") no-repeat  center;
 }
@@ -422,4 +434,31 @@ div#map_outer {
     color: #e34647;
     font-size: 14px;
     margin-right: 5px;
+}
+.bottom-table-claim-result table.cf{
+    width: 34%;
+}
+.bottom-table-claim-result{
+    background: #dbdbdb;
+    margin-top: -30px;
+    min-height: 100px;
+}
+.bottom-table-claim-result .table-striped.table-claim-result tr:nth-of-type(even) {
+    background-color: transparent;
+}
+@media (min-width: 1200px) {
+    .bottom-graph-container{
+        position: relative;
+    }
+    .bottom-graph-container #bottom-graph{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+/*********Data Tables Styles - Body Parts Affected********/
+
+.inactive-body {
+  color: #cbcbcb;
 }

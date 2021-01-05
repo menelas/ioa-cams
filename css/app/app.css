@@ -1327,6 +1327,8 @@ text.highcharts-axis-title {
 
 .row-flex-wrap {
    -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -ms-flex-flow: row wrap;
    align-content: flex-start;
    flex:0;
 }
